@@ -1,0 +1,33 @@
+name: Cuotas y estadísticas (diario)
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # cada día ~07:17 hora de Polonia
+  workflow_dispatch: {}      # botón "Run workflow" para lanzarlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pizarra-datos
+  cancel-in-progress: false
+
+jobs:
+  datos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Descargar resultados, tiros y cuotas
+        run: python scripts/fetch.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "pizarra-bot"
+          git config user.email "pizarra-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "Datos $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push

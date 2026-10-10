@@ -1,0 +1,72 @@
+name: Web (cada hora)
+
+on:
+  schedule:
+    - cron: "27 * * * *"   # cada hora, 20 min después de bajar resultados
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pizarra-datos
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar librerías
+        run: pip install numpy scipy
+      - name: Datos base (openfootball)
+        run: git clone --depth 1 https://github.com/openfootball/football.json.git /tmp/openfootball
+      - name: Calcular pronósticos
+        run: |
+          set -o pipefail
+          mkdir -p web
+          python app/pronosticos.py /tmp/openfootball app/template.html web/index.html \
+            "$(date -u +%Y-%m-%d)" --fd data/fd --hist data/historial.json 2>&1 | tail -60 > web/_registro.txt
+          grep -q "const DATA =" web/index.html
+          # copia para la pizarra de Claude (sin cabecera de documento ni recarga)
+          python - <<'PY'
+          import re
+          t = open("web/index.html", encoding="utf-8").read()
+          t = re.sub(r'(?s)^<!doctype html>.*?(?=<title>)', '', t)
+          t = t.replace('</head>\n<body>\n', '').replace('</body>\n</html>\n', '')
+          open("web/claude.html", "w", encoding="utf-8").write(t)
+          PY
+      - name: Guardar historial y página
+        run: |
+          git config user.name "pizarra-bot"
+          git config user.email "pizarra-bot@users.noreply.github.com"
+          git add web data/historial.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Web $(date -u +%Y-%m-%dT%H:%M)"
+          git pull --rebase origin main
+          git push
+      - name: Guardar registro del error
+        if: failure()
+        run: |
+          git config user.name "pizarra-bot"
+          git config user.email "pizarra-bot@users.noreply.github.com"
+          git add -f web/_registro.txt
+          git commit -m "Web: registro de error" && git pull --rebase origin main && git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
