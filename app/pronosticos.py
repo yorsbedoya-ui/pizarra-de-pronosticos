@@ -230,6 +230,46 @@ def stat_row(s):
     return dict(date=s["date"].isoformat(), h=s["h"], a=s["a"], hg=s["hg"], ag=s["ag"],
                 **{c: g(c) for c in ("HST", "AST", "HS", "AS", "HC", "AC", "HPoss", "APoss")})
 
+
+# ---------------- Tiros esperados en el próximo partido ----------------
+# Fuerza de cada equipo (últimos SHOT_K partidos) frente a la media de la liga (últimos SHOT_LG),
+# suavizada hacia 1 con SHOT_SH. Ajustes elegidos por backtest con partidos reales de 2026.
+from collections import deque, defaultdict
+SHOT_K, SHOT_LG, SHOT_SH = 38, 200, 0.6
+SHOT_COLS = ("ST", "S", "C")
+
+class ShotState:
+    def __init__(self):
+        self.team = {c: defaultdict(lambda: deque(maxlen=SHOT_K)) for c in SHOT_COLS}
+        self.lg = {c: deque(maxlen=SHOT_LG) for c in SHOT_COLS}
+    def proj(self, h, a, c):
+        lg = self.lg[c]
+        if len(lg) < 50: return None
+        lh = sum(x for x, _ in lg) / len(lg); la = sum(y for _, y in lg) / len(lg); lall = (lh + la) / 2
+        def tm(t):
+            d = self.team[c].get(t)
+            if not d or len(d) < 4: return None
+            f = sum(x for x, _ in d) / len(d); g = sum(y for _, y in d) / len(d)
+            return 1 + SHOT_SH * (f / lall - 1), 1 + SHOT_SH * (g / lall - 1)
+        th, ta = tm(h), tm(a)
+        if not th or not ta: return None
+        return lh * th[0] * ta[1], la * ta[0] * th[1]
+    def add(self, s):
+        for c in SHOT_COLS:
+            x, y = s.get("H" + c), s.get("A" + c)
+            if x is None or y is None: continue
+            self.lg[c].append((x, y)); self.team[c][s["h"]].append((x, y)); self.team[c][s["a"]].append((y, x))
+
+def shots_run(stats, bt_from):
+    """Recorre los partidos en orden: backtest (quién tira más a puerta) y estado final para predecir."""
+    st, rec = ShotState(), []
+    for s in stats:
+        if s["date"] >= bt_from and s.get("HST") is not None:
+            p = st.proj(s["h"], s["a"], "ST")
+            if p: rec.append((p[0], p[1], s["HST"], s["AST"]))
+        st.add(s)
+    return st, rec
+
 # ---------------- Modelo ----------------
 def fit_poisson(train, ref, x0=None):
     teams = sorted({r[1] for r in train} | {r[2] for r in train}); idx = {t: i for i, t in enumerate(teams)}; n = len(teams)
@@ -399,6 +439,7 @@ if len(with_odds) >= 300:
     print("Peso mercado:", mkt_test, flush=True)
 
 leagues = []
+SHOT_BT = []
 for L in per_league:
     played = L["played"]; mdl = Model(played, TODAY)
     up = sorted([f for f in L["fixtures"] if f["date"] >= TODAY], key=lambda f: (f["date"], f["time"]))
@@ -407,6 +448,7 @@ for L in per_league:
     else:
         up = [f for f in up if f["date"] <= up[0]["date"] + timedelta(days=6)] if up else []
     preds = []; smp = name_mapper([s["h"] for s in L["stats"]] + [s["a"] for s in L["stats"]])
+    sstate, srec = shots_run(L["stats"], BT_START); SHOT_BT.extend(srec)
     for f in up:
         rw = mdl.raw(f["h"], f["a"])
         if not rw: continue
@@ -415,7 +457,9 @@ for L in per_league:
                           fh=form(played, f["h"]), fa=form(played, f["a"]), lh=round(rw["lh"], 2), la=round(rw["la"], 2),
                           mk={k: round(v, 3) for k, v in mk.items()}, scores=rw["scores"], safe=safe,
                           odds=f["odds"], value=[dict(v, p=round(v["p"], 3), edge=round(v["edge"], 3)) for v in values(rw, f["odds"])],
-                          sh=team_summary(L["stats"], smp(f["h"]) or f["h"]), sa=team_summary(L["stats"], smp(f["a"]) or f["a"])))
+                          sh=team_summary(L["stats"], smp(f["h"]) or f["h"]), sa=team_summary(L["stats"], smp(f["a"]) or f["a"]),
+                          shots={c: [round(v, 1) for v in pr] for c in SHOT_COLS
+                                 for pr in [sstate.proj(smp(f["h"]) or f["h"], smp(f["a"]) or f["a"], c)] if pr}))
     lb = [b for b in bt if b["lg"] == L["code"]]
     acc = float(np.mean([hit(max("1X2", key=lambda k: m[k]), b["hg"], b["ag"]) for b in lb for m in [markets(b["raw"], b["odds"], WM)]])) if lb else None
     leagues.append(dict(code=L["code"], name=L["name"], src=L["src"], last_data=played[-1][0].isoformat(), n_bt=L["n_bt"],
@@ -445,7 +489,17 @@ if vb:
     if value_bt["roi"] < 0:  # si históricamente pierden dinero, no se muestran
         for l in leagues:
             for m in l["matches"]: m["value"] = []
-summary = dict(n=len(bt), from_=BT_START.isoformat(), market_weight=WM, market_test=mkt_test, value=value_bt,
+def shot_summary(rec):
+    if not rec: return None
+    v = np.array(rec); eh, ea, rh, ra = v.T
+    out = dict(n=len(v), mae=round(float(np.mean(np.abs(np.r_[eh, ea] - np.r_[rh, ra]))), 2), bands=[])
+    for lo, hi_ in ((0, 1), (1, 1.5), (1.5, 2.5), (2.5, 99)):
+        m = (rh != ra) & (np.abs(eh - ea) >= lo) & (np.abs(eh - ea) < hi_)
+        if m.sum() >= 20:
+            out["bands"].append(dict(lo=lo, hi=hi_, n=int(m.sum()), real=round(float(np.mean((eh > ea)[m] == (rh > ra)[m])), 3)))
+    return out
+
+summary = dict(n=len(bt), from_=BT_START.isoformat(), shots=shot_summary(SHOT_BT), market_weight=WM, market_test=mkt_test, value=value_bt,
                acc=round(float(np.mean([h for _, h in win])), 3), o25=round(float(np.mean(o25)), 3),
                win65=thr(win, .65), safe80=thr(safe, .80), safe85=thr(safe, .85),
                cal_win=band_stats(win), cal_safe=band_stats(safe))

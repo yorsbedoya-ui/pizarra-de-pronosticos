@@ -58,7 +58,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(2.1rem,6vw,3.2re
 button:focus-visible,input:focus-visible{outline:2px solid var(--pitch);outline-offset:2px}
 .leaguehead{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
 .leaguehead h2{font-family:var(--f-display);font-size:1.7rem;margin:0;text-transform:uppercase}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:12px}
 @media (max-width:420px){.grid{grid-template-columns:1fr}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px;display:grid;gap:12px;min-width:0;border-left:4px solid var(--c,var(--line))}
 .meta{display:flex;justify-content:space-between;gap:8px;font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
@@ -111,6 +111,15 @@ details.more summary{cursor:pointer;font-size:.8rem;color:var(--muted);list-styl
 details.more summary::-webkit-details-marker{display:none}
 details.more summary::before{content:"+ ";font-family:var(--f-mono)}
 details.more[open] summary::before{content:"– "}
+.shots{display:grid;gap:6px;border:1px solid var(--line);border-radius:4px;padding:8px 10px}
+.shots .lab{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.srow{display:grid;grid-template-columns:2.6em 1fr 2.6em;gap:8px;align-items:center;font-size:.82rem}
+.srow b{font-family:var(--f-mono);font-weight:500}
+.srow b:last-child{text-align:right}
+.sbar{position:relative;height:8px;border-radius:4px;background:var(--away);overflow:hidden}
+.sbar i{position:absolute;inset:0 auto 0 0;background:var(--pitch)}
+.sname{grid-column:1/-1;display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem;margin-bottom:-4px}
+.shots small{color:var(--muted);font-size:.76rem}
 </style>
 
 </head>
@@ -152,6 +161,7 @@ details.more[open] summary::before{content:"– "}
   <section class="note">
     <h3>Cómo leerlo</h3>
     <p><b>Pick seguro</b> es el mercado con más probabilidad del partido entre: ganador, doble oportunidad, más/menos 2,5 goles y ambos marcan. Es la forma honesta de subir el acierto: con confianza ≥ 85 % salió bien el <span id="s85"></span> de las veces, pero paga cuotas bajas.</p>
+    <p><b>Tiros esperados</b> sale de cómo ataca cada equipo (últimos 38 partidos) frente a cómo defiende el rival, comparado con la media de su liga. Es una media: el número exacto varía mucho de un partido a otro (error medio <span id="smae"></span> tiros a puerta por equipo). Lo que mejor predice es <b>qué equipo tirará más</b>.</p>
     <p><b>Cuota justa</b> es 1 ÷ probabilidad. Solo tiene sentido apostar si la casa paga más que esa cifra; si paga menos, a la larga pierdes aunque aciertes mucho.</p>
     <p><b>Con cuotas reales</b>, el backtest decide cuánto pesa el mercado frente a nuestro modelo. Las etiquetas de <b>valor</b> (modelo por encima de la cuota) solo aparecen si históricamente han ganado dinero; hoy no es así, por eso están ocultas.</p>
     <p>El modelo no detecta amaños: eso no aparece en los marcadores. Tampoco conoce lesiones ni alineaciones. Datos de resultados hasta <span id="last"></span>. Si apuestas, hazlo solo con dinero que puedas perder.</p>
@@ -197,6 +207,18 @@ document.querySelector('.seg').addEventListener('click', e=>{ const b=e.target.c
 const formHTML = f => `<span class="form" aria-label="Últimos 5: ${f}">${[...f].map(c=>`<span class="f-${c}">${c}</span>`).join('')}</span>`;
 
 const f1 = v => v==null ? '–' : (Math.round(v*10)/10).toLocaleString('es-ES');
+function shotsHTML(m){
+  const s = m.shots; if (!s || !s.ST) return '';
+  const SB = (DATA.backtest && DATA.backtest.shots) || null;
+  const row = (lab, v) => v ? `<div class="sname"><span>${lab}</span><span>total ${f1(v[0]+v[1])}</span></div>
+    <div class="srow"><b>${f1(v[0])}</b><div class="sbar" role="img" aria-label="${lab}: ${f1(v[0])} contra ${f1(v[1])}"><i style="width:${(100*v[0]/(v[0]+v[1])).toFixed(1)}%"></i></div><b>${f1(v[1])}</b></div>` : '';
+  const d = s.ST[0]-s.ST[1], who = d>0 ? short(m.h) : short(m.a);
+  const band = SB && SB.bands.find(b => Math.abs(d)>=b.lo && Math.abs(d)<b.hi);
+  const note = Math.abs(d) < 0.5 ? 'Tiros a puerta muy parejos: sin favorito claro.'
+    : `Más tiros a puerta: <b>${who}</b>${band ? ` · con esta diferencia acertó el ${pct(band.real)} de ${band.n} partidos` : ''}`;
+  return `<div class="shots"><span class="lab">Tiros esperados en este partido · ${short(m.h)} – ${short(m.a)}</span>
+    ${row('Tiros a puerta', s.ST)}${row('Tiros totales', s.S)}${row('Córners', s.C)}<small>${note}</small></div>`;
+}
 function statTable(m){
   const h = m.sh, a = m.sa; if (!h && !a) return '';
   const rows = [['Goles a favor','gf'],['Goles en contra','gc'],['Tiros a puerta a favor','stf'],['Tiros a puerta en contra','stc'],['Tiros totales','sf'],['Córners','cf'],['Posesión %','poss']];
@@ -242,6 +264,7 @@ function card(m){
     </div>
     ${m.odds ? `<div class="scores">Cuotas casa: <b>1</b> ${m.odds.o1.toFixed(2)} · <b>X</b> ${m.odds.oX.toFixed(2)} · <b>2</b> ${m.odds.o2.toFixed(2)}${m.odds.oO?` · <b>+2,5</b> ${m.odds.oO.toFixed(2)}`:''}</div>` : ''}
     ${(m.value||[]).length ? `<div class="pick">${m.value.map(v=>`<span class="pill hi">Valor: ${mkName(v.m,m)} @ ${v.odds.toFixed(2)} (+${Math.round(v.edge*100)} %)</span>`).join('')}</div>` : ''}
+    ${shotsHTML(m)}
     ${statTable(m)}
     <div class="scores">Marcadores más probables: ${m.scores.map(s=>`<b>${s[0]}-${s[1]}</b> ${pct(s[2])}`).join(' · ')}</div>
   </article>`;
@@ -259,6 +282,7 @@ function render(){
     ${recentHTML(l)}`;
 }
 render();
+document.getElementById('smae').textContent = B.shots ? f1(B.shots.mae) : '–';
 
 const H = DATA.history;
 if (H) {
