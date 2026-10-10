@@ -533,7 +533,12 @@ if HIST:
     print("Historial:", {k: v for k, v in hist_out.items() if k != "items"}, flush=True)
 
 src = sorted({l["src"] for l in leagues})
-data = dict(generated=TODAY.isoformat(), sources=src,
+try:
+    from zoneinfo import ZoneInfo
+    _now = datetime.now(ZoneInfo("Europe/Warsaw"))
+except Exception:
+    _now = datetime.utcnow()
+data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
             model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
             backtest=summary, leagues=leagues, history=hist_out)
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))

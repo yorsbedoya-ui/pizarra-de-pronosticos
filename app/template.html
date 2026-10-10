@@ -164,7 +164,7 @@ details.more[open] summary::before{content:"– "}
     <p><b>Tiros esperados</b> sale de cómo ataca cada equipo (últimos 38 partidos) frente a cómo defiende el rival, comparado con la media de su liga. Es una media: el número exacto varía mucho de un partido a otro (error medio <span id="smae"></span> tiros a puerta por equipo). Lo que mejor predice es <b>qué equipo tirará más</b>.</p>
     <p><b>Cuota justa</b> es 1 ÷ probabilidad. Solo tiene sentido apostar si la casa paga más que esa cifra; si paga menos, a la larga pierdes aunque aciertes mucho.</p>
     <p><b>Con cuotas reales</b>, el backtest decide cuánto pesa el mercado frente a nuestro modelo. Las etiquetas de <b>valor</b> (modelo por encima de la cuota) solo aparecen si históricamente han ganado dinero; hoy no es así, por eso están ocultas.</p>
-    <p>El modelo no detecta amaños: eso no aparece en los marcadores. Tampoco conoce lesiones ni alineaciones. Datos de resultados hasta <span id="last"></span>. Si apuestas, hazlo solo con dinero que puedas perder.</p>
+    <p>El modelo no detecta amaños: eso no aparece en los marcadores. Tampoco conoce lesiones ni alineaciones. Los resultados se comprueban cada hora; último partido terminado en los datos: <span id="last"></span>. Si apuestas, hazlo solo con dinero que puedas perder.</p>
   </section>
 </div>
 
@@ -180,12 +180,13 @@ const mkName = (k,m) => ({'1':'Gana '+short(m.h),'2':'Gana '+short(m.a),'X':'Emp
 const B = DATA.backtest;
 const bandOf = (cal,p) => cal.find(c=>p>=c.lo && p<(c.hi>=1?1.01:c.hi));
 
-document.getElementById('gen').textContent = DATA.generated;
+const upd = DATA.updated_at ? new Date(DATA.updated_at) : new Date(DATA.generated+'T12:00:00');
+document.getElementById('gen').textContent = upd.toLocaleDateString('es-ES',{weekday:'short',day:'numeric',month:'short'}) + (DATA.updated_at ? ', ' + DATA.updated_at.slice(11,16) : '');
 document.getElementById('mdl').textContent = DATA.model;
 document.getElementById('srcs').textContent = (DATA.sources||['openfootball']).join(' + ');
 document.getElementById('btn').textContent = B.n.toLocaleString('es-ES') + ' partidos desde ' + B.from_;
 document.getElementById('s85').textContent = pct(bandOf(B.cal_safe,.9)?.real);
-document.getElementById('last').textContent = DATA.leagues.map(l=>l.last_data).sort().pop();
+document.getElementById('last').textContent = fmtDate(DATA.leagues.map(l=>l.last_data).sort().pop(),'');
 document.getElementById('perf').innerHTML = [
   ['Ganador · todos', pct(B.acc)],
   ['Ganador · conf. ≥ 65 %', pct(B.win65.real)],
@@ -238,6 +239,11 @@ function recentHTML(l){
       ${st.length?`<div class="st">${st.map(([k,v])=>`<span>${k} ${v}</span>`).join('')}</div>`:''}</div>`; }).join('')}</div>`;
 }
 
+function gapNote(l){
+  const ref = new Date((DATA.updated_at||DATA.generated).slice(0,10)+'T12:00:00');
+  const days = Math.round((ref - new Date(l.last_data+'T12:00:00'))/864e5);
+  return days > 7 ? ` (sin jornada de liga desde entonces; resultados comprobados cada hora)` : '';
+}
 function card(m){
   const k = m.mk, probs = {'1':k['1'],'X':k['X'],'2':k['2']};
   const pick = Object.keys(probs).reduce((a,b)=>probs[a]>=probs[b]?a:b), p = probs[pick], L = lvl(p);
@@ -277,7 +283,7 @@ function render(){
   const ms = l.matches.filter(m=>m.mk[m.safe]>=filt).sort((a,b)=>b.mk[b.safe]-a.mk[a.safe]);
   document.getElementById('league').innerHTML = `
     <div class="leaguehead"><h2>${l.name}</h2>
-      <span class="eyebrow">Acierto ganador en esta liga: <span class="num">${pct(l.acc)}</span> (${l.n_bt} partidos) · datos hasta ${l.last_data}</span></div>
+      <span class="eyebrow">Acierto ganador en esta liga: <span class="num">${pct(l.acc)}</span> (${l.n_bt} partidos) · último partido jugado: ${fmtDate(l.last_data,'')}${gapNote(l)}</span></div>
     ${ms.length ? `<div class="grid">${ms.map(card).join('')}</div>` : `<div class="empty">Ningún partido de esta jornada llega a ese nivel de confianza. Elige "Todos" para verlos todos.</div>`}
     ${recentHTML(l)}`;
 }
