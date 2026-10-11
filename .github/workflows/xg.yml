@@ -1,8 +1,8 @@
-name: xG Understat (semanal)
+name: xG Understat (diario)
 
 on:
   schedule:
-    - cron: "43 4 * * 1"   # lunes
+    - cron: "43 4 * * *"   # cada día
   workflow_dispatch: {}
 
 permissions:

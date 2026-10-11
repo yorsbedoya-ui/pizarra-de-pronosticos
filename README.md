@@ -15,3 +15,6 @@ Pronósticos de fútbol para 8 ligas (Premier, Championship, LaLiga, Serie A, Bu
 - `app/pronosticos.py`: el modelo. `app/template.html`: la página.
 - `data/historial.json`: cada pick ≥ 85 % publicado y su resultado real.
 - Las probabilidades no son garantías.
+
+### Datos de xG
+| xG Understat (diario) | 04:43 | xG real por partido de las 5 grandes ligas (paquete abierto `soccerdata`) → `data/xg/`. El modelo lo usa en vez de los tiros en esas ligas: en el backtest de 2026 mejoró "ambos marcan" (57,2 % → 57,9 %) y el modelo de goles; en ganador y +2,5 siguen mandando las cuotas. |

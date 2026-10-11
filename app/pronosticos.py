@@ -398,6 +398,29 @@ def form(played, team, k=5):
     return "".join(res)
 
 # ---------------- Backtest + predicciones ----------------
+
+# ---------------- xG real (Understat) para las 5 grandes ligas ----------------
+# Backtest 2026 (1.197 partidos): con xG en lugar de tiros, 'ambos marcan' acierta 57,9 % frente a 57,2 %
+# y el modelo de goles mejora un poco; en ganador y +2,5 siguen mandando las cuotas.
+GOAL_W_SHOTS, GOAL_W_XG = 0.7, 0.3
+
+def attach_xg(div, played):
+    """Sustituye los tiros por el xG real (si existe data/xg/<div>.csv). Devuelve (filas, nº con xG)."""
+    p = os.path.join(FD, "..", "xg", f"{div}.csv") if FD else None
+    if not p or not os.path.exists(p): return played, 0
+    mp = name_mapper([r[1] for r in played] + [r[2] for r in played]); xg = {}
+    for r in csv.DictReader(open(p, encoding="utf-8")):
+        try: d = datetime.fromisoformat(r["date"][:19]).date()
+        except ValueError: continue
+        h, a = mp(r["home"]), mp(r["away"])
+        if h and a and r.get("hxg") and r.get("axg"): xg[(d, h, a)] = (float(r["hxg"]), float(r["axg"]))
+    out, n = [], 0
+    for r in played:
+        x = next((xg[k] for k in ((r[0] + timedelta(days=j), r[1], r[2]) for j in (0, -1, 1)) if k in xg), None)
+        if x: out.append(r[:5] + (x[0], x[1]) + r[7:]); n += 1
+        else: out.append(r[:5] + (None, None) + r[7:])
+    return out, n
+
 bt, per_league = [], []
 for code, (name, div) in LEAGUES.items():
     src = "openfootball"
@@ -414,6 +437,9 @@ for code, (name, div) in LEAGUES.items():
     if n_live or miss:
         print(f"  {name}: +{n_live} resultados de ESPN" + (f" | sin emparejar: {miss[:6]}" if miss else ""), flush=True)
     if n_live: src += "+espn"
+    played, n_xg = attach_xg(div, played)
+    GOAL_W = GOAL_W_XG if n_xg else GOAL_W_SHOTS
+    if n_xg: src += "+xg"; print(f"  {name}: xG real en {n_xg} partidos", flush=True)
     weeks = sorted({r[0].isocalendar()[:2] for r in played if r[0] >= BT_START})
     x0, lbt = None, []
     for wk in weeks:
@@ -423,7 +449,7 @@ for code, (name, div) in LEAGUES.items():
             rw = mdl.raw(r[1], r[2])
             if rw: lbt.append(dict(raw=rw, odds=r[7], hg=r[3], ag=r[4], lg=code))
     bt += lbt
-    per_league.append(dict(code=code, name=name, src=src, played=played, fixtures=fixtures, n_bt=len(lbt), div=div,
+    per_league.append(dict(code=code, name=name, src=src, played=played, fixtures=fixtures, n_bt=len(lbt), div=div, gw=GOAL_W,
                            stats=match_stats(div, played)))
     print(name, "| fuente", src, "| datos hasta", played[-1][0], "| backtest", len(lbt), flush=True)
 
@@ -441,6 +467,7 @@ if len(with_odds) >= 300:
 leagues = []
 SHOT_BT = []
 for L in per_league:
+    GOAL_W = L["gw"]
     played = L["played"]; mdl = Model(played, TODAY)
     done_ = {(r[0], r[1], r[2]) for r in played}
     up = sorted([f for f in L["fixtures"] if f["date"] >= TODAY and (f["date"], f["h"], f["a"]) not in done_], key=lambda f: (f["date"], f["time"]))
@@ -533,14 +560,14 @@ if HIST:
                     items=sorted(H, key=lambda e: e["date"], reverse=True)[:40])
     print("Historial:", {k: v for k, v in hist_out.items() if k != "items"}, flush=True)
 
-src = sorted({l["src"] for l in leagues})
+src = sorted({part for l in leagues for part in l["src"].split("+")})
 try:
     from zoneinfo import ZoneInfo
     _now = datetime.now(ZoneInfo("Europe/Warsaw"))
 except Exception:
     _now = datetime.utcnow()
 data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
-            model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
+            model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (" + xG" if "xg" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
             backtest=summary, leagues=leagues, history=hist_out)
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))
 open(OUT, "w").write(open(TPL).read().replace("__DATA__", json.dumps(data, ensure_ascii=False)))
