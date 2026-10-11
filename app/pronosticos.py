@@ -166,7 +166,7 @@ def merge_live(div, played, fixtures):
         d = pdate(r["Date"]); h, a = mp(r["HomeTeam"]), mp(r["AwayTeam"])
         if not h: miss.add(r["HomeTeam"])
         if not a: miss.add(r["AwayTeam"])
-        if not (d and h and a) or d <= last - timedelta(days=3) or d >= TODAY: continue
+        if not (d and h and a) or d <= last - timedelta(days=3) or d > TODAY: continue
         if any((d + timedelta(days=k), h, a) in have for k in (-1, 0, 1)): continue
         try:
             hst = int(r["HST"]) if r.get("HST") else None; ast_ = int(r["AST"]) if r.get("AST") else None
@@ -188,7 +188,7 @@ def match_stats(div, played):
         for p in sorted(glob.glob(os.path.join(FD, "*", f"{div}.csv"))):
             for r in csv.DictReader(open(p, encoding="utf-8-sig", errors="replace")):
                 d = pdate(r.get("Date", "")) if r.get("Date") else None
-                if not d or not r.get("FTHG") or d >= TODAY: continue
+                if not d or not r.get("FTHG") or d > TODAY: continue
                 try: s = dict(date=d, h=r["HomeTeam"].strip(), a=r["AwayTeam"].strip(), hg=int(r["FTHG"]), ag=int(r["FTAG"]))
                 except ValueError: continue
                 for c in STAT_COLS: s[c] = _num(r.get(c))
@@ -199,7 +199,7 @@ def match_stats(div, played):
         for r in csv.DictReader(open(lp, encoding="utf-8")):
             if r.get("Status") != "FT": continue
             d = pdate(r["Date"]); h, a = mp(r["HomeTeam"]), mp(r["AwayTeam"])
-            if not (d and h and a) or d >= TODAY: continue
+            if not (d and h and a) or d > TODAY: continue
             key = next(((d + timedelta(days=k), h, a) for k in (0, -1, 1) if (d + timedelta(days=k), h, a) in out), None)
             if key:  # completar lo que falte (p. ej. posesión) sin pisar football-data
                 for c in STAT_COLS:
@@ -442,7 +442,8 @@ leagues = []
 SHOT_BT = []
 for L in per_league:
     played = L["played"]; mdl = Model(played, TODAY)
-    up = sorted([f for f in L["fixtures"] if f["date"] >= TODAY], key=lambda f: (f["date"], f["time"]))
+    done_ = {(r[0], r[1], r[2]) for r in played}
+    up = sorted([f for f in L["fixtures"] if f["date"] >= TODAY and (f["date"], f["h"], f["a"]) not in done_], key=lambda f: (f["date"], f["time"]))
     if up and up[0]["round"] != "Próximos partidos":
         up = [f for f in up if f["round"] == up[0]["round"]]
     else:
