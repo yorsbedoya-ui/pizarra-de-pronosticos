@@ -18,6 +18,9 @@ HIST = None   # historial.json: picks publicados (≥85 %) y su resultado real
 if "--hist" in args:
     i = args.index("--hist"); HIST = args[i+1]; del args[i:i+2]
 HIST_MIN = 0.85
+PREDS = None  # predicciones.json: predicción de TODOS los partidos (congelada antes del inicio) y su resultado
+if "--preds" in args:
+    i = args.index("--preds"); PREDS = args[i+1]; del args[i:i+2]
 ROOT, TPL, OUT = args[0], args[1], args[2]
 TODAY = date.fromisoformat(args[3]) if len(args) > 3 else date.today()
 LEAGUES = {"en.1": ("Premier League", "E0"), "es.1": ("LaLiga", "SP1"), "it.1": ("Serie A", "I1"),
@@ -28,6 +31,12 @@ GOAL_W = 0.7          # peso de los goles frente a tiros a puerta (backtest 2025
 VALUE_EDGE = 0.05     # apuesta de valor: prob. modelo × cuota − 1 ≥ 5 %
 G = np.arange(11); TOT = np.add.outer(G, G)
 BT_START = TODAY - timedelta(days=280)
+def _now_str():
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Europe/Warsaw")).strftime("%Y-%m-%dT%H:%M")
+    except Exception:
+        return datetime.utcnow().strftime("%Y-%m-%dT%H:%M")
 
 # ---------------- Carga de datos ----------------
 # fila = (fecha, local, visitante, gl, gv, tiros_puerta_l, tiros_puerta_v, cuotas)
@@ -531,6 +540,63 @@ summary = dict(n=len(bt), from_=BT_START.isoformat(), shots=shot_summary(SHOT_BT
                acc=round(float(np.mean([h for _, h in win])), 3), o25=round(float(np.mean(o25)), 3),
                win65=thr(win, .65), safe80=thr(safe, .80), safe85=thr(safe, .85),
                cal_win=band_stats(win), cal_safe=band_stats(safe))
+
+# ---------------- Registro de todas las predicciones (cuadro diario) ----------------
+def kickoff_utc(d, tm):
+    """Hora de inicio en UTC. El calendario de football-data va en hora del Reino Unido (UTC+1 en verano):
+    se resta 1 h, que en invierno adelanta el corte 1 h (más prudente)."""
+    try:
+        hh, mm = (int(x) for x in (tm or "12:00").split(":")[:2])
+    except ValueError:
+        hh, mm = 12, 0
+    return datetime.fromisoformat(d) + timedelta(hours=hh - 1, minutes=mm)
+
+def pred_entry(l, m, pub):
+    mk = m["mk"]; k1 = max(("1", "X", "2"), key=lambda k: mk[k])
+    e = dict(id=f'{m["date"]}|{m["h"]}|{m["a"]}', lg=l["code"], liga=l["name"], date=m["date"], time=m.get("time", ""),
+             h=m["h"], a=m["a"], pub=pub, k1=k1, p1=mk[k1], safe=m["safe"], ps=mk[m["safe"]],
+             o25=mk.get("+2.5"), btts=mk.get("AM-Sí"), res=None)
+    if m.get("shots") and m["shots"].get("ST"): e["st"] = m["shots"]["ST"]
+    if m.get("odds"): e["odds"] = {k: m["odds"].get(k) for k in ("o1", "oX", "o2")}
+    return e
+
+def resolve_entry(e, s):
+    hg, ag = s["hg"], s["ag"]
+    e.update(res=f"{hg}-{ag}", hg=hg, ag=ag, hst=s.get("HST"), ast=s.get("AST"),
+             hit_safe=bool(hit(e["safe"], hg, ag)), hit_1x2=bool(hit(e["k1"], hg, ag)))
+    if e.get("o25") is not None: e["hit_ou"] = bool(hit("+2.5" if e["o25"] >= .5 else "-2.5", hg, ag))
+    if e.get("btts") is not None: e["hit_btts"] = bool(hit("AM-Sí" if e["btts"] >= .5 else "AM-No", hg, ag))
+    if e.get("st") and s.get("HST") is not None and s.get("AST") is not None and abs(e["st"][0] - e["st"][1]) >= 0.5 and s["HST"] != s["AST"]:
+        e["hit_st"] = (e["st"][0] > e["st"][1]) == (s["HST"] > s["AST"])
+    return e
+
+board_out = None
+if PREDS:
+    try: PR = json.load(open(PREDS))
+    except (OSError, ValueError): PR = {}
+    nowu = datetime.utcnow()
+    for l in leagues:
+        for m in l["matches"]:
+            if nowu < kickoff_utc(m["date"], m.get("time")):
+                old = PR.get(f'{m["date"]}|{m["h"]}|{m["a"]}')
+                if not old or old.get("res") is None:
+                    PR[f'{m["date"]}|{m["h"]}|{m["a"]}'] = pred_entry(l, m, _now_str())
+    stats_by, smaps = {}, {}
+    for L in per_league:
+        stats_by[L["code"]] = {(s["date"].isoformat(), s["h"], s["a"]): s for s in L["stats"]}
+        smaps[L["code"]] = name_mapper([s["h"] for s in L["stats"]] + [s["a"] for s in L["stats"]])
+    for e in PR.values():
+        if e.get("res") is not None: continue
+        sb, mp = stats_by.get(e["lg"], {}), smaps.get(e["lg"], lambda x: x)
+        h2, a2 = mp(e["h"]) or e["h"], mp(e["a"]) or e["a"]
+        d0 = date.fromisoformat(e["date"])
+        s = next((sb[k] for k in ((( d0 + timedelta(days=j)).isoformat(), h, a) for j in (0, -1, 1) for h, a in ((e["h"], e["a"]), (h2, a2))) if k in sb), None)
+        if s: resolve_entry(e, s)
+    json.dump(PR, open(PREDS, "w"), ensure_ascii=False, indent=0)
+    keep_from = (TODAY - timedelta(days=21)).isoformat()
+    board_out = sorted((e for e in PR.values() if e["date"] >= keep_from), key=lambda e: (e["date"], e.get("time", ""), e["liga"]))
+    print("Cuadro diario:", len(PR), "predicciones,", sum(1 for e in PR.values() if e.get("res")), "con resultado", flush=True)
+
 # ---------------- Historial real (picks publicados en vivo) ----------------
 hist_out = None
 if HIST:
@@ -568,6 +634,6 @@ except Exception:
     _now = datetime.utcnow()
 data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
             model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (" + xG" if "xg" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
-            backtest=summary, leagues=leagues, history=hist_out)
+            backtest=summary, leagues=leagues, history=hist_out, board=board_out)
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))
 open(OUT, "w").write(open(TPL).read().replace("__DATA__", json.dumps(data, ensure_ascii=False)))

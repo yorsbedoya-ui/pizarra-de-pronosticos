@@ -120,6 +120,23 @@ details.more[open] summary::before{content:"– "}
 .sbar i{position:absolute;inset:0 auto 0 0;background:var(--pitch)}
 .sname{grid-column:1/-1;display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem;margin-bottom:-4px}
 .shots small{color:var(--muted);font-size:.76rem}
+.board{display:grid;gap:12px}
+.board .chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.board .chips button{flex:0 0 auto;font:500 .82rem var(--f-body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 10px;border-radius:999px;cursor:pointer}
+.board .chips button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.board .chips button small{color:inherit;opacity:.7;margin-left:4px}
+.blg{display:grid;gap:6px}
+.blg h4{margin:6px 0 0;font:600 1rem var(--f-display);text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+.brow{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--line));border-radius:6px;padding:8px 10px;display:grid;gap:6px;min-width:0}
+.brow .sc{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;font-weight:600;font-size:.92rem}
+.brow .sc span:last-child{text-align:right}
+.brow .sc b{font:600 1.15rem var(--f-display);min-width:3.2em;text-align:center}
+.brow .sc b.pend{font:500 .78rem var(--f-mono);color:var(--muted)}
+.brow .tags{display:flex;flex-wrap:wrap;gap:4px 6px}
+.tag{font-size:.74rem;border-radius:4px;padding:2px 7px;background:var(--chip);color:var(--ink);white-space:nowrap}
+.tag.ok{background:color-mix(in srgb,var(--hi) 16%,var(--surface));color:var(--hi)}
+.tag.ko{background:color-mix(in srgb,var(--lo) 16%,var(--surface));color:var(--lo)}
+.tag b{font-weight:600}
 </style>
 
 </head>
@@ -130,6 +147,14 @@ details.more[open] summary::before{content:"– "}
     <h1>Pizarra de Pronósticos</h1>
     <p class="sub">Probabilidades de la próxima jornada en 8 ligas, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
   </header>
+
+  <section class="calib board" id="board" hidden>
+    <div class="eyebrow">Resultados del día · todas las ligas · predicción publicada antes de cada partido</div>
+    <div class="chips" id="bdates" role="group" aria-label="Día"></div>
+    <div class="perf" id="bperf"></div>
+    <label class="toggle" style="justify-self:start"><input type="checkbox" id="bonly"> Solo picks seguros ≥ 85 %</label>
+    <div id="blist" class="board"></div>
+  </section>
 
   <section class="perf" id="perf"></section>
 
@@ -288,6 +313,47 @@ function render(){
     ${recentHTML(l)}`;
 }
 render();
+
+// ---------- Cuadro de resultados diarios ----------
+const BD = DATA.board || [];
+if (BD.length) {
+  document.getElementById('board').hidden = false;
+  const days = [...new Set(BD.map(e=>e.date))].sort().reverse();
+  const withRes = days.filter(d => BD.some(e=>e.date===d && e.res));
+  let bday = withRes[0] || days[days.length-1];
+  try { const s = localStorage.getItem('pp-bday'); if (s && days.includes(s)) bday = s; } catch(e){}
+  const tick = v => v===true ? '✓' : (v===false ? '✗' : '');
+  const cls = v => v===true ? 'ok' : (v===false ? 'ko' : '');
+  const ratio = (arr,k) => { const r = arr.filter(e=>e[k]!=null); const h = r.filter(e=>e[k]).length; return r.length ? `${h}/${r.length} · ${Math.round(100*h/r.length)}%` : '–'; };
+  function renderBoard(){
+    const only = document.getElementById('bonly').checked;
+    document.getElementById('bdates').innerHTML = days.map(d=>{ const n = BD.filter(e=>e.date===d).length;
+      return `<button type="button" data-d="${d}" aria-pressed="${d===bday}">${fmtDate(d,'')}<small>${n}</small></button>`; }).join('');
+    let rows = BD.filter(e=>e.date===bday); if (only) rows = rows.filter(e=>e.ps>=0.85);
+    const done = rows.filter(e=>e.res);
+    document.getElementById('bperf').innerHTML = [
+      ['Pick seguro', ratio(done,'hit_safe')], ['Favorito 1X2', ratio(done,'hit_1x2')],
+      ['Más/Menos 2,5', ratio(done,'hit_ou')], ['Quién tira más a puerta', ratio(done,'hit_st')],
+      ['Por jugarse', String(rows.length - done.length)]
+    ].map(([k,v])=>`<div><span class="eyebrow">${k}</span><b class="num" style="font-size:1.35rem">${v}</b></div>`).join('');
+    const byL = {}; rows.forEach(e => (byL[e.liga] = byL[e.liga] || []).push(e));
+    document.getElementById('blist').innerHTML = Object.keys(byL).map(lg => `<div class="blg"><h4>${lg}</h4>${byL[lg].map(e=>{
+      const m = {h:e.h, a:e.a};
+      const col = e.hit_safe===true ? 'var(--hi)' : (e.hit_safe===false ? 'var(--lo)' : 'var(--line)');
+      const st = e.st ? `<span class="tag ${cls(e.hit_st)}">Tiros a puerta esp. <b>${f1(e.st[0])}–${f1(e.st[1])}</b>${e.hst!=null?` · real <b>${e.hst}–${e.ast}</b>`:''} ${tick(e.hit_st)}</span>` : '';
+      return `<div class="brow" style="--c:${col}">
+        <div class="sc"><span>${short(e.h)}</span>${e.res?`<b class="num">${e.hg} – ${e.ag}</b>`:`<b class="pend">${e.date < (DATA.updated_at||DATA.generated).slice(0,10) ? 'sin resultado' : (e.time||'—')}</b>`}<span>${short(e.a)}</span></div>
+        <div class="tags">
+          <span class="tag ${cls(e.hit_safe)}">Pick: <b>${mkName(e.safe,m)}</b> ${pct(e.ps)} ${tick(e.hit_safe)}</span>
+          <span class="tag ${cls(e.hit_1x2)}">Favorito: <b>${e.k1==='1'?short(e.h):e.k1==='2'?short(e.a):'Empate'}</b> ${pct(e.p1)} ${tick(e.hit_1x2)}</span>
+          ${e.o25!=null?`<span class="tag ${cls(e.hit_ou)}">${e.o25>=.5?'Más':'Menos'} de 2,5 ${pct(e.o25>=.5?e.o25:1-e.o25)} ${tick(e.hit_ou)}</span>`:''}
+          ${st}
+        </div></div>`; }).join('')}</div>`).join('') || '<div class="empty">Sin partidos con ese filtro.</div>';
+  }
+  document.getElementById('bdates').addEventListener('click', ev => { const b = ev.target.closest('button'); if(!b) return; bday = b.dataset.d; try{localStorage.setItem('pp-bday',bday)}catch(e){} renderBoard(); });
+  document.getElementById('bonly').addEventListener('change', renderBoard);
+  renderBoard();
+}
 document.getElementById('smae').textContent = B.shots ? f1(B.shots.mae) : '–';
 
 const H = DATA.history;
