@@ -35,8 +35,8 @@
 "m": "1X",
 "p": 0.88,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-10-10|Barcelona|Getafe",
@@ -48,8 +48,8 @@
 "m": "1X",
 "p": 0.96,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "3-0",
+"hit": true
 },
 {
 "id": "2026-10-10|Real Madrid|Villarreal",
@@ -61,8 +61,8 @@
 "m": "1X",
 "p": 0.859,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-10-10|Inter|Parma",
@@ -74,8 +74,8 @@
 "m": "1X",
 "p": 0.945,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "3-0",
+"hit": true
 },
 {
 "id": "2026-10-10|Napoli|Frosinone",
@@ -87,8 +87,8 @@
 "m": "1X",
 "p": 0.854,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "3-0",
+"hit": true
 },
 {
 "id": "2026-10-10|Augsburg|Bayern Munich",
@@ -100,8 +100,8 @@
 "m": "X2",
 "p": 0.915,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "2-2",
+"hit": true
 },
 {
 "id": "2026-10-10|Hoffenheim|Hamburg",
@@ -113,8 +113,8 @@
 "m": "1X",
 "p": 0.853,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "2-3",
+"hit": false
 },
 {
 "id": "2026-10-10|Lille|Le Havre",
@@ -126,8 +126,8 @@
 "m": "1X",
 "p": 0.861,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-10-10|Paris SG|Le Mans",
@@ -139,8 +139,8 @@
 "m": "1X",
 "p": 0.957,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "3-1",
+"hit": true
 },
 {
 "id": "2026-10-11|Rennes|Auxerre",
@@ -165,8 +165,8 @@
 "m": "X2",
 "p": 0.9,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "1-2",
+"hit": true
 },
 {
 "id": "2026-10-11|Benfica|Guimaraes",
@@ -191,7 +191,7 @@
 "m": "1X",
 "p": 0.88,
 "pub": "2026-10-10",
-"res": null,
-"hit": null
+"res": "1-1",
+"hit": true
 }
 ]
