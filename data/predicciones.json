@@ -959,7 +959,7 @@
 "ps": 0.7,
 "o25": 0.449,
 "btts": 0.5,
-"res": null,
+"res": "2-1",
 "st": [
 4.2,
 3.9
@@ -968,7 +968,15 @@
 "o1": 2.31,
 "oX": 3.19,
 "o2": 3.12
-}
+},
+"hg": 2,
+"ag": 1,
+"hst": 4.0,
+"ast": 1.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": true
 },
 "2026-10-10|Augsburg|Bayern Munich": {
 "id": "2026-10-10|Augsburg|Bayern Munich",
