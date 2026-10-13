@@ -1,10 +1,110 @@
-E0: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions']
-E0: 1959 partidos con xG, último 2026-10-11 15:30:00
-SP1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions']
-SP1: 1977 partidos con xG, último 2026-10-11 19:00:00
-I1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions']
-I1: 1958 partidos con xG, último 2026-10-11 18:45:00
-D1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions']
-D1: 1575 partidos con xG, último 2026-10-11 15:30:00
-F1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions']
-F1: 1732 partidos con xG, último 2026-10-11 18:45:00
+E0: ERROR
+nosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 16, in <module>
+    us = sd.Understat(leagues=lg, seasons=SEASONS, no_cache=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 80, in __init__
+    super().__init__(
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 491, in __init__
+    self._session = self._init_session(headers)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 494, in _init_session
+    return tls_requests.Client(proxy=self.proxy(), headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/client.py", line 149, in __init__
+    self._session = TLSClient.initialize()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/tls.py", line 107, in initialize
+    cls._library = TLSLibrary.load()
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/libraries.py", line 448, in load
+    raise OSError("Failed to download the required TLS library.")
+OSError: Failed to download the required TLS library.
+
+SP1: ERROR
+nosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 16, in <module>
+    us = sd.Understat(leagues=lg, seasons=SEASONS, no_cache=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 80, in __init__
+    super().__init__(
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 491, in __init__
+    self._session = self._init_session(headers)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 494, in _init_session
+    return tls_requests.Client(proxy=self.proxy(), headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/client.py", line 149, in __init__
+    self._session = TLSClient.initialize()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/tls.py", line 107, in initialize
+    cls._library = TLSLibrary.load()
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/libraries.py", line 448, in load
+    raise OSError("Failed to download the required TLS library.")
+OSError: Failed to download the required TLS library.
+
+I1: ERROR
+nosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 16, in <module>
+    us = sd.Understat(leagues=lg, seasons=SEASONS, no_cache=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 80, in __init__
+    super().__init__(
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 491, in __init__
+    self._session = self._init_session(headers)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 494, in _init_session
+    return tls_requests.Client(proxy=self.proxy(), headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/client.py", line 149, in __init__
+    self._session = TLSClient.initialize()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/tls.py", line 107, in initialize
+    cls._library = TLSLibrary.load()
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/libraries.py", line 448, in load
+    raise OSError("Failed to download the required TLS library.")
+OSError: Failed to download the required TLS library.
+
+D1: ERROR
+nosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 16, in <module>
+    us = sd.Understat(leagues=lg, seasons=SEASONS, no_cache=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 80, in __init__
+    super().__init__(
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 491, in __init__
+    self._session = self._init_session(headers)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 494, in _init_session
+    return tls_requests.Client(proxy=self.proxy(), headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/client.py", line 149, in __init__
+    self._session = TLSClient.initialize()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/tls.py", line 107, in initialize
+    cls._library = TLSLibrary.load()
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/libraries.py", line 448, in load
+    raise OSError("Failed to download the required TLS library.")
+OSError: Failed to download the required TLS library.
+
+F1: ERROR
+nosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 16, in <module>
+    us = sd.Understat(leagues=lg, seasons=SEASONS, no_cache=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 80, in __init__
+    super().__init__(
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 491, in __init__
+    self._session = self._init_session(headers)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/_common.py", line 494, in _init_session
+    return tls_requests.Client(proxy=self.proxy(), headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/client.py", line 149, in __init__
+    self._session = TLSClient.initialize()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/tls.py", line 107, in initialize
+    cls._library = TLSLibrary.load()
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/libraries.py", line 448, in load
+    raise OSError("Failed to download the required TLS library.")
+OSError: Failed to download the required TLS library.
+
