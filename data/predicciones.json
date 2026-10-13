@@ -2469,7 +2469,7 @@
 "ps": 0.733,
 "o25": 0.5,
 "btts": 0.473,
-"res": null,
+"res": "0-1",
 "st": [
 4.2,
 3.3
@@ -2478,7 +2478,16 @@
 "o1": 2.07,
 "oX": 3.38,
 "o2": 3.53
-}
+},
+"hg": 0,
+"ag": 1,
+"hst": 7.0,
+"ast": 1.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-13|Burnley|Charlton": {
 "id": "2026-10-13|Burnley|Charlton",
@@ -2547,7 +2556,7 @@
 "ps": 0.668,
 "o25": 0.508,
 "btts": 0.486,
-"res": null,
+"res": "0-1",
 "st": [
 4.6,
 3.8
@@ -2556,7 +2565,16 @@
 "o1": 2.4,
 "oX": 3.41,
 "o2": 2.83
-}
+},
+"hg": 0,
+"ag": 1,
+"hst": 4.0,
+"ast": 2.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-13|Wolves|Bolton": {
 "id": "2026-10-13|Wolves|Bolton",
@@ -2573,7 +2591,7 @@
 "ps": 0.869,
 "o25": 0.603,
 "btts": 0.616,
-"res": null,
+"res": "1-3",
 "st": [
 5.4,
 4.0
@@ -2582,7 +2600,16 @@
 "o1": 1.4,
 "oX": 4.8,
 "o2": 7.19
-}
+},
+"hg": 1,
+"ag": 3,
+"hst": 3.0,
+"ast": 6.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": false
 },
 "2026-10-13|Wrexham|West Brom": {
 "id": "2026-10-13|Wrexham|West Brom",
@@ -2599,7 +2626,7 @@
 "ps": 0.695,
 "o25": 0.465,
 "btts": 0.496,
-"res": null,
+"res": "1-2",
 "st": [
 3.5,
 3.9
@@ -2608,7 +2635,15 @@
 "o1": 2.28,
 "oX": 3.33,
 "o2": 3.09
-}
+},
+"hg": 1,
+"ag": 2,
+"hst": 4.0,
+"ast": 3.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-10-13|Birmingham|Preston": {
 "id": "2026-10-13|Birmingham|Preston",
@@ -2670,7 +2705,7 @@
 "time": "19:45",
 "h": "Norwich",
 "a": "Southampton",
-"pub": "2026-10-13T20:42",
+"pub": "2026-10-13T22:44",
 "k1": "1",
 "p1": 0.397,
 "safe": "AM-Sí",
@@ -2680,7 +2715,7 @@
 "res": null,
 "st": [
 4.9,
-4.2
+4.1
 ],
 "odds": {
 "o1": 2.37,
@@ -2696,7 +2731,7 @@
 "time": "19:45",
 "h": "Portsmouth",
 "a": "Sheffield United",
-"pub": "2026-10-13T20:42",
+"pub": "2026-10-13T22:44",
 "k1": "1",
 "p1": 0.42,
 "safe": "1X",
@@ -2722,13 +2757,13 @@
 "time": "19:45",
 "h": "QPR",
 "a": "Derby",
-"pub": "2026-10-13T20:42",
+"pub": "2026-10-13T22:44",
 "k1": "1",
 "p1": 0.549,
 "safe": "1X",
 "ps": 0.795,
 "o25": 0.529,
-"btts": 0.518,
+"btts": 0.519,
 "res": null,
 "st": [
 4.7,
@@ -2748,7 +2783,7 @@
 "time": "20:00",
 "h": "Lincoln",
 "a": "West Ham",
-"pub": "2026-10-13T20:42",
+"pub": "2026-10-13T22:44",
 "k1": "2",
 "p1": 0.559,
 "safe": "X2",
@@ -2758,7 +2793,7 @@
 "res": null,
 "st": [
 3.6,
-5.1
+5.0
 ],
 "odds": {
 "o1": 4.6,
