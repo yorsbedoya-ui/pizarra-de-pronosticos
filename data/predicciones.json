@@ -2453,5 +2453,317 @@
 "hit_ou": false,
 "hit_btts": false,
 "hit_st": true
+},
+"2026-10-13|Bristol City|Blackburn": {
+"id": "2026-10-13|Bristol City|Blackburn",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "19:45",
+"h": "Bristol City",
+"a": "Blackburn",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.455,
+"safe": "1X",
+"ps": 0.733,
+"o25": 0.5,
+"btts": 0.473,
+"res": null,
+"st": [
+4.2,
+3.3
+],
+"odds": {
+"o1": 2.07,
+"oX": 3.38,
+"o2": 3.53
+}
+},
+"2026-10-13|Burnley|Charlton": {
+"id": "2026-10-13|Burnley|Charlton",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "19:45",
+"h": "Burnley",
+"a": "Charlton",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.579,
+"safe": "1X",
+"ps": 0.819,
+"o25": 0.519,
+"btts": 0.413,
+"res": null,
+"st": [
+4.9,
+2.8
+],
+"odds": {
+"o1": 1.62,
+"oX": 3.92,
+"o2": 5.18
+}
+},
+"2026-10-13|Cardiff|Watford": {
+"id": "2026-10-13|Cardiff|Watford",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "19:45",
+"h": "Cardiff",
+"a": "Watford",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.569,
+"safe": "1X",
+"ps": 0.791,
+"o25": 0.63,
+"btts": 0.549,
+"res": null,
+"st": [
+4.7,
+4.0
+],
+"odds": {
+"o1": 1.66,
+"oX": 4.25,
+"o2": 4.51
+}
+},
+"2026-10-13|Millwall|Swansea": {
+"id": "2026-10-13|Millwall|Swansea",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "19:45",
+"h": "Millwall",
+"a": "Swansea",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.392,
+"safe": "1X",
+"ps": 0.668,
+"o25": 0.508,
+"btts": 0.486,
+"res": null,
+"st": [
+4.6,
+3.8
+],
+"odds": {
+"o1": 2.4,
+"oX": 3.41,
+"o2": 2.83
+}
+},
+"2026-10-13|Wolves|Bolton": {
+"id": "2026-10-13|Wolves|Bolton",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "19:45",
+"h": "Wolves",
+"a": "Bolton",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.673,
+"safe": "1X",
+"ps": 0.869,
+"o25": 0.603,
+"btts": 0.616,
+"res": null,
+"st": [
+5.4,
+4.0
+],
+"odds": {
+"o1": 1.4,
+"oX": 4.8,
+"o2": 7.19
+}
+},
+"2026-10-13|Wrexham|West Brom": {
+"id": "2026-10-13|Wrexham|West Brom",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "19:45",
+"h": "Wrexham",
+"a": "West Brom",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.413,
+"safe": "1X",
+"ps": 0.695,
+"o25": 0.465,
+"btts": 0.496,
+"res": null,
+"st": [
+3.5,
+3.9
+],
+"odds": {
+"o1": 2.28,
+"oX": 3.33,
+"o2": 3.09
+}
+},
+"2026-10-13|Birmingham|Preston": {
+"id": "2026-10-13|Birmingham|Preston",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "20:00",
+"h": "Birmingham",
+"a": "Preston",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.61,
+"safe": "1X",
+"ps": 0.831,
+"o25": 0.548,
+"btts": 0.482,
+"res": null,
+"st": [
+5.0,
+3.3
+],
+"odds": {
+"o1": 1.54,
+"oX": 4.24,
+"o2": 5.57
+}
+},
+"2026-10-13|Stoke|Middlesbrough": {
+"id": "2026-10-13|Stoke|Middlesbrough",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-13",
+"time": "20:00",
+"h": "Stoke",
+"a": "Middlesbrough",
+"pub": "2026-10-13T14:44",
+"k1": "2",
+"p1": 0.468,
+"safe": "X2",
+"ps": 0.726,
+"o25": 0.557,
+"btts": 0.528,
+"res": null,
+"st": [
+3.7,
+4.7
+],
+"odds": {
+"o1": 3.43,
+"oX": 3.64,
+"o2": 2.01
+}
+},
+"2026-10-14|Norwich|Southampton": {
+"id": "2026-10-14|Norwich|Southampton",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-14",
+"time": "19:45",
+"h": "Norwich",
+"a": "Southampton",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.397,
+"safe": "AM-Sí",
+"ps": 0.658,
+"o25": 0.632,
+"btts": 0.658,
+"res": null,
+"st": [
+4.9,
+4.2
+],
+"odds": {
+"o1": 2.37,
+"oX": 3.78,
+"o2": 2.65
+}
+},
+"2026-10-14|Portsmouth|Sheffield United": {
+"id": "2026-10-14|Portsmouth|Sheffield United",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-14",
+"time": "19:45",
+"h": "Portsmouth",
+"a": "Sheffield United",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.42,
+"safe": "1X",
+"ps": 0.696,
+"o25": 0.496,
+"btts": 0.532,
+"res": null,
+"st": [
+4.4,
+3.8
+],
+"odds": {
+"o1": 2.24,
+"oX": 3.41,
+"o2": 3.09
+}
+},
+"2026-10-14|QPR|Derby": {
+"id": "2026-10-14|QPR|Derby",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-14",
+"time": "19:45",
+"h": "QPR",
+"a": "Derby",
+"pub": "2026-10-13T14:44",
+"k1": "1",
+"p1": 0.549,
+"safe": "1X",
+"ps": 0.795,
+"o25": 0.529,
+"btts": 0.518,
+"res": null,
+"st": [
+4.7,
+3.7
+],
+"odds": {
+"o1": 1.71,
+"oX": 3.81,
+"o2": 4.57
+}
+},
+"2026-10-14|Lincoln|West Ham": {
+"id": "2026-10-14|Lincoln|West Ham",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-14",
+"time": "20:00",
+"h": "Lincoln",
+"a": "West Ham",
+"pub": "2026-10-13T14:44",
+"k1": "2",
+"p1": 0.559,
+"safe": "X2",
+"ps": 0.796,
+"o25": 0.571,
+"btts": 0.561,
+"res": null,
+"st": [
+3.6,
+5.1
+],
+"odds": {
+"o1": 4.6,
+"oX": 3.98,
+"o2": 1.68
+}
 }
 }
