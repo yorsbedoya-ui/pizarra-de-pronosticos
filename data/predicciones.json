@@ -325,7 +325,7 @@
 "ps": 0.712,
 "o25": 0.573,
 "btts": 0.563,
-"res": null,
+"res": "4-1",
 "st": [
 4.2,
 4.3
@@ -334,7 +334,15 @@
 "o1": 3.25,
 "oX": 3.58,
 "o2": 2.08
-}
+},
+"hg": 4,
+"ag": 1,
+"hst": 6.0,
+"ast": 6.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-10-10|Vallecano|Ath Bilbao": {
 "id": "2026-10-10|Vallecano|Ath Bilbao",
@@ -620,7 +628,7 @@
 "ps": 0.651,
 "o25": 0.468,
 "btts": 0.543,
-"res": null,
+"res": "3-3",
 "st": [
 4.6,
 3.6
@@ -629,7 +637,16 @@
 "o1": 2.68,
 "oX": 3.27,
 "o2": 2.56
-}
+},
+"hg": 3,
+"ag": 3,
+"hst": 8.0,
+"ast": 5.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-10|Genoa|Fiorentina": {
 "id": "2026-10-10|Genoa|Fiorentina",
@@ -1756,7 +1773,7 @@
 "ps": 0.784,
 "o25": 0.465,
 "btts": 0.445,
-"res": null,
+"res": "1-4",
 "st": [
 4.7,
 3.3
@@ -1765,7 +1782,16 @@
 "o1": 1.83,
 "oX": 3.35,
 "o2": 4.29
-}
+},
+"hg": 1,
+"ag": 4,
+"hst": 2.0,
+"ast": 5.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false,
+"hit_st": false
 },
 "2026-10-10|Go Ahead Eagles|Sparta Rotterdam": {
 "id": "2026-10-10|Go Ahead Eagles|Sparta Rotterdam",
