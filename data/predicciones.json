@@ -2504,7 +2504,7 @@
 "ps": 0.819,
 "o25": 0.519,
 "btts": 0.413,
-"res": null,
+"res": "2-2",
 "st": [
 4.9,
 2.8
@@ -2513,7 +2513,16 @@
 "o1": 1.62,
 "oX": 3.92,
 "o2": 5.18
-}
+},
+"hg": 2,
+"ag": 2,
+"hst": 4.0,
+"ast": 5.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": false,
+"hit_st": false
 },
 "2026-10-13|Cardiff|Watford": {
 "id": "2026-10-13|Cardiff|Watford",
@@ -2530,7 +2539,7 @@
 "ps": 0.791,
 "o25": 0.63,
 "btts": 0.549,
-"res": null,
+"res": "5-1",
 "st": [
 4.7,
 4.0
@@ -2539,7 +2548,16 @@
 "o1": 1.66,
 "oX": 4.25,
 "o2": 4.51
-}
+},
+"hg": 5,
+"ag": 1,
+"hst": 10.0,
+"ast": 4.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-13|Millwall|Swansea": {
 "id": "2026-10-13|Millwall|Swansea",
@@ -2660,7 +2678,7 @@
 "ps": 0.831,
 "o25": 0.548,
 "btts": 0.482,
-"res": null,
+"res": "4-0",
 "st": [
 5.0,
 3.3
@@ -2669,7 +2687,16 @@
 "o1": 1.54,
 "oX": 4.24,
 "o2": 5.57
-}
+},
+"hg": 4,
+"ag": 0,
+"hst": 7.0,
+"ast": 1.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-13|Stoke|Middlesbrough": {
 "id": "2026-10-13|Stoke|Middlesbrough",
@@ -2686,7 +2713,7 @@
 "ps": 0.726,
 "o25": 0.557,
 "btts": 0.528,
-"res": null,
+"res": "2-3",
 "st": [
 3.7,
 4.7
@@ -2695,7 +2722,16 @@
 "o1": 3.43,
 "oX": 3.64,
 "o2": 2.01
-}
+},
+"hg": 2,
+"ag": 3,
+"hst": 1.0,
+"ast": 9.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-14|Norwich|Southampton": {
 "id": "2026-10-14|Norwich|Southampton",
@@ -2705,13 +2741,13 @@
 "time": "19:45",
 "h": "Norwich",
 "a": "Southampton",
-"pub": "2026-10-13T22:44",
+"pub": "2026-10-14T00:43",
 "k1": "1",
 "p1": 0.397,
 "safe": "AM-Sí",
-"ps": 0.658,
+"ps": 0.657,
 "o25": 0.632,
-"btts": 0.658,
+"btts": 0.657,
 "res": null,
 "st": [
 4.9,
@@ -2731,13 +2767,13 @@
 "time": "19:45",
 "h": "Portsmouth",
 "a": "Sheffield United",
-"pub": "2026-10-13T22:44",
+"pub": "2026-10-14T00:43",
 "k1": "1",
 "p1": 0.42,
 "safe": "1X",
 "ps": 0.696,
 "o25": 0.496,
-"btts": 0.532,
+"btts": 0.53,
 "res": null,
 "st": [
 4.4,
@@ -2757,13 +2793,13 @@
 "time": "19:45",
 "h": "QPR",
 "a": "Derby",
-"pub": "2026-10-13T22:44",
+"pub": "2026-10-14T00:43",
 "k1": "1",
 "p1": 0.549,
 "safe": "1X",
 "ps": 0.795,
 "o25": 0.529,
-"btts": 0.519,
+"btts": 0.516,
 "res": null,
 "st": [
 4.7,
@@ -2783,7 +2819,7 @@
 "time": "20:00",
 "h": "Lincoln",
 "a": "West Ham",
-"pub": "2026-10-13T22:44",
+"pub": "2026-10-14T00:43",
 "k1": "2",
 "p1": 0.559,
 "safe": "X2",
