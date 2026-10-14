@@ -2748,7 +2748,7 @@
 "ps": 0.657,
 "o25": 0.632,
 "btts": 0.657,
-"res": null,
+"res": "0-1",
 "st": [
 4.9,
 4.1
@@ -2757,7 +2757,15 @@
 "o1": 2.37,
 "oX": 3.78,
 "o2": 2.65
-}
+},
+"hg": 0,
+"ag": 1,
+"hst": 4.0,
+"ast": 4.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-10-14|Portsmouth|Sheffield United": {
 "id": "2026-10-14|Portsmouth|Sheffield United",
@@ -2774,7 +2782,7 @@
 "ps": 0.696,
 "o25": 0.496,
 "btts": 0.53,
-"res": null,
+"res": "3-2",
 "st": [
 4.4,
 3.8
@@ -2783,7 +2791,16 @@
 "o1": 2.24,
 "oX": 3.41,
 "o2": 3.09
-}
+},
+"hg": 3,
+"ag": 2,
+"hst": 7.0,
+"ast": 4.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-14|QPR|Derby": {
 "id": "2026-10-14|QPR|Derby",
