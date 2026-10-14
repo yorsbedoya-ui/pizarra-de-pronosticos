@@ -2817,7 +2817,7 @@
 "ps": 0.795,
 "o25": 0.529,
 "btts": 0.516,
-"res": null,
+"res": "4-1",
 "st": [
 4.7,
 3.7
@@ -2826,7 +2826,16 @@
 "o1": 1.71,
 "oX": 3.81,
 "o2": 4.57
-}
+},
+"hg": 4,
+"ag": 1,
+"hst": 7.0,
+"ast": 6.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-14|Lincoln|West Ham": {
 "id": "2026-10-14|Lincoln|West Ham",
@@ -2843,7 +2852,7 @@
 "ps": 0.796,
 "o25": 0.571,
 "btts": 0.561,
-"res": null,
+"res": "0-6",
 "st": [
 3.6,
 5.0
@@ -2852,6 +2861,15 @@
 "o1": 4.6,
 "oX": 3.98,
 "o2": 1.68
-}
+},
+"hg": 0,
+"ag": 6,
+"hst": 0.0,
+"ast": 12.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": false,
+"hit_st": true
 }
 }
