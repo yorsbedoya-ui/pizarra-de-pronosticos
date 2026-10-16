@@ -2871,5 +2871,1825 @@
 "hit_ou": true,
 "hit_btts": false,
 "hit_st": true
+},
+"2026-10-17|Everton|Chelsea": {
+"id": "2026-10-17|Everton|Chelsea",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-17",
+"time": "12:30",
+"h": "Everton",
+"a": "Chelsea",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.442,
+"safe": "X2",
+"ps": 0.701,
+"o25": 0.57,
+"btts": 0.591,
+"res": null,
+"st": [
+4.5,
+4.2
+],
+"odds": {
+"o1": 3.13,
+"oX": 3.62,
+"o2": 2.12
+}
+},
+"2026-10-17|Brentford|Liverpool": {
+"id": "2026-10-17|Brentford|Liverpool",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Brentford",
+"a": "Liverpool",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.401,
+"safe": "1X",
+"ps": 0.66,
+"o25": 0.603,
+"btts": 0.639,
+"res": null,
+"st": [
+4.3,
+4.3
+],
+"odds": {
+"o1": 2.34,
+"oX": 3.62,
+"o2": 2.76
+}
+},
+"2026-10-17|Fulham|Hull": {
+"id": "2026-10-17|Fulham|Hull",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Fulham",
+"a": "Hull",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.551,
+"safe": "1X",
+"ps": 0.792,
+"o25": 0.546,
+"btts": 0.529,
+"res": null,
+"st": [
+4.5,
+3.7
+],
+"odds": {
+"o1": 1.7,
+"oX": 3.89,
+"o2": 4.51
+}
+},
+"2026-10-17|Man City|Ipswich": {
+"id": "2026-10-17|Man City|Ipswich",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Man City",
+"a": "Ipswich",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.761,
+"safe": "1X",
+"ps": 0.906,
+"o25": 0.685,
+"btts": 0.538,
+"res": null,
+"st": [
+6.5,
+3.2
+],
+"odds": {
+"o1": 1.24,
+"oX": 6.47,
+"o2": 10.08
+}
+},
+"2026-10-17|Newcastle|Aston Villa": {
+"id": "2026-10-17|Newcastle|Aston Villa",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-17",
+"time": "17:30",
+"h": "Newcastle",
+"a": "Aston Villa",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.422,
+"safe": "1X",
+"ps": 0.68,
+"o25": 0.591,
+"btts": 0.621,
+"res": null,
+"st": [
+5.2,
+4.4
+],
+"odds": {
+"o1": 2.22,
+"oX": 3.63,
+"o2": 2.93
+}
+},
+"2026-10-18|Bournemouth|Sunderland": {
+"id": "2026-10-18|Bournemouth|Sunderland",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-18",
+"time": "14:00",
+"h": "Bournemouth",
+"a": "Sunderland",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.46,
+"safe": "1X",
+"ps": 0.727,
+"o25": 0.525,
+"btts": 0.551,
+"res": null,
+"st": [
+4.9,
+3.7
+],
+"odds": {
+"o1": 2.04,
+"oX": 3.51,
+"o2": 3.44
+}
+},
+"2026-10-18|Brighton|Crystal Palace": {
+"id": "2026-10-18|Brighton|Crystal Palace",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-18",
+"time": "14:00",
+"h": "Brighton",
+"a": "Crystal Palace",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.613,
+"safe": "1X",
+"ps": 0.825,
+"o25": 0.606,
+"btts": 0.607,
+"res": null,
+"st": [
+5.2,
+3.5
+],
+"odds": {
+"o1": 1.53,
+"oX": 4.42,
+"o2": 5.35
+}
+},
+"2026-10-18|Leeds|Man United": {
+"id": "2026-10-18|Leeds|Man United",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-18",
+"time": "14:00",
+"h": "Leeds",
+"a": "Man United",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.404,
+"safe": "1X",
+"ps": 0.668,
+"o25": 0.577,
+"btts": 0.586,
+"res": null,
+"st": [
+4.1,
+4.9
+],
+"odds": {
+"o1": 2.32,
+"oX": 3.55,
+"o2": 2.82
+}
+},
+"2026-10-18|Nott'm Forest|Arsenal": {
+"id": "2026-10-18|Nott'm Forest|Arsenal",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-18",
+"time": "16:30",
+"h": "Nott'm Forest",
+"a": "Arsenal",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.586,
+"safe": "X2",
+"ps": 0.832,
+"o25": 0.5,
+"btts": 0.495,
+"res": null,
+"st": [
+3.3,
+4.3
+],
+"odds": {
+"o1": 5.59,
+"oX": 3.82,
+"o2": 1.6
+}
+},
+"2026-10-19|Tottenham|Coventry": {
+"id": "2026-10-19|Tottenham|Coventry",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-19",
+"time": "20:00",
+"h": "Tottenham",
+"a": "Coventry",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.643,
+"safe": "1X",
+"ps": 0.849,
+"o25": 0.602,
+"btts": 0.554,
+"res": null,
+"st": [
+4.5,
+3.5
+],
+"odds": {
+"o1": 1.46,
+"oX": 4.55,
+"o2": 6.23
+}
+},
+"2026-10-16|La Coruna|Levante": {
+"id": "2026-10-16|La Coruna|Levante",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-16",
+"time": "20:00",
+"h": "La Coruna",
+"a": "Levante",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.458,
+"safe": "1X",
+"ps": 0.731,
+"o25": 0.5,
+"btts": 0.605,
+"res": null,
+"st": [
+5.5,
+3.4
+],
+"odds": {
+"o1": 2.06,
+"oX": 3.46,
+"o2": 3.51
+}
+},
+"2026-10-17|Espanol|Ath Madrid": {
+"id": "2026-10-17|Espanol|Ath Madrid",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-17",
+"time": "13:00",
+"h": "Espanol",
+"a": "Ath Madrid",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.554,
+"safe": "X2",
+"ps": 0.799,
+"o25": 0.528,
+"btts": 0.532,
+"res": null,
+"st": [
+4.5,
+4.5
+],
+"odds": {
+"o1": 4.68,
+"oX": 3.84,
+"o2": 1.7
+}
+},
+"2026-10-17|Villarreal|Elche": {
+"id": "2026-10-17|Villarreal|Elche",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-17",
+"time": "15:15",
+"h": "Villarreal",
+"a": "Elche",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.653,
+"safe": "1X",
+"ps": 0.848,
+"o25": 0.65,
+"btts": 0.592,
+"res": null,
+"st": [
+5.8,
+3.2
+],
+"odds": {
+"o1": 1.44,
+"oX": 4.84,
+"o2": 6.17
+}
+},
+"2026-10-17|Betis|Barcelona": {
+"id": "2026-10-17|Betis|Barcelona",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-17",
+"time": "17:30",
+"h": "Betis",
+"a": "Barcelona",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.67,
+"safe": "X2",
+"ps": 0.844,
+"o25": 0.755,
+"btts": 0.663,
+"res": null,
+"st": [
+4.9,
+5.1
+],
+"odds": {
+"o1": 6.0,
+"oX": 5.42,
+"o2": 1.4
+}
+},
+"2026-10-17|Valencia|Ath Bilbao": {
+"id": "2026-10-17|Valencia|Ath Bilbao",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-17",
+"time": "20:00",
+"h": "Valencia",
+"a": "Ath Bilbao",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.43,
+"safe": "X2",
+"ps": 0.711,
+"o25": 0.46,
+"btts": 0.473,
+"res": null,
+"st": [
+4.2,
+3.6
+],
+"odds": {
+"o1": 3.26,
+"oX": 3.34,
+"o2": 2.19
+}
+},
+"2026-10-18|Osasuna|Santander": {
+"id": "2026-10-18|Osasuna|Santander",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-18",
+"time": "13:00",
+"h": "Osasuna",
+"a": "Santander",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.472,
+"safe": "1X",
+"ps": 0.73,
+"o25": 0.572,
+"btts": 0.605,
+"res": null,
+"st": [
+6.5,
+3.9
+],
+"odds": {
+"o1": 1.98,
+"oX": 3.61,
+"o2": 3.46
+}
+},
+"2026-10-18|Celta|Alaves": {
+"id": "2026-10-18|Celta|Alaves",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-18",
+"time": "15:15",
+"h": "Celta",
+"a": "Alaves",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.444,
+"safe": "1X",
+"ps": 0.734,
+"o25": 0.428,
+"btts": 0.477,
+"res": null,
+"st": [
+4.7,
+3.3
+],
+"odds": {
+"o1": 2.1,
+"oX": 3.22,
+"o2": 3.5
+}
+},
+"2026-10-18|Malaga|Sociedad": {
+"id": "2026-10-18|Malaga|Sociedad",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-18",
+"time": "17:30",
+"h": "Malaga",
+"a": "Sociedad",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.434,
+"safe": "X2",
+"ps": 0.703,
+"o25": 0.532,
+"btts": 0.492,
+"res": null,
+"st": [
+4.1,
+4.4
+],
+"odds": {
+"o1": 3.14,
+"oX": 3.48,
+"o2": 2.15
+}
+},
+"2026-10-18|Real Madrid|Sevilla": {
+"id": "2026-10-18|Real Madrid|Sevilla",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-18",
+"time": "20:00",
+"h": "Real Madrid",
+"a": "Sevilla",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.76,
+"safe": "1X",
+"ps": 0.909,
+"o25": 0.667,
+"btts": 0.488,
+"res": null,
+"st": [
+6.6,
+2.9
+],
+"odds": {
+"o1": 1.23,
+"oX": 6.27,
+"o2": 10.23
+}
+},
+"2026-10-19|Getafe|Vallecano": {
+"id": "2026-10-19|Getafe|Vallecano",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-19",
+"time": "20:00",
+"h": "Getafe",
+"a": "Vallecano",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.357,
+"safe": "X2",
+"ps": 0.672,
+"o25": 0.373,
+"btts": 0.398,
+"res": null,
+"st": [
+4.0,
+3.8
+],
+"odds": {
+"o1": 2.85,
+"oX": 2.98,
+"o2": 2.62
+}
+},
+"2026-10-16|Frosinone|Sassuolo": {
+"id": "2026-10-16|Frosinone|Sassuolo",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-16",
+"time": "19:45",
+"h": "Frosinone",
+"a": "Sassuolo",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.407,
+"safe": "+2.5",
+"ps": 0.668,
+"o25": 0.668,
+"btts": 0.614,
+"res": null,
+"st": [
+5.2,
+4.2
+],
+"odds": {
+"o1": 2.31,
+"oX": 3.78,
+"o2": 2.73
+}
+},
+"2026-10-17|Venezia|Napoli": {
+"id": "2026-10-17|Venezia|Napoli",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-17",
+"time": "14:00",
+"h": "Venezia",
+"a": "Napoli",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.562,
+"safe": "X2",
+"ps": 0.798,
+"o25": 0.559,
+"btts": 0.516,
+"res": null,
+"st": [
+3.5,
+4.7
+],
+"odds": {
+"o1": 4.67,
+"oX": 4.0,
+"o2": 1.68
+}
+},
+"2026-10-17|Bologna|Inter": {
+"id": "2026-10-17|Bologna|Inter",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-17",
+"time": "17:00",
+"h": "Bologna",
+"a": "Inter",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.591,
+"safe": "X2",
+"ps": 0.823,
+"o25": 0.578,
+"btts": 0.546,
+"res": null,
+"st": [
+3.4,
+4.7
+],
+"odds": {
+"o1": 5.31,
+"oX": 4.04,
+"o2": 1.59
+}
+},
+"2026-10-17|Roma|Genoa": {
+"id": "2026-10-17|Roma|Genoa",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-17",
+"time": "19:45",
+"h": "Roma",
+"a": "Genoa",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.649,
+"safe": "1X",
+"ps": 0.859,
+"o25": 0.558,
+"btts": 0.458,
+"res": null,
+"st": [
+5.0,
+3.4
+],
+"odds": {
+"o1": 1.45,
+"oX": 4.48,
+"o2": 6.67
+}
+},
+"2026-10-18|Udinese|Lecce": {
+"id": "2026-10-18|Udinese|Lecce",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-18",
+"time": "11:30",
+"h": "Udinese",
+"a": "Lecce",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.502,
+"safe": "1X",
+"ps": 0.773,
+"o25": 0.468,
+"btts": 0.486,
+"res": null,
+"st": [
+4.5,
+3.1
+],
+"odds": {
+"o1": 1.87,
+"oX": 3.45,
+"o2": 4.14
+}
+},
+"2026-10-18|Fiorentina|Como": {
+"id": "2026-10-18|Fiorentina|Como",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-18",
+"time": "14:00",
+"h": "Fiorentina",
+"a": "Como",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.455,
+"safe": "X2",
+"ps": 0.714,
+"o25": 0.573,
+"btts": 0.533,
+"res": null,
+"st": [
+3.7,
+4.9
+],
+"odds": {
+"o1": 3.28,
+"oX": 3.61,
+"o2": 2.06
+}
+},
+"2026-10-18|Milan|Atalanta": {
+"id": "2026-10-18|Milan|Atalanta",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-18",
+"time": "17:00",
+"h": "Milan",
+"a": "Atalanta",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.519,
+"safe": "1X",
+"ps": 0.772,
+"o25": 0.546,
+"btts": 0.582,
+"res": null,
+"st": [
+4.5,
+3.9
+],
+"odds": {
+"o1": 1.81,
+"oX": 3.7,
+"o2": 4.12
+}
+},
+"2026-10-18|Juventus|Lazio": {
+"id": "2026-10-18|Juventus|Lazio",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-18",
+"time": "19:45",
+"h": "Juventus",
+"a": "Lazio",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.564,
+"safe": "1X",
+"ps": 0.814,
+"o25": 0.491,
+"btts": 0.441,
+"res": null,
+"st": [
+5.7,
+3.1
+],
+"odds": {
+"o1": 1.66,
+"oX": 3.76,
+"o2": 5.03
+}
+},
+"2026-10-19|Monza|Cagliari": {
+"id": "2026-10-19|Monza|Cagliari",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-19",
+"time": "17:30",
+"h": "Monza",
+"a": "Cagliari",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.396,
+"safe": "1X",
+"ps": 0.692,
+"o25": 0.457,
+"btts": 0.523,
+"res": null,
+"st": [
+4.3,
+4.1
+],
+"odds": {
+"o1": 2.36,
+"oX": 3.16,
+"o2": 3.04
+}
+},
+"2026-10-19|Parma|Torino": {
+"id": "2026-10-19|Parma|Torino",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-19",
+"time": "19:45",
+"h": "Parma",
+"a": "Torino",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.38,
+"safe": "X2",
+"ps": 0.687,
+"o25": 0.401,
+"btts": 0.46,
+"res": null,
+"st": [
+3.6,
+3.9
+],
+"odds": {
+"o1": 2.99,
+"oX": 3.05,
+"o2": 2.46
+}
+},
+"2026-10-16|Ein Frankfurt|FC Koln": {
+"id": "2026-10-16|Ein Frankfurt|FC Koln",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-16",
+"time": "19:30",
+"h": "Ein Frankfurt",
+"a": "FC Koln",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.508,
+"safe": "1X",
+"ps": 0.734,
+"o25": 0.714,
+"btts": 0.679,
+"res": null,
+"st": [
+5.5,
+4.3
+],
+"odds": {
+"o1": 1.85,
+"oX": 4.18,
+"o2": 3.53
+}
+},
+"2026-10-17|Elversberg|Augsburg": {
+"id": "2026-10-17|Elversberg|Augsburg",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-17",
+"time": "14:30",
+"h": "Elversberg",
+"a": "Augsburg",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.384,
+"safe": "+2.5",
+"ps": 0.657,
+"o25": 0.657,
+"btts": 0.642,
+"res": null,
+"st": [
+5.3,
+4.0
+],
+"odds": {
+"o1": 2.43,
+"oX": 3.77,
+"o2": 2.54
+}
+},
+"2026-10-17|Hamburg|Stuttgart": {
+"id": "2026-10-17|Hamburg|Stuttgart",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-17",
+"time": "14:30",
+"h": "Hamburg",
+"a": "Stuttgart",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.522,
+"safe": "X2",
+"ps": 0.755,
+"o25": 0.681,
+"btts": 0.63,
+"res": null,
+"st": [
+5.4,
+4.9
+],
+"odds": {
+"o1": 3.81,
+"oX": 4.02,
+"o2": 1.79
+}
+},
+"2026-10-17|Schalke 04|Mainz": {
+"id": "2026-10-17|Schalke 04|Mainz",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-17",
+"time": "14:30",
+"h": "Schalke 04",
+"a": "Mainz",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.423,
+"safe": "X2",
+"ps": 0.682,
+"o25": 0.587,
+"btts": 0.631,
+"res": null,
+"st": [
+4.8,
+4.6
+],
+"odds": {
+"o1": 2.94,
+"oX": 3.62,
+"o2": 2.21
+}
+},
+"2026-10-17|Union Berlin|Dortmund": {
+"id": "2026-10-17|Union Berlin|Dortmund",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-17",
+"time": "14:30",
+"h": "Union Berlin",
+"a": "Dortmund",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.6,
+"safe": "X2",
+"ps": 0.813,
+"o25": 0.636,
+"btts": 0.563,
+"res": null,
+"st": [
+4.2,
+4.1
+],
+"odds": {
+"o1": 5.0,
+"oX": 4.39,
+"o2": 1.56
+}
+},
+"2026-10-17|Werder Bremen|Paderborn": {
+"id": "2026-10-17|Werder Bremen|Paderborn",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-17",
+"time": "14:30",
+"h": "Werder Bremen",
+"a": "Paderborn",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.53,
+"safe": "1X",
+"ps": 0.764,
+"o25": 0.623,
+"btts": 0.532,
+"res": null,
+"st": [
+5.5,
+3.2
+],
+"odds": {
+"o1": 1.77,
+"oX": 4.0,
+"o2": 3.97
+}
+},
+"2026-10-17|Bayern Munich|RB Leipzig": {
+"id": "2026-10-17|Bayern Munich|RB Leipzig",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-17",
+"time": "17:30",
+"h": "Bayern Munich",
+"a": "RB Leipzig",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.774,
+"safe": "1X",
+"ps": 0.9,
+"o25": 0.832,
+"btts": 0.668,
+"res": null,
+"st": [
+7.2,
+3.8
+],
+"odds": {
+"o1": 1.21,
+"oX": 7.43,
+"o2": 9.32
+}
+},
+"2026-10-18|Leverkusen|Freiburg": {
+"id": "2026-10-18|Leverkusen|Freiburg",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-18",
+"time": "14:30",
+"h": "Leverkusen",
+"a": "Freiburg",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.549,
+"safe": "1X",
+"ps": 0.775,
+"o25": 0.643,
+"btts": 0.6,
+"res": null,
+"st": [
+5.5,
+3.9
+],
+"odds": {
+"o1": 1.7,
+"oX": 4.14,
+"o2": 4.15
+}
+},
+"2026-10-18|M'gladbach|Hoffenheim": {
+"id": "2026-10-18|M'gladbach|Hoffenheim",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-18",
+"time": "16:30",
+"h": "M'gladbach",
+"a": "Hoffenheim",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.457,
+"safe": "X2",
+"ps": 0.694,
+"o25": 0.681,
+"btts": 0.673,
+"res": null,
+"st": [
+4.9,
+4.9
+],
+"odds": {
+"o1": 3.05,
+"oX": 3.94,
+"o2": 2.04
+}
+},
+"2026-10-16|Le Mans|Toulouse": {
+"id": "2026-10-16|Le Mans|Toulouse",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-16",
+"time": "19:45",
+"h": "Le Mans",
+"a": "Toulouse",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.407,
+"safe": "X2",
+"ps": 0.675,
+"o25": 0.57,
+"btts": 0.598,
+"res": null,
+"st": [
+4.8,
+4.6
+],
+"odds": {
+"o1": 2.9,
+"oX": 3.51,
+"o2": 2.31
+}
+},
+"2026-10-17|Strasbourg|Paris SG": {
+"id": "2026-10-17|Strasbourg|Paris SG",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-17",
+"time": "16:15",
+"h": "Strasbourg",
+"a": "Paris SG",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.677,
+"safe": "X2",
+"ps": 0.853,
+"o25": 0.709,
+"btts": 0.606,
+"res": null,
+"st": [
+4.3,
+5.8
+],
+"odds": {
+"o1": 6.35,
+"oX": 5.3,
+"o2": 1.38
+}
+},
+"2026-10-17|Lille|Brest": {
+"id": "2026-10-17|Lille|Brest",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-17",
+"time": "19:45",
+"h": "Lille",
+"a": "Brest",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.509,
+"safe": "1X",
+"ps": 0.758,
+"o25": 0.563,
+"btts": 0.528,
+"res": null,
+"st": [
+5.1,
+3.3
+],
+"odds": {
+"o1": 1.84,
+"oX": 3.76,
+"o2": 3.88
+}
+},
+"2026-10-17|Troyes|Lens": {
+"id": "2026-10-17|Troyes|Lens",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-17",
+"time": "19:45",
+"h": "Troyes",
+"a": "Lens",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.515,
+"safe": "X2",
+"ps": 0.756,
+"o25": 0.605,
+"btts": 0.588,
+"res": null,
+"st": [
+3.4,
+5.2
+],
+"odds": {
+"o1": 3.84,
+"oX": 3.89,
+"o2": 1.82
+}
+},
+"2026-10-18|Angers|Marseille": {
+"id": "2026-10-18|Angers|Marseille",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-18",
+"time": "14:00",
+"h": "Angers",
+"a": "Marseille",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.452,
+"safe": "X2",
+"ps": 0.704,
+"o25": 0.591,
+"btts": 0.555,
+"res": null,
+"st": [
+4.0,
+5.5
+],
+"odds": {
+"o1": 3.16,
+"oX": 3.71,
+"o2": 2.07
+}
+},
+"2026-10-18|Le Havre|Auxerre": {
+"id": "2026-10-18|Le Havre|Auxerre",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-18",
+"time": "16:15",
+"h": "Le Havre",
+"a": "Auxerre",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.411,
+"safe": "1X",
+"ps": 0.689,
+"o25": 0.508,
+"btts": 0.485,
+"res": null,
+"st": [
+4.6,
+3.6
+],
+"odds": {
+"o1": 2.28,
+"oX": 3.36,
+"o2": 3.01
+}
+},
+"2026-10-18|Lorient|Monaco": {
+"id": "2026-10-18|Lorient|Monaco",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-18",
+"time": "16:15",
+"h": "Lorient",
+"a": "Monaco",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.461,
+"safe": "X2",
+"ps": 0.731,
+"o25": 0.499,
+"btts": 0.563,
+"res": null,
+"st": [
+4.5,
+3.9
+],
+"odds": {
+"o1": 3.48,
+"oX": 3.46,
+"o2": 2.03
+}
+},
+"2026-10-18|Paris FC|Rennes": {
+"id": "2026-10-18|Paris FC|Rennes",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-18",
+"time": "16:15",
+"h": "Paris FC",
+"a": "Rennes",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.414,
+"safe": "1X",
+"ps": 0.681,
+"o25": 0.572,
+"btts": 0.595,
+"res": null,
+"st": [
+4.5,
+4.1
+],
+"odds": {
+"o1": 2.26,
+"oX": 3.5,
+"o2": 2.93
+}
+},
+"2026-10-18|Lyon|Nice": {
+"id": "2026-10-18|Lyon|Nice",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-18",
+"time": "19:45",
+"h": "Lyon",
+"a": "Nice",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.563,
+"safe": "1X",
+"ps": 0.798,
+"o25": 0.575,
+"btts": 0.558,
+"res": null,
+"st": [
+5.4,
+3.5
+],
+"odds": {
+"o1": 1.66,
+"oX": 3.98,
+"o2": 4.63
+}
+},
+"2026-10-19|Sp Braga|Gil Vicente": {
+"id": "2026-10-19|Sp Braga|Gil Vicente",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-19",
+"time": "20:15",
+"h": "Sp Braga",
+"a": "Gil Vicente",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.59,
+"safe": "1X",
+"ps": 0.834,
+"o25": 0.461,
+"btts": 0.474,
+"res": null,
+"st": [
+4.2,
+3.5
+],
+"odds": {
+"o1": 1.57,
+"oX": 3.78,
+"o2": 5.59
+}
+},
+"2026-10-16|Heerenveen|Excelsior": {
+"id": "2026-10-16|Heerenveen|Excelsior",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-16",
+"time": "19:00",
+"h": "Heerenveen",
+"a": "Excelsior",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.615,
+"safe": "1X",
+"ps": 0.819,
+"o25": 0.678,
+"btts": 0.62,
+"res": null,
+"st": [
+5.6,
+4.3
+],
+"odds": {
+"o1": 1.51,
+"oX": 4.54,
+"o2": 5.14
+}
+},
+"2026-10-17|Den Haag|PSV Eindhoven": {
+"id": "2026-10-17|Den Haag|PSV Eindhoven",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-17",
+"time": "15:30",
+"h": "Den Haag",
+"a": "PSV Eindhoven",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.746,
+"safe": "X2",
+"ps": 0.889,
+"o25": 0.764,
+"btts": 0.648,
+"res": null,
+"st": [
+3.7,
+7.6
+],
+"odds": {
+"o1": 8.37,
+"oX": 6.53,
+"o2": 1.25
+}
+},
+"2026-10-17|Telstar|Feyenoord": {
+"id": "2026-10-17|Telstar|Feyenoord",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-17",
+"time": "19:00",
+"h": "Telstar",
+"a": "Feyenoord",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.711,
+"safe": "X2",
+"ps": 0.876,
+"o25": 0.717,
+"btts": 0.594,
+"res": null,
+"st": [
+4.2,
+6.4
+],
+"odds": {
+"o1": 7.53,
+"oX": 5.62,
+"o2": 1.31
+}
+},
+"2026-10-17|Sparta Rotterdam|Willem II": {
+"id": "2026-10-17|Sparta Rotterdam|Willem II",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-17",
+"time": "20:00",
+"h": "Sparta Rotterdam",
+"a": "Willem II",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.58,
+"safe": "1X",
+"ps": 0.796,
+"o25": 0.65,
+"btts": 0.561,
+"res": null,
+"st": [
+5.4,
+3.9
+],
+"odds": {
+"o1": 1.6,
+"oX": 4.31,
+"o2": 4.55
+}
+},
+"2026-10-18|Zwolle|Go Ahead Eagles": {
+"id": "2026-10-18|Zwolle|Go Ahead Eagles",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-18",
+"time": "11:15",
+"h": "Zwolle",
+"a": "Go Ahead Eagles",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.477,
+"safe": "X2",
+"ps": 0.719,
+"o25": 0.652,
+"btts": 0.65,
+"res": null,
+"st": [
+4.7,
+5.7
+],
+"odds": {
+"o1": 3.31,
+"oX": 3.83,
+"o2": 1.95
+}
+},
+"2026-10-18|Cambuur|AZ Alkmaar": {
+"id": "2026-10-18|Cambuur|AZ Alkmaar",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-18",
+"time": "13:30",
+"h": "Cambuur",
+"a": "AZ Alkmaar",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.647,
+"safe": "X2",
+"ps": 0.839,
+"o25": 0.696,
+"btts": 0.63,
+"res": null,
+"st": [
+4.1,
+5.9
+],
+"odds": {
+"o1": 5.8,
+"oX": 4.83,
+"o2": 1.44
+}
+},
+"2026-10-18|Groningen|Ajax": {
+"id": "2026-10-18|Groningen|Ajax",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-18",
+"time": "15:45",
+"h": "Groningen",
+"a": "Ajax",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.499,
+"safe": "X2",
+"ps": 0.727,
+"o25": 0.695,
+"btts": 0.62,
+"res": null,
+"st": [
+5.5,
+4.9
+],
+"odds": {
+"o1": 3.4,
+"oX": 4.06,
+"o2": 1.86
+}
+},
+"2026-10-18|Nijmegen|For Sittard": {
+"id": "2026-10-18|Nijmegen|For Sittard",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-18",
+"time": "19:00",
+"h": "Nijmegen",
+"a": "For Sittard",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.588,
+"safe": "1X",
+"ps": 0.8,
+"o25": 0.684,
+"btts": 0.63,
+"res": null,
+"st": [
+6.4,
+4.2
+],
+"odds": {
+"o1": 1.58,
+"oX": 4.38,
+"o2": 4.65
+}
+},
+"2026-10-18|Twente|Utrecht": {
+"id": "2026-10-18|Twente|Utrecht",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-18",
+"time": "19:00",
+"h": "Twente",
+"a": "Utrecht",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.708,
+"safe": "1X",
+"ps": 0.874,
+"o25": 0.712,
+"btts": 0.605,
+"res": null,
+"st": [
+6.7,
+4.0
+],
+"odds": {
+"o1": 1.31,
+"oX": 5.61,
+"o2": 7.34
+}
+},
+"2026-10-16|Burnley|Wolves": {
+"id": "2026-10-16|Burnley|Wolves",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-16",
+"time": "20:00",
+"h": "Burnley",
+"a": "Wolves",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.427,
+"safe": "X2",
+"ps": 0.697,
+"o25": 0.527,
+"btts": 0.55,
+"res": null,
+"st": [
+4.5,
+3.2
+],
+"odds": {
+"o1": 3.1,
+"oX": 3.49,
+"o2": 2.2
+}
+},
+"2026-10-17|Middlesbrough|Cardiff": {
+"id": "2026-10-17|Middlesbrough|Cardiff",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "12:30",
+"h": "Middlesbrough",
+"a": "Cardiff",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.616,
+"safe": "1X",
+"ps": 0.817,
+"o25": 0.689,
+"btts": 0.579,
+"res": null,
+"st": [
+5.6,
+3.7
+],
+"odds": {
+"o1": 1.52,
+"oX": 4.65,
+"o2": 5.12
+}
+},
+"2026-10-17|Millwall|Lincoln": {
+"id": "2026-10-17|Millwall|Lincoln",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "12:30",
+"h": "Millwall",
+"a": "Lincoln",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.566,
+"safe": "1X",
+"ps": 0.807,
+"o25": 0.524,
+"btts": 0.428,
+"res": null,
+"st": [
+5.3,
+2.8
+],
+"odds": {
+"o1": 1.65,
+"oX": 3.87,
+"o2": 4.85
+}
+},
+"2026-10-17|Watford|Charlton": {
+"id": "2026-10-17|Watford|Charlton",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "12:30",
+"h": "Watford",
+"a": "Charlton",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.38,
+"safe": "1X",
+"ps": 0.661,
+"o25": 0.495,
+"btts": 0.468,
+"res": null,
+"st": [
+4.7,
+3.4
+],
+"odds": {
+"o1": 2.47,
+"oX": 3.34,
+"o2": 2.77
+}
+},
+"2026-10-17|Birmingham|QPR": {
+"id": "2026-10-17|Birmingham|QPR",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Birmingham",
+"a": "QPR",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.463,
+"safe": "1X",
+"ps": 0.731,
+"o25": 0.509,
+"btts": 0.516,
+"res": null,
+"st": [
+4.7,
+3.7
+],
+"odds": {
+"o1": 2.03,
+"oX": 3.5,
+"o2": 3.49
+}
+},
+"2026-10-17|Bristol City|Sheffield United": {
+"id": "2026-10-17|Bristol City|Sheffield United",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Bristol City",
+"a": "Sheffield United",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.455,
+"safe": "1X",
+"ps": 0.719,
+"o25": 0.52,
+"btts": 0.532,
+"res": null,
+"st": [
+4.8,
+3.8
+],
+"odds": {
+"o1": 2.06,
+"oX": 3.55,
+"o2": 3.34
+}
+},
+"2026-10-17|Derby|Stoke": {
+"id": "2026-10-17|Derby|Stoke",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Derby",
+"a": "Stoke",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.393,
+"safe": "X2",
+"ps": 0.671,
+"o25": 0.488,
+"btts": 0.503,
+"res": null,
+"st": [
+4.5,
+3.6
+],
+"odds": {
+"o1": 2.85,
+"oX": 3.37,
+"o2": 2.38
+}
+},
+"2026-10-17|Norwich|Portsmouth": {
+"id": "2026-10-17|Norwich|Portsmouth",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Norwich",
+"a": "Portsmouth",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.536,
+"safe": "1X",
+"ps": 0.782,
+"o25": 0.55,
+"btts": 0.568,
+"res": null,
+"st": [
+4.7,
+3.5
+],
+"odds": {
+"o1": 1.75,
+"oX": 3.82,
+"o2": 4.3
+}
+},
+"2026-10-17|Southampton|Bolton": {
+"id": "2026-10-17|Southampton|Bolton",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Southampton",
+"a": "Bolton",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.638,
+"safe": "1X",
+"ps": 0.834,
+"o25": 0.66,
+"btts": 0.631,
+"res": null,
+"st": [
+5.9,
+4.1
+],
+"odds": {
+"o1": 1.47,
+"oX": 4.79,
+"o2": 5.65
+}
+},
+"2026-10-17|Swansea|West Ham": {
+"id": "2026-10-17|Swansea|West Ham",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Swansea",
+"a": "West Ham",
+"pub": "2026-10-16T12:43",
+"k1": "2",
+"p1": 0.437,
+"safe": "X2",
+"ps": 0.697,
+"o25": 0.546,
+"btts": 0.633,
+"res": null,
+"st": [
+4.2,
+5.0
+],
+"odds": {
+"o1": 3.1,
+"oX": 3.62,
+"o2": 2.15
+}
+},
+"2026-10-17|West Brom|Blackburn": {
+"id": "2026-10-17|West Brom|Blackburn",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "West Brom",
+"a": "Blackburn",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.491,
+"safe": "1X",
+"ps": 0.762,
+"o25": 0.471,
+"btts": 0.417,
+"res": null,
+"st": [
+4.0,
+2.9
+],
+"odds": {
+"o1": 1.91,
+"oX": 3.47,
+"o2": 3.94
+}
+},
+"2026-10-17|Wrexham|Preston": {
+"id": "2026-10-17|Wrexham|Preston",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-17",
+"time": "15:00",
+"h": "Wrexham",
+"a": "Preston",
+"pub": "2026-10-16T12:43",
+"k1": "1",
+"p1": 0.559,
+"safe": "1X",
+"ps": 0.805,
+"o25": 0.517,
+"btts": 0.53,
+"res": null,
+"st": [
+4.4,
+3.4
+],
+"odds": {
+"o1": 1.68,
+"oX": 3.83,
+"o2": 4.81
+}
 }
 }
