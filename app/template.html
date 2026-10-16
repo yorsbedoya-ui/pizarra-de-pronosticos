@@ -145,7 +145,7 @@ details.more[open] summary::before{content:"– "}
   <header>
     <div class="eyebrow">Modelo <span id="mdl"></span> · datos reales <span id="srcs"></span> · actualizado <span id="gen"></span></div>
     <h1>Pizarra de Pronósticos</h1>
-    <p class="sub">Probabilidades de la próxima jornada en 8 ligas, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
+    <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa), calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
   </header>
 
   <section class="calib board" id="board" hidden>
@@ -196,8 +196,10 @@ details.more[open] summary::before{content:"– "}
 <script>
 const DATA = __DATA__;
 const pct = x => x==null ? '–' : Math.round(x*100) + '%';
-const short = n => n.replace(/\b(FC|CF|AFC|SC|SV|AC|SS|SSC|US|RC|CD|UD|SD|VfL|VfB|TSG|BV)\b\.?/g,'').replace(/^1\.\s*/,'').replace(/\s+/g,' ').trim();
-const fmtDate = (d,t) => { const x=new Date(d+'T12:00:00'); return x.toLocaleDateString('es-ES',{weekday:'short',day:'numeric',month:'short'}) + (t?' · '+t:''); };
+const shortRaw = n => n.replace(/\b(FC|CF|AFC|SC|SV|AC|SS|SSC|US|RC|CD|UD|SD|VfL|VfB|TSG|BV)\b\.?/g,'').replace(/^1\.\s*/,'').replace(/\s+/g,' ').trim();
+const short = n => (DATA.names && DATA.names[n]) || shortRaw(n);  // nombres como en Betclic
+const plTime = (d,t) => { if(!t) return ''; const [h,m]=t.split(':').map(Number); const x=new Date(d+'T00:00:00'); x.setHours(h+1,m); return x.toTimeString().slice(0,5); };
+const fmtDate = (d,t) => { const x=new Date(d+'T12:00:00'); return x.toLocaleDateString('es-ES',{weekday:'short',day:'numeric',month:'short'}) + (t?' · '+plTime(d,t)+' h PL':''); };
 const lvl = p => p>=.65?'hi':(p>=.5?'mid':'lo');
 const lvlName = {hi:'Confianza alta',mid:'Confianza media',lo:'Partido abierto'};
 const mkName = (k,m) => ({'1':'Gana '+short(m.h),'2':'Gana '+short(m.a),'X':'Empate','1X':short(m.h)+' o empate','X2':short(m.a)+' o empate',
@@ -342,7 +344,7 @@ if (BD.length) {
       const col = e.hit_safe===true ? 'var(--hi)' : (e.hit_safe===false ? 'var(--lo)' : 'var(--line)');
       const st = e.st ? `<span class="tag ${cls(e.hit_st)}">Tiros a puerta esp. <b>${f1(e.st[0])}–${f1(e.st[1])}</b>${e.hst!=null?` · real <b>${e.hst}–${e.ast}</b>`:''} ${tick(e.hit_st)}</span>` : '';
       return `<div class="brow" style="--c:${col}">
-        <div class="sc"><span>${short(e.h)}</span>${e.res?`<b class="num">${e.hg} – ${e.ag}</b>`:`<b class="pend">${e.date < (DATA.updated_at||DATA.generated).slice(0,10) ? 'sin resultado' : (e.time||'—')}</b>`}<span>${short(e.a)}</span></div>
+        <div class="sc"><span>${short(e.h)}</span>${e.res?`<b class="num">${e.hg} – ${e.ag}</b>`:`<b class="pend">${e.date < (DATA.updated_at||DATA.generated).slice(0,10) ? 'sin resultado' : (e.time?plTime(e.date,e.time):'—')}</b>`}<span>${short(e.a)}</span></div>
         <div class="tags">
           <span class="tag ${cls(e.hit_safe)}">Pick: <b>${mkName(e.safe,m)}</b> ${pct(e.ps)} ${tick(e.hit_safe)}</span>
           <span class="tag ${cls(e.hit_1x2)}">Favorito: <b>${e.k1==='1'?short(e.h):e.k1==='2'?short(e.a):'Empate'}</b> ${pct(e.p1)} ${tick(e.hit_1x2)}</span>

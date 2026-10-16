@@ -634,6 +634,8 @@ except Exception:
     _now = datetime.utcnow()
 data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
             model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (" + xG" if "xg" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
-            backtest=summary, leagues=leagues, history=hist_out, board=board_out)
+            backtest=summary, leagues=leagues, history=hist_out, board=board_out,
+            names=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json"), encoding="utf-8"))
+                  if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json")) else {})
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))
 open(OUT, "w").write(open(TPL).read().replace("__DATA__", json.dumps(data, ensure_ascii=False)))

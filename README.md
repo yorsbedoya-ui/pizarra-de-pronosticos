@@ -1,6 +1,6 @@
 # Pizarra de Pronósticos
 
-Pronósticos de fútbol para 8 ligas (Premier, Championship, LaLiga, Serie A, Bundesliga, Ligue 1, Portugal, Eredivisie) calculados solo con datos reales.
+Pronósticos de fútbol para 9 ligas (Premier, Championship, LaLiga, Serie A, Bundesliga, Ligue 1, Portugal, Eredivisie y Ekstraklasa) calculados solo con datos reales.
 
 **Web:** https://yorsbedoya-ui.github.io/pizarra-de-pronosticos/
 
