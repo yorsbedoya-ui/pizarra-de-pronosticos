@@ -8,7 +8,7 @@ import csv, json, os, sys, time, urllib.request, urllib.error
 from datetime import date, datetime, timedelta, timezone
 
 LEAGUES = {"E0": "eng.1", "E1": "eng.2", "SP1": "esp.1", "I1": "ita.1",
-           "D1": "ger.1", "F1": "fra.1", "P1": "por.1", "N1": "ned.1"}
+           "D1": "ger.1", "F1": "fra.1", "P1": "por.1", "N1": "ned.1", "POL": "pol.1"}
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "live")
 API = "https://site.api.espn.com/apis/site/v2/sports/soccer/{lg}/scoreboard?dates={d}"
 

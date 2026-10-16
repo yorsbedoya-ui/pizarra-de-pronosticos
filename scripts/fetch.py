@@ -39,5 +39,50 @@ for s in season_codes():
         else: fail += 1
 if get(f"{BASE}/fixtures.csv", os.path.join(OUT, "fixtures.csv")): ok += 1
 else: fail += 1
+
+# ---- Ligas "extra" de football-data (formato distinto): Polonia = Ekstraklasa ----
+import csv, io
+EXTRA = {"POL": "POL"}   # fichero de football-data -> código interno
+def season_of(s):  # "2025/2026" -> "2526"
+    try: a, b = s.split("/"); return a[-2:] + b[-2:]
+    except ValueError: return None
+STD = ["Div", "Date", "Time", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
+       "PSCH", "PSCD", "PSCA", "AvgCH", "AvgCD", "AvgCA", "B365CH", "B365CD", "B365CA", "MaxCH", "MaxCD", "MaxCA"]
+keep = set(season_codes())
+for name, div in EXTRA.items():
+    raw = os.path.join(OUT, "_raw", f"{name}.csv")
+    if not get(f"{BASE}/new/{name}.csv", raw): fail += 1; continue
+    ok += 1
+    rows = {}
+    for r in csv.DictReader(io.open(raw, encoding="utf-8-sig", errors="replace")):
+        s = season_of(r.get("Season", ""))
+        if s not in keep: continue
+        out = {"Div": div, "Date": r.get("Date", ""), "Time": r.get("Time", ""), "HomeTeam": r.get("Home", ""),
+               "AwayTeam": r.get("Away", ""), "FTHG": r.get("HG", ""), "FTAG": r.get("AG", ""), "FTR": r.get("Res", "")}
+        for k in STD[8:]: out[k] = r.get(k, "")
+        rows.setdefault(s, []).append(out)
+    for s, rs in rows.items():
+        dest = os.path.join(OUT, s, f"{div}.csv"); os.makedirs(os.path.dirname(dest), exist_ok=True)
+        with open(dest, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=STD); w.writeheader(); w.writerows(rs)
+        print(f"  {div} {s}: {len(rs)} partidos")
+# próximos partidos de las ligas extra, al formato estándar de fixtures.csv
+rawf = os.path.join(OUT, "_raw", "new_league_fixtures.csv")
+if get(f"{BASE}/new_league_fixtures.csv", rawf):
+    ok += 1; fx = []
+    for r in csv.DictReader(io.open(rawf, encoding="utf-8-sig", errors="replace")):
+        div = next((d for n, d in EXTRA.items() if r.get("Country", "").strip().upper().startswith("POLAND") or r.get("Div", "") == n), None)
+        if not div: continue
+        o = {"Div": div, "Date": r.get("Date", ""), "Time": r.get("Time", ""), "HomeTeam": r.get("Home", r.get("HomeTeam", "")),
+             "AwayTeam": r.get("Away", r.get("AwayTeam", ""))}
+        for k in ("AvgH", "AvgD", "AvgA", "PSH", "PSD", "PSA", "B365H", "B365D", "B365A", "MaxH", "MaxD", "MaxA"):
+            o[k] = r.get(k, "")
+        fx.append(o)
+    with open(os.path.join(OUT, "fixtures_extra.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["Div", "Date", "Time", "HomeTeam", "AwayTeam", "AvgH", "AvgD", "AvgA", "PSH", "PSD", "PSA",
+                                           "B365H", "B365D", "B365A", "MaxH", "MaxD", "MaxA"]); w.writeheader(); w.writerows(fx)
+    print("  próximos partidos extra:", len(fx))
+else:
+    fail += 1
 print(f"Descargados {ok}, fallidos {fail}")
 sys.exit(1 if ok == 0 else 0)

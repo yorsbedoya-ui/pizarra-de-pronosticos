@@ -25,7 +25,7 @@ ROOT, TPL, OUT = args[0], args[1], args[2]
 TODAY = date.fromisoformat(args[3]) if len(args) > 3 else date.today()
 LEAGUES = {"en.1": ("Premier League", "E0"), "es.1": ("LaLiga", "SP1"), "it.1": ("Serie A", "I1"),
            "de.1": ("Bundesliga", "D1"), "fr.1": ("Ligue 1", "F1"), "pt.1": ("Primeira Liga", "P1"),
-           "nl.1": ("Eredivisie", "N1"), "en.2": ("Championship", "E1")}
+           "nl.1": ("Eredivisie", "N1"), "en.2": ("Championship", "E1"), "pl.1": ("Ekstraklasa", "POL")}
 XI, REG, ELO_W, K_ELO, H_ELO = 0.002, 3.0, 0.3, 20, 60
 GOAL_W = 0.7          # peso de los goles frente a tiros a puerta (backtest 2025-26: 0.7 mejor que 1.0)
 VALUE_EDGE = 0.05     # apuesta de valor: prob. modelo × cuota − 1 ≥ 5 %
@@ -103,8 +103,8 @@ def load_fd(div):
             except (ValueError, KeyError, TypeError): hst = ast = None
             played.append((d, r["HomeTeam"].strip(), r["AwayTeam"].strip(), hg, ag, hst, ast, odds_of(r)))
     fixtures = []
-    fp = os.path.join(FD, "fixtures.csv")
-    if os.path.exists(fp):
+    for fp in (os.path.join(FD, "fixtures.csv"), os.path.join(FD, "fixtures_extra.csv")):
+        if not os.path.exists(fp): continue
         for r in csv.DictReader(open(fp, encoding="utf-8-sig", errors="replace")):
             if r.get("Div", "").strip() != div: continue
             d = pdate(r.get("Date", ""))
