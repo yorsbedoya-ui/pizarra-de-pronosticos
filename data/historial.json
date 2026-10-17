@@ -243,8 +243,8 @@
 "m": "1X",
 "p": 0.859,
 "pub": "2026-10-16",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-10-17|Bayern Munich|RB Leipzig",
@@ -295,8 +295,8 @@
 "m": "X2",
 "p": 0.876,
 "pub": "2026-10-16",
-"res": null,
-"hit": null
+"res": "3-4",
+"hit": true
 },
 {
 "id": "2026-10-18|Twente|Utrecht",
