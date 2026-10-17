@@ -189,7 +189,7 @@ details.more[open] summary::before{content:"– "}
     <p><b>Tiros esperados</b> sale de cómo ataca cada equipo (últimos 38 partidos) frente a cómo defiende el rival, comparado con la media de su liga. Es una media: el número exacto varía mucho de un partido a otro (error medio <span id="smae"></span> tiros a puerta por equipo). Lo que mejor predice es <b>qué equipo tirará más</b>.</p>
     <p><b>Cuota justa</b> es 1 ÷ probabilidad. Solo tiene sentido apostar si la casa paga más que esa cifra; si paga menos, a la larga pierdes aunque aciertes mucho.</p>
     <p><b>Con cuotas reales</b>, el backtest decide cuánto pesa el mercado frente a nuestro modelo. Las etiquetas de <b>valor</b> (modelo por encima de la cuota) solo aparecen si históricamente han ganado dinero; hoy no es así, por eso están ocultas.</p>
-    <p>El modelo no detecta amaños: eso no aparece en los marcadores. Tampoco conoce lesiones ni alineaciones. Los resultados se comprueban cada hora; último partido terminado en los datos: <span id="last"></span>. Si apuestas, hazlo solo con dinero que puedas perder.</p>
+    <p>El modelo no detecta amaños: eso no aparece en los marcadores. <b>Lesiones y alineaciones</b> no se leen una a una, pero entran a través de las cuotas: cuando se conoce una baja o el once titular, las casas mueven la cuota en minutos, y la app usa esas cuotas para el ganador y los goles (en las pruebas con partidos reales fueron lo que mejor predijo). Los resultados se comprueban cada hora; último partido terminado en los datos: <span id="last"></span>. Si apuestas, hazlo solo con dinero que puedas perder.</p>
   </section>
 </div>
 
