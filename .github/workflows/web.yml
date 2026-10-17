@@ -1,8 +1,11 @@
-name: Web (cada hora)
+name: Web (tras cada actualización de resultados)
 
 on:
   schedule:
-    - cron: "27 * * * *"   # cada hora, 20 min después de bajar resultados
+    - cron: "27 */2 * * *"   # respaldo cada 2 h
+  workflow_run:              # se lanza sola en cuanto terminan los resultados
+    workflows: ["Resultados (cada 30 min)"]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
