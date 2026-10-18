@@ -3193,7 +3193,7 @@
 "time": "20:00",
 "h": "Tottenham",
 "a": "Coventry",
-"pub": "2026-10-18T21:39",
+"pub": "2026-10-18T22:42",
 "k1": "1",
 "p1": 0.643,
 "safe": "1X",
@@ -3522,7 +3522,7 @@
 "time": "20:00",
 "h": "Getafe",
 "a": "Vallecano",
-"pub": "2026-10-18T21:39",
+"pub": "2026-10-18T22:42",
 "k1": "2",
 "p1": 0.357,
 "safe": "X2",
@@ -3800,7 +3800,7 @@
 "ps": 0.814,
 "o25": 0.491,
 "btts": 0.438,
-"res": null,
+"res": "0-3",
 "st": [
 5.6,
 3.2
@@ -3809,7 +3809,16 @@
 "o1": 1.66,
 "oX": 3.76,
 "o2": 5.03
-}
+},
+"hg": 0,
+"ag": 3,
+"hst": 2.0,
+"ast": 3.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": false
 },
 "2026-10-19|Monza|Cagliari": {
 "id": "2026-10-19|Monza|Cagliari",
@@ -3819,7 +3828,7 @@
 "time": "17:30",
 "h": "Monza",
 "a": "Cagliari",
-"pub": "2026-10-18T21:39",
+"pub": "2026-10-18T22:42",
 "k1": "1",
 "p1": 0.396,
 "safe": "1X",
@@ -3845,7 +3854,7 @@
 "time": "19:45",
 "h": "Parma",
 "a": "Torino",
-"pub": "2026-10-18T21:39",
+"pub": "2026-10-18T22:42",
 "k1": "2",
 "p1": 0.38,
 "safe": "X2",
@@ -4466,7 +4475,7 @@
 "ps": 0.798,
 "o25": 0.575,
 "btts": 0.555,
-"res": null,
+"res": "2-1",
 "st": [
 5.3,
 3.5
@@ -4475,7 +4484,16 @@
 "o1": 1.66,
 "oX": 3.98,
 "o2": 4.63
-}
+},
+"hg": 2,
+"ag": 1,
+"hst": 4.0,
+"ast": 5.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": false
 },
 "2026-10-19|Sp Braga|Gil Vicente": {
 "id": "2026-10-19|Sp Braga|Gil Vicente",
@@ -4485,7 +4503,7 @@
 "time": "20:15",
 "h": "Sp Braga",
 "a": "Gil Vicente",
-"pub": "2026-10-18T21:39",
+"pub": "2026-10-18T22:42",
 "k1": "1",
 "p1": 0.59,
 "safe": "1X",
@@ -4763,7 +4781,7 @@
 "ps": 0.8,
 "o25": 0.684,
 "btts": 0.625,
-"res": null,
+"res": "2-2",
 "st": [
 6.4,
 4.2
@@ -4772,7 +4790,16 @@
 "o1": 1.58,
 "oX": 4.38,
 "o2": 4.65
-}
+},
+"hg": 2,
+"ag": 2,
+"hst": 7.0,
+"ast": 3.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-10-18|Twente|Utrecht": {
 "id": "2026-10-18|Twente|Utrecht",
@@ -4789,7 +4816,7 @@
 "ps": 0.874,
 "o25": 0.712,
 "btts": 0.6,
-"res": null,
+"res": "1-2",
 "st": [
 6.7,
 4.0
@@ -4798,7 +4825,15 @@
 "o1": 1.31,
 "oX": 5.61,
 "o2": 7.34
-}
+},
+"hg": 1,
+"ag": 2,
+"hst": 5.0,
+"ast": 5.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-10-16|Burnley|Wolves": {
 "id": "2026-10-16|Burnley|Wolves",
@@ -5403,7 +5438,7 @@
 "time": "18:00",
 "h": "Wisla Plock",
 "a": "Radomiak Radom",
-"pub": "2026-10-18T21:39",
+"pub": "2026-10-18T22:42",
 "k1": "1",
 "p1": 0.481,
 "safe": "1X",
