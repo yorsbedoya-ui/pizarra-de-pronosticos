@@ -3878,7 +3878,7 @@
 "ps": 0.687,
 "o25": 0.401,
 "btts": 0.456,
-"res": null,
+"res": "0-3",
 "st": [
 3.6,
 3.9
@@ -3887,7 +3887,15 @@
 "o1": 2.99,
 "oX": 3.05,
 "o2": 2.46
-}
+},
+"hg": 0,
+"ag": 3,
+"hst": 8.0,
+"ast": 3.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": true
 },
 "2026-10-16|Ein Frankfurt|FC Koln": {
 "id": "2026-10-16|Ein Frankfurt|FC Koln",
