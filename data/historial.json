@@ -347,8 +347,8 @@
 "m": "1X",
 "p": 0.967,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-10-20|Liverpool|Villarreal",
@@ -360,8 +360,8 @@
 "m": "1X",
 "p": 0.861,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "4-3",
+"hit": true
 },
 {
 "id": "2026-10-20|Manchester City|AEK Athens",
@@ -373,8 +373,8 @@
 "m": "1X",
 "p": 0.89,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "5-1",
+"hit": true
 },
 {
 "id": "2026-10-21|Aston Villa|Viking FK",
