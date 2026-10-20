@@ -538,8 +538,8 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 14/10/2026,21:00,league-phase,Real Betis,FC Porto,3,2,FT,7,5,17,11,56,44,5,1
 14/10/2026,21:00,league-phase,Shakhtar Donetsk,AEK Athens,3,1,FT,4,3,12,13,54.5,45.5,5,2
 14/10/2026,21:00,league-phase,Slovan Bratislava,VfB Stuttgart,0,3,FT,1,8,15,16,35.9,64.1,1,8
-20/10/2026,18:45,league-phase,Fenerbahce,Slavia Prague,,,NS,0,0,0,0,0,0,0,0
-20/10/2026,18:45,league-phase,Sabah FK,Borussia Dortmund,,,NS,0,0,0,0,0,0,0,0
+20/10/2026,18:45,league-phase,Fenerbahce,Slavia Prague,2,0,LIVE,2,0,2,1,67.3,32.7,0,0
+20/10/2026,18:45,league-phase,Sabah FK,Borussia Dortmund,0,1,LIVE,0,4,0,6,35.6,64.4,0,1
 20/10/2026,21:00,league-phase,AS Roma,Slovan Bratislava,,,NS,,,,,,,,
 20/10/2026,21:00,league-phase,FC Porto,PSV Eindhoven,,,NS,,,,,,,,
 20/10/2026,21:00,league-phase,Liverpool,Villarreal,,,NS,,,,,,,,
