@@ -1,0 +1,558 @@
+Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,AC
+19/09/2023,18:45,group-stage,AC Milan,Newcastle United,0,0,FT,9,1,25,6,52.5,47.5,6,2
+19/09/2023,18:45,group-stage,Young Boys,RB Leipzig,1,3,FT,3,9,8,21,55.1,44.9,3,7
+19/09/2023,21:00,group-stage,Barcelona,Antwerp,5,0,FT,10,1,22,3,69.7,30.3,10,2
+19/09/2023,21:00,group-stage,Feyenoord Rotterdam,Celtic,2,0,FT,5,3,16,8,60.9,39.1,4,1
+19/09/2023,21:00,group-stage,Lazio,Atlético Madrid,1,1,FT,7,4,19,9,48.8,51.2,11,5
+19/09/2023,21:00,group-stage,Manchester City,Red Star Belgrade,3,1,FT,16,2,37,3,76,24,12,0
+19/09/2023,21:00,group-stage,Paris Saint-Germain,Borussia Dortmund,2,0,FT,3,1,17,14,68.1,31.9,10,7
+19/09/2023,21:00,group-stage,Shakhtar Donetsk,FC Porto,1,3,FT,4,9,9,13,45.7,54.3,4,3
+20/09/2023,18:45,group-stage,Galatasaray,F.C. København,2,2,FT,5,3,14,7,64,36,9,1
+20/09/2023,18:45,group-stage,Real Madrid,1. FC Union Berlin,1,0,FT,7,0,32,4,75.4,24.6,16,1
+20/09/2023,21:00,group-stage,Arsenal,PSV Eindhoven,4,0,FT,8,4,18,12,58.7,41.3,4,4
+20/09/2023,21:00,group-stage,Bayern Munich,Manchester United,4,3,FT,9,4,19,9,60,40,7,3
+20/09/2023,21:00,group-stage,Benfica,RB Salzburg,0,2,FT,7,5,15,14,56.4,43.6,4,5
+20/09/2023,21:00,group-stage,Braga,Napoli,1,2,FT,2,6,16,18,53.3,46.7,11,10
+20/09/2023,21:00,group-stage,Real Sociedad,Internazionale,1,1,FT,5,1,14,6,44.5,55.5,7,4
+20/09/2023,21:00,group-stage,Sevilla,Lens,1,1,FT,5,3,10,12,56.3,43.7,9,6
+03/10/2023,18:45,group-stage,1. FC Union Berlin,Braga,2,3,FT,6,6,13,12,34.9,65.1,5,5
+03/10/2023,18:45,group-stage,RB Salzburg,Real Sociedad,0,2,FT,1,5,11,15,47.7,52.3,2,5
+03/10/2023,21:00,group-stage,F.C. København,Bayern Munich,1,2,FT,4,5,11,15,42.2,57.8,3,9
+03/10/2023,21:00,group-stage,Internazionale,Benfica,1,0,FT,8,3,21,6,47,53,6,5
+03/10/2023,21:00,group-stage,Lens,Arsenal,2,1,FT,3,6,10,11,33.1,66.9,3,5
+03/10/2023,21:00,group-stage,Manchester United,Galatasaray,2,3,FT,5,4,16,14,54.8,45.2,9,3
+03/10/2023,21:00,group-stage,Napoli,Real Madrid,2,3,FT,7,5,18,18,50.1,49.9,9,9
+03/10/2023,21:00,group-stage,PSV Eindhoven,Sevilla,2,2,FT,8,2,26,10,62.8,37.2,8,4
+04/10/2023,18:45,group-stage,Antwerp,Shakhtar Donetsk,2,3,FT,7,7,13,16,52.8,47.2,2,4
+04/10/2023,18:45,group-stage,Atlético Madrid,Feyenoord Rotterdam,3,2,FT,3,7,7,17,48.1,51.9,4,15
+04/10/2023,21:00,group-stage,Borussia Dortmund,AC Milan,0,0,FT,3,2,18,14,57.4,42.6,6,7
+04/10/2023,21:00,group-stage,Celtic,Lazio,1,2,FT,4,3,11,9,55.2,44.8,4,3
+04/10/2023,21:00,group-stage,FC Porto,Barcelona,0,1,FT,5,4,13,14,43.9,56.1,6,6
+04/10/2023,21:00,group-stage,Newcastle United,Paris Saint-Germain,4,1,FT,8,2,12,11,26.9,73.1,1,8
+04/10/2023,21:00,group-stage,RB Leipzig,Manchester City,1,3,FT,1,5,3,18,31.8,68.2,2,3
+04/10/2023,21:00,group-stage,Red Star Belgrade,Young Boys,2,2,FT,9,6,20,18,49.8,50.2,11,5
+24/10/2023,18:45,group-stage,Galatasaray,Bayern Munich,1,3,FT,4,7,20,14,51.9,48.1,5,6
+24/10/2023,18:45,group-stage,Internazionale,RB Salzburg,2,1,FT,3,6,17,11,55,45,4,4
+24/10/2023,21:00,group-stage,1. FC Union Berlin,Napoli,0,1,FT,2,1,11,6,40.7,59.3,3,2
+24/10/2023,21:00,group-stage,Benfica,Real Sociedad,0,1,FT,3,2,10,12,37.8,62.2,5,5
+24/10/2023,21:00,group-stage,Braga,Real Madrid,1,2,FT,3,6,16,13,47.9,52.1,5,5
+24/10/2023,21:00,group-stage,Lens,PSV Eindhoven,1,1,FT,2,2,14,10,46.4,53.6,4,4
+24/10/2023,21:00,group-stage,Manchester United,F.C. København,1,0,FT,5,4,15,16,50.1,49.9,5,10
+24/10/2023,21:00,group-stage,Sevilla,Arsenal,1,2,FT,2,4,11,14,56.4,43.6,4,5
+25/10/2023,18:45,group-stage,Barcelona,Shakhtar Donetsk,2,1,FT,6,1,19,11,53.7,46.3,6,2
+25/10/2023,18:45,group-stage,Feyenoord Rotterdam,Lazio,3,1,FT,5,4,15,8,45.9,54.1,2,0
+25/10/2023,21:00,group-stage,Antwerp,FC Porto,1,4,FT,2,7,11,11,54.7,45.3,6,4
+25/10/2023,21:00,group-stage,Celtic,Atlético Madrid,2,2,FT,3,6,6,15,53.3,46.7,4,4
+25/10/2023,21:00,group-stage,Newcastle United,Borussia Dortmund,0,1,FT,3,5,12,13,60.1,39.9,11,9
+25/10/2023,21:00,group-stage,Paris Saint-Germain,AC Milan,3,0,FT,7,4,13,11,61.6,38.4,7,7
+25/10/2023,21:00,group-stage,RB Leipzig,Red Star Belgrade,3,1,FT,10,4,27,16,65.4,34.6,10,4
+25/10/2023,21:00,group-stage,Young Boys,Manchester City,1,3,FT,4,14,10,26,31.8,68.2,4,5
+07/11/2023,19:45,group-stage,Borussia Dortmund,Newcastle United,2,0,FT,8,5,17,10,45.7,54.3,7,4
+07/11/2023,19:45,group-stage,Shakhtar Donetsk,Barcelona,1,0,FT,4,1,9,13,32,68,1,3
+07/11/2023,22:00,group-stage,AC Milan,Paris Saint-Germain,2,1,FT,8,6,16,17,30.7,69.3,3,8
+07/11/2023,22:00,group-stage,Atlético Madrid,Celtic,6,0,FT,12,1,27,1,65.7,34.3,11,3
+07/11/2023,22:00,group-stage,FC Porto,Antwerp,2,0,FT,6,1,16,4,68.5,31.5,1,2
+07/11/2023,22:00,group-stage,Lazio,Feyenoord Rotterdam,1,0,FT,1,3,9,12,35.7,64.3,9,6
+07/11/2023,22:00,group-stage,Manchester City,Young Boys,3,0,FT,10,0,27,0,71.3,28.7,6,0
+07/11/2023,22:00,group-stage,Red Star Belgrade,RB Leipzig,1,2,FT,3,4,15,24,49.4,50.6,4,7
+08/11/2023,19:45,group-stage,Napoli,1. FC Union Berlin,1,1,FT,5,6,27,15,73,27,19,5
+08/11/2023,19:45,group-stage,Real Sociedad,Benfica,3,1,FT,7,4,17,11,52.2,47.8,10,4
+08/11/2023,22:00,group-stage,Arsenal,Sevilla,2,0,FT,3,1,11,1,61.8,38.2,4,1
+08/11/2023,22:00,group-stage,Bayern Munich,Galatasaray,2,1,FT,4,2,16,6,61.8,38.2,7,1
+08/11/2023,22:00,group-stage,F.C. København,Manchester United,4,3,FT,8,8,16,9,51.8,48.2,3,3
+08/11/2023,22:00,group-stage,PSV Eindhoven,Lens,1,0,FT,7,4,14,15,45.7,54.3,3,7
+08/11/2023,22:00,group-stage,RB Salzburg,Internazionale,0,1,FT,4,6,14,17,49.8,50.2,5,5
+08/11/2023,22:00,group-stage,Real Madrid,Braga,3,0,FT,7,4,18,9,47.9,52.1,7,2
+28/11/2023,19:45,group-stage,Lazio,Celtic,2,0,FT,5,4,22,7,45.9,54.1,6,4
+28/11/2023,19:45,group-stage,Shakhtar Donetsk,Antwerp,1,0,FT,6,6,15,14,42.6,57.4,4,9
+28/11/2023,22:00,group-stage,AC Milan,Borussia Dortmund,1,3,FT,4,4,17,12,53.9,46.1,10,1
+28/11/2023,22:00,group-stage,Barcelona,FC Porto,2,1,FT,7,5,21,13,54.5,45.5,5,3
+28/11/2023,22:00,group-stage,Feyenoord Rotterdam,Atlético Madrid,1,3,FT,4,3,12,9,50.7,49.3,10,4
+28/11/2023,22:00,group-stage,Manchester City,RB Leipzig,3,2,FT,6,3,14,5,70.2,29.8,6,7
+28/11/2023,22:00,group-stage,Paris Saint-Germain,Newcastle United,1,1,FT,7,2,31,5,72.4,27.6,6,2
+28/11/2023,22:00,group-stage,Young Boys,Red Star Belgrade,2,0,FT,6,3,22,18,47.4,52.6,8,6
+29/11/2023,19:45,group-stage,Galatasaray,Manchester United,3,3,FT,8,4,16,17,57.8,42.2,5,3
+29/11/2023,19:45,group-stage,Sevilla,PSV Eindhoven,2,3,FT,4,8,11,16,40.1,59.9,4,5
+29/11/2023,22:00,group-stage,Arsenal,Lens,6,0,FT,8,3,14,6,47.9,52.1,4,0
+29/11/2023,22:00,group-stage,Bayern Munich,F.C. København,0,0,FT,2,4,9,8,62.4,37.6,4,2
+29/11/2023,22:00,group-stage,Benfica,Internazionale,3,3,FT,5,8,11,14,41.2,58.8,2,6
+29/11/2023,22:00,group-stage,Braga,1. FC Union Berlin,1,1,FT,2,2,18,6,53.2,46.8,6,0
+29/11/2023,22:00,group-stage,Real Madrid,Napoli,4,2,FT,9,3,20,11,52.8,47.2,5,4
+29/11/2023,22:00,group-stage,Real Sociedad,RB Salzburg,0,0,FT,7,1,21,4,70.3,29.7,9,2
+12/12/2023,19:45,group-stage,Lens,Sevilla,2,1,FT,2,4,3,10,34.6,65.4,0,7
+12/12/2023,19:45,group-stage,PSV Eindhoven,Arsenal,1,1,FT,6,3,17,12,41.9,58.1,4,2
+12/12/2023,22:00,group-stage,1. FC Union Berlin,Real Madrid,2,3,FT,5,9,8,23,25.6,74.4,3,9
+12/12/2023,22:00,group-stage,F.C. København,Galatasaray,1,0,FT,3,7,11,22,36.9,63.1,3,9
+12/12/2023,22:00,group-stage,Internazionale,Real Sociedad,0,0,FT,2,2,10,5,44.6,55.4,1,5
+12/12/2023,22:00,group-stage,Manchester United,Bayern Munich,0,1,FT,1,3,5,10,40.8,59.2,4,2
+12/12/2023,22:00,group-stage,Napoli,Braga,2,0,FT,6,5,9,19,49.4,50.6,5,6
+12/12/2023,22:00,group-stage,RB Salzburg,Benfica,1,3,FT,6,6,19,18,44.1,55.9,2,6
+13/12/2023,19:45,group-stage,RB Leipzig,Young Boys,2,1,FT,2,3,10,16,53.1,46.9,1,3
+13/12/2023,19:45,group-stage,Red Star Belgrade,Manchester City,2,3,FT,6,3,11,10,30.9,69.1,2,2
+13/12/2023,22:00,group-stage,Antwerp,Barcelona,3,2,FT,0,0,0,0,0,0,0,0
+13/12/2023,22:00,group-stage,Atlético Madrid,Lazio,2,0,FT,4,4,16,10,57.1,42.9,5,3
+13/12/2023,22:00,group-stage,Borussia Dortmund,Paris Saint-Germain,1,1,FT,6,6,10,18,40.7,59.3,4,5
+13/12/2023,22:00,group-stage,Celtic,Feyenoord Rotterdam,2,1,FT,7,8,13,19,47.5,52.5,6,8
+13/12/2023,22:00,group-stage,FC Porto,Shakhtar Donetsk,5,3,FT,9,6,20,9,48.8,51.2,5,1
+13/12/2023,22:00,group-stage,Newcastle United,AC Milan,1,2,FT,8,2,17,12,57.9,42.1,5,3
+13/02/2024,22:00,round-of-16,F.C. København,Manchester City,1,3,FT,1,13,4,27,21,79,2,6
+13/02/2024,22:00,round-of-16,RB Leipzig,Real Madrid,0,1,FT,9,3,14,15,50,50,7,3
+14/02/2024,22:00,round-of-16,Lazio,Bayern Munich,1,0,FT,4,0,11,17,39.3,60.7,3,5
+14/02/2024,22:00,round-of-16,Paris Saint-Germain,Real Sociedad,2,0,FT,6,0,14,9,62.2,37.8,9,7
+20/02/2024,22:00,round-of-16,Internazionale,Atlético Madrid,1,0,FT,5,0,19,7,56.1,43.9,3,2
+20/02/2024,22:00,round-of-16,PSV Eindhoven,Borussia Dortmund,1,1,FT,4,5,14,8,55.1,44.9,4,4
+21/02/2024,22:00,round-of-16,FC Porto,Arsenal,1,0,FT,2,0,8,7,35.2,64.8,1,10
+21/02/2024,22:00,round-of-16,Napoli,Barcelona,1,1,FT,1,6,6,12,49.1,50.9,7,4
+05/03/2024,22:00,round-of-16,Bayern Munich,Lazio,3,0,FT,7,0,24,5,60.4,39.6,6,3
+05/03/2024,22:00,round-of-16,Real Sociedad,Paris Saint-Germain,1,2,FT,7,7,14,10,43.7,56.3,6,4
+06/03/2024,22:00,round-of-16,Manchester City,F.C. København,3,1,FT,3,2,12,11,68.9,31.1,4,4
+06/03/2024,22:00,round-of-16,Real Madrid,RB Leipzig,1,1,FT,3,4,11,20,53.5,46.5,3,8
+12/03/2024,22:00,round-of-16,Arsenal,FC Porto,1,0,FT,4,3,13,10,58,42,9,1
+12/03/2024,22:00,round-of-16,Barcelona,Napoli,3,1,FT,10,4,24,14,48.9,51.1,7,2
+13/03/2024,22:00,round-of-16,Atlético Madrid,Internazionale,2,1,FT,9,5,23,15,47.3,52.7,5,1
+13/03/2024,22:00,round-of-16,Borussia Dortmund,PSV Eindhoven,2,0,FT,7,7,15,17,48.6,51.4,5,4
+09/04/2024,21:00,quarterfinals,Arsenal,Bayern Munich,2,2,FT,4,2,13,8,59.2,40.8,2,1
+09/04/2024,21:00,quarterfinals,Real Madrid,Manchester City,3,3,FT,5,6,14,12,38.3,61.7,4,2
+10/04/2024,21:00,quarterfinals,Atlético Madrid,Borussia Dortmund,2,1,FT,9,4,14,12,33.4,66.6,8,8
+10/04/2024,21:00,quarterfinals,Paris Saint-Germain,Barcelona,2,3,FT,6,7,18,15,58.6,41.4,7,5
+16/04/2024,21:00,quarterfinals,Barcelona,Paris Saint-Germain,1,4,FT,3,9,7,21,32.7,67.3,3,10
+16/04/2024,21:00,quarterfinals,Borussia Dortmund,Atlético Madrid,4,2,FT,9,3,19,10,51.6,48.4,6,2
+17/04/2024,21:00,quarterfinals,Bayern Munich,Arsenal,1,0,FT,3,3,15,8,51.4,48.6,8,3
+17/04/2024,21:00,quarterfinals,Manchester City,Real Madrid,1,1,FT,9,3,33,8,67.3,32.7,18,1
+30/04/2024,21:00,semifinals,Bayern Munich,Real Madrid,2,2,FT,5,4,14,10,51.6,48.4,6,5
+01/05/2024,21:00,semifinals,Borussia Dortmund,Paris Saint-Germain,1,0,FT,4,3,13,14,42.7,57.3,4,3
+07/05/2024,21:00,semifinals,Paris Saint-Germain,Borussia Dortmund,0,1,FT,5,3,30,7,69.5,30.5,12,4
+08/05/2024,21:00,semifinals,Real Madrid,Bayern Munich,2,1,FT,7,5,19,8,57.1,42.9,8,4
+01/06/2024,21:00,final,Borussia Dortmund,Real Madrid,0,2,FT,4,6,13,13,42.7,57.3,9,8
+17/09/2024,18:45,league-phase,Juventus,PSV Eindhoven,3,1,FT,6,5,15,13,43.7,56.3,2,4
+17/09/2024,18:45,league-phase,Young Boys,Aston Villa,0,3,FT,5,7,12,20,47.3,52.7,3,6
+17/09/2024,21:00,league-phase,AC Milan,Liverpool,1,3,FT,2,11,8,23,49.4,50.6,2,5
+17/09/2024,21:00,league-phase,Bayern Munich,Dinamo Zagreb,9,2,FT,19,3,29,4,69.9,30.1,12,0
+17/09/2024,21:00,league-phase,Real Madrid,VfB Stuttgart,3,1,FT,8,7,20,17,45.8,54.2,10,6
+17/09/2024,21:00,league-phase,Sporting CP,Lille,2,0,FT,5,2,18,3,50.1,49.9,3,2
+18/09/2024,18:45,league-phase,Bologna,Shakhtar Donetsk,0,0,FT,4,1,17,4,47.6,52.4,8,3
+18/09/2024,18:45,league-phase,Sparta Prague,RB Salzburg,3,0,FT,6,1,11,11,29.1,70.9,4,2
+18/09/2024,21:00,league-phase,Celtic,Slovan Bratislava,5,1,FT,11,2,16,8,60.7,39.3,11,4
+18/09/2024,21:00,league-phase,Club Brugge,Borussia Dortmund,0,3,FT,5,6,18,17,36.5,63.5,5,3
+18/09/2024,21:00,league-phase,Manchester City,Internazionale,0,0,FT,5,4,22,13,59.8,40.2,4,3
+18/09/2024,21:00,league-phase,Paris Saint-Germain,Girona,1,0,FT,5,1,26,3,63.8,36.2,5,1
+19/09/2024,18:45,league-phase,Feyenoord Rotterdam,Bayer Leverkusen,0,4,FT,3,5,12,11,50.6,49.4,6,2
+19/09/2024,18:45,league-phase,Red Star Belgrade,Benfica,1,2,FT,3,3,15,10,55.4,44.6,7,1
+19/09/2024,21:00,league-phase,AS Monaco,Barcelona,2,1,FT,8,1,18,4,55.9,44.1,10,0
+19/09/2024,21:00,league-phase,Atalanta,Arsenal,0,0,FT,2,2,8,6,53.9,46.1,4,2
+19/09/2024,21:00,league-phase,Atlético Madrid,RB Leipzig,2,1,FT,4,3,21,7,51.8,48.2,8,2
+19/09/2024,21:00,league-phase,Brest,SK Sturm Graz,2,1,FT,5,2,14,8,56.9,43.1,6,1
+01/10/2024,18:45,league-phase,RB Salzburg,Brest,0,4,FT,7,6,15,13,51.9,48.1,4,0
+01/10/2024,18:45,league-phase,VfB Stuttgart,Sparta Prague,1,1,FT,10,3,26,14,76.5,23.5,10,0
+01/10/2024,21:00,league-phase,Arsenal,Paris Saint-Germain,2,0,FT,5,2,6,10,35.1,64.9,1,5
+01/10/2024,21:00,league-phase,Barcelona,Young Boys,5,0,FT,8,1,21,5,70,30,9,3
+01/10/2024,21:00,league-phase,Bayer Leverkusen,AC Milan,1,0,FT,9,5,16,16,50.3,49.7,5,4
+01/10/2024,21:00,league-phase,Borussia Dortmund,Celtic,7,1,FT,13,2,16,9,52.6,47.4,8,4
+01/10/2024,21:00,league-phase,Internazionale,Red Star Belgrade,4,0,FT,7,3,15,11,52.4,47.6,2,2
+01/10/2024,21:00,league-phase,PSV Eindhoven,Sporting CP,1,1,FT,6,3,18,9,57.3,42.7,0,4
+01/10/2024,21:00,league-phase,Slovan Bratislava,Manchester City,0,4,FT,0,14,3,28,23.9,76.1,0,15
+02/10/2024,18:45,league-phase,Girona,Feyenoord Rotterdam,2,3,FT,7,2,14,7,66.1,33.9,11,0
+02/10/2024,18:45,league-phase,Shakhtar Donetsk,Atalanta,0,3,FT,0,5,6,22,46.9,53.1,3,5
+02/10/2024,21:00,league-phase,Aston Villa,Bayern Munich,1,0,FT,2,7,5,17,30,70,1,11
+02/10/2024,21:00,league-phase,Benfica,Atlético Madrid,4,0,FT,10,0,19,4,53.3,46.7,4,2
+02/10/2024,21:00,league-phase,Dinamo Zagreb,AS Monaco,2,2,FT,3,5,7,9,38.4,61.6,2,4
+02/10/2024,21:00,league-phase,Lille,Real Madrid,1,0,FT,3,6,7,12,42.2,57.8,2,3
+02/10/2024,21:00,league-phase,Liverpool,Bologna,2,0,FT,4,2,9,12,51.4,48.6,5,3
+02/10/2024,21:00,league-phase,RB Leipzig,Juventus,2,3,FT,7,5,24,16,44.9,55.1,8,2
+02/10/2024,21:00,league-phase,SK Sturm Graz,Club Brugge,0,1,FT,1,4,8,13,38.2,61.8,4,5
+22/10/2024,18:45,league-phase,AC Milan,Club Brugge,3,1,FT,5,5,15,9,61.7,38.3,5,3
+22/10/2024,18:45,league-phase,AS Monaco,Red Star Belgrade,5,1,FT,8,2,27,5,70.2,29.8,8,5
+22/10/2024,21:00,league-phase,Arsenal,Shakhtar Donetsk,1,0,FT,5,1,13,9,55.9,44.1,5,3
+22/10/2024,21:00,league-phase,Aston Villa,Bologna,2,0,FT,6,4,16,12,53.3,46.7,5,4
+22/10/2024,21:00,league-phase,Girona,Slovan Bratislava,2,0,FT,7,2,15,6,64.1,35.9,7,6
+22/10/2024,21:00,league-phase,Juventus,VfB Stuttgart,0,1,FT,1,10,7,22,49.3,50.7,4,10
+22/10/2024,21:00,league-phase,Paris Saint-Germain,PSV Eindhoven,1,1,FT,8,3,26,8,60.7,39.3,14,3
+22/10/2024,21:00,league-phase,Real Madrid,Borussia Dortmund,5,2,FT,10,7,26,8,51.5,48.5,11,4
+22/10/2024,21:00,league-phase,SK Sturm Graz,Sporting CP,0,2,FT,6,5,11,15,40.5,59.5,7,4
+23/10/2024,18:45,league-phase,Atalanta,Celtic,0,0,FT,6,2,22,4,66.2,33.8,7,4
+23/10/2024,18:45,league-phase,Brest,Bayer Leverkusen,1,1,FT,3,3,11,8,41.2,58.8,2,6
+23/10/2024,21:00,league-phase,Atlético Madrid,Lille,1,3,FT,6,3,11,8,61.8,38.2,6,5
+23/10/2024,21:00,league-phase,Barcelona,Bayern Munich,4,1,FT,4,3,12,11,39.8,60.2,5,5
+23/10/2024,21:00,league-phase,Benfica,Feyenoord Rotterdam,1,3,FT,8,6,16,14,62.7,37.3,6,4
+23/10/2024,21:00,league-phase,Manchester City,Sparta Prague,5,0,FT,10,1,22,5,79.9,20.1,7,1
+23/10/2024,21:00,league-phase,RB Leipzig,Liverpool,0,1,FT,6,8,13,17,42.5,57.5,5,7
+23/10/2024,21:00,league-phase,RB Salzburg,Dinamo Zagreb,0,2,FT,2,5,11,18,48.7,51.3,7,5
+23/10/2024,21:00,league-phase,Young Boys,Internazionale,0,1,FT,2,6,20,19,41.7,58.3,5,1
+05/11/2024,19:45,league-phase,PSV Eindhoven,Girona,4,0,FT,12,3,25,7,62.1,37.9,7,3
+05/11/2024,19:45,league-phase,Slovan Bratislava,Dinamo Zagreb,1,4,FT,7,5,19,13,59.7,40.3,11,4
+05/11/2024,22:00,league-phase,Bologna,AS Monaco,0,1,FT,2,4,7,10,46.5,53.5,3,6
+05/11/2024,22:00,league-phase,Borussia Dortmund,SK Sturm Graz,1,0,FT,8,1,21,7,66.3,33.7,11,3
+05/11/2024,22:00,league-phase,Celtic,RB Leipzig,3,1,FT,5,3,17,10,60.4,39.6,7,8
+05/11/2024,22:00,league-phase,Lille,Juventus,1,1,FT,3,3,6,11,34.1,65.9,1,5
+05/11/2024,22:00,league-phase,Liverpool,Bayer Leverkusen,4,0,FT,8,4,22,12,47.1,52.9,1,3
+05/11/2024,22:00,league-phase,Real Madrid,AC Milan,1,3,FT,10,9,23,14,56.8,43.2,8,5
+05/11/2024,22:00,league-phase,Sporting CP,Manchester City,4,1,FT,6,6,9,20,27.3,72.7,1,11
+06/11/2024,19:45,league-phase,Club Brugge,Aston Villa,1,0,FT,7,1,13,8,43.9,56.1,2,3
+06/11/2024,19:45,league-phase,Shakhtar Donetsk,Young Boys,2,1,FT,6,1,17,10,48.6,51.4,9,2
+06/11/2024,22:00,league-phase,Feyenoord Rotterdam,RB Salzburg,1,3,FT,4,3,14,9,57.8,42.2,4,3
+06/11/2024,22:00,league-phase,Internazionale,Arsenal,1,0,FT,1,4,7,20,37.2,62.8,0,13
+06/11/2024,22:00,league-phase,Paris Saint-Germain,Atlético Madrid,1,2,FT,9,3,22,4,71.3,28.7,6,0
+06/11/2024,22:00,league-phase,Red Star Belgrade,Barcelona,2,5,FT,2,9,4,21,30.1,69.9,1,7
+06/11/2024,22:00,league-phase,Sparta Prague,Brest,1,2,FT,1,7,6,18,50.1,49.9,3,6
+06/11/2024,22:00,league-phase,VfB Stuttgart,Atalanta,0,2,FT,1,4,10,9,55.1,44.9,4,3
+06/11/2024,22:15,league-phase,Bayern Munich,Benfica,1,0,FT,10,0,24,1,73.5,26.5,10,0
+26/11/2024,19:45,league-phase,Slovan Bratislava,AC Milan,2,3,FT,3,5,6,15,34.2,65.8,4,8
+26/11/2024,19:45,league-phase,Sparta Prague,Atlético Madrid,0,6,FT,2,10,4,24,39.9,60.1,0,6
+26/11/2024,22:00,league-phase,Barcelona,Brest,3,0,FT,8,0,19,2,75.9,24.1,4,0
+26/11/2024,22:00,league-phase,Bayer Leverkusen,RB Salzburg,5,0,FT,13,2,29,7,62.4,37.6,6,3
+26/11/2024,22:00,league-phase,Bayern Munich,Paris Saint-Germain,1,0,FT,7,3,18,11,57.4,42.6,4,3
+26/11/2024,22:00,league-phase,Internazionale,RB Leipzig,1,0,FT,4,1,12,7,50.2,49.8,6,5
+26/11/2024,22:00,league-phase,Manchester City,Feyenoord Rotterdam,3,3,FT,9,5,18,10,63.5,36.5,10,2
+26/11/2024,22:00,league-phase,Sporting CP,Arsenal,1,5,FT,8,9,19,13,52.2,47.8,8,3
+26/11/2024,22:00,league-phase,Young Boys,Atalanta,1,6,FT,1,10,9,18,44.8,55.2,7,9
+27/11/2024,19:45,league-phase,Red Star Belgrade,VfB Stuttgart,5,1,FT,7,2,11,13,29.1,70.9,4,4
+27/11/2024,19:45,league-phase,SK Sturm Graz,Girona,1,0,FT,5,1,9,9,30.7,69.3,1,10
+27/11/2024,22:00,league-phase,AS Monaco,Benfica,2,3,FT,5,8,11,18,46.1,53.9,4,7
+27/11/2024,22:00,league-phase,Aston Villa,Juventus,0,0,FT,3,2,11,8,45.6,54.4,3,3
+27/11/2024,22:00,league-phase,Bologna,Lille,1,2,FT,6,8,12,15,56.9,43.1,2,3
+27/11/2024,22:00,league-phase,Celtic,Club Brugge,1,1,FT,3,3,7,9,60.2,39.8,4,5
+27/11/2024,22:00,league-phase,Dinamo Zagreb,Borussia Dortmund,0,3,FT,1,6,5,17,29.5,70.5,3,8
+27/11/2024,22:00,league-phase,Liverpool,Real Madrid,2,0,FT,7,3,17,8,62.7,37.3,8,5
+27/11/2024,22:00,league-phase,PSV Eindhoven,Shakhtar Donetsk,3,2,FT,18,3,35,12,69.2,30.8,12,5
+10/12/2024,19:45,league-phase,Dinamo Zagreb,Celtic,0,0,FT,2,1,11,7,31.2,68.8,4,10
+10/12/2024,19:45,league-phase,Girona,Liverpool,0,1,FT,5,7,13,15,37.5,62.5,5,8
+10/12/2024,22:00,league-phase,Atalanta,Real Madrid,2,3,FT,9,6,20,10,55.6,44.4,5,2
+10/12/2024,22:00,league-phase,Bayer Leverkusen,Internazionale,1,0,FT,5,0,17,6,60.7,39.3,3,1
+10/12/2024,22:00,league-phase,Brest,PSV Eindhoven,1,0,FT,5,5,11,18,33.4,66.6,4,8
+10/12/2024,22:00,league-phase,Club Brugge,Sporting CP,2,1,FT,4,2,9,8,44,56,4,0
+10/12/2024,22:00,league-phase,RB Leipzig,Aston Villa,2,3,FT,6,8,17,19,46.7,53.3,5,7
+10/12/2024,22:00,league-phase,RB Salzburg,Paris Saint-Germain,0,3,FT,1,8,3,15,30,70,1,5
+10/12/2024,22:00,league-phase,Shakhtar Donetsk,Bayern Munich,1,5,FT,5,8,12,21,34.6,65.4,4,5
+11/12/2024,19:45,league-phase,Atlético Madrid,Slovan Bratislava,3,1,FT,6,2,19,5,59,41,9,1
+11/12/2024,19:45,league-phase,Lille,SK Sturm Graz,3,2,FT,9,4,18,10,66.7,33.3,9,2
+11/12/2024,22:00,league-phase,AC Milan,Red Star Belgrade,2,1,FT,10,4,20,9,51.8,48.2,7,4
+11/12/2024,22:00,league-phase,Arsenal,AS Monaco,3,0,FT,8,2,16,7,54.6,45.4,3,1
+11/12/2024,22:00,league-phase,Benfica,Bologna,0,0,FT,5,1,15,6,49,51,10,4
+11/12/2024,22:00,league-phase,Borussia Dortmund,Barcelona,2,3,FT,2,8,12,13,44.8,55.2,2,3
+11/12/2024,22:00,league-phase,Feyenoord Rotterdam,Sparta Prague,4,2,FT,9,5,13,13,56.7,43.3,6,5
+11/12/2024,22:00,league-phase,Juventus,Manchester City,2,0,FT,5,3,10,12,31.1,68.9,2,6
+11/12/2024,22:00,league-phase,VfB Stuttgart,Young Boys,5,1,FT,6,1,20,5,63.8,36.2,5,0
+21/01/2025,19:45,league-phase,AS Monaco,Aston Villa,1,0,FT,4,5,12,10,39.1,60.9,4,7
+21/01/2025,19:45,league-phase,Atalanta,SK Sturm Graz,5,0,FT,9,1,25,5,61,39,12,1
+21/01/2025,22:00,league-phase,Atlético Madrid,Bayer Leverkusen,2,1,FT,2,4,5,13,30,70,3,4
+21/01/2025,22:00,league-phase,Benfica,Barcelona,4,5,FT,5,11,10,22,25.6,74.4,2,6
+21/01/2025,22:00,league-phase,Bologna,Borussia Dortmund,2,1,FT,6,2,17,3,52.5,47.5,6,5
+21/01/2025,22:00,league-phase,Club Brugge,Juventus,0,0,FT,0,1,7,5,42.8,57.2,3,4
+21/01/2025,22:00,league-phase,Liverpool,Lille,2,1,FT,7,1,13,4,55.8,44.2,3,3
+21/01/2025,22:00,league-phase,Red Star Belgrade,PSV Eindhoven,2,3,FT,7,5,21,13,56.8,43.2,7,7
+21/01/2025,22:00,league-phase,Slovan Bratislava,VfB Stuttgart,1,3,FT,2,7,6,21,40.7,59.3,4,19
+22/01/2025,19:45,league-phase,RB Leipzig,Sporting CP,2,1,FT,6,2,10,17,47.4,52.6,0,9
+22/01/2025,19:45,league-phase,Shakhtar Donetsk,Brest,2,0,FT,5,4,9,10,46.8,53.2,3,4
+22/01/2025,22:00,league-phase,AC Milan,Girona,1,0,FT,5,4,17,11,42.2,57.8,6,3
+22/01/2025,22:00,league-phase,Arsenal,Dinamo Zagreb,3,0,FT,4,0,17,5,63,37,11,3
+22/01/2025,22:00,league-phase,Celtic,Young Boys,1,0,FT,7,4,16,12,59.3,40.7,7,4
+22/01/2025,22:00,league-phase,Feyenoord Rotterdam,Bayern Munich,3,0,FT,3,6,8,30,20,80,1,13
+22/01/2025,22:00,league-phase,Paris Saint-Germain,Manchester City,4,2,FT,9,6,26,9,63.2,36.8,11,6
+22/01/2025,22:00,league-phase,Real Madrid,RB Salzburg,5,1,FT,6,3,14,9,70.3,29.7,10,3
+22/01/2025,22:00,league-phase,Sparta Prague,Internazionale,0,1,FT,2,4,10,12,30.5,69.5,4,3
+29/01/2025,22:00,league-phase,Aston Villa,Celtic,4,2,FT,8,4,20,6,58.4,41.6,4,4
+29/01/2025,22:00,league-phase,Barcelona,Atalanta,2,2,FT,7,4,16,8,68.2,31.8,7,4
+29/01/2025,22:00,league-phase,Bayer Leverkusen,Sparta Prague,2,0,FT,10,1,26,12,70.7,29.3,10,2
+29/01/2025,22:00,league-phase,Bayern Munich,Slovan Bratislava,3,1,FT,9,4,35,9,74.6,25.4,9,2
+29/01/2025,22:00,league-phase,Borussia Dortmund,Shakhtar Donetsk,3,1,FT,7,2,15,7,45.4,54.6,6,1
+29/01/2025,22:00,league-phase,Brest,Real Madrid,0,3,FT,5,6,23,14,40.7,59.3,4,3
+29/01/2025,22:00,league-phase,Dinamo Zagreb,AC Milan,2,1,FT,5,5,12,14,43.1,56.9,5,4
+29/01/2025,22:00,league-phase,Girona,Arsenal,1,2,FT,3,6,7,16,39.4,60.6,3,13
+29/01/2025,22:00,league-phase,Internazionale,AS Monaco,3,0,FT,7,0,20,4,63.9,36.1,3,0
+29/01/2025,22:00,league-phase,Juventus,Benfica,0,2,FT,4,6,17,15,66.7,33.3,7,3
+29/01/2025,22:00,league-phase,Lille,Feyenoord Rotterdam,6,1,FT,5,3,14,7,61.7,38.3,7,5
+29/01/2025,22:00,league-phase,Manchester City,Club Brugge,3,1,FT,6,5,17,12,73.9,26.1,5,1
+29/01/2025,22:00,league-phase,PSV Eindhoven,Liverpool,3,2,FT,5,5,12,9,53.2,46.8,9,2
+29/01/2025,22:00,league-phase,RB Salzburg,Atlético Madrid,1,4,FT,3,8,10,12,49.6,50.4,4,5
+29/01/2025,22:00,league-phase,SK Sturm Graz,RB Leipzig,1,0,FT,5,5,9,15,39.9,60.1,3,9
+29/01/2025,22:00,league-phase,Sporting CP,Bologna,1,1,FT,5,2,9,11,57.1,42.9,5,6
+29/01/2025,22:00,league-phase,VfB Stuttgart,Paris Saint-Germain,1,4,FT,2,6,10,13,41.6,58.4,2,8
+29/01/2025,22:00,league-phase,Young Boys,Red Star Belgrade,0,1,FT,3,3,8,18,41.3,58.7,4,10
+11/02/2025,19:45,knockout-round-playoffs,Brest,Paris Saint-Germain,0,3,FT,2,7,16,16,38,62,6,3
+11/02/2025,22:00,knockout-round-playoffs,Juventus,PSV Eindhoven,2,1,FT,8,2,12,15,47,53,5,4
+11/02/2025,22:00,knockout-round-playoffs,Manchester City,Real Madrid,2,3,FT,4,8,11,20,54.4,45.6,6,5
+11/02/2025,22:00,knockout-round-playoffs,Sporting CP,Borussia Dortmund,0,3,FT,6,7,13,16,45.5,54.5,4,8
+12/02/2025,19:45,knockout-round-playoffs,Club Brugge,Atalanta,2,1,FT,4,5,11,12,53.9,46.1,4,2
+12/02/2025,22:00,knockout-round-playoffs,AS Monaco,Benfica,0,1,FT,3,6,6,23,44.4,55.6,2,7
+12/02/2025,22:00,knockout-round-playoffs,Celtic,Bayern Munich,1,2,FT,2,5,9,10,43.1,56.9,7,7
+12/02/2025,22:00,knockout-round-playoffs,Feyenoord Rotterdam,AC Milan,1,0,FT,2,6,11,12,46.2,53.8,5,6
+18/02/2025,19:45,knockout-round-playoffs,AC Milan,Feyenoord Rotterdam,1,1,FT,7,1,18,6,56.1,43.9,4,3
+18/02/2025,22:00,knockout-round-playoffs,Atalanta,Club Brugge,1,3,FT,11,4,30,7,65,35,14,0
+18/02/2025,22:00,knockout-round-playoffs,Bayern Munich,Celtic,1,1,FT,10,3,23,5,67,33,7,0
+18/02/2025,22:00,knockout-round-playoffs,Benfica,AS Monaco,3,3,FT,7,6,10,15,40,60,2,3
+19/02/2025,19:45,knockout-round-playoffs,Borussia Dortmund,Sporting CP,0,0,FT,5,1,19,7,55.2,44.8,6,2
+19/02/2025,22:00,knockout-round-playoffs,Paris Saint-Germain,Brest,7,0,FT,9,3,20,13,68.3,31.7,4,5
+19/02/2025,22:00,knockout-round-playoffs,PSV Eindhoven,Juventus,3,1,FT,10,4,25,15,59.2,40.8,6,5
+19/02/2025,22:00,knockout-round-playoffs,Real Madrid,Manchester City,3,1,FT,8,4,15,12,48.4,51.6,7,5
+04/03/2025,19:45,round-of-16,Club Brugge,Aston Villa,1,3,FT,3,4,11,7,56,44,3,1
+04/03/2025,22:00,round-of-16,Borussia Dortmund,Lille,1,1,FT,1,1,7,9,43.3,56.7,5,1
+04/03/2025,22:00,round-of-16,PSV Eindhoven,Arsenal,1,7,FT,2,8,12,15,53.2,46.8,5,3
+04/03/2025,22:00,round-of-16,Real Madrid,Atlético Madrid,2,1,FT,7,2,13,6,51.4,48.6,6,3
+05/03/2025,19:45,round-of-16,Feyenoord Rotterdam,Internazionale,0,2,FT,5,7,8,13,41.8,58.2,7,5
+05/03/2025,22:00,round-of-16,Bayern Munich,Bayer Leverkusen,3,0,FT,6,1,17,3,64.6,35.4,5,1
+05/03/2025,22:00,round-of-16,Benfica,Barcelona,0,1,FT,8,5,26,10,52,48,13,4
+05/03/2025,22:00,round-of-16,Paris Saint-Germain,Liverpool,0,1,FT,10,1,27,2,70.4,29.6,14,2
+11/03/2025,19:45,round-of-16,Barcelona,Benfica,3,1,FT,6,2,20,8,65.1,34.9,1,6
+11/03/2025,22:00,round-of-16,Bayer Leverkusen,Bayern Munich,0,2,FT,3,5,17,12,53.3,46.7,14,6
+11/03/2025,22:00,round-of-16,Internazionale,Feyenoord Rotterdam,2,1,FT,5,4,12,14,55.7,44.3,6,3
+11/03/2025,22:00,round-of-16,Liverpool,Paris Saint-Germain,0,1,FT,0,0,0,0,0,0,0,0
+12/03/2025,19:45,round-of-16,Lille,Borussia Dortmund,1,2,FT,4,8,11,17,49.6,50.4,4,3
+12/03/2025,22:00,round-of-16,Arsenal,PSV Eindhoven,2,2,FT,7,5,9,13,51.1,48.9,5,4
+12/03/2025,22:00,round-of-16,Aston Villa,Club Brugge,3,0,FT,10,1,14,4,53.3,46.7,3,1
+12/03/2025,22:00,round-of-16,Atlético Madrid,Real Madrid,1,0,FT,8,3,17,10,38,62,10,10
+08/04/2025,21:00,quarterfinals,Arsenal,Real Madrid,3,0,FT,11,3,12,9,53.4,46.6,5,3
+08/04/2025,21:00,quarterfinals,Bayern Munich,Internazionale,1,2,FT,7,4,20,10,58.2,41.8,5,1
+09/04/2025,21:00,quarterfinals,Barcelona,Borussia Dortmund,4,0,FT,10,3,18,13,60.2,39.8,4,6
+09/04/2025,21:00,quarterfinals,Paris Saint-Germain,Aston Villa,3,1,FT,10,2,29,7,75.4,24.6,10,1
+15/04/2025,21:00,quarterfinals,Aston Villa,Paris Saint-Germain,3,2,FT,9,7,17,14,34.3,65.7,5,5
+15/04/2025,21:00,quarterfinals,Borussia Dortmund,Barcelona,3,1,FT,11,2,18,7,46.5,53.5,8,4
+16/04/2025,21:00,quarterfinals,Internazionale,Bayern Munich,2,2,FT,6,6,15,20,37.7,62.3,5,6
+16/04/2025,21:00,quarterfinals,Real Madrid,Arsenal,1,2,FT,3,6,18,12,66.2,33.8,10,4
+29/04/2025,21:00,semifinals,Arsenal,Paris Saint-Germain,0,1,FT,5,4,10,11,47.9,52.1,3,1
+30/04/2025,21:00,semifinals,Barcelona,Internazionale,3,3,FT,9,3,19,7,71.5,28.5,7,2
+06/05/2025,21:00,semifinals,Internazionale,Barcelona,4,3,FT,7,10,13,22,28.8,71.2,5,7
+07/05/2025,21:00,semifinals,Paris Saint-Germain,Arsenal,2,1,FT,6,4,11,19,45.9,54.1,2,6
+31/05/2025,21:00,final,Paris Saint-Germain,Internazionale,5,0,FT,8,2,23,8,59.3,40.7,4,6
+16/09/2025,18:45,league-phase,Athletic Club,Arsenal,0,2,FT,2,6,11,11,38.4,61.6,2,2
+16/09/2025,18:45,league-phase,PSV Eindhoven,Union St.-Gilloise,1,3,FT,3,8,10,18,62.7,37.3,7,7
+16/09/2025,21:00,league-phase,Benfica,FK Qarabag,2,3,FT,3,5,14,10,52.9,47.1,8,3
+16/09/2025,21:00,league-phase,Juventus,Borussia Dortmund,4,4,FT,7,5,19,10,51.6,48.4,4,2
+16/09/2025,21:00,league-phase,Real Madrid,Marseille,2,1,FT,15,5,28,15,43.2,56.8,9,4
+16/09/2025,21:00,league-phase,Tottenham Hotspur,Villarreal,1,0,FT,1,0,9,10,58.2,41.8,3,3
+17/09/2025,18:45,league-phase,Olympiacos,Pafos,0,0,FT,3,1,18,6,69.4,30.6,9,0
+17/09/2025,18:45,league-phase,Slavia Prague,Bodo/Glimt,2,2,FT,11,10,26,11,46.4,53.6,8,4
+17/09/2025,21:00,league-phase,Ajax Amsterdam,Internazionale,0,2,FT,2,4,7,14,56.4,43.6,3,5
+17/09/2025,21:00,league-phase,Bayern Munich,Chelsea,3,1,FT,5,3,16,9,55.7,44.3,6,2
+17/09/2025,21:00,league-phase,Liverpool,Atlético Madrid,3,2,FT,6,4,20,10,55.9,44.1,7,6
+17/09/2025,21:00,league-phase,Paris Saint-Germain,Atalanta,4,0,FT,13,2,22,7,66.9,33.1,6,1
+18/09/2025,18:45,league-phase,Club Brugge,AS Monaco,4,1,FT,10,5,26,13,48.8,51.2,4,5
+18/09/2025,18:45,league-phase,F.C. København,Bayer Leverkusen,2,2,FT,7,4,12,15,36.4,63.6,4,5
+18/09/2025,21:00,league-phase,Eintracht Frankfurt,Galatasaray,5,1,FT,5,5,11,14,38.1,61.9,4,3
+18/09/2025,21:00,league-phase,Manchester City,Napoli,2,0,FT,8,1,23,1,73.8,26.2,9,2
+18/09/2025,21:00,league-phase,Newcastle United,Barcelona,1,2,FT,6,5,10,19,35.9,64.1,6,4
+18/09/2025,21:00,league-phase,Sporting CP,Kairat Almaty,4,1,FT,8,4,21,9,63.8,36.2,8,3
+30/09/2025,18:45,league-phase,Atalanta,Club Brugge,2,1,FT,3,2,20,7,48.2,51.8,7,1
+30/09/2025,18:45,league-phase,Kairat Almaty,Real Madrid,0,5,FT,4,12,11,20,32.8,67.2,3,6
+30/09/2025,21:00,league-phase,Atlético Madrid,Eintracht Frankfurt,5,1,FT,12,2,18,6,51.4,48.6,5,2
+30/09/2025,21:00,league-phase,Bodo/Glimt,Tottenham Hotspur,2,2,FT,4,3,18,8,52,48,4,5
+30/09/2025,21:00,league-phase,Chelsea,Benfica,1,0,FT,3,3,8,9,56.1,43.9,3,5
+30/09/2025,21:00,league-phase,Galatasaray,Liverpool,1,0,FT,4,4,9,16,33.4,66.6,3,7
+30/09/2025,21:00,league-phase,Internazionale,Slavia Prague,3,0,FT,6,1,21,3,57.1,42.9,5,0
+30/09/2025,21:00,league-phase,Marseille,Ajax Amsterdam,4,0,FT,6,2,9,13,48,52,1,7
+30/09/2025,21:00,league-phase,Pafos,Bayern Munich,1,5,FT,2,15,6,26,33.2,66.8,2,6
+01/10/2025,18:45,league-phase,FK Qarabag,F.C. København,2,0,FT,6,4,10,12,49.2,50.8,4,7
+01/10/2025,18:45,league-phase,Union St.-Gilloise,Newcastle United,0,4,FT,6,6,17,13,43.2,56.8,7,5
+01/10/2025,21:00,league-phase,Arsenal,Olympiacos,2,0,FT,5,3,16,10,61,39,3,5
+01/10/2025,21:00,league-phase,AS Monaco,Manchester City,2,2,FT,3,6,8,18,28.7,71.3,7,3
+01/10/2025,21:00,league-phase,Barcelona,Paris Saint-Germain,1,2,FT,3,7,12,16,46.9,53.1,4,9
+01/10/2025,21:00,league-phase,Bayer Leverkusen,PSV Eindhoven,1,1,FT,4,1,14,6,46.4,53.6,7,4
+01/10/2025,21:00,league-phase,Borussia Dortmund,Athletic Club,4,1,FT,8,3,13,6,52.3,47.7,4,0
+01/10/2025,21:00,league-phase,Napoli,Sporting CP,2,1,FT,3,4,12,8,51.1,48.9,7,2
+01/10/2025,21:00,league-phase,Villarreal,Juventus,2,2,FT,6,4,17,13,44.5,55.5,4,3
+21/10/2025,18:45,league-phase,Barcelona,Olympiacos,6,1,FT,7,2,14,5,72.5,27.5,7,2
+21/10/2025,18:45,league-phase,Kairat Almaty,Pafos,0,0,FT,2,6,22,9,69,31,6,4
+21/10/2025,21:00,league-phase,Arsenal,Atlético Madrid,4,0,FT,8,1,19,11,51.5,48.5,3,4
+21/10/2025,21:00,league-phase,Bayer Leverkusen,Paris Saint-Germain,2,7,FT,3,8,6,24,29.1,70.9,3,4
+21/10/2025,21:00,league-phase,F.C. København,Borussia Dortmund,2,4,FT,4,5,11,9,35.7,64.3,4,7
+21/10/2025,21:00,league-phase,Newcastle United,Benfica,3,0,FT,10,2,19,7,52.2,47.8,12,8
+21/10/2025,21:00,league-phase,PSV Eindhoven,Napoli,6,2,FT,8,2,19,10,58.6,41.4,4,8
+21/10/2025,21:00,league-phase,Union St.-Gilloise,Internazionale,0,4,FT,6,7,15,21,30.3,69.7,3,4
+21/10/2025,21:00,league-phase,Villarreal,Manchester City,0,2,FT,2,7,11,10,34.1,65.9,1,3
+22/10/2025,18:45,league-phase,Athletic Club,FK Qarabag,3,1,FT,5,4,21,9,59.7,40.3,8,3
+22/10/2025,18:45,league-phase,Galatasaray,Bodo/Glimt,3,1,FT,11,2,23,8,37.9,62.1,7,4
+22/10/2025,21:00,league-phase,AS Monaco,Tottenham Hotspur,0,0,FT,8,2,23,11,56.2,43.8,5,4
+22/10/2025,21:00,league-phase,Atalanta,Slavia Prague,0,0,FT,5,4,22,16,55.8,44.2,6,3
+22/10/2025,21:00,league-phase,Bayern Munich,Club Brugge,4,0,FT,13,2,26,5,63.3,36.7,9,1
+22/10/2025,21:00,league-phase,Chelsea,Ajax Amsterdam,5,1,FT,10,1,22,2,65.6,34.4,11,0
+22/10/2025,21:00,league-phase,Eintracht Frankfurt,Liverpool,1,5,FT,1,14,4,18,35.2,64.8,2,10
+22/10/2025,21:00,league-phase,Real Madrid,Juventus,1,0,FT,10,4,28,13,65.6,34.4,14,7
+22/10/2025,21:00,league-phase,Sporting CP,Marseille,2,1,FT,7,3,14,10,52.5,47.5,3,1
+04/11/2025,19:45,league-phase,Napoli,Eintracht Frankfurt,0,0,FT,3,3,18,7,63.6,36.4,5,3
+04/11/2025,19:45,league-phase,Slavia Prague,Arsenal,0,3,FT,1,8,9,14,43.1,56.9,4,7
+04/11/2025,22:00,league-phase,Atlético Madrid,Union St.-Gilloise,3,1,FT,6,3,14,8,66.6,33.4,9,1
+04/11/2025,22:00,league-phase,Bodo/Glimt,AS Monaco,0,1,FT,4,2,17,9,64,36,4,4
+04/11/2025,22:00,league-phase,Juventus,Sporting CP,1,1,FT,9,1,18,4,49.7,50.3,6,0
+04/11/2025,22:00,league-phase,Liverpool,Real Madrid,1,0,FT,9,2,17,8,38.8,61.2,4,2
+04/11/2025,22:00,league-phase,Olympiacos,PSV Eindhoven,1,1,FT,4,2,18,10,39.6,60.4,3,6
+04/11/2025,22:00,league-phase,Paris Saint-Germain,Bayern Munich,1,2,FT,9,5,25,9,71,29,9,1
+04/11/2025,22:00,league-phase,Tottenham Hotspur,F.C. København,4,0,FT,6,4,14,12,61.2,38.8,3,6
+05/11/2025,19:45,league-phase,FK Qarabag,Chelsea,2,2,FT,3,4,9,16,38.6,61.4,2,8
+05/11/2025,19:45,league-phase,Pafos,Villarreal,1,0,FT,2,5,5,18,40.8,59.2,2,3
+05/11/2025,22:00,league-phase,Ajax Amsterdam,Galatasaray,0,3,FT,2,8,8,14,48,52,3,2
+05/11/2025,22:00,league-phase,Benfica,Bayer Leverkusen,0,1,FT,6,3,21,7,53.4,46.6,6,0
+05/11/2025,22:00,league-phase,Club Brugge,Barcelona,3,3,FT,6,6,10,23,23.7,76.3,0,4
+05/11/2025,22:00,league-phase,Internazionale,Kairat Almaty,2,1,FT,9,3,23,7,65.6,34.4,9,3
+05/11/2025,22:00,league-phase,Manchester City,Borussia Dortmund,4,1,FT,11,4,18,12,49.9,50.1,4,4
+05/11/2025,22:00,league-phase,Marseille,Atalanta,0,1,FT,4,3,15,8,53.1,46.9,7,3
+05/11/2025,22:00,league-phase,Newcastle United,Athletic Club,2,0,FT,4,5,8,12,58.5,41.5,2,5
+25/11/2025,19:45,league-phase,Ajax Amsterdam,Benfica,0,2,FT,3,4,7,11,62.3,37.7,10,4
+25/11/2025,19:45,league-phase,Galatasaray,Union St.-Gilloise,0,1,FT,3,5,15,16,66,34,4,5
+25/11/2025,22:00,league-phase,Bodo/Glimt,Juventus,2,3,FT,6,16,18,23,57.6,42.4,6,8
+25/11/2025,22:00,league-phase,Borussia Dortmund,Villarreal,4,0,FT,8,2,13,10,67,33,3,2
+25/11/2025,22:00,league-phase,Chelsea,Barcelona,3,0,FT,6,2,15,5,55.5,44.5,4,0
+25/11/2025,22:00,league-phase,Manchester City,Bayer Leverkusen,0,2,FT,7,2,19,7,55.2,44.8,9,3
+25/11/2025,22:00,league-phase,Marseille,Newcastle United,2,1,FT,7,9,18,20,57.6,42.4,11,5
+25/11/2025,22:00,league-phase,Napoli,FK Qarabag,2,0,FT,8,3,17,11,54.9,45.1,6,4
+25/11/2025,22:00,league-phase,Slavia Prague,Athletic Club,0,0,FT,3,4,8,12,51.9,48.1,2,5
+26/11/2025,19:45,league-phase,F.C. København,Kairat Almaty,3,2,FT,9,4,18,13,53.6,46.4,5,0
+26/11/2025,19:45,league-phase,Pafos,AS Monaco,2,2,FT,4,6,17,14,48.2,51.8,5,3
+26/11/2025,22:00,league-phase,Arsenal,Bayern Munich,3,1,FT,8,2,13,8,40,60,6,1
+26/11/2025,22:00,league-phase,Atlético Madrid,Internazionale,2,1,FT,6,6,15,17,48.5,51.5,7,6
+26/11/2025,22:00,league-phase,Eintracht Frankfurt,Atalanta,0,3,FT,3,7,9,21,46.1,53.9,5,6
+26/11/2025,22:00,league-phase,Liverpool,PSV Eindhoven,1,4,FT,10,6,27,9,63.4,36.6,11,4
+26/11/2025,22:00,league-phase,Olympiacos,Real Madrid,3,4,FT,8,7,18,15,41.1,58.9,3,5
+26/11/2025,22:00,league-phase,Paris Saint-Germain,Tottenham Hotspur,5,3,FT,6,5,15,11,67.2,32.8,5,5
+26/11/2025,22:00,league-phase,Sporting CP,Club Brugge,3,0,FT,9,1,19,8,45.5,54.5,3,5
+09/12/2025,17:30,league-phase,Kairat Almaty,Olympiacos,0,1,FT,1,8,5,20,46.5,53.5,1,8
+09/12/2025,19:45,league-phase,Bayern Munich,Sporting CP,3,1,FT,9,0,23,4,61.6,38.4,4,3
+09/12/2025,22:00,league-phase,AS Monaco,Galatasaray,1,0,FT,5,2,19,13,41.7,58.3,8,3
+09/12/2025,22:00,league-phase,Atalanta,Chelsea,2,1,FT,4,5,14,10,49.4,50.6,2,5
+09/12/2025,22:00,league-phase,Barcelona,Eintracht Frankfurt,2,1,FT,7,4,19,6,75.4,24.6,5,0
+09/12/2025,22:00,league-phase,Internazionale,Liverpool,0,1,FT,2,5,9,12,50,50,6,3
+09/12/2025,22:00,league-phase,PSV Eindhoven,Atlético Madrid,2,3,FT,3,9,13,15,52.7,47.3,9,5
+09/12/2025,22:00,league-phase,Tottenham Hotspur,Slavia Prague,3,0,FT,10,5,16,12,53.1,46.9,8,3
+09/12/2025,22:00,league-phase,Union St.-Gilloise,Marseille,2,3,FT,6,5,8,10,40.5,59.5,2,3
+10/12/2025,19:45,league-phase,FK Qarabag,Ajax Amsterdam,2,4,FT,6,8,17,20,47.1,52.9,4,6
+10/12/2025,19:45,league-phase,Villarreal,F.C. København,2,3,FT,5,4,19,8,52,48,6,4
+10/12/2025,22:00,league-phase,Athletic Club,Paris Saint-Germain,0,0,FT,1,5,9,18,27.6,72.4,4,6
+10/12/2025,22:00,league-phase,Bayer Leverkusen,Newcastle United,2,2,FT,7,5,17,13,50.7,49.3,9,6
+10/12/2025,22:00,league-phase,Benfica,Napoli,2,0,FT,5,2,13,9,39.7,60.3,2,6
+10/12/2025,22:00,league-phase,Borussia Dortmund,Bodo/Glimt,2,2,FT,9,3,22,7,63.3,36.7,10,4
+10/12/2025,22:00,league-phase,Club Brugge,Arsenal,0,3,FT,7,11,18,20,49.3,50.7,1,5
+10/12/2025,22:00,league-phase,Juventus,Pafos,2,0,FT,5,3,25,12,61.2,38.8,13,4
+10/12/2025,22:00,league-phase,Real Madrid,Manchester City,1,2,FT,1,8,16,12,51.7,48.3,3,3
+20/01/2026,17:30,league-phase,Kairat Almaty,Club Brugge,1,4,FT,2,6,8,17,47,53,1,3
+20/01/2026,19:45,league-phase,Bodo/Glimt,Manchester City,3,1,FT,5,5,8,16,34.2,65.8,2,9
+20/01/2026,22:00,league-phase,F.C. København,Napoli,1,1,FT,4,5,5,19,29.7,70.3,1,11
+20/01/2026,22:00,league-phase,Internazionale,Arsenal,1,3,FT,4,6,18,17,51.3,48.7,4,7
+20/01/2026,22:00,league-phase,Olympiacos,Bayer Leverkusen,2,0,FT,2,6,6,17,28.3,71.7,2,8
+20/01/2026,22:00,league-phase,Real Madrid,AS Monaco,6,1,FT,5,6,25,20,49.1,50.9,10,6
+20/01/2026,22:00,league-phase,Sporting CP,Paris Saint-Germain,2,1,FT,4,6,10,28,25.4,74.6,2,10
+20/01/2026,22:00,league-phase,Tottenham Hotspur,Borussia Dortmund,2,0,FT,5,1,16,6,53.5,46.5,4,2
+20/01/2026,22:00,league-phase,Villarreal,Ajax Amsterdam,1,2,FT,8,5,19,15,38.4,61.6,7,5
+21/01/2026,19:45,league-phase,FK Qarabag,Eintracht Frankfurt,3,2,FT,5,5,11,8,58.2,41.8,7,1
+21/01/2026,19:45,league-phase,Galatasaray,Atlético Madrid,1,1,FT,2,5,7,15,45.5,54.5,4,7
+21/01/2026,22:00,league-phase,Atalanta,Athletic Club,2,3,FT,4,3,14,4,70.1,29.9,5,2
+21/01/2026,22:00,league-phase,Bayern Munich,Union St.-Gilloise,2,0,FT,4,1,14,5,73.7,26.3,4,1
+21/01/2026,22:00,league-phase,Chelsea,Pafos,1,0,FT,7,2,21,4,71.4,28.6,15,2
+21/01/2026,22:00,league-phase,Juventus,Benfica,2,0,FT,4,3,12,16,45.6,54.4,4,7
+21/01/2026,22:00,league-phase,Marseille,Liverpool,0,3,FT,4,3,15,11,58.1,41.9,7,4
+21/01/2026,22:00,league-phase,Newcastle United,PSV Eindhoven,3,0,FT,4,1,11,6,53.7,46.3,3,1
+21/01/2026,22:00,league-phase,Slavia Prague,Barcelona,2,4,FT,2,12,12,20,40.7,59.3,5,4
+28/01/2026,22:00,league-phase,Ajax Amsterdam,Olympiacos,1,2,FT,4,3,11,11,63.4,36.6,5,4
+28/01/2026,22:00,league-phase,Arsenal,Kairat Almaty,3,2,FT,11,2,25,4,65.6,34.4,11,0
+28/01/2026,22:00,league-phase,AS Monaco,Juventus,0,0,FT,5,0,11,5,50.2,49.8,6,0
+28/01/2026,22:00,league-phase,Athletic Club,Sporting CP,2,3,FT,2,6,9,9,35.2,64.8,6,7
+28/01/2026,22:00,league-phase,Atlético Madrid,Bodo/Glimt,1,2,FT,8,7,27,11,64.6,35.4,12,1
+28/01/2026,22:00,league-phase,Barcelona,F.C. København,4,1,FT,13,1,28,6,76.4,23.6,10,1
+28/01/2026,22:00,league-phase,Bayer Leverkusen,Villarreal,3,0,FT,7,2,15,5,65.1,34.9,4,1
+28/01/2026,22:00,league-phase,Benfica,Real Madrid,4,2,FT,12,6,22,16,32.8,67.2,6,5
+28/01/2026,22:00,league-phase,Borussia Dortmund,Internazionale,0,2,FT,1,5,9,12,45.2,54.8,5,3
+28/01/2026,22:00,league-phase,Club Brugge,Marseille,3,0,FT,5,9,11,18,37.4,62.6,4,10
+28/01/2026,22:00,league-phase,Eintracht Frankfurt,Tottenham Hotspur,0,2,FT,1,6,4,15,44.6,55.4,0,6
+28/01/2026,22:00,league-phase,Liverpool,FK Qarabag,6,0,FT,12,1,38,5,56.2,43.8,14,1
+28/01/2026,22:00,league-phase,Manchester City,Galatasaray,2,0,FT,5,4,10,4,50.3,49.7,4,4
+28/01/2026,22:00,league-phase,Napoli,Chelsea,2,3,FT,5,5,8,11,46,54,4,1
+28/01/2026,22:00,league-phase,Pafos,Slavia Prague,4,1,FT,8,3,17,13,44.8,55.2,8,2
+28/01/2026,22:00,league-phase,Paris Saint-Germain,Newcastle United,1,1,FT,7,4,25,10,67.1,32.9,5,1
+28/01/2026,22:00,league-phase,PSV Eindhoven,Bayern Munich,1,2,FT,7,8,13,17,42.7,57.3,5,6
+28/01/2026,22:00,league-phase,Union St.-Gilloise,Atalanta,1,0,FT,4,2,8,13,35.7,64.3,0,6
+17/02/2026,19:45,knockout-round-playoffs,Galatasaray,Juventus,5,2,FT,9,3,22,7,61.8,38.2,5,5
+17/02/2026,22:00,knockout-round-playoffs,AS Monaco,Paris Saint-Germain,2,3,FT,4,10,7,30,19.6,80.4,1,8
+17/02/2026,22:00,knockout-round-playoffs,Benfica,Real Madrid,0,1,FT,3,7,10,16,41.7,58.3,3,6
+17/02/2026,22:15,knockout-round-playoffs,Borussia Dortmund,Atalanta,2,0,FT,2,3,9,7,44.4,55.6,3,2
+18/02/2026,19:45,knockout-round-playoffs,FK Qarabag,Newcastle United,1,6,FT,2,14,8,22,42,58,8,6
+18/02/2026,22:00,knockout-round-playoffs,Bodo/Glimt,Internazionale,3,1,FT,6,4,8,15,42.4,57.6,3,3
+18/02/2026,22:00,knockout-round-playoffs,Club Brugge,Atlético Madrid,3,3,FT,10,4,17,13,57.7,42.3,4,6
+18/02/2026,22:00,knockout-round-playoffs,Olympiacos,Bayer Leverkusen,0,2,FT,1,5,13,8,42.1,57.9,3,3
+24/02/2026,19:45,knockout-round-playoffs,Atlético Madrid,Club Brugge,4,1,FT,5,6,14,11,45.3,54.7,2,7
+24/02/2026,22:00,knockout-round-playoffs,Bayer Leverkusen,Olympiacos,0,0,FT,1,1,7,7,46.7,53.3,4,5
+24/02/2026,22:00,knockout-round-playoffs,Internazionale,Bodo/Glimt,1,2,FT,7,5,30,7,70.8,29.2,16,1
+24/02/2026,22:00,knockout-round-playoffs,Newcastle United,FK Qarabag,3,2,FT,8,6,19,13,65.4,34.6,9,6
+25/02/2026,19:45,knockout-round-playoffs,Atalanta,Borussia Dortmund,4,1,FT,9,4,15,7,43.7,56.3,5,1
+25/02/2026,22:00,knockout-round-playoffs,Juventus,Galatasaray,3,2,FT,9,8,28,16,47.2,52.8,9,4
+25/02/2026,22:00,knockout-round-playoffs,Paris Saint-Germain,AS Monaco,2,2,FT,6,4,21,10,72.6,27.4,8,4
+25/02/2026,22:00,knockout-round-playoffs,Real Madrid,Benfica,2,1,FT,4,4,14,12,55.8,44.2,4,7
+10/03/2026,19:45,round-of-16,Galatasaray,Liverpool,1,0,FT,4,6,15,15,46.2,53.8,7,4
+10/03/2026,22:00,round-of-16,Atalanta,Bayern Munich,1,6,FT,3,13,11,25,30.8,69.2,2,7
+10/03/2026,22:00,round-of-16,Atlético Madrid,Tottenham Hotspur,5,2,FT,7,5,11,11,58,42,4,2
+10/03/2026,22:00,round-of-16,Newcastle United,Barcelona,1,1,FT,4,2,16,9,45.6,54.4,9,4
+11/03/2026,19:45,round-of-16,Bayer Leverkusen,Arsenal,1,1,FT,3,2,10,6,45.3,54.7,2,3
+11/03/2026,22:00,round-of-16,Bodo/Glimt,Sporting CP,3,0,FT,5,2,10,9,48.6,51.4,4,5
+11/03/2026,22:00,round-of-16,Paris Saint-Germain,Chelsea,5,2,FT,8,4,9,9,58.2,41.8,2,3
+11/03/2026,22:00,round-of-16,Real Madrid,Manchester City,3,0,FT,7,4,12,8,40.2,59.8,1,10
+17/03/2026,19:45,round-of-16,Sporting CP,Bodo/Glimt,5,0,FT,14,3,38,9,66,34,16,4
+17/03/2026,22:00,round-of-16,Arsenal,Bayer Leverkusen,2,0,FT,12,2,21,9,41.5,58.5,10,8
+17/03/2026,22:00,round-of-16,Chelsea,Paris Saint-Germain,0,3,FT,9,5,18,8,45.4,54.6,9,3
+17/03/2026,22:00,round-of-16,Manchester City,Real Madrid,1,2,FT,8,7,22,14,47.3,52.7,9,6
+18/03/2026,19:45,round-of-16,Barcelona,Newcastle United,7,2,FT,13,5,18,8,62.8,37.2,6,2
+18/03/2026,22:00,round-of-16,Bayern Munich,Atalanta,4,1,FT,8,8,25,14,70.4,29.6,6,3
+18/03/2026,22:00,round-of-16,Liverpool,Galatasaray,4,0,FT,16,1,32,4,62.1,37.9,6,2
+18/03/2026,22:00,round-of-16,Tottenham Hotspur,Atlético Madrid,3,2,FT,11,6,18,18,51.3,48.7,7,7
+07/04/2026,21:00,quarterfinals,Real Madrid,Bayern Munich,1,2,FT,9,8,20,20,48,52,8,11
+07/04/2026,21:00,quarterfinals,Sporting CP,Arsenal,0,1,FT,5,4,11,8,44.2,55.8,3,4
+08/04/2026,21:00,quarterfinals,Barcelona,Atlético Madrid,0,2,FT,7,3,18,5,58.3,41.7,7,1
+08/04/2026,21:00,quarterfinals,Paris Saint-Germain,Liverpool,2,0,FT,6,0,18,3,74,26,3,1
+14/04/2026,21:00,quarterfinals,Atlético Madrid,Barcelona,1,2,FT,5,8,15,15,28.9,71.1,2,4
+14/04/2026,21:00,quarterfinals,Liverpool,Paris Saint-Germain,0,2,FT,5,6,21,12,52.7,47.3,8,2
+15/04/2026,21:00,quarterfinals,Arsenal,Sporting CP,0,0,FT,1,1,15,8,50.4,49.6,8,3
+15/04/2026,21:00,quarterfinals,Bayern Munich,Real Madrid,4,3,FT,9,5,21,12,68.5,31.5,9,2
+28/04/2026,21:00,semifinals,Paris Saint-Germain,Bayern Munich,5,4,FT,5,8,12,10,42.6,57.4,2,5
+29/04/2026,21:00,semifinals,Atlético Madrid,Arsenal,1,1,FT,4,2,18,11,51.5,48.5,6,1
+05/05/2026,21:00,semifinals,Arsenal,Atlético Madrid,1,0,FT,2,2,13,9,53.4,46.6,5,2
+06/05/2026,21:00,semifinals,Bayern Munich,Paris Saint-Germain,1,1,FT,6,7,18,15,65.5,34.5,1,8
+30/05/2026,18:00,final,Paris Saint-Germain,Arsenal,1,1,FT,4,1,21,7,75.3,24.7,11,4
+08/09/2026,18:45,league-phase,AEK Athens,LASK Linz,1,0,FT,4,3,18,11,49.1,50.9,7,3
+08/09/2026,18:45,league-phase,Club Brugge,Aston Villa,2,3,FT,7,9,14,21,64.1,35.9,4,5
+08/09/2026,21:00,league-phase,Borussia Dortmund,Villarreal,3,2,FT,6,6,18,13,52,48,9,7
+08/09/2026,21:00,league-phase,FC Porto,Manchester City,0,2,FT,0,10,5,20,35.5,64.5,2,5
+08/09/2026,21:00,league-phase,Lille,Real Betis,2,3,FT,2,5,6,20,44.6,55.4,5,5
+08/09/2026,21:00,league-phase,Real Madrid,Internazionale,2,1,FT,8,7,16,21,35.6,64.4,4,11
+09/09/2026,18:45,league-phase,Barcelona,Feyenoord Rotterdam,5,1,FT,9,2,24,4,71.6,28.4,4,1
+09/09/2026,18:45,league-phase,VfB Stuttgart,Viking FK,3,1,FT,3,3,17,9,61.9,38.1,4,5
+09/09/2026,21:00,league-phase,Liverpool,Atlético Madrid,2,1,FT,5,4,14,9,45.3,54.7,7,5
+09/09/2026,21:00,league-phase,Napoli,Arsenal,0,1,FT,3,8,5,26,42.3,57.7,0,6
+09/09/2026,21:00,league-phase,Paris Saint-Germain,Slovan Bratislava,6,1,FT,14,4,35,9,72.1,27.9,7,2
+09/09/2026,21:00,league-phase,Sporting CP,Galatasaray,3,1,FT,5,3,8,10,38.3,61.7,1,4
+10/09/2026,18:45,league-phase,Fenerbahce,AS Roma,1,1,FT,5,3,11,8,41.7,58.3,1,3
+10/09/2026,18:45,league-phase,PSV Eindhoven,Shakhtar Donetsk,1,1,FT,2,2,10,8,53.6,46.4,3,3
+10/09/2026,21:00,league-phase,Bayern Munich,Bodo/Glimt,5,0,FT,12,0,25,3,65.6,34.4,6,3
+10/09/2026,21:00,league-phase,Como,RB Leipzig,4,1,FT,6,4,14,14,50.3,49.7,1,5
+10/09/2026,21:00,league-phase,Manchester United,Sabah FK,4,0,FT,10,0,21,11,57.8,42.2,7,2
+10/09/2026,21:00,league-phase,Slavia Prague,Lens,2,3,FT,5,8,18,26,37.3,62.7,6,9
+13/10/2026,18:45,league-phase,Lens,Sporting CP,0,2,FT,6,5,21,11,55.9,44.1,6,3
+13/10/2026,18:45,league-phase,Sabah FK,Slavia Prague,2,0,FT,6,8,13,18,44.8,55.2,4,6
+13/10/2026,21:00,league-phase,Arsenal,Lille,3,0,FT,8,0,16,4,58,42,7,0
+13/10/2026,21:00,league-phase,Atlético Madrid,Manchester United,2,0,FT,5,4,11,9,57.8,42.2,2,5
+13/10/2026,21:00,league-phase,Galatasaray,Barcelona,1,4,FT,3,11,5,22,29,71,1,6
+13/10/2026,21:00,league-phase,Internazionale,Club Brugge,3,4,FT,12,8,30,18,53.3,46.7,4,4
+13/10/2026,21:00,league-phase,RB Leipzig,PSV Eindhoven,1,0,FT,7,5,19,11,43,57,6,13
+13/10/2026,21:00,league-phase,Viking FK,Bayern Munich,3,3,FT,5,8,8,25,34.5,65.5,7,15
+13/10/2026,21:00,league-phase,Villarreal,Napoli,3,1,FT,4,3,17,11,52,48,4,4
+14/10/2026,18:45,league-phase,Feyenoord Rotterdam,Como,3,2,FT,5,5,13,11,47.8,52.2,5,1
+14/10/2026,18:45,league-phase,LASK Linz,Liverpool,3,6,FT,4,9,12,26,35.8,64.2,3,11
+14/10/2026,21:00,league-phase,AS Roma,Real Madrid,3,4,FT,7,8,14,16,54,46,5,9
+14/10/2026,21:00,league-phase,Aston Villa,Fenerbahce,6,0,FT,11,4,20,15,44.8,55.2,9,7
+14/10/2026,21:00,league-phase,Bodo/Glimt,Borussia Dortmund,1,0,FT,3,4,11,9,47.8,52.2,4,10
+14/10/2026,21:00,league-phase,Manchester City,Paris Saint-Germain,2,4,FT,9,10,27,15,53.9,46.1,11,2
+14/10/2026,21:00,league-phase,Real Betis,FC Porto,3,2,FT,7,5,17,11,56,44,5,1
+14/10/2026,21:00,league-phase,Shakhtar Donetsk,AEK Athens,3,1,FT,4,3,12,13,54.5,45.5,5,2
+14/10/2026,21:00,league-phase,Slovan Bratislava,VfB Stuttgart,0,3,FT,1,8,15,16,35.9,64.1,1,8
+20/10/2026,18:45,league-phase,Fenerbahce,Slavia Prague,,,NS,,,,,,,,
+20/10/2026,18:45,league-phase,Sabah FK,Borussia Dortmund,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,AS Roma,Slovan Bratislava,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,FC Porto,PSV Eindhoven,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,Liverpool,Villarreal,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,Manchester City,AEK Athens,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,Napoli,Bodo/Glimt,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,Paris Saint-Germain,Barcelona,,,NS,,,,,,,,
+20/10/2026,21:00,league-phase,VfB Stuttgart,Atlético Madrid,,,NS,,,,,,,,
+21/10/2026,18:45,league-phase,Como,Manchester United,,,NS,,,,,,,,
+21/10/2026,18:45,league-phase,Lille,Galatasaray,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Aston Villa,Viking FK,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Bayern Munich,Arsenal,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Club Brugge,Lens,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Internazionale,Shakhtar Donetsk,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Real Betis,Feyenoord Rotterdam,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Real Madrid,RB Leipzig,,,NS,,,,,,,,
+21/10/2026,21:00,league-phase,Sporting CP,LASK Linz,,,NS,,,,,,,,
