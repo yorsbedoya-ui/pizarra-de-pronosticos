@@ -1,0 +1,5 @@
+ClubElo fixtures: 0 filas; columnas: None
+  por país/competición: []
+  fallo http://api.clubelo.com/2026-10-20 <HTTPError 502: 'Bad Gateway'>
+  fallo http://api.clubelo.com/2026-10-20 <HTTPError 502: 'Bad Gateway'>
+  fallo http://api.clubelo.com/2026-10-20 <HTTPError 502: 'Bad Gateway'>
