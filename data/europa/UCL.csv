@@ -540,13 +540,13 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 14/10/2026,21:00,league-phase,Slovan Bratislava,VfB Stuttgart,0,3,FT,1,8,15,16,35.9,64.1,1,8
 20/10/2026,18:45,league-phase,Fenerbahce,Slavia Prague,2,2,FT,4,4,15,15,49,51,3,5
 20/10/2026,18:45,league-phase,Sabah FK,Borussia Dortmund,1,2,FT,4,9,13,22,44.9,55.1,4,9
-20/10/2026,21:00,league-phase,AS Roma,Slovan Bratislava,2,0,LIVE,4,0,10,1,74.3,25.7,2,1
-20/10/2026,21:00,league-phase,FC Porto,PSV Eindhoven,0,0,LIVE,0,0,4,8,33,67,1,0
-20/10/2026,21:00,league-phase,Liverpool,Villarreal,1,2,LIVE,2,3,5,8,53.6,46.4,2,2
-20/10/2026,21:00,league-phase,Manchester City,AEK Athens,2,0,LIVE,4,0,10,2,64.5,35.5,4,0
-20/10/2026,21:00,league-phase,Napoli,Bodo/Glimt,1,1,LIVE,4,1,8,1,53.2,46.8,1,1
-20/10/2026,21:00,league-phase,Paris Saint-Germain,Barcelona,1,0,LIVE,8,1,9,5,50.9,49.1,1,1
-20/10/2026,21:00,league-phase,VfB Stuttgart,Atlético Madrid,1,0,LIVE,4,0,9,3,52.7,47.3,4,2
+20/10/2026,21:00,league-phase,AS Roma,Slovan Bratislava,4,0,LIVE,9,0,23,1,72.6,27.4,7,1
+20/10/2026,21:00,league-phase,FC Porto,PSV Eindhoven,0,1,LIVE,3,3,11,17,37.4,62.6,2,4
+20/10/2026,21:00,league-phase,Liverpool,Villarreal,4,2,LIVE,7,4,21,11,56.9,43.1,7,2
+20/10/2026,21:00,league-phase,Manchester City,AEK Athens,5,1,LIVE,7,3,16,8,61.9,38.1,8,2
+20/10/2026,21:00,league-phase,Napoli,Bodo/Glimt,3,2,LIVE,8,5,17,11,45.6,54.4,2,2
+20/10/2026,21:00,league-phase,Paris Saint-Germain,Barcelona,2,1,LIVE,13,4,19,13,47.1,52.9,2,2
+20/10/2026,21:00,league-phase,VfB Stuttgart,Atlético Madrid,1,1,LIVE,4,3,16,10,52.1,47.9,9,4
 21/10/2026,18:45,league-phase,Como,Manchester United,,,NS,,,,,,,,
 21/10/2026,18:45,league-phase,Lille,Galatasaray,,,NS,,,,,,,,
 21/10/2026,21:00,league-phase,Aston Villa,Viking FK,,,NS,,,,,,,,
