@@ -237,7 +237,7 @@ const formHTML = f => `<span class="form" aria-label="Últimos 5: ${f}">${[...f]
 const f1 = v => v==null ? '–' : (Math.round(v*10)/10).toLocaleString('es-ES');
 function shotsHTML(m){
   const s = m.shots; if (!s || !s.ST) return '';
-  const SB = (DATA.backtest && DATA.backtest.shots) || null;
+  const SB = (m.elo && DATA.eu && DATA.eu.shots) || (DATA.backtest && DATA.backtest.shots) || null;
   const row = (lab, v) => v ? `<div class="sname"><span>${lab}</span><span>total ${f1(v[0]+v[1])}</span></div>
     <div class="srow"><b>${f1(v[0])}</b><div class="sbar" role="img" aria-label="${lab}: ${f1(v[0])} contra ${f1(v[1])}"><i style="width:${(100*v[0]/(v[0]+v[1])).toFixed(1)}%"></i></div><b>${f1(v[1])}</b></div>` : '';
   const d = s.ST[0]-s.ST[1], who = d>0 ? short(m.h) : short(m.a);
@@ -289,6 +289,7 @@ function card(m){
       <div class="s1" style="width:${w(k['1'])}">1 · ${pct(k['1'])}</div><div class="sx" style="width:${w(k['X'])}">X ${pct(k['X'])}</div><div class="s2" style="width:${w(k['2'])}">2 · ${pct(k['2'])}</div>
     </div>
     <div class="pick"><strong>${mkName(pick,m)}</strong><span class="pill ${L}">${lvlName[L]} ${pct(p)}</span><span class="pill" style="color:var(--muted)">Cuota justa ${(1/p).toFixed(2)}</span></div>
+    ${!m.elo && !m.odds ? `<small style="color:var(--mid)">Aún sin cuotas de las casas: pick del modelo propio (menos fiable). Se recalcula solo cuando se publiquen las cuotas, normalmente 2–3 días antes del partido.</small>` : ''}
     ${m.elo && m.known < 2 ? `<small style="color:var(--muted)">${m.known===0?'Ninguno de los dos equipos':'Uno de los equipos no'} juega en las ligas con datos: su fuerza sale solo de partidos europeos (menos fiable).</small>` : ''}
     ${k['+1.5']==null ? '' : `<div class="stats">
       <div><b>${pct(k['+1.5'])}</b><span>+1,5</span></div>

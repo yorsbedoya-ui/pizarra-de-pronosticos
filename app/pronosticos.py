@@ -183,6 +183,21 @@ def merge_live(div, played, fixtures):
         except ValueError: pass
     return sorted(played + add, key=lambda r: r[0]), len(add), sorted(miss)
 
+
+def espn_fixtures(div, played):
+    """Próximos partidos desde ESPN (data/live) cuando football-data aún no ha publicado la jornada con cuotas."""
+    p = os.path.join(LIVE, f"{div}.csv") if LIVE else None
+    if not p or not os.path.exists(p): return []
+    mp = name_mapper([r[1] for r in played] + [r[2] for r in played]); out = []
+    for r in csv.DictReader(open(p, encoding="utf-8")):
+        if r.get("Status") != "NS": continue
+        d = pdate(r["Date"]); h, a = mp(r["HomeTeam"]), mp(r["AwayTeam"])
+        if not (d and h and a) or not (TODAY <= d <= TODAY + timedelta(days=7)): continue
+        try: hh, mm = r["Time"].split(":")[:2]; tuk = f"{(int(hh) - 1) % 24:02d}:{mm}"   # ESPN va en hora de Polonia
+        except ValueError: tuk = ""
+        out.append(dict(date=d, time=tuk, round="Próximos partidos", h=h, a=a, odds=None))
+    return out
+
 # ---------------- Estadísticas reales por partido (football-data + ESPN) ----------------
 STAT_COLS = ["HST", "AST", "HS", "AS", "HC", "AC", "HPoss", "APoss", "HY", "AY", "HR", "AR"]
 
@@ -443,6 +458,10 @@ for code, (name, div) in LEAGUES.items():
     played = [r for r in played if r[0] < TODAY]
     if not played: continue
     played, n_live, miss = merge_live(div, played, fixtures)
+    if not any(f["date"] >= TODAY and f["round"] == "Próximos partidos" for f in fixtures):
+        ef = espn_fixtures(div, played)
+        if ef:
+            fixtures = ef; print(f"  {name}: {len(ef)} próximos partidos del calendario de ESPN (aún sin cuotas)", flush=True)
     if n_live or miss:
         print(f"  {name}: +{n_live} resultados de ESPN" + (f" | sin emparejar: {miss[:6]}" if miss else ""), flush=True)
     if n_live: src += "+espn"
@@ -651,6 +670,10 @@ try:
                           safe85=thr([(r["ps"], hit(r["safe"], r["hg"], r["ag"])) for r in rec], .85), cal=cal)
         print("Europa backtest:", {k: v for k, v in eu_summary.items() if k != "cal"}, flush=True)
         pfit = eu_fit(hist_e, TODAY + timedelta(days=1))
+        # tiros esperados: misma fórmula que en las ligas, alimentada solo con partidos europeos (escala común)
+        all_eu_stats = sorted([s for c in EU_COMPS for s in stats_e[c]], key=lambda s: s["date"])
+        eu_shot_state, eu_shot_rec = shots_run(all_eu_stats, BT_START)
+        eu_summary["shots"] = shot_summary(eu_shot_rec)
         for comp, cname in EU_COMPS.items():
             preds = []
             for f in sorted([f for f in fx_e if f["comp"] == comp], key=lambda f: (f["date"], f["time"])):
@@ -662,7 +685,8 @@ try:
                 preds.append(dict(date=f["date"].isoformat(), time=tuk, round=cname, h=f["h"], a=f["a"], fh=form(sorted(dom_e + [e[:6] for e in eu_e], key=lambda r: r[0]), f["hk"]),
                                   fa=form(sorted(dom_e + [e[:6] for e in eu_e], key=lambda r: r[0]), f["ak"]), lh=None, la=None,
                                   mk={k: round(float(v), 3) for k, v in mk.items()}, scores=[], safe=safe, odds=None, value=[],
-                                  elo=[round(rh), round(ra)], known=known, sh=None, sa=None))
+                                  elo=[round(rh), round(ra)], known=known, sh=None, sa=None,
+                                  shots={c: [round(v, 1) for v in pr_] for c in SHOT_COLS for pr_ in [eu_shot_state.proj(f["h"], f["a"], c)] if pr_}))
             rc = [r for r in rec if r["comp"] == comp]
             st = sorted(stats_e[comp], key=lambda s: s["date"])
             per_league.append(dict(code=comp.lower(), name=cname, src="espn+elo", div=comp, gw=GOAL_W_SHOTS, n_bt=len(rc), stats=st,
@@ -741,7 +765,7 @@ if HIST:
     for l in leagues:
         for m in l["matches"]:
             p = m["mk"][m["safe"]]; hid = f'{m["date"]}|{m["h"]}|{m["a"]}'
-            if p >= HIST_MIN and hid not in seen:
+            if p >= HIST_MIN and hid not in seen and (m.get("odds") or l.get("eu")):   # en ligas, solo con cuotas
                 H.append(dict(id=hid, lg=l["code"], liga=l["name"], date=m["date"], h=m["h"], a=m["a"], m=m["safe"],
                               p=round(p, 3), pub=TODAY.isoformat(), res=None, hit=None)); seen.add(hid)
     played_by, mappers = {}, {}
