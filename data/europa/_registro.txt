@@ -1,3 +1,3 @@
-UCL desde 2023-07-01: 557 leídos, 557 en total, 539 terminados, 0 días con error
-UEL desde 2023-07-01: 573 leídos, 573 en total, 555 terminados, 0 días con error
-UECL desde 2023-07-01: 483 leídos, 483 en total, 465 terminados, 0 días con error
+UCL desde 2026-10-16: 18 leídos, 557 en total, 539 terminados, 0 días con error
+UEL desde 2026-10-16: 18 leídos, 573 en total, 555 terminados, 0 días con error
+UECL desde 2026-10-16: 18 leídos, 483 en total, 465 terminados, 0 días con error
