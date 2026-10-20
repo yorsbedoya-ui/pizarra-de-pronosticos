@@ -5,7 +5,7 @@ Salida: data/fd/<temporada>/<liga>.csv y data/fd/fixtures.csv
 import os, sys, time, urllib.request
 from datetime import date
 
-LEAGUES = ["E0", "E1", "SP1", "I1", "D1", "F1", "P1", "N1"]
+LEAGUES = ["E0", "E1", "SP1", "I1", "D1", "F1", "P1", "N1", "B1", "SC0", "T1", "G1"]  # las 4 últimas solo alimentan el Elo europeo
 BASE = "https://www.football-data.co.uk"
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "fd")
 
@@ -42,10 +42,15 @@ else: fail += 1
 
 # ---- Ligas "extra" de football-data (formato distinto): Polonia = Ekstraklasa ----
 import csv, io
-EXTRA = {"POL": "POL"}   # fichero de football-data -> código interno
-def season_of(s):  # "2025/2026" -> "2526"
-    try: a, b = s.split("/"); return a[-2:] + b[-2:]
-    except ValueError: return None
+COUNTRY = {"POL": "POLAND", "AUT": "AUSTRIA", "SWZ": "SWITZERLAND", "DNK": "DENMARK", "NOR": "NORWAY", "SWE": "SWEDEN", "ROU": "ROMANIA"}
+EXTRA = {"POL": "POL", "AUT": "AUT", "SWZ": "SWZ", "DNK": "DNK", "NOR": "NOR", "SWE": "SWE", "ROU": "ROU"}   # fichero de football-data -> código interno
+def season_of(s):  # "2025/2026" -> "2526"; ligas de año natural "2026" -> "2526"
+    s = (s or "").strip()
+    if "/" in s:
+        a, b = s.split("/")[:2]; return a[-2:] + b[-2:]
+    if s.isdigit() and len(s) == 4:
+        y = int(s); return f"{(y-1)%100:02d}{y%100:02d}"
+    return None
 STD = ["Div", "Date", "Time", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
        "PSCH", "PSCD", "PSCA", "AvgCH", "AvgCD", "AvgCA", "B365CH", "B365CD", "B365CA", "MaxCH", "MaxCD", "MaxCA"]
 keep = set(season_codes())
@@ -71,7 +76,8 @@ rawf = os.path.join(OUT, "_raw", "new_league_fixtures.csv")
 if get(f"{BASE}/new_league_fixtures.csv", rawf):
     ok += 1; fx = []
     for r in csv.DictReader(io.open(rawf, encoding="utf-8-sig", errors="replace")):
-        div = next((d for n, d in EXTRA.items() if r.get("Country", "").strip().upper().startswith("POLAND") or r.get("Div", "") == n), None)
+        country = r.get("Country", "").strip().upper()
+        div = next((d for n, d in EXTRA.items() if r.get("Div", "") == n or country.startswith(COUNTRY.get(n, "?"))), None)
         if not div: continue
         o = {"Div": div, "Date": r.get("Date", ""), "Time": r.get("Time", ""), "HomeTeam": r.get("Home", r.get("HomeTeam", "")),
              "AwayTeam": r.get("Away", r.get("AwayTeam", ""))}
