@@ -5320,12 +5320,20 @@
 "ps": 0.701,
 "o25": 0.635,
 "btts": 0.659,
-"res": null,
+"res": "1-2",
 "odds": {
 "o1": 2.02,
 "oX": 3.71,
 "o2": 3.07
-}
+},
+"hg": 1,
+"ag": 2,
+"hst": null,
+"ast": null,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-10-16|Widzew Lodz|Wisla": {
 "id": "2026-10-16|Widzew Lodz|Wisla",
@@ -5342,12 +5350,20 @@
 "ps": 0.671,
 "o25": 0.508,
 "btts": 0.564,
-"res": null,
+"res": "0-0",
 "odds": {
 "o1": 2.26,
 "oX": 3.43,
 "o2": 2.78
-}
+},
+"hg": 0,
+"ag": 0,
+"hst": null,
+"ast": null,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-10-17|Motor Lublin|Slask Wroclaw": {
 "id": "2026-10-17|Motor Lublin|Slask Wroclaw",
@@ -5364,12 +5380,20 @@
 "ps": 0.741,
 "o25": 0.579,
 "btts": 0.61,
-"res": null,
+"res": "3-2",
 "odds": {
 "o1": 1.86,
 "oX": 3.69,
 "o2": 3.53
-}
+},
+"hg": 3,
+"ag": 2,
+"hst": null,
+"ast": null,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-10-17|GKS Katowice|Pogon Szczecin": {
 "id": "2026-10-17|GKS Katowice|Pogon Szczecin",
@@ -5386,12 +5410,20 @@
 "ps": 0.718,
 "o25": 0.551,
 "btts": 0.591,
-"res": null,
+"res": "0-1",
 "odds": {
 "o1": 1.96,
 "oX": 3.64,
 "o2": 3.25
-}
+},
+"hg": 0,
+"ag": 1,
+"hst": null,
+"ast": null,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-10-17|Cracovia|Legia": {
 "id": "2026-10-17|Cracovia|Legia",
@@ -5408,12 +5440,20 @@
 "ps": 0.664,
 "o25": 0.454,
 "btts": 0.521,
-"res": null,
+"res": "1-1",
 "odds": {
 "o1": 2.72,
 "oX": 3.32,
 "o2": 2.36
-}
+},
+"hg": 1,
+"ag": 1,
+"hst": null,
+"ast": null,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-10-18|Gornik Zabrze|Piast Gliwice": {
 "id": "2026-10-18|Gornik Zabrze|Piast Gliwice",
@@ -5430,12 +5470,20 @@
 "ps": 0.812,
 "o25": 0.454,
 "btts": 0.49,
-"res": null,
+"res": "1-1",
 "odds": {
 "o1": 1.59,
 "oX": 3.88,
 "o2": 4.87
-}
+},
+"hg": 1,
+"ag": 1,
+"hst": null,
+"ast": null,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": false
 },
 "2026-10-18|Zaglebie|Jagiellonia": {
 "id": "2026-10-18|Zaglebie|Jagiellonia",
@@ -5452,12 +5500,20 @@
 "ps": 0.643,
 "o25": 0.478,
 "btts": 0.541,
-"res": null,
+"res": "1-0",
 "odds": {
 "o1": 2.56,
 "oX": 3.43,
 "o2": 2.42
-}
+},
+"hg": 1,
+"ag": 0,
+"hst": null,
+"ast": null,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": false
 },
 "2026-10-18|Lech Poznan|Korona Kielce": {
 "id": "2026-10-18|Lech Poznan|Korona Kielce",
@@ -5474,12 +5530,20 @@
 "ps": 0.846,
 "o25": 0.518,
 "btts": 0.505,
-"res": null,
+"res": "6-1",
 "odds": {
 "o1": 1.43,
 "oX": 4.44,
 "o2": 5.92
-}
+},
+"hg": 6,
+"ag": 1,
+"hst": null,
+"ast": null,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-10-19|Wisla Plock|Radomiak Radom": {
 "id": "2026-10-19|Wisla Plock|Radomiak Radom",
@@ -5496,12 +5560,20 @@
 "ps": 0.734,
 "o25": 0.464,
 "btts": 0.522,
-"res": null,
+"res": "1-0",
 "odds": {
 "o1": 1.9,
 "oX": 3.62,
 "o2": 3.44
-}
+},
+"hg": 1,
+"ag": 0,
+"hst": null,
+"ast": null,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": false
 },
 "2026-10-20|Fenerbahce|Slavia Prague": {
 "id": "2026-10-20|Fenerbahce|Slavia Prague",
@@ -5511,14 +5583,18 @@
 "time": "17:45",
 "h": "Fenerbahce",
 "a": "Slavia Prague",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.759,
+"p1": 0.766,
 "safe": "1X",
-"ps": 0.91,
+"ps": 0.913,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.6,
+4.3
+]
 },
 "2026-10-20|Sabah FK|Borussia Dortmund": {
 "id": "2026-10-20|Sabah FK|Borussia Dortmund",
@@ -5528,7 +5604,7 @@
 "time": "17:45",
 "h": "Sabah FK",
 "a": "Borussia Dortmund",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.683,
 "safe": "X2",
@@ -5545,14 +5621,18 @@
 "time": "20:00",
 "h": "AS Roma",
 "a": "Slovan Bratislava",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.903,
 "safe": "1X",
 "ps": 0.967,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.4,
+3.1
+]
 },
 "2026-10-20|FC Porto|PSV Eindhoven": {
 "id": "2026-10-20|FC Porto|PSV Eindhoven",
@@ -5562,14 +5642,18 @@
 "time": "20:00",
 "h": "FC Porto",
 "a": "PSV Eindhoven",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.485,
+"p1": 0.486,
 "safe": "1X",
 "ps": 0.751,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.7,
+4.0
+]
 },
 "2026-10-20|Liverpool|Villarreal": {
 "id": "2026-10-20|Liverpool|Villarreal",
@@ -5579,14 +5663,18 @@
 "time": "20:00",
 "h": "Liverpool",
 "a": "Villarreal",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.659,
 "safe": "1X",
 "ps": 0.861,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.2,
+3.5
+]
 },
 "2026-10-20|Manchester City|AEK Athens": {
 "id": "2026-10-20|Manchester City|AEK Athens",
@@ -5596,14 +5684,18 @@
 "time": "20:00",
 "h": "Manchester City",
 "a": "AEK Athens",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.717,
 "safe": "1X",
 "ps": 0.89,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.8,
+4.0
+]
 },
 "2026-10-20|Napoli|Bodo/Glimt": {
 "id": "2026-10-20|Napoli|Bodo/Glimt",
@@ -5613,14 +5705,18 @@
 "time": "20:00",
 "h": "Napoli",
 "a": "Bodo/Glimt",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.462,
+"p1": 0.468,
 "safe": "X2",
-"ps": 0.733,
+"ps": 0.738,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.4,
+4.4
+]
 },
 "2026-10-20|Paris Saint-Germain|Barcelona": {
 "id": "2026-10-20|Paris Saint-Germain|Barcelona",
@@ -5630,14 +5726,18 @@
 "time": "20:00",
 "h": "Paris Saint-Germain",
 "a": "Barcelona",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.467,
 "safe": "1X",
 "ps": 0.737,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.0,
+4.5
+]
 },
 "2026-10-20|VfB Stuttgart|Atlético Madrid": {
 "id": "2026-10-20|VfB Stuttgart|Atlético Madrid",
@@ -5647,14 +5747,18 @@
 "time": "20:00",
 "h": "VfB Stuttgart",
 "a": "Atlético Madrid",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.412,
 "safe": "X2",
 "ps": 0.692,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.4,
+3.7
+]
 },
 "2026-10-21|Como|Manchester United": {
 "id": "2026-10-21|Como|Manchester United",
@@ -5664,7 +5768,7 @@
 "time": "17:45",
 "h": "Como",
 "a": "Manchester United",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.415,
 "safe": "1X",
@@ -5681,14 +5785,18 @@
 "time": "17:45",
 "h": "Lille",
 "a": "Galatasaray",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.41,
+"p1": 0.403,
 "safe": "1X",
-"ps": 0.69,
+"ps": 0.683,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.5,
+4.0
+]
 },
 "2026-10-21|Aston Villa|Viking FK": {
 "id": "2026-10-21|Aston Villa|Viking FK",
@@ -5698,11 +5806,11 @@
 "time": "20:00",
 "h": "Aston Villa",
 "a": "Viking FK",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.645,
+"p1": 0.641,
 "safe": "1X",
-"ps": 0.853,
+"ps": 0.851,
 "o25": null,
 "btts": null,
 "res": null
@@ -5715,14 +5823,18 @@
 "time": "20:00",
 "h": "Bayern Munich",
 "a": "Arsenal",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.435,
 "safe": "1X",
 "ps": 0.711,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.2,
+4.0
+]
 },
 "2026-10-21|Club Brugge|Lens": {
 "id": "2026-10-21|Club Brugge|Lens",
@@ -5732,14 +5844,18 @@
 "time": "20:00",
 "h": "Club Brugge",
 "a": "Lens",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.564,
 "safe": "1X",
-"ps": 0.805,
+"ps": 0.806,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.8,
+3.8
+]
 },
 "2026-10-21|Internazionale|Shakhtar Donetsk": {
 "id": "2026-10-21|Internazionale|Shakhtar Donetsk",
@@ -5749,14 +5865,18 @@
 "time": "20:00",
 "h": "Internazionale",
 "a": "Shakhtar Donetsk",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.73,
 "safe": "1X",
 "ps": 0.896,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.6,
+3.8
+]
 },
 "2026-10-21|Real Betis|Feyenoord Rotterdam": {
 "id": "2026-10-21|Real Betis|Feyenoord Rotterdam",
@@ -5766,14 +5886,18 @@
 "time": "20:00",
 "h": "Real Betis",
 "a": "Feyenoord Rotterdam",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.538,
 "safe": "1X",
 "ps": 0.788,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.9,
+3.1
+]
 },
 "2026-10-21|Real Madrid|RB Leipzig": {
 "id": "2026-10-21|Real Madrid|RB Leipzig",
@@ -5783,14 +5907,18 @@
 "time": "20:00",
 "h": "Real Madrid",
 "a": "RB Leipzig",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.724,
 "safe": "1X",
 "ps": 0.893,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.2,
+5.1
+]
 },
 "2026-10-21|Sporting CP|LASK Linz": {
 "id": "2026-10-21|Sporting CP|LASK Linz",
@@ -5800,14 +5928,18 @@
 "time": "20:00",
 "h": "Sporting CP",
 "a": "LASK Linz",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.815,
+"p1": 0.805,
 "safe": "1X",
-"ps": 0.934,
+"ps": 0.93,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.5,
+3.2
+]
 },
 "2026-10-22|Ararat-Armenia|AZ Alkmaar": {
 "id": "2026-10-22|Ararat-Armenia|AZ Alkmaar",
@@ -5817,11 +5949,11 @@
 "time": "17:45",
 "h": "Ararat-Armenia",
 "a": "AZ Alkmaar",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.531,
 "safe": "X2",
-"ps": 0.783,
+"ps": 0.784,
 "o25": null,
 "btts": null,
 "res": null
@@ -5834,7 +5966,7 @@
 "time": "17:45",
 "h": "Dinamo Zagreb",
 "a": "NEC Nijmegen",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.506,
 "safe": "1X",
@@ -5851,11 +5983,11 @@
 "time": "17:45",
 "h": "Ferencvaros",
 "a": "Torreense",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.674,
 "safe": "1X",
-"ps": 0.868,
+"ps": 0.869,
 "o25": null,
 "btts": null,
 "res": null
@@ -5868,14 +6000,18 @@
 "time": "17:45",
 "h": "Juventus",
 "a": "Stade Rennais",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.539,
 "safe": "1X",
 "ps": 0.789,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.7,
+4.9
+]
 },
 "2026-10-22|Lech Poznan|Sunderland": {
 "id": "2026-10-22|Lech Poznan|Sunderland",
@@ -5885,11 +6021,11 @@
 "time": "17:45",
 "h": "Lech Poznan",
 "a": "Sunderland",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.397,
+"p1": 0.411,
 "safe": "1X",
-"ps": 0.678,
+"ps": 0.691,
 "o25": null,
 "btts": null,
 "res": null
@@ -5902,11 +6038,11 @@
 "time": "17:45",
 "h": "OFI Crete",
 "a": "Bayer Leverkusen",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.726,
+"p1": 0.736,
 "safe": "X2",
-"ps": 0.894,
+"ps": 0.899,
 "o25": null,
 "btts": null,
 "res": null
@@ -5919,14 +6055,18 @@
 "time": "17:45",
 "h": "SK Sturm Graz",
 "a": "Marseille",
-"pub": "2026-10-20T11:43",
-"k1": "2",
-"p1": 0.368,
-"safe": "X2",
-"ps": 0.65,
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.363,
+"safe": "1X",
+"ps": 0.645,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.7,
+4.6
+]
 },
 "2026-10-22|Union St.-Gilloise|Hapoel Be'er": {
 "id": "2026-10-22|Union St.-Gilloise|Hapoel Be'er",
@@ -5936,11 +6076,11 @@
 "time": "17:45",
 "h": "Union St.-Gilloise",
 "a": "Hapoel Be'er",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.814,
+"p1": 0.815,
 "safe": "1X",
-"ps": 0.933,
+"ps": 0.934,
 "o25": null,
 "btts": null,
 "res": null
@@ -5953,7 +6093,7 @@
 "time": "20:00",
 "h": "AFC Bournemouth",
 "a": "AC Milan",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.448,
 "safe": "1X",
@@ -5970,14 +6110,18 @@
 "time": "20:00",
 "h": "Besiktas",
 "a": "Crystal Palace",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.39,
+"p1": 0.373,
 "safe": "1X",
-"ps": 0.672,
+"ps": 0.656,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.0,
+5.3
+]
 },
 "2026-10-22|Celtic|Celta Vigo": {
 "id": "2026-10-22|Celtic|Celta Vigo",
@@ -5987,14 +6131,18 @@
 "time": "20:00",
 "h": "Celtic",
 "a": "Celta Vigo",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.505,
+"p1": 0.528,
 "safe": "1X",
-"ps": 0.766,
+"ps": 0.782,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.3,
+4.4
+]
 },
 "2026-10-22|Jagiellonia Bialystok|Anderlecht": {
 "id": "2026-10-22|Jagiellonia Bialystok|Anderlecht",
@@ -6004,14 +6152,18 @@
 "time": "20:00",
 "h": "Jagiellonia Bialystok",
 "a": "Anderlecht",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.478,
+"p1": 0.464,
 "safe": "1X",
-"ps": 0.745,
+"ps": 0.734,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.6,
+3.5
+]
 },
 "2026-10-22|Lillestrom|Real Sociedad": {
 "id": "2026-10-22|Lillestrom|Real Sociedad",
@@ -6021,11 +6173,11 @@
 "time": "20:00",
 "h": "Lillestrom",
 "a": "Real Sociedad",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.548,
+"p1": 0.52,
 "safe": "X2",
-"ps": 0.795,
+"ps": 0.776,
 "o25": null,
 "btts": null,
 "res": null
@@ -6038,14 +6190,18 @@
 "time": "20:00",
 "h": "NK Celje",
 "a": "RB Salzburg",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.378,
+"p1": 0.369,
 "safe": "1X",
-"ps": 0.66,
+"ps": 0.651,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+6.3,
+4.4
+]
 },
 "2026-10-22|Olympiacos|Sparta Prague": {
 "id": "2026-10-22|Olympiacos|Sparta Prague",
@@ -6055,14 +6211,18 @@
 "time": "20:00",
 "h": "Olympiacos",
 "a": "Sparta Prague",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.703,
+"p1": 0.709,
 "safe": "1X",
-"ps": 0.883,
+"ps": 0.886,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.4,
+3.5
+]
 },
 "2026-10-22|Omonia Nicosia|Benfica": {
 "id": "2026-10-22|Omonia Nicosia|Benfica",
@@ -6072,14 +6232,18 @@
 "time": "20:00",
 "h": "Omonia Nicosia",
 "a": "Benfica",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.689,
 "safe": "X2",
 "ps": 0.876,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.8,
+4.1
+]
 },
 "2026-10-22|TSG Hoffenheim|Lyon": {
 "id": "2026-10-22|TSG Hoffenheim|Lyon",
@@ -6089,14 +6253,18 @@
 "time": "20:00",
 "h": "TSG Hoffenheim",
 "a": "Lyon",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.551,
 "safe": "X2",
 "ps": 0.797,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.7,
+4.3
+]
 },
 "2026-10-22|Viktoria Plzen|Levski Sofia": {
 "id": "2026-10-22|Viktoria Plzen|Levski Sofia",
@@ -6106,9 +6274,9 @@
 "time": "20:00",
 "h": "Viktoria Plzen",
 "a": "Levski Sofia",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.642,
+"p1": 0.643,
 "safe": "1X",
 "ps": 0.852,
 "o25": null,
@@ -6123,14 +6291,18 @@
 "time": "15:30",
 "h": "Kairat Almaty",
 "a": "Panathinaikos",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.623,
+"p1": 0.63,
 "safe": "X2",
-"ps": 0.841,
+"ps": 0.845,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.0,
+5.8
+]
 },
 "2026-10-22|FC Nordsjælland|CSKA Sofia": {
 "id": "2026-10-22|FC Nordsjælland|CSKA Sofia",
@@ -6140,11 +6312,11 @@
 "time": "17:45",
 "h": "FC Nordsjælland",
 "a": "CSKA Sofia",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.611,
+"p1": 0.605,
 "safe": "1X",
-"ps": 0.834,
+"ps": 0.831,
 "o25": null,
 "btts": null,
 "res": null
@@ -6157,7 +6329,7 @@
 "time": "17:45",
 "h": "Getafe",
 "a": "FC Lugano",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.38,
 "safe": "X2",
@@ -6174,11 +6346,11 @@
 "time": "17:45",
 "h": "Iberia 1999",
 "a": "Mjällby AIF",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.394,
+"p1": 0.38,
 "safe": "X2",
-"ps": 0.675,
+"ps": 0.662,
 "o25": null,
 "btts": null,
 "res": null
@@ -6191,11 +6363,11 @@
 "time": "17:45",
 "h": "Inter D'Escaldes",
 "a": "CSU Craiova",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.557,
+"p1": 0.566,
 "safe": "X2",
-"ps": 0.801,
+"ps": 0.807,
 "o25": null,
 "btts": null,
 "res": null
@@ -6208,7 +6380,7 @@
 "time": "17:45",
 "h": "Jablonec",
 "a": "Brighton & Hove Albion",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.732,
 "safe": "X2",
@@ -6225,11 +6397,11 @@
 "time": "17:45",
 "h": "Kauno Zalgiris",
 "a": "SK Brann",
-"pub": "2026-10-20T11:43",
-"k1": "2",
-"p1": 0.379,
-"safe": "X2",
-"ps": 0.661,
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.361,
+"safe": "1X",
+"ps": 0.643,
 "o25": null,
 "btts": null,
 "res": null
@@ -6242,7 +6414,7 @@
 "time": "17:45",
 "h": "Pafos",
 "a": "Riga FC",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.554,
 "safe": "1X",
@@ -6259,14 +6431,18 @@
 "time": "17:45",
 "h": "Red Star Belgrade",
 "a": "F.C. København",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
-"p1": 0.455,
+"p1": 0.449,
 "safe": "X2",
-"ps": 0.727,
+"ps": 0.722,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.0,
+4.1
+]
 },
 "2026-10-22|Trabzonspor|Heart of Midlothian": {
 "id": "2026-10-22|Trabzonspor|Heart of Midlothian",
@@ -6276,11 +6452,11 @@
 "time": "17:45",
 "h": "Trabzonspor",
 "a": "Heart of Midlothian",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.488,
+"p1": 0.529,
 "safe": "1X",
-"ps": 0.753,
+"ps": 0.782,
 "o25": null,
 "btts": null,
 "res": null
@@ -6293,11 +6469,11 @@
 "time": "20:00",
 "h": "AGF",
 "a": "Egnatia",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.534,
+"p1": 0.541,
 "safe": "1X",
-"ps": 0.786,
+"ps": 0.79,
 "o25": null,
 "btts": null,
 "res": null
@@ -6310,14 +6486,18 @@
 "time": "20:00",
 "h": "Ajax Amsterdam",
 "a": "Atalanta",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.431,
 "safe": "X2",
 "ps": 0.708,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.6,
+5.0
+]
 },
 "2026-10-22|AS Monaco|SC Freiburg": {
 "id": "2026-10-22|AS Monaco|SC Freiburg",
@@ -6327,14 +6507,18 @@
 "time": "20:00",
 "h": "AS Monaco",
 "a": "SC Freiburg",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.427,
 "safe": "1X",
 "ps": 0.704,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+4.5,
+4.5
+]
 },
 "2026-10-22|Borac Banja Luka|KuPS Kuopio": {
 "id": "2026-10-22|Borac Banja Luka|KuPS Kuopio",
@@ -6344,14 +6528,18 @@
 "time": "20:00",
 "h": "Borac Banja Luka",
 "a": "KuPS Kuopio",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.477,
 "safe": "1X",
 "ps": 0.745,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.0,
+3.0
+]
 },
 "2026-10-22|Braga|KAA Gent": {
 "id": "2026-10-22|Braga|KAA Gent",
@@ -6361,14 +6549,18 @@
 "time": "20:00",
 "h": "Braga",
 "a": "KAA Gent",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.468,
+"p1": 0.469,
 "safe": "1X",
 "ps": 0.738,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+5.0,
+4.2
+]
 },
 "2026-10-22|FC Midtjylland|Sint-Truidense": {
 "id": "2026-10-22|FC Midtjylland|Sint-Truidense",
@@ -6378,11 +6570,11 @@
 "time": "20:00",
 "h": "FC Midtjylland",
 "a": "Sint-Truidense",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
-"p1": 0.655,
+"p1": 0.665,
 "safe": "1X",
-"ps": 0.858,
+"ps": 0.864,
 "o25": null,
 "btts": null,
 "res": null
@@ -6395,7 +6587,7 @@
 "time": "20:00",
 "h": "FC Thun",
 "a": "Hajduk Split",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "1",
 "p1": 0.383,
 "safe": "1X",
@@ -6412,13 +6604,1760 @@
 "time": "20:00",
 "h": "Lincoln Red Imps",
 "a": "FC Twente",
-"pub": "2026-10-20T11:43",
+"pub": "2026-10-20T12:19",
 "k1": "2",
 "p1": 0.563,
 "safe": "X2",
 "ps": 0.805,
 "o25": null,
 "btts": null,
-"res": null
+"res": null,
+"st": [
+3.7,
+5.1
+]
+},
+"2026-10-23|Ipswich|Nott'm Forest": {
+"id": "2026-10-23|Ipswich|Nott'm Forest",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-23",
+"time": "20:00",
+"h": "Ipswich",
+"a": "Nott'm Forest",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.455,
+"safe": "X2",
+"ps": 0.725,
+"o25": 0.548,
+"btts": 0.583,
+"res": null,
+"st": [
+3.9,
+4.6
+]
+},
+"2026-10-24|Aston Villa|Man City": {
+"id": "2026-10-24|Aston Villa|Man City",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-24",
+"time": "12:30",
+"h": "Aston Villa",
+"a": "Man City",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.492,
+"safe": "X2",
+"ps": 0.748,
+"o25": 0.579,
+"btts": 0.603,
+"res": null,
+"st": [
+4.2,
+4.9
+]
+},
+"2026-10-24|Arsenal|Everton": {
+"id": "2026-10-24|Arsenal|Everton",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Arsenal",
+"a": "Everton",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.655,
+"safe": "1X",
+"ps": 0.876,
+"o25": 0.471,
+"btts": 0.44,
+"res": null,
+"st": [
+5.1,
+2.9
+]
+},
+"2026-10-24|Coventry|Fulham": {
+"id": "2026-10-24|Coventry|Fulham",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Coventry",
+"a": "Fulham",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.371,
+"safe": "1X",
+"ps": 0.661,
+"o25": 0.474,
+"btts": 0.533,
+"res": null,
+"st": [
+3.8,
+4.0
+]
+},
+"2026-10-24|Chelsea|Tottenham": {
+"id": "2026-10-24|Chelsea|Tottenham",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-24",
+"time": "17:30",
+"h": "Chelsea",
+"a": "Tottenham",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.55,
+"safe": "1X",
+"ps": 0.789,
+"o25": 0.616,
+"btts": 0.612,
+"res": null,
+"st": [
+4.5,
+3.9
+]
+},
+"2026-10-25|Crystal Palace|Newcastle": {
+"id": "2026-10-25|Crystal Palace|Newcastle",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Crystal Palace",
+"a": "Newcastle",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.384,
+"safe": "1X",
+"ps": 0.653,
+"o25": 0.604,
+"btts": 0.633,
+"res": null,
+"st": [
+4.3,
+4.5
+]
+},
+"2026-10-25|Hull|Brentford": {
+"id": "2026-10-25|Hull|Brentford",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Hull",
+"a": "Brentford",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.39,
+"safe": "X2",
+"ps": 0.672,
+"o25": 0.517,
+"btts": 0.565,
+"res": null,
+"st": [
+4.1,
+4.1
+]
+},
+"2026-10-25|Liverpool|Brighton": {
+"id": "2026-10-25|Liverpool|Brighton",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Liverpool",
+"a": "Brighton",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.464,
+"safe": "1X",
+"ps": 0.727,
+"o25": 0.596,
+"btts": 0.612,
+"res": null,
+"st": [
+4.6,
+4.2
+]
+},
+"2026-10-25|Man United|Bournemouth": {
+"id": "2026-10-25|Man United|Bournemouth",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Man United",
+"a": "Bournemouth",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.429,
+"safe": "1X",
+"ps": 0.696,
+"o25": 0.587,
+"btts": 0.618,
+"res": null,
+"st": [
+5.5,
+4.0
+]
+},
+"2026-10-25|Sunderland|Leeds": {
+"id": "2026-10-25|Sunderland|Leeds",
+"lg": "en.1",
+"liga": "Premier League",
+"date": "2026-10-25",
+"time": "17:30",
+"h": "Sunderland",
+"a": "Leeds",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.382,
+"safe": "X2",
+"ps": 0.673,
+"o25": 0.466,
+"btts": 0.526,
+"res": null,
+"st": [
+4.2,
+3.9
+]
+},
+"2026-10-21|Levante|Ath Bilbao": {
+"id": "2026-10-21|Levante|Ath Bilbao",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-21",
+"time": "19:00",
+"h": "Levante",
+"a": "Ath Bilbao",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.381,
+"safe": "1X",
+"ps": 0.652,
+"o25": 0.516,
+"btts": 0.56,
+"res": null,
+"st": [
+4.8,
+4.1
+]
+},
+"2026-10-23|Alaves|Malaga": {
+"id": "2026-10-23|Alaves|Malaga",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-23",
+"time": "20:00",
+"h": "Alaves",
+"a": "Malaga",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.581,
+"safe": "1X",
+"ps": 0.826,
+"o25": 0.47,
+"btts": 0.453,
+"res": null,
+"st": [
+6.0,
+2.9
+]
+},
+"2026-10-24|Vallecano|Elche": {
+"id": "2026-10-24|Vallecano|Elche",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-24",
+"time": "13:00",
+"h": "Vallecano",
+"a": "Elche",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.534,
+"safe": "1X",
+"ps": 0.784,
+"o25": 0.514,
+"btts": 0.528,
+"res": null,
+"st": [
+5.9,
+3.4
+]
+},
+"2026-10-24|Santander|Espanol": {
+"id": "2026-10-24|Santander|Espanol",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-24",
+"time": "15:15",
+"h": "Santander",
+"a": "Espanol",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.418,
+"safe": "1X",
+"ps": 0.678,
+"o25": 0.565,
+"btts": 0.598,
+"res": null,
+"st": [
+5.7,
+4.4
+]
+},
+"2026-10-24|Valencia|Villarreal": {
+"id": "2026-10-24|Valencia|Villarreal",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-24",
+"time": "17:30",
+"h": "Valencia",
+"a": "Villarreal",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.403,
+"safe": "X2",
+"ps": 0.672,
+"o25": 0.532,
+"btts": 0.571,
+"res": null,
+"st": [
+3.9,
+3.8
+]
+},
+"2026-10-24|Ath Madrid|La Coruna": {
+"id": "2026-10-24|Ath Madrid|La Coruna",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-24",
+"time": "20:00",
+"h": "Ath Madrid",
+"a": "La Coruna",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.65,
+"safe": "1X",
+"ps": 0.857,
+"o25": 0.548,
+"btts": 0.511,
+"res": null,
+"st": [
+5.6,
+3.4
+]
+},
+"2026-10-25|Ath Bilbao|Getafe": {
+"id": "2026-10-25|Ath Bilbao|Getafe",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-25",
+"time": "14:00",
+"h": "Ath Bilbao",
+"a": "Getafe",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.535,
+"safe": "1X",
+"ps": 0.814,
+"o25": 0.335,
+"btts": 0.365,
+"res": null,
+"st": [
+5.0,
+2.8
+]
+},
+"2026-10-25|Celta|Betis": {
+"id": "2026-10-25|Celta|Betis",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-25",
+"time": "16:15",
+"h": "Celta",
+"a": "Betis",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.387,
+"safe": "1X",
+"ps": 0.663,
+"o25": 0.493,
+"btts": 0.54,
+"res": null,
+"st": [
+5.2,
+4.0
+]
+},
+"2026-10-25|Sociedad|Levante": {
+"id": "2026-10-25|Sociedad|Levante",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-25",
+"time": "18:30",
+"h": "Sociedad",
+"a": "Levante",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.518,
+"safe": "1X",
+"ps": 0.759,
+"o25": 0.611,
+"btts": 0.614,
+"res": null,
+"st": [
+5.9,
+3.8
+]
+},
+"2026-10-25|Barcelona|Real Madrid": {
+"id": "2026-10-25|Barcelona|Real Madrid",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-25",
+"time": "21:00",
+"h": "Barcelona",
+"a": "Real Madrid",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.574,
+"safe": "1X",
+"ps": 0.787,
+"o25": 0.717,
+"btts": 0.687,
+"res": null,
+"st": [
+6.0,
+4.2
+]
+},
+"2026-10-26|Sevilla|Osasuna": {
+"id": "2026-10-26|Sevilla|Osasuna",
+"lg": "es.1",
+"liga": "LaLiga",
+"date": "2026-10-26",
+"time": "21:00",
+"h": "Sevilla",
+"a": "Osasuna",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.445,
+"safe": "1X",
+"ps": 0.722,
+"o25": 0.439,
+"btts": 0.494,
+"res": null,
+"st": [
+4.6,
+3.5
+]
+},
+"2026-10-23|Torino|Monza": {
+"id": "2026-10-23|Torino|Monza",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-23",
+"time": "19:45",
+"h": "Torino",
+"a": "Monza",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.513,
+"safe": "1X",
+"ps": 0.761,
+"o25": 0.491,
+"btts": 0.526,
+"res": null,
+"st": [
+4.7,
+3.7
+]
+},
+"2026-10-24|Cagliari|Bologna": {
+"id": "2026-10-24|Cagliari|Bologna",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-24",
+"time": "14:00",
+"h": "Cagliari",
+"a": "Bologna",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.412,
+"safe": "X2",
+"ps": 0.691,
+"o25": 0.431,
+"btts": 0.486,
+"res": null,
+"st": [
+3.9,
+4.0
+]
+},
+"2026-10-24|Como|Sassuolo": {
+"id": "2026-10-24|Como|Sassuolo",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-24",
+"time": "14:00",
+"h": "Como",
+"a": "Sassuolo",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.617,
+"safe": "1X",
+"ps": 0.83,
+"o25": 0.566,
+"btts": 0.542,
+"res": null,
+"st": [
+6.0,
+3.5
+]
+},
+"2026-10-24|Napoli|Roma": {
+"id": "2026-10-24|Napoli|Roma",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-24",
+"time": "17:00",
+"h": "Napoli",
+"a": "Roma",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.362,
+"safe": "1X",
+"ps": 0.644,
+"o25": 0.423,
+"btts": 0.483,
+"res": null,
+"st": [
+4.4,
+3.8
+]
+},
+"2026-10-24|Lazio|Parma": {
+"id": "2026-10-24|Lazio|Parma",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-24",
+"time": "19:45",
+"h": "Lazio",
+"a": "Parma",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.593,
+"safe": "1X",
+"ps": 0.833,
+"o25": 0.415,
+"btts": 0.426,
+"res": null,
+"st": [
+4.6,
+3.2
+]
+},
+"2026-10-25|Inter|Fiorentina": {
+"id": "2026-10-25|Inter|Fiorentina",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-25",
+"time": "12:30",
+"h": "Inter",
+"a": "Fiorentina",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.721,
+"safe": "1X",
+"ps": 0.885,
+"o25": 0.646,
+"btts": 0.558,
+"res": null,
+"st": [
+6.2,
+3.2
+]
+},
+"2026-10-25|Atalanta|Frosinone": {
+"id": "2026-10-25|Atalanta|Frosinone",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Atalanta",
+"a": "Frosinone",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.581,
+"safe": "1X",
+"ps": 0.796,
+"o25": 0.665,
+"btts": 0.632,
+"res": null,
+"st": [
+5.0,
+4.3
+]
+},
+"2026-10-25|Genoa|Venezia": {
+"id": "2026-10-25|Genoa|Venezia",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Genoa",
+"a": "Venezia",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.471,
+"safe": "1X",
+"ps": 0.736,
+"o25": 0.473,
+"btts": 0.511,
+"res": null,
+"st": [
+4.7,
+3.7
+]
+},
+"2026-10-25|Lecce|Juventus": {
+"id": "2026-10-25|Lecce|Juventus",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-25",
+"time": "18:00",
+"h": "Lecce",
+"a": "Juventus",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.6,
+"safe": "X2",
+"ps": 0.836,
+"o25": 0.446,
+"btts": 0.435,
+"res": null,
+"st": [
+2.9,
+5.4
+]
+},
+"2026-10-25|Udinese|Milan": {
+"id": "2026-10-25|Udinese|Milan",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-25",
+"time": "20:45",
+"h": "Udinese",
+"a": "Milan",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.529,
+"safe": "X2",
+"ps": 0.773,
+"o25": 0.518,
+"btts": 0.537,
+"res": null,
+"st": [
+4.0,
+4.2
+]
+},
+"2026-10-27|Sassuolo|Lazio": {
+"id": "2026-10-27|Sassuolo|Lazio",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-27",
+"time": "18:30",
+"h": "Sassuolo",
+"a": "Lazio",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.456,
+"safe": "X2",
+"ps": 0.717,
+"o25": 0.478,
+"btts": 0.525,
+"res": null,
+"st": [
+4.4,
+4.6
+]
+},
+"2026-10-27|Roma|Cagliari": {
+"id": "2026-10-27|Roma|Cagliari",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-27",
+"time": "20:45",
+"h": "Roma",
+"a": "Cagliari",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.659,
+"safe": "1X",
+"ps": 0.862,
+"o25": 0.516,
+"btts": 0.478,
+"res": null,
+"st": [
+5.3,
+3.4
+]
+},
+"2026-10-27|Torino|Como": {
+"id": "2026-10-27|Torino|Como",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-27",
+"time": "20:45",
+"h": "Torino",
+"a": "Como",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.506,
+"safe": "X2",
+"ps": 0.76,
+"o25": 0.475,
+"btts": 0.509,
+"res": null,
+"st": [
+3.6,
+4.8
+]
+},
+"2026-10-23|Stuttgart|M'gladbach": {
+"id": "2026-10-23|Stuttgart|M'gladbach",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-23",
+"time": "19:30",
+"h": "Stuttgart",
+"a": "M'gladbach",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.67,
+"safe": "1X",
+"ps": 0.856,
+"o25": 0.713,
+"btts": 0.635,
+"res": null,
+"st": [
+7.4,
+3.8
+]
+},
+"2026-10-24|Augsburg|Union Berlin": {
+"id": "2026-10-24|Augsburg|Union Berlin",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-24",
+"time": "14:30",
+"h": "Augsburg",
+"a": "Union Berlin",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.492,
+"safe": "1X",
+"ps": 0.746,
+"o25": 0.555,
+"btts": 0.58,
+"res": null,
+"st": [
+5.5,
+3.9
+]
+},
+"2026-10-24|FC Koln|Schalke 04": {
+"id": "2026-10-24|FC Koln|Schalke 04",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-24",
+"time": "14:30",
+"h": "FC Koln",
+"a": "Schalke 04",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.447,
+"safe": "1X",
+"ps": 0.704,
+"o25": 0.574,
+"btts": 0.59,
+"res": null,
+"st": [
+6.3,
+3.5
+]
+},
+"2026-10-24|Mainz|Werder Bremen": {
+"id": "2026-10-24|Mainz|Werder Bremen",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-24",
+"time": "14:30",
+"h": "Mainz",
+"a": "Werder Bremen",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.545,
+"safe": "1X",
+"ps": 0.784,
+"o25": 0.601,
+"btts": 0.593,
+"res": null,
+"st": [
+5.5,
+4.0
+]
+},
+"2026-10-24|RB Leipzig|Elversberg": {
+"id": "2026-10-24|RB Leipzig|Elversberg",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-24",
+"time": "14:30",
+"h": "RB Leipzig",
+"a": "Elversberg",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.596,
+"safe": "1X",
+"ps": 0.8,
+"o25": 0.775,
+"btts": 0.718,
+"res": null,
+"st": [
+6.7,
+3.8
+]
+},
+"2026-10-24|Paderborn|Hamburg": {
+"id": "2026-10-24|Paderborn|Hamburg",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-24",
+"time": "14:30",
+"h": "Paderborn",
+"a": "Hamburg",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.452,
+"safe": "1X",
+"ps": 0.72,
+"o25": 0.513,
+"btts": 0.552,
+"res": null,
+"st": [
+4.4,
+4.7
+]
+},
+"2026-10-24|Dortmund|Ein Frankfurt": {
+"id": "2026-10-24|Dortmund|Ein Frankfurt",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-24",
+"time": "17:30",
+"h": "Dortmund",
+"a": "Ein Frankfurt",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.641,
+"safe": "1X",
+"ps": 0.841,
+"o25": 0.661,
+"btts": 0.612,
+"res": null,
+"st": [
+5.7,
+3.4
+]
+},
+"2026-10-25|Hoffenheim|Leverkusen": {
+"id": "2026-10-25|Hoffenheim|Leverkusen",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-25",
+"time": "15:30",
+"h": "Hoffenheim",
+"a": "Leverkusen",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.465,
+"safe": "X2",
+"ps": 0.708,
+"o25": 0.674,
+"btts": 0.677,
+"res": null,
+"st": [
+5.7,
+4.2
+]
+},
+"2026-10-25|Freiburg|Bayern Munich": {
+"id": "2026-10-25|Freiburg|Bayern Munich",
+"lg": "de.1",
+"liga": "Bundesliga",
+"date": "2026-10-25",
+"time": "17:30",
+"h": "Freiburg",
+"a": "Bayern Munich",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.611,
+"safe": "X2",
+"ps": 0.817,
+"o25": 0.692,
+"btts": 0.653,
+"res": null,
+"st": [
+4.1,
+5.6
+]
+},
+"2026-10-23|Brest|Nice": {
+"id": "2026-10-23|Brest|Nice",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-23",
+"time": "19:45",
+"h": "Brest",
+"a": "Nice",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.453,
+"safe": "1X",
+"ps": 0.706,
+"o25": 0.54,
+"btts": 0.573,
+"res": null,
+"st": [
+4.8,
+3.8
+]
+},
+"2026-10-24|Toulouse|Troyes": {
+"id": "2026-10-24|Toulouse|Troyes",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-24",
+"time": "16:15",
+"h": "Toulouse",
+"a": "Troyes",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.587,
+"safe": "1X",
+"ps": 0.812,
+"o25": 0.552,
+"btts": 0.53,
+"res": null,
+"st": [
+4.9,
+3.2
+]
+},
+"2026-10-24|Lens|Paris FC": {
+"id": "2026-10-24|Lens|Paris FC",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-24",
+"time": "19:45",
+"h": "Lens",
+"a": "Paris FC",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.526,
+"safe": "1X",
+"ps": 0.763,
+"o25": 0.571,
+"btts": 0.578,
+"res": null,
+"st": [
+5.2,
+3.4
+]
+},
+"2026-10-25|Monaco|Lille": {
+"id": "2026-10-25|Monaco|Lille",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-25",
+"time": "15:00",
+"h": "Monaco",
+"a": "Lille",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.445,
+"safe": "1X",
+"ps": 0.706,
+"o25": 0.5,
+"btts": 0.539,
+"res": null,
+"st": [
+4.2,
+4.2
+]
+},
+"2026-10-25|Auxerre|Le Mans": {
+"id": "2026-10-25|Auxerre|Le Mans",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-25",
+"time": "17:15",
+"h": "Auxerre",
+"a": "Le Mans",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.456,
+"safe": "1X",
+"ps": 0.709,
+"o25": 0.543,
+"btts": 0.573,
+"res": null,
+"st": [
+4.9,
+4.2
+]
+},
+"2026-10-25|Angers|Lorient": {
+"id": "2026-10-25|Angers|Lorient",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-25",
+"time": "17:15",
+"h": "Angers",
+"a": "Lorient",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.412,
+"safe": "X2",
+"ps": 0.686,
+"o25": 0.439,
+"btts": 0.495,
+"res": null,
+"st": [
+3.7,
+4.4
+]
+},
+"2026-10-25|Marseille|Le Havre": {
+"id": "2026-10-25|Marseille|Le Havre",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-25",
+"time": "17:15",
+"h": "Marseille",
+"a": "Le Havre",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.653,
+"safe": "1X",
+"ps": 0.849,
+"o25": 0.596,
+"btts": 0.547,
+"res": null,
+"st": [
+5.6,
+3.5
+]
+},
+"2026-10-25|Rennes|Strasbourg": {
+"id": "2026-10-25|Rennes|Strasbourg",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-25",
+"time": "17:15",
+"h": "Rennes",
+"a": "Strasbourg",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.479,
+"safe": "1X",
+"ps": 0.715,
+"o25": 0.639,
+"btts": 0.647,
+"res": null,
+"st": [
+5.8,
+4.3
+]
+},
+"2026-10-25|Paris SG|Lyon": {
+"id": "2026-10-25|Paris SG|Lyon",
+"lg": "fr.1",
+"liga": "Ligue 1",
+"date": "2026-10-25",
+"time": "20:45",
+"h": "Paris SG",
+"a": "Lyon",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.633,
+"safe": "1X",
+"ps": 0.834,
+"o25": 0.63,
+"btts": 0.58,
+"res": null,
+"st": [
+6.0,
+3.6
+]
+},
+"2026-10-23|Guimaraes|Maritimo": {
+"id": "2026-10-23|Guimaraes|Maritimo",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-23",
+"time": "20:45",
+"h": "Guimaraes",
+"a": "Maritimo",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.45,
+"safe": "1X",
+"ps": 0.722,
+"o25": 0.49,
+"btts": 0.516,
+"res": null,
+"st": [
+5.5,
+3.4
+]
+},
+"2026-10-24|Estrela|Casa Pia": {
+"id": "2026-10-24|Estrela|Casa Pia",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-24",
+"time": "15:30",
+"h": "Estrela",
+"a": "Casa Pia",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.45,
+"safe": "1X",
+"ps": 0.728,
+"o25": 0.446,
+"btts": 0.487,
+"res": null,
+"st": [
+4.4,
+3.4
+]
+},
+"2026-10-24|Alverca|Arouca": {
+"id": "2026-10-24|Alverca|Arouca",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-24",
+"time": "18:00",
+"h": "Alverca",
+"a": "Arouca",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.392,
+"safe": "1X",
+"ps": 0.664,
+"o25": 0.52,
+"btts": 0.555,
+"res": null,
+"st": [
+4.3,
+3.7
+]
+},
+"2026-10-24|Gil Vicente|Porto": {
+"id": "2026-10-24|Gil Vicente|Porto",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-24",
+"time": "20:30",
+"h": "Gil Vicente",
+"a": "Porto",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.587,
+"safe": "X2",
+"ps": 0.827,
+"o25": 0.404,
+"btts": 0.425,
+"res": null,
+"st": [
+3.5,
+4.1
+]
+},
+"2026-10-25|Estoril|Moreirense": {
+"id": "2026-10-25|Estoril|Moreirense",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-25",
+"time": "16:30",
+"h": "Estoril",
+"a": "Moreirense",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.423,
+"safe": "1X",
+"ps": 0.695,
+"o25": 0.508,
+"btts": 0.538,
+"res": null,
+"st": [
+4.9,
+3.5
+]
+},
+"2026-10-25|Nacional|Sp Braga": {
+"id": "2026-10-25|Nacional|Sp Braga",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-25",
+"time": "19:00",
+"h": "Nacional",
+"a": "Sp Braga",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.556,
+"safe": "X2",
+"ps": 0.793,
+"o25": 0.525,
+"btts": 0.533,
+"res": null,
+"st": [
+3.8,
+4.4
+]
+},
+"2026-10-25|Rio Ave|Famalicao": {
+"id": "2026-10-25|Rio Ave|Famalicao",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-25",
+"time": "19:00",
+"h": "Rio Ave",
+"a": "Famalicao",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.46,
+"safe": "X2",
+"ps": 0.735,
+"o25": 0.448,
+"btts": 0.489,
+"res": null,
+"st": [
+3.7,
+4.4
+]
+},
+"2026-10-25|Sp Lisbon|Academico Viseu": {
+"id": "2026-10-25|Sp Lisbon|Academico Viseu",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-25",
+"time": "21:30",
+"h": "Sp Lisbon",
+"a": "Academico Viseu",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.754,
+"safe": "1X",
+"ps": 0.905,
+"o25": 0.661,
+"btts": 0.535,
+"res": null,
+"st": [
+7.3,
+2.9
+]
+},
+"2026-10-26|Santa Clara|Benfica": {
+"id": "2026-10-26|Santa Clara|Benfica",
+"lg": "pt.1",
+"liga": "Primeira Liga",
+"date": "2026-10-26",
+"time": "19:45",
+"h": "Santa Clara",
+"a": "Benfica",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.594,
+"safe": "X2",
+"ps": 0.828,
+"o25": 0.447,
+"btts": 0.454,
+"res": null,
+"st": [
+3.2,
+4.5
+]
+},
+"2026-10-23|Go Ahead Eagles|Telstar": {
+"id": "2026-10-23|Go Ahead Eagles|Telstar",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-23",
+"time": "19:00",
+"h": "Go Ahead Eagles",
+"a": "Telstar",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.481,
+"safe": "1X",
+"ps": 0.739,
+"o25": 0.654,
+"btts": 0.656,
+"res": null,
+"st": [
+6.4,
+4.6
+]
+},
+"2026-10-24|Utrecht|Zwolle": {
+"id": "2026-10-24|Utrecht|Zwolle",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-24",
+"time": "15:30",
+"h": "Utrecht",
+"a": "Zwolle",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.589,
+"safe": "1X",
+"ps": 0.82,
+"o25": 0.643,
+"btts": 0.617,
+"res": null,
+"st": [
+6.2,
+4.2
+]
+},
+"2026-10-24|Willem II|Cambuur": {
+"id": "2026-10-24|Willem II|Cambuur",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-24",
+"time": "17:45",
+"h": "Willem II",
+"a": "Cambuur",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.437,
+"safe": "X2",
+"ps": 0.702,
+"o25": 0.628,
+"btts": 0.651,
+"res": null,
+"st": [
+4.4,
+4.8
+]
+},
+"2026-10-24|Den Haag|Heerenveen": {
+"id": "2026-10-24|Den Haag|Heerenveen",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-24",
+"time": "20:00",
+"h": "Den Haag",
+"a": "Heerenveen",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.417,
+"safe": "X2",
+"ps": 0.692,
+"o25": 0.596,
+"btts": 0.625,
+"res": null,
+"st": [
+4.3,
+6.2
+]
+},
+"2026-10-25|For Sittard|Excelsior": {
+"id": "2026-10-25|For Sittard|Excelsior",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-25",
+"time": "12:15",
+"h": "For Sittard",
+"a": "Excelsior",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.416,
+"safe": "1X",
+"ps": 0.692,
+"o25": 0.581,
+"btts": 0.616,
+"res": null,
+"st": [
+4.9,
+4.7
+]
+},
+"2026-10-25|Nijmegen|Groningen": {
+"id": "2026-10-25|Nijmegen|Groningen",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-25",
+"time": "14:30",
+"h": "Nijmegen",
+"a": "Groningen",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.457,
+"safe": "1X",
+"ps": 0.719,
+"o25": 0.645,
+"btts": 0.657,
+"res": null,
+"st": [
+5.6,
+4.8
+]
+},
+"2026-10-25|PSV Eindhoven|Feyenoord": {
+"id": "2026-10-25|PSV Eindhoven|Feyenoord",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-25",
+"time": "14:30",
+"h": "PSV Eindhoven",
+"a": "Feyenoord",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.506,
+"safe": "+2.5",
+"ps": 0.747,
+"o25": 0.747,
+"btts": 0.73,
+"res": null,
+"st": [
+6.0,
+5.0
+]
+},
+"2026-10-25|Sparta Rotterdam|Ajax": {
+"id": "2026-10-25|Sparta Rotterdam|Ajax",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-25",
+"time": "16:45",
+"h": "Sparta Rotterdam",
+"a": "Ajax",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.544,
+"safe": "X2",
+"ps": 0.789,
+"o25": 0.62,
+"btts": 0.619,
+"res": null,
+"st": [
+4.7,
+5.7
+]
+},
+"2026-10-25|AZ Alkmaar|Twente": {
+"id": "2026-10-25|AZ Alkmaar|Twente",
+"lg": "nl.1",
+"liga": "Eredivisie",
+"date": "2026-10-25",
+"time": "20:00",
+"h": "AZ Alkmaar",
+"a": "Twente",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.39,
+"safe": "1X",
+"ps": 0.675,
+"o25": 0.543,
+"btts": 0.587,
+"res": null,
+"st": [
+5.1,
+5.0
+]
+},
+"2026-10-20|Wolves|Portsmouth": {
+"id": "2026-10-20|Wolves|Portsmouth",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-20",
+"time": "19:45",
+"h": "Wolves",
+"a": "Portsmouth",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.525,
+"safe": "1X",
+"ps": 0.767,
+"o25": 0.57,
+"btts": 0.563,
+"res": null,
+"st": [
+4.4,
+3.7
+]
+},
+"2026-10-23|Bolton|Middlesbrough": {
+"id": "2026-10-23|Bolton|Middlesbrough",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-23",
+"time": "20:00",
+"h": "Bolton",
+"a": "Middlesbrough",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.411,
+"safe": "X2",
+"ps": 0.67,
+"o25": 0.562,
+"btts": 0.593,
+"res": null,
+"st": [
+4.4,
+5.3
+]
+},
+"2026-10-24|Charlton|Norwich": {
+"id": "2026-10-24|Charlton|Norwich",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "12:30",
+"h": "Charlton",
+"a": "Norwich",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.395,
+"safe": "X2",
+"ps": 0.671,
+"o25": 0.462,
+"btts": 0.514,
+"res": null,
+"st": [
+3.5,
+4.5
+]
+},
+"2026-10-24|Portsmouth|Millwall": {
+"id": "2026-10-24|Portsmouth|Millwall",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "12:30",
+"h": "Portsmouth",
+"a": "Millwall",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.373,
+"safe": "X2",
+"ps": 0.654,
+"o25": 0.435,
+"btts": 0.495,
+"res": null,
+"st": [
+4.0,
+3.7
+]
+},
+"2026-10-24|Sheffield United|Derby": {
+"id": "2026-10-24|Sheffield United|Derby",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "12:30",
+"h": "Sheffield United",
+"a": "Derby",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.487,
+"safe": "1X",
+"ps": 0.747,
+"o25": 0.488,
+"btts": 0.519,
+"res": null,
+"st": [
+4.7,
+3.9
+]
+},
+"2026-10-24|Blackburn|Wrexham": {
+"id": "2026-10-24|Blackburn|Wrexham",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Blackburn",
+"a": "Wrexham",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.384,
+"safe": "1X",
+"ps": 0.66,
+"o25": 0.462,
+"btts": 0.515,
+"res": null,
+"st": [
+3.8,
+3.4
+]
+},
+"2026-10-24|Cardiff|Birmingham": {
+"id": "2026-10-24|Cardiff|Birmingham",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Cardiff",
+"a": "Birmingham",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.403,
+"safe": "X2",
+"ps": 0.667,
+"o25": 0.527,
+"btts": 0.567,
+"res": null,
+"st": [
+4.3,
+4.3
+]
+},
+"2026-10-24|Lincoln|Burnley": {
+"id": "2026-10-24|Lincoln|Burnley",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Lincoln",
+"a": "Burnley",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.478,
+"safe": "X2",
+"ps": 0.746,
+"o25": 0.448,
+"btts": 0.483,
+"res": null,
+"st": [
+3.1,
+4.6
+]
+},
+"2026-10-24|Preston|West Brom": {
+"id": "2026-10-24|Preston|West Brom",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Preston",
+"a": "West Brom",
+"pub": "2026-10-20T12:19",
+"k1": "2",
+"p1": 0.411,
+"safe": "X2",
+"ps": 0.695,
+"o25": 0.402,
+"btts": 0.465,
+"res": null,
+"st": [
+3.3,
+4.0
+]
+},
+"2026-10-24|QPR|Swansea": {
+"id": "2026-10-24|QPR|Swansea",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "QPR",
+"a": "Swansea",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.375,
+"safe": "1X",
+"ps": 0.65,
+"o25": 0.459,
+"btts": 0.513,
+"res": null,
+"st": [
+4.5,
+3.9
+]
+},
+"2026-10-24|Stoke|Bristol City": {
+"id": "2026-10-24|Stoke|Bristol City",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Stoke",
+"a": "Bristol City",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.393,
+"safe": "1X",
+"ps": 0.674,
+"o25": 0.431,
+"btts": 0.491,
+"res": null,
+"st": [
+3.8,
+4.0
+]
+},
+"2026-10-24|West Ham|Southampton": {
+"id": "2026-10-24|West Ham|Southampton",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "West Ham",
+"a": "Southampton",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.496,
+"safe": "1X",
+"ps": 0.725,
+"o25": 0.694,
+"btts": 0.666,
+"res": null,
+"st": [
+5.6,
+3.7
+]
+},
+"2026-10-24|Wolves|Watford": {
+"id": "2026-10-24|Wolves|Watford",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-10-24",
+"time": "15:00",
+"h": "Wolves",
+"a": "Watford",
+"pub": "2026-10-20T12:19",
+"k1": "1",
+"p1": 0.568,
+"safe": "1X",
+"ps": 0.797,
+"o25": 0.585,
+"btts": 0.566,
+"res": null,
+"st": [
+4.8,
+3.8
+]
 }
 }
