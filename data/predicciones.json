@@ -32,7 +32,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.4,
+9.0
+],
+"cx": [
+6.0,
+3.5
+]
 },
 "2026-10-10|Aston Villa|Brentford": {
 "id": "2026-10-10|Aston Villa|Brentford",
@@ -67,7 +75,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.3,
+11.0
+],
+"cx": [
+5.6,
+4.3
+]
 },
 "2026-10-10|Chelsea|Bournemouth": {
 "id": "2026-10-10|Chelsea|Bournemouth",
@@ -101,7 +117,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+14.8,
+11.1
+],
+"cx": [
+6.5,
+4.4
+]
 },
 "2026-10-10|Ipswich|Fulham": {
 "id": "2026-10-10|Ipswich|Fulham",
@@ -135,7 +159,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.5,
+13.4
+],
+"cx": [
+4.8,
+5.4
+]
 },
 "2026-10-10|Sunderland|Brighton": {
 "id": "2026-10-10|Sunderland|Brighton",
@@ -169,7 +201,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.2,
+12.9
+],
+"cx": [
+4.5,
+4.7
+]
 },
 "2026-10-10|Man United|Tottenham": {
 "id": "2026-10-10|Man United|Tottenham",
@@ -204,7 +244,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.4,
+10.3
+],
+"cx": [
+5.3,
+4.8
+]
 },
 "2026-10-11|Crystal Palace|Nott'm Forest": {
 "id": "2026-10-11|Crystal Palace|Nott'm Forest",
@@ -238,7 +286,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.4,
+11.5
+],
+"cx": [
+4.7,
+4.6
+]
 },
 "2026-10-11|Hull|Everton": {
 "id": "2026-10-11|Hull|Everton",
@@ -273,7 +329,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.5,
+11.3
+],
+"cx": [
+4.5,
+4.8
+]
 },
 "2026-10-11|Liverpool|Man City": {
 "id": "2026-10-11|Liverpool|Man City",
@@ -308,7 +372,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.7,
+12.5
+],
+"cx": [
+5.1,
+5.1
+]
 },
 "2026-10-12|Coventry|Newcastle": {
 "id": "2026-10-12|Coventry|Newcastle",
@@ -342,7 +414,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.0,
+13.9
+],
+"cx": [
+4.9,
+4.8
+]
 },
 "2026-10-10|Vallecano|Ath Bilbao": {
 "id": "2026-10-10|Vallecano|Ath Bilbao",
@@ -368,7 +448,15 @@
 "o1": 2.7,
 "oX": 3.34,
 "o2": 2.55
-}
+},
+"sx": [
+13.3,
+11.8
+],
+"cx": [
+5.3,
+5.0
+]
 },
 "2026-10-10|Alaves|Ath Madrid": {
 "id": "2026-10-10|Alaves|Ath Madrid",
@@ -403,7 +491,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.3,
+11.2
+],
+"cx": [
+5.2,
+5.0
+]
 },
 "2026-10-10|Barcelona|Getafe": {
 "id": "2026-10-10|Barcelona|Getafe",
@@ -438,7 +534,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+17.6,
+7.8
+],
+"cx": [
+6.8,
+3.6
+]
 },
 "2026-10-10|Real Madrid|Villarreal": {
 "id": "2026-10-10|Real Madrid|Villarreal",
@@ -472,7 +576,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+18.8,
+9.6
+],
+"cx": [
+6.9,
+3.4
+]
 },
 "2026-10-11|Elche|Celta": {
 "id": "2026-10-11|Elche|Celta",
@@ -507,7 +619,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.4,
+10.2
+],
+"cx": [
+4.9,
+3.3
+]
 },
 "2026-10-11|Sociedad|La Coruna": {
 "id": "2026-10-11|Sociedad|La Coruna",
@@ -542,7 +662,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.4,
+10.0
+],
+"cx": [
+6.4,
+4.0
+]
 },
 "2026-10-11|Betis|Osasuna": {
 "id": "2026-10-11|Betis|Osasuna",
@@ -577,7 +705,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.6,
+10.6
+],
+"cx": [
+5.2,
+3.9
+]
 },
 "2026-10-11|Santander|Valencia": {
 "id": "2026-10-11|Santander|Valencia",
@@ -611,7 +747,15 @@
 "hit_safe": true,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.4,
+12.4
+],
+"cx": [
+4.9,
+6.4
+]
 },
 "2026-10-12|Levante|Sevilla": {
 "id": "2026-10-12|Levante|Sevilla",
@@ -646,7 +790,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.1,
+11.1
+],
+"cx": [
+4.7,
+4.5
+]
 },
 "2026-10-10|Genoa|Fiorentina": {
 "id": "2026-10-10|Genoa|Fiorentina",
@@ -681,7 +833,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.9,
+12.1
+],
+"cx": [
+4.6,
+4.1
+]
 },
 "2026-10-10|Inter|Parma": {
 "id": "2026-10-10|Inter|Parma",
@@ -716,7 +876,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+19.2,
+8.4
+],
+"cx": [
+6.9,
+2.8
+]
 },
 "2026-10-10|Napoli|Frosinone": {
 "id": "2026-10-10|Napoli|Frosinone",
@@ -751,7 +919,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.9,
+10.6
+],
+"cx": [
+6.0,
+3.7
+]
 },
 "2026-10-11|Como|Roma": {
 "id": "2026-10-11|Como|Roma",
@@ -786,7 +962,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.8,
+10.3
+],
+"cx": [
+4.6,
+3.5
+]
 },
 "2026-10-11|Lazio|Monza": {
 "id": "2026-10-11|Lazio|Monza",
@@ -821,7 +1005,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.3,
+10.0
+],
+"cx": [
+5.0,
+3.4
+]
 },
 "2026-10-11|Lecce|Bologna": {
 "id": "2026-10-11|Lecce|Bologna",
@@ -855,7 +1047,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+10.7,
+11.7
+],
+"cx": [
+5.0,
+4.0
+]
 },
 "2026-10-11|Sassuolo|Milan": {
 "id": "2026-10-11|Sassuolo|Milan",
@@ -889,7 +1089,15 @@
 "hit_safe": true,
 "hit_1x2": false,
 "hit_ou": false,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.8,
+12.5
+],
+"cx": [
+4.7,
+3.9
+]
 },
 "2026-10-11|Cagliari|Juventus": {
 "id": "2026-10-11|Cagliari|Juventus",
@@ -924,7 +1132,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.0,
+14.2
+],
+"cx": [
+4.0,
+5.0
+]
 },
 "2026-10-12|Atalanta|Venezia": {
 "id": "2026-10-12|Atalanta|Venezia",
@@ -959,7 +1175,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.7,
+10.2
+],
+"cx": [
+6.5,
+3.5
+]
 },
 "2026-10-12|Torino|Udinese": {
 "id": "2026-10-12|Torino|Udinese",
@@ -993,7 +1217,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+14.0,
+11.5
+],
+"cx": [
+4.8,
+4.1
+]
 },
 "2026-10-10|Augsburg|Bayern Munich": {
 "id": "2026-10-10|Augsburg|Bayern Munich",
@@ -1028,7 +1260,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+12.7,
+16.2
+],
+"cx": [
+4.4,
+5.6
+]
 },
 "2026-10-10|Hoffenheim|Hamburg": {
 "id": "2026-10-10|Hoffenheim|Hamburg",
@@ -1062,7 +1302,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+16.8,
+10.5
+],
+"cx": [
+6.9,
+3.5
+]
 },
 "2026-10-10|Mainz|Leverkusen": {
 "id": "2026-10-10|Mainz|Leverkusen",
@@ -1097,7 +1345,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.9,
+13.4
+],
+"cx": [
+5.1,
+4.5
+]
 },
 "2026-10-10|Paderborn|Stuttgart": {
 "id": "2026-10-10|Paderborn|Stuttgart",
@@ -1132,7 +1388,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.7,
+15.5
+],
+"cx": [
+4.7,
+5.6
+]
 },
 "2026-10-10|Union Berlin|Elversberg": {
 "id": "2026-10-10|Union Berlin|Elversberg",
@@ -1167,7 +1431,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+19.6,
+10.2
+],
+"cx": [
+7.1,
+3.7
+]
 },
 "2026-10-10|RB Leipzig|Ein Frankfurt": {
 "id": "2026-10-10|RB Leipzig|Ein Frankfurt",
@@ -1202,7 +1474,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.6,
+10.6
+],
+"cx": [
+5.7,
+3.9
+]
 },
 "2026-10-11|FC Koln|M'gladbach": {
 "id": "2026-10-11|FC Koln|M'gladbach",
@@ -1236,7 +1516,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+15.9,
+11.4
+],
+"cx": [
+5.5,
+4.1
+]
 },
 "2026-10-11|Freiburg|Schalke 04": {
 "id": "2026-10-11|Freiburg|Schalke 04",
@@ -1271,7 +1559,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+17.2,
+10.9
+],
+"cx": [
+6.7,
+2.9
+]
 },
 "2026-10-10|Lille|Le Havre": {
 "id": "2026-10-10|Lille|Le Havre",
@@ -1306,7 +1602,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.6,
+9.5
+],
+"cx": [
+5.8,
+3.7
+]
 },
 "2026-10-10|Brest|Angers": {
 "id": "2026-10-10|Brest|Angers",
@@ -1341,7 +1645,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.5,
+10.7
+],
+"cx": [
+5.2,
+4.3
+]
 },
 "2026-10-10|Lorient|Paris FC": {
 "id": "2026-10-10|Lorient|Paris FC",
@@ -1375,7 +1687,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.4,
+10.5
+],
+"cx": [
+4.7,
+4.2
+]
 },
 "2026-10-10|Monaco|Toulouse": {
 "id": "2026-10-10|Monaco|Toulouse",
@@ -1409,7 +1729,15 @@
 "hit_safe": true,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.1,
+12.3
+],
+"cx": [
+5.4,
+4.0
+]
 },
 "2026-10-10|Paris SG|Le Mans": {
 "id": "2026-10-10|Paris SG|Le Mans",
@@ -1444,7 +1772,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+20.0,
+8.6
+],
+"cx": [
+8.0,
+2.4
+]
 },
 "2026-10-11|Nice|Strasbourg": {
 "id": "2026-10-11|Nice|Strasbourg",
@@ -1478,7 +1814,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.2,
+12.2
+],
+"cx": [
+5.5,
+4.2
+]
 },
 "2026-10-11|Rennes|Auxerre": {
 "id": "2026-10-11|Rennes|Auxerre",
@@ -1513,7 +1857,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.4,
+11.2
+],
+"cx": [
+6.2,
+4.4
+]
 },
 "2026-10-11|Troyes|Marseille": {
 "id": "2026-10-11|Troyes|Marseille",
@@ -1548,7 +1900,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.1,
+13.4
+],
+"cx": [
+6.2,
+2.6
+]
 },
 "2026-10-10|Casa Pia|Santa Clara": {
 "id": "2026-10-10|Casa Pia|Santa Clara",
@@ -1582,7 +1942,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+10.2,
+11.5
+],
+"cx": [
+4.9,
+4.8
+]
 },
 "2026-10-10|Maritimo|Porto": {
 "id": "2026-10-10|Maritimo|Porto",
@@ -1617,7 +1985,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+10.9,
+12.8
+],
+"cx": [
+3.2,
+4.6
+]
 },
 "2026-10-10|Academico Viseu|Estoril": {
 "id": "2026-10-10|Academico Viseu|Estoril",
@@ -1652,7 +2028,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.7,
+13.5
+],
+"cx": [
+4.0,
+4.5
+]
 },
 "2026-10-11|Rio Ave|Nacional": {
 "id": "2026-10-11|Rio Ave|Nacional",
@@ -1686,7 +2070,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.0,
+13.0
+],
+"cx": [
+5.4,
+4.8
+]
 },
 "2026-10-11|Benfica|Guimaraes": {
 "id": "2026-10-11|Benfica|Guimaraes",
@@ -1721,7 +2113,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.6,
+10.1
+],
+"cx": [
+5.9,
+3.1
+]
 },
 "2026-10-11|Arouca|Estrela": {
 "id": "2026-10-11|Arouca|Estrela",
@@ -1756,7 +2156,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.3,
+10.9
+],
+"cx": [
+4.9,
+3.8
+]
 },
 "2026-10-12|Famalicao|Alverca": {
 "id": "2026-10-12|Famalicao|Alverca",
@@ -1791,7 +2199,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.2,
+9.1
+],
+"cx": [
+5.3,
+4.4
+]
 },
 "2026-10-10|Go Ahead Eagles|Sparta Rotterdam": {
 "id": "2026-10-10|Go Ahead Eagles|Sparta Rotterdam",
@@ -1826,7 +2242,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+15.5,
+14.4
+],
+"cx": [
+6.8,
+4.7
+]
 },
 "2026-10-10|Feyenoord|AZ Alkmaar": {
 "id": "2026-10-10|Feyenoord|AZ Alkmaar",
@@ -1861,7 +2285,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.9,
+11.9
+],
+"cx": [
+6.5,
+4.1
+]
 },
 "2026-10-10|For Sittard|Twente": {
 "id": "2026-10-10|For Sittard|Twente",
@@ -1896,7 +2328,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.7,
+16.4
+],
+"cx": [
+4.2,
+6.0
+]
 },
 "2026-10-10|Ajax|Nijmegen": {
 "id": "2026-10-10|Ajax|Nijmegen",
@@ -1931,7 +2371,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.8,
+13.2
+],
+"cx": [
+4.9,
+4.7
+]
 },
 "2026-10-11|Utrecht|Willem II": {
 "id": "2026-10-11|Utrecht|Willem II",
@@ -1966,7 +2414,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+17.8,
+10.2
+],
+"cx": [
+6.4,
+3.7
+]
 },
 "2026-10-11|Telstar|Den Haag": {
 "id": "2026-10-11|Telstar|Den Haag",
@@ -2001,7 +2457,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.0,
+12.8
+],
+"cx": [
+5.7,
+4.6
+]
 },
 "2026-10-11|Zwolle|Cambuur": {
 "id": "2026-10-11|Zwolle|Cambuur",
@@ -2035,7 +2499,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+13.6,
+13.4
+],
+"cx": [
+5.2,
+4.4
+]
 },
 "2026-10-11|Excelsior|Groningen": {
 "id": "2026-10-11|Excelsior|Groningen",
@@ -2070,7 +2542,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.1,
+14.1
+],
+"cx": [
+4.8,
+5.1
+]
 },
 "2026-10-10|Charlton|Bristol City": {
 "id": "2026-10-10|Charlton|Bristol City",
@@ -2105,7 +2585,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+12.2,
+13.3
+],
+"cx": [
+5.1,
+4.9
+]
 },
 "2026-10-10|Swansea|Norwich": {
 "id": "2026-10-10|Swansea|Norwich",
@@ -2139,7 +2627,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.4,
+11.9
+],
+"cx": [
+4.8,
+4.9
+]
 },
 "2026-10-10|West Brom|Birmingham": {
 "id": "2026-10-10|West Brom|Birmingham",
@@ -2174,7 +2670,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.2,
+10.6
+],
+"cx": [
+5.0,
+4.7
+]
 },
 "2026-10-10|Blackburn|Cardiff": {
 "id": "2026-10-10|Blackburn|Cardiff",
@@ -2208,7 +2712,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.3,
+12.1
+],
+"cx": [
+5.4,
+4.8
+]
 },
 "2026-10-10|Bolton|Stoke": {
 "id": "2026-10-10|Bolton|Stoke",
@@ -2243,7 +2755,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.8,
+10.5
+],
+"cx": [
+5.4,
+4.8
+]
 },
 "2026-10-10|Derby|Wrexham": {
 "id": "2026-10-10|Derby|Wrexham",
@@ -2278,7 +2798,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.2,
+11.2
+],
+"cx": [
+5.4,
+4.4
+]
 },
 "2026-10-10|Middlesbrough|Wolves": {
 "id": "2026-10-10|Middlesbrough|Wolves",
@@ -2313,7 +2841,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.1,
+12.0
+],
+"cx": [
+6.4,
+4.8
+]
 },
 "2026-10-10|Preston|Millwall": {
 "id": "2026-10-10|Preston|Millwall",
@@ -2348,7 +2884,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+12.8,
+14.0
+],
+"cx": [
+6.0,
+5.6
+]
 },
 "2026-10-10|Sheffield United|Lincoln": {
 "id": "2026-10-10|Sheffield United|Lincoln",
@@ -2383,7 +2927,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.0,
+11.8
+],
+"cx": [
+7.6,
+4.5
+]
 },
 "2026-10-10|Watford|Burnley": {
 "id": "2026-10-10|Watford|Burnley",
@@ -2417,7 +2969,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.6,
+11.2
+],
+"cx": [
+4.7,
+4.9
+]
 },
 "2026-10-11|Southampton|Portsmouth": {
 "id": "2026-10-11|Southampton|Portsmouth",
@@ -2452,7 +3012,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.6,
+12.1
+],
+"cx": [
+6.0,
+5.0
+]
 },
 "2026-10-13|Bristol City|Blackburn": {
 "id": "2026-10-13|Bristol City|Blackburn",
@@ -2487,7 +3055,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.0,
+11.2
+],
+"cx": [
+5.5,
+5.0
+]
 },
 "2026-10-13|Burnley|Charlton": {
 "id": "2026-10-13|Burnley|Charlton",
@@ -2522,7 +3098,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+15.8,
+9.4
+],
+"cx": [
+6.1,
+3.8
+]
 },
 "2026-10-13|Cardiff|Watford": {
 "id": "2026-10-13|Cardiff|Watford",
@@ -2557,7 +3141,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.6,
+11.8
+],
+"cx": [
+5.7,
+4.5
+]
 },
 "2026-10-13|Millwall|Swansea": {
 "id": "2026-10-13|Millwall|Swansea",
@@ -2592,7 +3184,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.9,
+12.0
+],
+"cx": [
+6.0,
+4.7
+]
 },
 "2026-10-13|Wolves|Bolton": {
 "id": "2026-10-13|Wolves|Bolton",
@@ -2627,7 +3227,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.8,
+11.5
+],
+"cx": [
+6.0,
+4.7
+]
 },
 "2026-10-13|Wrexham|West Brom": {
 "id": "2026-10-13|Wrexham|West Brom",
@@ -2661,7 +3269,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+11.2,
+11.6
+],
+"cx": [
+4.9,
+4.7
+]
 },
 "2026-10-13|Birmingham|Preston": {
 "id": "2026-10-13|Birmingham|Preston",
@@ -2696,7 +3312,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.7,
+10.6
+],
+"cx": [
+7.1,
+4.2
+]
 },
 "2026-10-13|Stoke|Middlesbrough": {
 "id": "2026-10-13|Stoke|Middlesbrough",
@@ -2731,7 +3355,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+10.9,
+15.5
+],
+"cx": [
+5.4,
+5.6
+]
 },
 "2026-10-14|Norwich|Southampton": {
 "id": "2026-10-14|Norwich|Southampton",
@@ -2765,7 +3397,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+14.6,
+11.4
+],
+"cx": [
+5.6,
+4.6
+]
 },
 "2026-10-14|Portsmouth|Sheffield United": {
 "id": "2026-10-14|Portsmouth|Sheffield United",
@@ -2800,7 +3440,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.1,
+10.5
+],
+"cx": [
+6.7,
+4.5
+]
 },
 "2026-10-14|QPR|Derby": {
 "id": "2026-10-14|QPR|Derby",
@@ -2835,7 +3483,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.1,
+10.8
+],
+"cx": [
+5.6,
+4.4
+]
 },
 "2026-10-14|Lincoln|West Ham": {
 "id": "2026-10-14|Lincoln|West Ham",
@@ -2870,7 +3526,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.3,
+14.0
+],
+"cx": [
+4.4,
+6.6
+]
 },
 "2026-10-17|Everton|Chelsea": {
 "id": "2026-10-17|Everton|Chelsea",
@@ -2904,7 +3568,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.4,
+12.5
+],
+"cx": [
+4.7,
+5.3
+]
 },
 "2026-10-17|Brentford|Liverpool": {
 "id": "2026-10-17|Brentford|Liverpool",
@@ -2938,7 +3610,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.7,
+13.2
+],
+"cx": [
+4.8,
+5.3
+]
 },
 "2026-10-17|Fulham|Hull": {
 "id": "2026-10-17|Fulham|Hull",
@@ -2973,7 +3653,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.1,
+10.8
+],
+"cx": [
+6.1,
+4.2
+]
 },
 "2026-10-17|Man City|Ipswich": {
 "id": "2026-10-17|Man City|Ipswich",
@@ -3008,7 +3696,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+18.6,
+8.8
+],
+"cx": [
+7.7,
+3.2
+]
 },
 "2026-10-17|Newcastle|Aston Villa": {
 "id": "2026-10-17|Newcastle|Aston Villa",
@@ -3043,7 +3739,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.6,
+12.0
+],
+"cx": [
+5.8,
+4.5
+]
 },
 "2026-10-18|Bournemouth|Sunderland": {
 "id": "2026-10-18|Bournemouth|Sunderland",
@@ -3078,7 +3782,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.4,
+10.5
+],
+"cx": [
+5.7,
+4.1
+]
 },
 "2026-10-18|Brighton|Crystal Palace": {
 "id": "2026-10-18|Brighton|Crystal Palace",
@@ -3113,7 +3825,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.6,
+10.3
+],
+"cx": [
+5.5,
+4.1
+]
 },
 "2026-10-18|Leeds|Man United": {
 "id": "2026-10-18|Leeds|Man United",
@@ -3148,7 +3868,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.2,
+13.7
+],
+"cx": [
+5.0,
+4.8
+]
 },
 "2026-10-18|Nott'm Forest|Arsenal": {
 "id": "2026-10-18|Nott'm Forest|Arsenal",
@@ -3183,7 +3911,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+11.4,
+12.6
+],
+"cx": [
+4.3,
+4.6
+]
 },
 "2026-10-19|Tottenham|Coventry": {
 "id": "2026-10-19|Tottenham|Coventry",
@@ -3218,7 +3954,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.4,
+9.9
+],
+"cx": [
+5.6,
+3.7
+]
 },
 "2026-10-16|La Coruna|Levante": {
 "id": "2026-10-16|La Coruna|Levante",
@@ -3253,7 +3997,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.2,
+10.9
+],
+"cx": [
+6.4,
+4.3
+]
 },
 "2026-10-17|Espanol|Ath Madrid": {
 "id": "2026-10-17|Espanol|Ath Madrid",
@@ -3287,7 +4039,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+13.9,
+11.9
+],
+"cx": [
+4.7,
+4.9
+]
 },
 "2026-10-17|Villarreal|Elche": {
 "id": "2026-10-17|Villarreal|Elche",
@@ -3322,7 +4082,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.3,
+10.1
+],
+"cx": [
+4.9,
+3.9
+]
 },
 "2026-10-17|Betis|Barcelona": {
 "id": "2026-10-17|Betis|Barcelona",
@@ -3356,7 +4124,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.3,
+14.1
+],
+"cx": [
+4.8,
+5.7
+]
 },
 "2026-10-17|Valencia|Ath Bilbao": {
 "id": "2026-10-17|Valencia|Ath Bilbao",
@@ -3391,7 +4167,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+12.0,
+11.2
+],
+"cx": [
+4.9,
+4.5
+]
 },
 "2026-10-18|Osasuna|Santander": {
 "id": "2026-10-18|Osasuna|Santander",
@@ -3426,7 +4210,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.2,
+10.1
+],
+"cx": [
+7.0,
+4.2
+]
 },
 "2026-10-18|Celta|Alaves": {
 "id": "2026-10-18|Celta|Alaves",
@@ -3461,7 +4253,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+12.6,
+10.7
+],
+"cx": [
+4.6,
+4.0
+]
 },
 "2026-10-18|Malaga|Sociedad": {
 "id": "2026-10-18|Malaga|Sociedad",
@@ -3495,7 +4295,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+14.2,
+11.3
+],
+"cx": [
+5.8,
+4.6
+]
 },
 "2026-10-18|Real Madrid|Sevilla": {
 "id": "2026-10-18|Real Madrid|Sevilla",
@@ -3530,7 +4338,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.8,
+9.7
+],
+"cx": [
+6.0,
+3.6
+]
 },
 "2026-10-19|Getafe|Vallecano": {
 "id": "2026-10-19|Getafe|Vallecano",
@@ -3564,7 +4380,15 @@
 "hit_safe": true,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.9,
+11.1
+],
+"cx": [
+5.5,
+4.5
+]
 },
 "2026-10-16|Frosinone|Sassuolo": {
 "id": "2026-10-16|Frosinone|Sassuolo",
@@ -3599,7 +4423,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.7,
+12.1
+],
+"cx": [
+6.4,
+3.9
+]
 },
 "2026-10-17|Venezia|Napoli": {
 "id": "2026-10-17|Venezia|Napoli",
@@ -3634,7 +4466,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.7,
+12.7
+],
+"cx": [
+3.8,
+5.1
+]
 },
 "2026-10-17|Bologna|Inter": {
 "id": "2026-10-17|Bologna|Inter",
@@ -3669,7 +4509,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.8,
+12.7
+],
+"cx": [
+3.8,
+4.9
+]
 },
 "2026-10-17|Roma|Genoa": {
 "id": "2026-10-17|Roma|Genoa",
@@ -3704,7 +4552,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+15.3,
+9.6
+],
+"cx": [
+5.7,
+3.1
+]
 },
 "2026-10-18|Udinese|Lecce": {
 "id": "2026-10-18|Udinese|Lecce",
@@ -3739,7 +4595,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.5,
+10.6
+],
+"cx": [
+5.3,
+4.1
+]
 },
 "2026-10-18|Fiorentina|Como": {
 "id": "2026-10-18|Fiorentina|Como",
@@ -3774,7 +4638,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+12.2,
+13.5
+],
+"cx": [
+4.0,
+4.3
+]
 },
 "2026-10-18|Milan|Atalanta": {
 "id": "2026-10-18|Milan|Atalanta",
@@ -3809,7 +4681,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.1,
+11.9
+],
+"cx": [
+4.6,
+4.3
+]
 },
 "2026-10-18|Juventus|Lazio": {
 "id": "2026-10-18|Juventus|Lazio",
@@ -3844,7 +4724,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+17.1,
+9.1
+],
+"cx": [
+5.6,
+3.2
+]
 },
 "2026-10-19|Monza|Cagliari": {
 "id": "2026-10-19|Monza|Cagliari",
@@ -3878,7 +4766,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.7,
+11.5
+],
+"cx": [
+5.1,
+4.0
+]
 },
 "2026-10-19|Parma|Torino": {
 "id": "2026-10-19|Parma|Torino",
@@ -3912,7 +4808,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+12.9,
+12.2
+],
+"cx": [
+4.5,
+4.0
+]
 },
 "2026-10-16|Ein Frankfurt|FC Koln": {
 "id": "2026-10-16|Ein Frankfurt|FC Koln",
@@ -3947,7 +4851,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.3,
+12.1
+],
+"cx": [
+5.8,
+4.1
+]
 },
 "2026-10-17|Elversberg|Augsburg": {
 "id": "2026-10-17|Elversberg|Augsburg",
@@ -3981,7 +4893,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.6,
+15.6
+],
+"cx": [
+5.2,
+5.2
+]
 },
 "2026-10-17|Hamburg|Stuttgart": {
 "id": "2026-10-17|Hamburg|Stuttgart",
@@ -4016,7 +4936,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.2,
+13.5
+],
+"cx": [
+4.4,
+5.0
+]
 },
 "2026-10-17|Schalke 04|Mainz": {
 "id": "2026-10-17|Schalke 04|Mainz",
@@ -4050,7 +4978,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+13.3,
+12.8
+],
+"cx": [
+4.0,
+5.5
+]
 },
 "2026-10-17|Union Berlin|Dortmund": {
 "id": "2026-10-17|Union Berlin|Dortmund",
@@ -4084,7 +5020,15 @@
 "hit_safe": true,
 "hit_1x2": false,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.8,
+11.7
+],
+"cx": [
+5.1,
+4.4
+]
 },
 "2026-10-17|Werder Bremen|Paderborn": {
 "id": "2026-10-17|Werder Bremen|Paderborn",
@@ -4119,7 +5063,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+17.9,
+12.5
+],
+"cx": [
+6.2,
+4.1
+]
 },
 "2026-10-17|Bayern Munich|RB Leipzig": {
 "id": "2026-10-17|Bayern Munich|RB Leipzig",
@@ -4154,7 +5106,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+17.9,
+11.4
+],
+"cx": [
+6.5,
+3.6
+]
 },
 "2026-10-18|Leverkusen|Freiburg": {
 "id": "2026-10-18|Leverkusen|Freiburg",
@@ -4189,7 +5149,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.4,
+11.2
+],
+"cx": [
+5.6,
+3.5
+]
 },
 "2026-10-18|M'gladbach|Hoffenheim": {
 "id": "2026-10-18|M'gladbach|Hoffenheim",
@@ -4223,7 +5191,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.5,
+13.4
+],
+"cx": [
+4.9,
+4.7
+]
 },
 "2026-10-16|Le Mans|Toulouse": {
 "id": "2026-10-16|Le Mans|Toulouse",
@@ -4257,7 +5233,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.0,
+14.2
+],
+"cx": [
+4.0,
+5.0
+]
 },
 "2026-10-17|Strasbourg|Paris SG": {
 "id": "2026-10-17|Strasbourg|Paris SG",
@@ -4292,7 +5276,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+10.8,
+15.3
+],
+"cx": [
+3.6,
+5.0
+]
 },
 "2026-10-17|Lille|Brest": {
 "id": "2026-10-17|Lille|Brest",
@@ -4327,7 +5319,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.7,
+10.0
+],
+"cx": [
+6.2,
+3.6
+]
 },
 "2026-10-17|Troyes|Lens": {
 "id": "2026-10-17|Troyes|Lens",
@@ -4362,7 +5362,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.8,
+13.5
+],
+"cx": [
+6.1,
+3.3
+]
 },
 "2026-10-18|Angers|Marseille": {
 "id": "2026-10-18|Angers|Marseille",
@@ -4397,7 +5405,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.5,
+13.8
+],
+"cx": [
+4.4,
+4.5
+]
 },
 "2026-10-18|Le Havre|Auxerre": {
 "id": "2026-10-18|Le Havre|Auxerre",
@@ -4431,7 +5447,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.7,
+11.0
+],
+"cx": [
+5.2,
+4.5
+]
 },
 "2026-10-18|Lorient|Monaco": {
 "id": "2026-10-18|Lorient|Monaco",
@@ -4466,7 +5490,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+12.9,
+11.1
+],
+"cx": [
+4.1,
+4.8
+]
 },
 "2026-10-18|Paris FC|Rennes": {
 "id": "2026-10-18|Paris FC|Rennes",
@@ -4500,7 +5532,15 @@
 "hit_safe": true,
 "hit_1x2": true,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+13.5,
+12.6
+],
+"cx": [
+4.9,
+5.4
+]
 },
 "2026-10-18|Lyon|Nice": {
 "id": "2026-10-18|Lyon|Nice",
@@ -4535,7 +5575,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.7,
+10.4
+],
+"cx": [
+6.3,
+4.5
+]
 },
 "2026-10-19|Sp Braga|Gil Vicente": {
 "id": "2026-10-19|Sp Braga|Gil Vicente",
@@ -4570,7 +5618,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+11.9,
+10.3
+],
+"cx": [
+4.7,
+3.7
+]
 },
 "2026-10-16|Heerenveen|Excelsior": {
 "id": "2026-10-16|Heerenveen|Excelsior",
@@ -4605,7 +5661,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.1,
+12.2
+],
+"cx": [
+5.8,
+4.1
+]
 },
 "2026-10-17|Den Haag|PSV Eindhoven": {
 "id": "2026-10-17|Den Haag|PSV Eindhoven",
@@ -4640,7 +5704,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+11.7,
+17.0
+],
+"cx": [
+4.0,
+6.4
+]
 },
 "2026-10-17|Telstar|Feyenoord": {
 "id": "2026-10-17|Telstar|Feyenoord",
@@ -4675,7 +5747,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+12.3,
+15.9
+],
+"cx": [
+4.2,
+6.4
+]
 },
 "2026-10-17|Sparta Rotterdam|Willem II": {
 "id": "2026-10-17|Sparta Rotterdam|Willem II",
@@ -4710,7 +5790,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+17.5,
+11.0
+],
+"cx": [
+6.5,
+4.5
+]
 },
 "2026-10-18|Zwolle|Go Ahead Eagles": {
 "id": "2026-10-18|Zwolle|Go Ahead Eagles",
@@ -4745,7 +5833,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+15.2,
+13.7
+],
+"cx": [
+5.3,
+5.5
+]
 },
 "2026-10-18|Cambuur|AZ Alkmaar": {
 "id": "2026-10-18|Cambuur|AZ Alkmaar",
@@ -4780,7 +5876,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+12.6,
+14.5
+],
+"cx": [
+4.5,
+5.6
+]
 },
 "2026-10-18|Groningen|Ajax": {
 "id": "2026-10-18|Groningen|Ajax",
@@ -4815,7 +5919,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+15.7,
+12.6
+],
+"cx": [
+6.0,
+4.4
+]
 },
 "2026-10-18|Nijmegen|For Sittard": {
 "id": "2026-10-18|Nijmegen|For Sittard",
@@ -4850,7 +5962,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+18.2,
+10.3
+],
+"cx": [
+7.5,
+3.5
+]
 },
 "2026-10-18|Twente|Utrecht": {
 "id": "2026-10-18|Twente|Utrecht",
@@ -4884,7 +6004,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": true,
-"hit_btts": true
+"hit_btts": true,
+"sx": [
+18.0,
+10.9
+],
+"cx": [
+5.9,
+4.0
+]
 },
 "2026-10-16|Burnley|Wolves": {
 "id": "2026-10-16|Burnley|Wolves",
@@ -4919,7 +6047,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": false
+"hit_st": false,
+"sx": [
+12.3,
+12.1
+],
+"cx": [
+5.1,
+4.8
+]
 },
 "2026-10-17|Middlesbrough|Cardiff": {
 "id": "2026-10-17|Middlesbrough|Cardiff",
@@ -4954,7 +6090,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.5,
+10.7
+],
+"cx": [
+6.5,
+4.2
+]
 },
 "2026-10-17|Millwall|Lincoln": {
 "id": "2026-10-17|Millwall|Lincoln",
@@ -4989,7 +6133,15 @@
 "hit_1x2": false,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.1,
+11.5
+],
+"cx": [
+7.8,
+4.3
+]
 },
 "2026-10-17|Watford|Charlton": {
 "id": "2026-10-17|Watford|Charlton",
@@ -5024,7 +6176,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+16.2,
+10.3
+],
+"cx": [
+6.0,
+4.6
+]
 },
 "2026-10-17|Birmingham|QPR": {
 "id": "2026-10-17|Birmingham|QPR",
@@ -5059,7 +6219,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.5,
+11.3
+],
+"cx": [
+6.1,
+4.1
+]
 },
 "2026-10-17|Bristol City|Sheffield United": {
 "id": "2026-10-17|Bristol City|Sheffield United",
@@ -5094,7 +6262,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+13.6,
+11.7
+],
+"cx": [
+6.1,
+4.7
+]
 },
 "2026-10-17|Derby|Stoke": {
 "id": "2026-10-17|Derby|Stoke",
@@ -5129,7 +6305,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.4,
+10.7
+],
+"cx": [
+5.2,
+4.8
+]
 },
 "2026-10-17|Norwich|Portsmouth": {
 "id": "2026-10-17|Norwich|Portsmouth",
@@ -5163,7 +6347,15 @@
 "hit_safe": false,
 "hit_1x2": false,
 "hit_ou": false,
-"hit_btts": false
+"hit_btts": false,
+"sx": [
+12.5,
+10.9
+],
+"cx": [
+5.5,
+4.7
+]
 },
 "2026-10-17|Southampton|Bolton": {
 "id": "2026-10-17|Southampton|Bolton",
@@ -5198,7 +6390,15 @@
 "hit_1x2": false,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": false
+"hit_st": false,
+"sx": [
+14.8,
+12.6
+],
+"cx": [
+6.0,
+4.7
+]
 },
 "2026-10-17|Swansea|West Ham": {
 "id": "2026-10-17|Swansea|West Ham",
@@ -5233,7 +6433,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.0,
+13.5
+],
+"cx": [
+4.6,
+5.8
+]
 },
 "2026-10-17|West Brom|Blackburn": {
 "id": "2026-10-17|West Brom|Blackburn",
@@ -5268,7 +6476,15 @@
 "hit_1x2": true,
 "hit_ou": false,
 "hit_btts": false,
-"hit_st": true
+"hit_st": true,
+"sx": [
+13.4,
+9.5
+],
+"cx": [
+5.9,
+4.4
+]
 },
 "2026-10-17|Wrexham|Preston": {
 "id": "2026-10-17|Wrexham|Preston",
@@ -5303,7 +6519,15 @@
 "hit_1x2": true,
 "hit_ou": true,
 "hit_btts": true,
-"hit_st": true
+"hit_st": true,
+"sx": [
+14.3,
+10.7
+],
+"cx": [
+6.0,
+4.5
+]
 },
 "2026-10-16|Wieczysta Krakow|Rakow": {
 "id": "2026-10-16|Wieczysta Krakow|Rakow",
@@ -5594,6 +6818,14 @@
 "st": [
 5.6,
 4.3
+],
+"sx": [
+13.8,
+11.8
+],
+"cx": [
+4.9,
+4.7
 ]
 },
 "2026-10-20|Sabah FK|Borussia Dortmund": {
@@ -5632,6 +6864,14 @@
 "st": [
 6.4,
 3.1
+],
+"sx": [
+18.2,
+9.8
+],
+"cx": [
+6.8,
+3.8
 ]
 },
 "2026-10-20|FC Porto|PSV Eindhoven": {
@@ -5653,6 +6893,14 @@
 "st": [
 5.7,
 4.0
+],
+"sx": [
+15.6,
+11.3
+],
+"cx": [
+5.3,
+4.4
 ]
 },
 "2026-10-20|Liverpool|Villarreal": {
@@ -5673,6 +6921,14 @@
 "res": null,
 "st": [
 6.2,
+3.5
+],
+"sx": [
+15.9,
+9.8
+],
+"cx": [
+5.5,
 3.5
 ]
 },
@@ -5695,6 +6951,14 @@
 "st": [
 6.8,
 4.0
+],
+"sx": [
+16.8,
+10.9
+],
+"cx": [
+6.7,
+3.6
 ]
 },
 "2026-10-20|Napoli|Bodo/Glimt": {
@@ -5716,6 +6980,14 @@
 "st": [
 5.4,
 4.4
+],
+"sx": [
+17.0,
+11.3
+],
+"cx": [
+8.1,
+3.5
 ]
 },
 "2026-10-20|Paris Saint-Germain|Barcelona": {
@@ -5737,6 +7009,14 @@
 "st": [
 6.0,
 4.5
+],
+"sx": [
+16.4,
+11.0
+],
+"cx": [
+5.6,
+3.4
 ]
 },
 "2026-10-20|VfB Stuttgart|Atlético Madrid": {
@@ -5758,6 +7038,14 @@
 "st": [
 6.4,
 3.7
+],
+"sx": [
+17.8,
+10.0
+],
+"cx": [
+7.1,
+3.6
 ]
 },
 "2026-10-21|Como|Manchester United": {
@@ -5796,6 +7084,14 @@
 "st": [
 5.5,
 4.0
+],
+"sx": [
+14.2,
+10.8
+],
+"cx": [
+5.4,
+3.5
 ]
 },
 "2026-10-21|Aston Villa|Viking FK": {
@@ -5834,6 +7130,14 @@
 "st": [
 5.2,
 4.0
+],
+"sx": [
+16.2,
+9.7
+],
+"cx": [
+5.3,
+3.7
 ]
 },
 "2026-10-21|Club Brugge|Lens": {
@@ -5854,6 +7158,14 @@
 "res": null,
 "st": [
 5.8,
+3.8
+],
+"sx": [
+14.8,
+11.6
+],
+"cx": [
+5.2,
 3.8
 ]
 },
@@ -5876,6 +7188,14 @@
 "st": [
 5.6,
 3.8
+],
+"sx": [
+16.3,
+10.5
+],
+"cx": [
+5.0,
+3.5
 ]
 },
 "2026-10-21|Real Betis|Feyenoord Rotterdam": {
@@ -5897,6 +7217,14 @@
 "st": [
 5.9,
 3.1
+],
+"sx": [
+15.8,
+8.8
+],
+"cx": [
+5.7,
+3.4
 ]
 },
 "2026-10-21|Real Madrid|RB Leipzig": {
@@ -5918,6 +7246,14 @@
 "st": [
 6.2,
 5.1
+],
+"sx": [
+18.0,
+12.7
+],
+"cx": [
+6.6,
+5.2
 ]
 },
 "2026-10-21|Sporting CP|LASK Linz": {
@@ -5938,6 +7274,14 @@
 "res": null,
 "st": [
 5.5,
+3.2
+],
+"sx": [
+15.2,
+9.2
+],
+"cx": [
+5.8,
 3.2
 ]
 },
@@ -6011,6 +7355,14 @@
 "st": [
 4.7,
 4.9
+],
+"sx": [
+13.4,
+14.4
+],
+"cx": [
+5.0,
+4.7
 ]
 },
 "2026-10-22|Lech Poznan|Sunderland": {
@@ -6066,6 +7418,14 @@
 "st": [
 4.7,
 4.6
+],
+"sx": [
+12.9,
+12.4
+],
+"cx": [
+4.2,
+5.3
 ]
 },
 "2026-10-22|Union St.-Gilloise|Hapoel Be'er": {
@@ -6121,6 +7481,14 @@
 "st": [
 4.0,
 5.3
+],
+"sx": [
+12.1,
+14.7
+],
+"cx": [
+3.9,
+4.2
 ]
 },
 "2026-10-22|Celtic|Celta Vigo": {
@@ -6142,6 +7510,14 @@
 "st": [
 4.3,
 4.4
+],
+"sx": [
+11.5,
+11.6
+],
+"cx": [
+5.4,
+4.2
 ]
 },
 "2026-10-22|Jagiellonia Bialystok|Anderlecht": {
@@ -6163,6 +7539,14 @@
 "st": [
 4.6,
 3.5
+],
+"sx": [
+12.2,
+10.4
+],
+"cx": [
+4.2,
+4.2
 ]
 },
 "2026-10-22|Lillestrom|Real Sociedad": {
@@ -6201,6 +7585,14 @@
 "st": [
 6.3,
 4.4
+],
+"sx": [
+16.5,
+11.1
+],
+"cx": [
+5.3,
+3.3
 ]
 },
 "2026-10-22|Olympiacos|Sparta Prague": {
@@ -6222,6 +7614,14 @@
 "st": [
 5.4,
 3.5
+],
+"sx": [
+16.3,
+9.3
+],
+"cx": [
+5.3,
+3.8
 ]
 },
 "2026-10-22|Omonia Nicosia|Benfica": {
@@ -6243,6 +7643,14 @@
 "st": [
 4.8,
 4.1
+],
+"sx": [
+13.1,
+12.0
+],
+"cx": [
+5.6,
+4.6
 ]
 },
 "2026-10-22|TSG Hoffenheim|Lyon": {
@@ -6264,6 +7672,14 @@
 "st": [
 4.7,
 4.3
+],
+"sx": [
+14.8,
+10.4
+],
+"cx": [
+5.1,
+4.1
 ]
 },
 "2026-10-22|Viktoria Plzen|Levski Sofia": {
@@ -6302,6 +7718,14 @@
 "st": [
 4.0,
 5.8
+],
+"sx": [
+11.9,
+14.9
+],
+"cx": [
+3.3,
+5.5
 ]
 },
 "2026-10-22|FC Nordsjælland|CSKA Sofia": {
@@ -6442,6 +7866,14 @@
 "st": [
 5.0,
 4.1
+],
+"sx": [
+14.9,
+11.6
+],
+"cx": [
+5.5,
+3.9
 ]
 },
 "2026-10-22|Trabzonspor|Heart of Midlothian": {
@@ -6497,6 +7929,14 @@
 "st": [
 4.6,
 5.0
+],
+"sx": [
+11.7,
+12.7
+],
+"cx": [
+4.3,
+4.3
 ]
 },
 "2026-10-22|AS Monaco|SC Freiburg": {
@@ -6518,6 +7958,14 @@
 "st": [
 4.5,
 4.5
+],
+"sx": [
+13.4,
+13.1
+],
+"cx": [
+5.0,
+3.9
 ]
 },
 "2026-10-22|Borac Banja Luka|KuPS Kuopio": {
@@ -6539,6 +7987,14 @@
 "st": [
 5.0,
 3.0
+],
+"sx": [
+15.0,
+10.2
+],
+"cx": [
+5.7,
+4.1
 ]
 },
 "2026-10-22|Braga|KAA Gent": {
@@ -6560,6 +8016,14 @@
 "st": [
 5.0,
 4.2
+],
+"sx": [
+13.2,
+11.2
+],
+"cx": [
+5.2,
+4.6
 ]
 },
 "2026-10-22|FC Midtjylland|Sint-Truidense": {
@@ -6615,6 +8079,14 @@
 "st": [
 3.7,
 5.1
+],
+"sx": [
+11.2,
+14.5
+],
+"cx": [
+4.1,
+5.2
 ]
 },
 "2026-10-23|Ipswich|Nott'm Forest": {
@@ -6636,6 +8108,14 @@
 "st": [
 3.9,
 4.6
+],
+"sx": [
+12.4,
+13.8
+],
+"cx": [
+4.2,
+5.5
 ]
 },
 "2026-10-24|Aston Villa|Man City": {
@@ -6657,6 +8137,14 @@
 "st": [
 4.2,
 4.9
+],
+"sx": [
+12.2,
+13.7
+],
+"cx": [
+4.5,
+5.4
 ]
 },
 "2026-10-24|Arsenal|Everton": {
@@ -6678,6 +8166,14 @@
 "st": [
 5.1,
 2.9
+],
+"sx": [
+15.6,
+8.8
+],
+"cx": [
+5.7,
+3.6
 ]
 },
 "2026-10-24|Coventry|Fulham": {
@@ -6699,6 +8195,14 @@
 "st": [
 3.8,
 4.0
+],
+"sx": [
+12.2,
+14.3
+],
+"cx": [
+4.8,
+4.6
 ]
 },
 "2026-10-24|Chelsea|Tottenham": {
@@ -6720,6 +8224,14 @@
 "st": [
 4.5,
 3.9
+],
+"sx": [
+14.4,
+10.2
+],
+"cx": [
+5.7,
+4.6
 ]
 },
 "2026-10-25|Crystal Palace|Newcastle": {
@@ -6741,6 +8253,14 @@
 "st": [
 4.3,
 4.5
+],
+"sx": [
+13.6,
+11.5
+],
+"cx": [
+4.9,
+5.1
 ]
 },
 "2026-10-25|Hull|Brentford": {
@@ -6762,6 +8282,14 @@
 "st": [
 4.1,
 4.1
+],
+"sx": [
+13.1,
+11.9
+],
+"cx": [
+4.9,
+5.3
 ]
 },
 "2026-10-25|Liverpool|Brighton": {
@@ -6783,6 +8311,14 @@
 "st": [
 4.6,
 4.2
+],
+"sx": [
+15.0,
+11.6
+],
+"cx": [
+6.1,
+4.3
 ]
 },
 "2026-10-25|Man United|Bournemouth": {
@@ -6804,6 +8340,14 @@
 "st": [
 5.5,
 4.0
+],
+"sx": [
+16.1,
+11.7
+],
+"cx": [
+5.7,
+4.7
 ]
 },
 "2026-10-25|Sunderland|Leeds": {
@@ -6825,6 +8369,14 @@
 "st": [
 4.2,
 3.9
+],
+"sx": [
+12.8,
+12.3
+],
+"cx": [
+4.8,
+4.4
 ]
 },
 "2026-10-21|Levante|Ath Bilbao": {
@@ -6846,6 +8398,14 @@
 "st": [
 4.8,
 4.1
+],
+"sx": [
+12.6,
+12.7
+],
+"cx": [
+4.6,
+4.9
 ]
 },
 "2026-10-23|Alaves|Malaga": {
@@ -6867,6 +8427,14 @@
 "st": [
 6.0,
 2.9
+],
+"sx": [
+15.8,
+10.4
+],
+"cx": [
+5.2,
+4.9
 ]
 },
 "2026-10-24|Vallecano|Elche": {
@@ -6888,6 +8456,14 @@
 "st": [
 5.9,
 3.4
+],
+"sx": [
+17.0,
+10.3
+],
+"cx": [
+5.6,
+4.2
 ]
 },
 "2026-10-24|Santander|Espanol": {
@@ -6909,6 +8485,14 @@
 "st": [
 5.7,
 4.4
+],
+"sx": [
+14.0,
+12.5
+],
+"cx": [
+5.4,
+5.6
 ]
 },
 "2026-10-24|Valencia|Villarreal": {
@@ -6930,6 +8514,14 @@
 "st": [
 3.9,
 3.8
+],
+"sx": [
+14.1,
+10.5
+],
+"cx": [
+5.7,
+4.0
 ]
 },
 "2026-10-24|Ath Madrid|La Coruna": {
@@ -6951,6 +8543,14 @@
 "st": [
 5.6,
 3.4
+],
+"sx": [
+15.3,
+9.9
+],
+"cx": [
+7.0,
+4.1
 ]
 },
 "2026-10-25|Ath Bilbao|Getafe": {
@@ -6972,6 +8572,14 @@
 "st": [
 5.0,
 2.8
+],
+"sx": [
+14.8,
+8.1
+],
+"cx": [
+6.0,
+3.5
 ]
 },
 "2026-10-25|Celta|Betis": {
@@ -6993,6 +8601,14 @@
 "st": [
 5.2,
 4.0
+],
+"sx": [
+12.8,
+12.0
+],
+"cx": [
+4.5,
+3.9
 ]
 },
 "2026-10-25|Sociedad|Levante": {
@@ -7014,6 +8630,14 @@
 "st": [
 5.9,
 3.8
+],
+"sx": [
+15.6,
+12.1
+],
+"cx": [
+6.1,
+4.0
 ]
 },
 "2026-10-25|Barcelona|Real Madrid": {
@@ -7035,6 +8659,14 @@
 "st": [
 6.0,
 4.2
+],
+"sx": [
+17.2,
+10.8
+],
+"cx": [
+5.9,
+4.6
 ]
 },
 "2026-10-26|Sevilla|Osasuna": {
@@ -7056,6 +8688,14 @@
 "st": [
 4.6,
 3.5
+],
+"sx": [
+13.5,
+9.7
+],
+"cx": [
+5.2,
+3.4
 ]
 },
 "2026-10-23|Torino|Monza": {
@@ -7077,6 +8717,14 @@
 "st": [
 4.7,
 3.7
+],
+"sx": [
+14.4,
+10.9
+],
+"cx": [
+4.9,
+3.8
 ]
 },
 "2026-10-24|Cagliari|Bologna": {
@@ -7098,6 +8746,14 @@
 "st": [
 3.9,
 4.0
+],
+"sx": [
+11.8,
+12.1
+],
+"cx": [
+4.9,
+4.2
 ]
 },
 "2026-10-24|Como|Sassuolo": {
@@ -7119,6 +8775,14 @@
 "st": [
 6.0,
 3.5
+],
+"sx": [
+17.4,
+9.4
+],
+"cx": [
+5.8,
+3.2
 ]
 },
 "2026-10-24|Napoli|Roma": {
@@ -7140,6 +8804,14 @@
 "st": [
 4.4,
 3.8
+],
+"sx": [
+12.3,
+11.4
+],
+"cx": [
+4.7,
+3.5
 ]
 },
 "2026-10-24|Lazio|Parma": {
@@ -7161,6 +8833,14 @@
 "st": [
 4.6,
 3.2
+],
+"sx": [
+14.3,
+10.6
+],
+"cx": [
+5.1,
+3.6
 ]
 },
 "2026-10-25|Inter|Fiorentina": {
@@ -7182,6 +8862,14 @@
 "st": [
 6.2,
 3.2
+],
+"sx": [
+17.7,
+10.2
+],
+"cx": [
+5.9,
+3.3
 ]
 },
 "2026-10-25|Atalanta|Frosinone": {
@@ -7203,6 +8891,14 @@
 "st": [
 5.0,
 4.3
+],
+"sx": [
+16.9,
+12.2
+],
+"cx": [
+5.6,
+4.6
 ]
 },
 "2026-10-25|Genoa|Venezia": {
@@ -7224,6 +8920,14 @@
 "st": [
 4.7,
 3.7
+],
+"sx": [
+14.6,
+10.8
+],
+"cx": [
+5.1,
+4.0
 ]
 },
 "2026-10-25|Lecce|Juventus": {
@@ -7245,6 +8949,14 @@
 "st": [
 2.9,
 5.4
+],
+"sx": [
+10.3,
+14.2
+],
+"cx": [
+4.1,
+5.1
 ]
 },
 "2026-10-25|Udinese|Milan": {
@@ -7266,6 +8978,14 @@
 "st": [
 4.0,
 4.2
+],
+"sx": [
+12.7,
+12.4
+],
+"cx": [
+4.7,
+4.1
 ]
 },
 "2026-10-27|Sassuolo|Lazio": {
@@ -7287,6 +9007,14 @@
 "st": [
 4.4,
 4.6
+],
+"sx": [
+13.4,
+11.9
+],
+"cx": [
+4.5,
+4.2
 ]
 },
 "2026-10-27|Roma|Cagliari": {
@@ -7308,6 +9036,14 @@
 "st": [
 5.3,
 3.4
+],
+"sx": [
+15.6,
+9.2
+],
+"cx": [
+5.9,
+3.2
 ]
 },
 "2026-10-27|Torino|Como": {
@@ -7329,6 +9065,14 @@
 "st": [
 3.6,
 4.8
+],
+"sx": [
+11.2,
+13.9
+],
+"cx": [
+3.7,
+4.4
 ]
 },
 "2026-10-23|Stuttgart|M'gladbach": {
@@ -7350,6 +9094,14 @@
 "st": [
 7.4,
 3.8
+],
+"sx": [
+17.2,
+11.1
+],
+"cx": [
+6.1,
+3.4
 ]
 },
 "2026-10-24|Augsburg|Union Berlin": {
@@ -7371,6 +9123,14 @@
 "st": [
 5.5,
 3.9
+],
+"sx": [
+14.8,
+12.6
+],
+"cx": [
+5.4,
+4.6
 ]
 },
 "2026-10-24|FC Koln|Schalke 04": {
@@ -7391,6 +9151,14 @@
 "res": null,
 "st": [
 6.3,
+3.5
+],
+"sx": [
+16.0,
+10.3
+],
+"cx": [
+6.5,
 3.5
 ]
 },
@@ -7413,6 +9181,14 @@
 "st": [
 5.5,
 4.0
+],
+"sx": [
+14.7,
+12.1
+],
+"cx": [
+5.6,
+3.8
 ]
 },
 "2026-10-24|RB Leipzig|Elversberg": {
@@ -7434,6 +9210,14 @@
 "st": [
 6.7,
 3.8
+],
+"sx": [
+23.1,
+10.4
+],
+"cx": [
+8.1,
+3.5
 ]
 },
 "2026-10-24|Paderborn|Hamburg": {
@@ -7455,6 +9239,14 @@
 "st": [
 4.4,
 4.7
+],
+"sx": [
+16.1,
+13.8
+],
+"cx": [
+5.8,
+4.1
 ]
 },
 "2026-10-24|Dortmund|Ein Frankfurt": {
@@ -7476,6 +9268,14 @@
 "st": [
 5.7,
 3.4
+],
+"sx": [
+14.8,
+10.0
+],
+"cx": [
+5.6,
+3.7
 ]
 },
 "2026-10-25|Hoffenheim|Leverkusen": {
@@ -7497,6 +9297,14 @@
 "st": [
 5.7,
 4.2
+],
+"sx": [
+15.2,
+12.9
+],
+"cx": [
+5.6,
+4.6
 ]
 },
 "2026-10-25|Freiburg|Bayern Munich": {
@@ -7518,6 +9326,14 @@
 "st": [
 4.1,
 5.6
+],
+"sx": [
+12.3,
+15.0
+],
+"cx": [
+4.1,
+4.7
 ]
 },
 "2026-10-23|Brest|Nice": {
@@ -7539,6 +9355,14 @@
 "st": [
 4.8,
 3.8
+],
+"sx": [
+14.4,
+11.4
+],
+"cx": [
+5.1,
+4.9
 ]
 },
 "2026-10-24|Toulouse|Troyes": {
@@ -7560,6 +9384,14 @@
 "st": [
 4.9,
 3.2
+],
+"sx": [
+13.5,
+12.4
+],
+"cx": [
+3.3,
+5.5
 ]
 },
 "2026-10-24|Lens|Paris FC": {
@@ -7581,6 +9413,14 @@
 "st": [
 5.2,
 3.4
+],
+"sx": [
+15.2,
+10.4
+],
+"cx": [
+6.4,
+3.5
 ]
 },
 "2026-10-25|Monaco|Lille": {
@@ -7602,6 +9442,14 @@
 "st": [
 4.2,
 4.2
+],
+"sx": [
+11.8,
+12.5
+],
+"cx": [
+4.8,
+4.4
 ]
 },
 "2026-10-25|Auxerre|Le Mans": {
@@ -7623,6 +9471,14 @@
 "st": [
 4.9,
 4.2
+],
+"sx": [
+14.7,
+10.5
+],
+"cx": [
+6.0,
+3.4
 ]
 },
 "2026-10-25|Angers|Lorient": {
@@ -7644,6 +9500,14 @@
 "st": [
 3.7,
 4.4
+],
+"sx": [
+11.5,
+11.8
+],
+"cx": [
+5.3,
+3.7
 ]
 },
 "2026-10-25|Marseille|Le Havre": {
@@ -7665,6 +9529,14 @@
 "st": [
 5.6,
 3.5
+],
+"sx": [
+15.3,
+10.5
+],
+"cx": [
+5.4,
+3.7
 ]
 },
 "2026-10-25|Rennes|Strasbourg": {
@@ -7686,6 +9558,14 @@
 "st": [
 5.8,
 4.3
+],
+"sx": [
+15.6,
+11.5
+],
+"cx": [
+6.1,
+3.8
 ]
 },
 "2026-10-25|Paris SG|Lyon": {
@@ -7707,6 +9587,14 @@
 "st": [
 6.0,
 3.6
+],
+"sx": [
+16.5,
+9.7
+],
+"cx": [
+6.3,
+3.7
 ]
 },
 "2026-10-23|Guimaraes|Maritimo": {
@@ -7728,6 +9616,14 @@
 "st": [
 5.5,
 3.4
+],
+"sx": [
+16.4,
+9.0
+],
+"cx": [
+5.0,
+3.0
 ]
 },
 "2026-10-24|Estrela|Casa Pia": {
@@ -7749,6 +9645,14 @@
 "st": [
 4.4,
 3.4
+],
+"sx": [
+13.8,
+9.7
+],
+"cx": [
+5.0,
+4.5
 ]
 },
 "2026-10-24|Alverca|Arouca": {
@@ -7770,6 +9674,14 @@
 "st": [
 4.3,
 3.7
+],
+"sx": [
+12.9,
+10.8
+],
+"cx": [
+5.5,
+3.6
 ]
 },
 "2026-10-24|Gil Vicente|Porto": {
@@ -7791,6 +9703,14 @@
 "st": [
 3.5,
 4.1
+],
+"sx": [
+12.4,
+11.2
+],
+"cx": [
+4.3,
+4.4
 ]
 },
 "2026-10-25|Estoril|Moreirense": {
@@ -7812,6 +9732,14 @@
 "st": [
 4.9,
 3.5
+],
+"sx": [
+14.3,
+9.1
+],
+"cx": [
+5.1,
+3.7
 ]
 },
 "2026-10-25|Nacional|Sp Braga": {
@@ -7833,6 +9761,14 @@
 "st": [
 3.8,
 4.4
+],
+"sx": [
+12.2,
+11.7
+],
+"cx": [
+3.8,
+5.1
 ]
 },
 "2026-10-25|Rio Ave|Famalicao": {
@@ -7854,6 +9790,14 @@
 "st": [
 3.7,
 4.4
+],
+"sx": [
+10.8,
+12.7
+],
+"cx": [
+4.9,
+5.9
 ]
 },
 "2026-10-25|Sp Lisbon|Academico Viseu": {
@@ -7875,6 +9819,14 @@
 "st": [
 7.3,
 2.9
+],
+"sx": [
+20.0,
+8.2
+],
+"cx": [
+6.5,
+2.5
 ]
 },
 "2026-10-26|Santa Clara|Benfica": {
@@ -7896,6 +9848,14 @@
 "st": [
 3.2,
 4.5
+],
+"sx": [
+11.1,
+12.1
+],
+"cx": [
+3.6,
+5.9
 ]
 },
 "2026-10-23|Go Ahead Eagles|Telstar": {
@@ -7916,6 +9876,14 @@
 "res": null,
 "st": [
 6.4,
+4.6
+],
+"sx": [
+15.8,
+13.9
+],
+"cx": [
+6.7,
 4.6
 ]
 },
@@ -7938,6 +9906,14 @@
 "st": [
 6.2,
 4.2
+],
+"sx": [
+18.2,
+10.7
+],
+"cx": [
+6.3,
+3.9
 ]
 },
 "2026-10-24|Willem II|Cambuur": {
@@ -7959,6 +9935,14 @@
 "st": [
 4.4,
 4.8
+],
+"sx": [
+12.8,
+13.5
+],
+"cx": [
+5.0,
+4.6
 ]
 },
 "2026-10-24|Den Haag|Heerenveen": {
@@ -7980,6 +9964,14 @@
 "st": [
 4.3,
 6.2
+],
+"sx": [
+13.9,
+14.9
+],
+"cx": [
+4.5,
+5.1
 ]
 },
 "2026-10-25|For Sittard|Excelsior": {
@@ -8001,6 +9993,14 @@
 "st": [
 4.9,
 4.7
+],
+"sx": [
+14.2,
+12.6
+],
+"cx": [
+4.9,
+4.9
 ]
 },
 "2026-10-25|Nijmegen|Groningen": {
@@ -8022,6 +10022,14 @@
 "st": [
 5.6,
 4.8
+],
+"sx": [
+15.6,
+12.0
+],
+"cx": [
+6.0,
+4.5
 ]
 },
 "2026-10-25|PSV Eindhoven|Feyenoord": {
@@ -8043,6 +10051,14 @@
 "st": [
 6.0,
 5.0
+],
+"sx": [
+15.7,
+12.7
+],
+"cx": [
+5.7,
+4.8
 ]
 },
 "2026-10-25|Sparta Rotterdam|Ajax": {
@@ -8064,6 +10080,14 @@
 "st": [
 4.7,
 5.7
+],
+"sx": [
+14.3,
+14.7
+],
+"cx": [
+5.4,
+5.2
 ]
 },
 "2026-10-25|AZ Alkmaar|Twente": {
@@ -8085,6 +10109,14 @@
 "st": [
 5.1,
 5.0
+],
+"sx": [
+14.2,
+13.3
+],
+"cx": [
+5.6,
+4.5
 ]
 },
 "2026-10-20|Wolves|Portsmouth": {
@@ -8106,6 +10138,14 @@
 "st": [
 4.4,
 3.7
+],
+"sx": [
+14.2,
+11.1
+],
+"cx": [
+6.3,
+4.5
 ]
 },
 "2026-10-23|Bolton|Middlesbrough": {
@@ -8127,6 +10167,14 @@
 "st": [
 4.4,
 5.3
+],
+"sx": [
+12.7,
+14.8
+],
+"cx": [
+5.2,
+5.7
 ]
 },
 "2026-10-24|Charlton|Norwich": {
@@ -8148,6 +10196,14 @@
 "st": [
 3.5,
 4.5
+],
+"sx": [
+11.1,
+13.8
+],
+"cx": [
+4.8,
+5.0
 ]
 },
 "2026-10-24|Portsmouth|Millwall": {
@@ -8169,6 +10225,14 @@
 "st": [
 4.0,
 3.7
+],
+"sx": [
+14.2,
+10.7
+],
+"cx": [
+6.7,
+4.9
 ]
 },
 "2026-10-24|Sheffield United|Derby": {
@@ -8190,6 +10254,14 @@
 "st": [
 4.7,
 3.9
+],
+"sx": [
+13.7,
+11.8
+],
+"cx": [
+5.5,
+4.8
 ]
 },
 "2026-10-24|Blackburn|Wrexham": {
@@ -8211,6 +10283,14 @@
 "st": [
 3.8,
 3.4
+],
+"sx": [
+12.1,
+11.3
+],
+"cx": [
+5.5,
+4.6
 ]
 },
 "2026-10-24|Cardiff|Birmingham": {
@@ -8232,6 +10312,14 @@
 "st": [
 4.3,
 4.3
+],
+"sx": [
+13.3,
+12.1
+],
+"cx": [
+5.0,
+5.0
 ]
 },
 "2026-10-24|Lincoln|Burnley": {
@@ -8253,6 +10341,14 @@
 "st": [
 3.1,
 4.6
+],
+"sx": [
+11.7,
+13.5
+],
+"cx": [
+4.1,
+6.1
 ]
 },
 "2026-10-24|Preston|West Brom": {
@@ -8274,6 +10370,14 @@
 "st": [
 3.3,
 4.0
+],
+"sx": [
+11.0,
+13.2
+],
+"cx": [
+5.0,
+5.5
 ]
 },
 "2026-10-24|QPR|Swansea": {
@@ -8295,6 +10399,14 @@
 "st": [
 4.5,
 3.9
+],
+"sx": [
+13.2,
+11.2
+],
+"cx": [
+5.8,
+4.0
 ]
 },
 "2026-10-24|Stoke|Bristol City": {
@@ -8316,6 +10428,14 @@
 "st": [
 3.8,
 4.0
+],
+"sx": [
+12.6,
+12.0
+],
+"cx": [
+6.1,
+4.3
 ]
 },
 "2026-10-24|West Ham|Southampton": {
@@ -8337,6 +10457,14 @@
 "st": [
 5.6,
 3.7
+],
+"sx": [
+16.2,
+11.9
+],
+"cx": [
+6.1,
+4.4
 ]
 },
 "2026-10-24|Wolves|Watford": {
@@ -8358,6 +10486,14 @@
 "st": [
 4.8,
 3.8
+],
+"sx": [
+15.7,
+11.2
+],
+"cx": [
+6.8,
+3.9
 ]
 }
 }

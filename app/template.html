@@ -137,6 +137,24 @@ details.more[open] summary::before{content:"– "}
 .tag.ok{background:color-mix(in srgb,var(--hi) 16%,var(--surface));color:var(--hi)}
 .tag.ko{background:color-mix(in srgb,var(--lo) 16%,var(--surface));color:var(--lo)}
 .tag b{font-weight:600}
+.bdays{display:grid;gap:8px}
+details.day{border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+details.day>summary{list-style:none;cursor:pointer;padding:10px 12px;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+details.day>summary::-webkit-details-marker{display:none}
+details.day>summary::before{content:"▸";font-family:var(--f-mono);color:var(--muted)}
+details.day[open]>summary::before{content:"▾"}
+details.day>summary strong{font:600 1.05rem var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+details.day>summary .sum{font-size:.8rem;color:var(--muted)}
+details.day>summary .sum b{color:var(--ink);font-family:var(--f-mono);font-weight:500}
+.dayin{padding:0 10px 12px;display:grid;gap:10px}
+details.mt{border:1px solid var(--line);border-left:4px solid var(--c,var(--line));border-radius:6px;background:var(--bg)}
+details.mt>summary{list-style:none;cursor:pointer;padding:8px 10px;display:grid;gap:4px}
+details.mt>summary::-webkit-details-marker{display:none}
+.cmp{width:100%;border-collapse:collapse;font-size:.8rem}
+.cmp th,.cmp td{padding:5px 8px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+.cmp th{font-family:var(--f-mono);font-weight:500;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.cmp td.r{text-align:center;font-weight:600}
+.cmp td.r.ok{color:var(--hi)} .cmp td.r.ko{color:var(--lo)}
 </style>
 
 </head>
@@ -149,11 +167,9 @@ details.more[open] summary::before{content:"– "}
   </header>
 
   <section class="calib board" id="board" hidden>
-    <div class="eyebrow">Resultados del día · todas las ligas · predicción publicada antes de cada partido</div>
-    <div class="chips" id="bdates" role="group" aria-label="Día"></div>
-    <div class="perf" id="bperf"></div>
+    <div class="eyebrow">Resultados por día · todas las ligas · lo que se proyectó antes del partido frente a lo que pasó</div>
     <label class="toggle" style="justify-self:start"><input type="checkbox" id="bonly"> Solo picks seguros ≥ 85 %</label>
-    <div id="blist" class="board"></div>
+    <div id="bdays" class="bdays"></div>
   </section>
 
   <section class="perf" id="perf"></section>
@@ -319,43 +335,62 @@ function render(){
 }
 render();
 
-// ---------- Cuadro de resultados diarios ----------
+// ---------- Cuadro de resultados diarios (desplegable por día y por partido) ----------
 const BD = DATA.board || [];
 if (BD.length) {
   document.getElementById('board').hidden = false;
   const days = [...new Set(BD.map(e=>e.date))].sort().reverse();
-  const withRes = days.filter(d => BD.some(e=>e.date===d && e.res));
-  let bday = withRes[0] || days[days.length-1];
-  try { const s = localStorage.getItem('pp-bday'); if (s && days.includes(s)) bday = s; } catch(e){}
-  const tick = v => v===true ? '✓' : (v===false ? '✗' : '');
+  const today = (DATA.updated_at||DATA.generated).slice(0,10);
+  const lastWithRes = days.find(d => BD.some(e=>e.date===d && e.res));
+  const tick = v => v===true ? '✓' : (v===false ? '✗' : '–');
   const cls = v => v===true ? 'ok' : (v===false ? 'ko' : '');
-  const ratio = (arr,k) => { const r = arr.filter(e=>e[k]!=null); const h = r.filter(e=>e[k]).length; return r.length ? `${h}/${r.length} · ${Math.round(100*h/r.length)}%` : '–'; };
+  const cnt = (arr,k) => { const r = arr.filter(e=>e[k]!=null); return [r.filter(e=>e[k]).length, r.length]; };
+  const rt = ([h,n]) => n ? `<b>${h}/${n}</b> (${Math.round(100*h/n)} %)` : '<b>–</b>';
+  const pair = (a,b,suf='') => (a==null||b==null) ? '–' : `${f1(a)}${suf} – ${f1(b)}${suf}`;
+  const favName = e => e.k1==='1' ? short(e.h) : e.k1==='2' ? short(e.a) : 'Empate';
+  function matchHTML(e){
+    const m = {h:e.h, a:e.a};
+    const col = e.hit_safe===true ? 'var(--hi)' : (e.hit_safe===false ? 'var(--lo)' : 'var(--line)');
+    const head = `<div class="sc" style="display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;font-weight:600;font-size:.92rem">
+        <span>${short(e.h)}</span>${e.res?`<b class="num" style="font:600 1.15rem var(--f-display)">${e.hg} – ${e.ag}</b>`:`<b class="num" style="font:500 .78rem var(--f-mono);color:var(--muted)">${e.date < today ? 'sin resultado' : (e.time?plTime(e.date,e.time)+' h':'—')}</b>`}<span style="text-align:right">${short(e.a)}</span></div>
+      <div class="tags"><span class="tag ${cls(e.hit_safe)}">${e.liga} · Pick: <b>${mkName(e.safe,m)}</b> ${pct(e.ps)} ${e.res?tick(e.hit_safe):''}</span></div>`;
+    const goals = e.res ? e.hg + e.ag : null;
+    const rows = [
+      ['Pick seguro', `${mkName(e.safe,m)} · ${pct(e.ps)}`, e.res ? `${e.hg}-${e.ag}` : '–', e.hit_safe],
+      ['Favorito (1X2)', `${favName(e)} · ${pct(e.p1)}`, e.res ? (e.hg>e.ag?short(e.h):e.hg<e.ag?short(e.a):'Empate') : '–', e.hit_1x2],
+      e.o25!=null ? ['Goles (más/menos 2,5)', `${e.o25>=.5?'Más':'Menos'} de 2,5 · ${pct(e.o25>=.5?e.o25:1-e.o25)}`, goals!=null ? `${goals} goles` : '–', e.hit_ou] : null,
+      e.btts!=null ? ['Ambos marcan', `${e.btts>=.5?'Sí':'No'} · ${pct(e.btts>=.5?e.btts:1-e.btts)}`, e.res ? ((e.hg>0&&e.ag>0)?'Sí':'No') : '–', e.hit_btts] : null,
+      e.st ? ['Tiros a puerta', pair(e.st[0],e.st[1]), pair(e.hst,e.ast), e.hit_st] : null,
+      e.sx ? ['Tiros totales', pair(e.sx[0],e.sx[1]), pair(e.hs,e.as_), e.hit_s] : null,
+      e.cx ? ['Córners', pair(e.cx[0],e.cx[1]), pair(e.hc,e.ac), e.hit_c] : null,
+      (e.hposs!=null) ? ['Posesión', '–', pair(Math.round(e.hposs),Math.round(e.aposs),' %'), null] : null,
+    ].filter(Boolean);
+    return `<details class="mt" style="--c:${col}"><summary>${head}</summary>
+      <div class="tw" style="padding:0 6px 8px"><table class="cmp"><thead><tr><th></th><th>Proyectado</th><th>Real</th><th></th></tr></thead><tbody>
+      ${rows.map(([k,p,r,h])=>`<tr><td>${k}</td><td class="num">${p}</td><td class="num">${r}</td><td class="r ${cls(h)}">${e.res?tick(h):''}</td></tr>`).join('')}
+      </tbody></table>
+      ${e.st||e.sx||e.cx ? '<small style="color:var(--muted);padding:0 2px">En tiros y córners se valora si acertó qué equipo tendría más.</small>' : ''}</div></details>`;
+  }
   function renderBoard(){
     const only = document.getElementById('bonly').checked;
-    document.getElementById('bdates').innerHTML = days.map(d=>{ const n = BD.filter(e=>e.date===d).length;
-      return `<button type="button" data-d="${d}" aria-pressed="${d===bday}">${fmtDate(d,'')}<small>${n}</small></button>`; }).join('');
-    let rows = BD.filter(e=>e.date===bday); if (only) rows = rows.filter(e=>e.ps>=0.85);
-    const done = rows.filter(e=>e.res);
-    document.getElementById('bperf').innerHTML = [
-      ['Pick seguro', ratio(done,'hit_safe')], ['Favorito 1X2', ratio(done,'hit_1x2')],
-      ['Más/Menos 2,5', ratio(done,'hit_ou')], ['Quién tira más a puerta', ratio(done,'hit_st')],
-      ['Por jugarse', String(rows.length - done.length)]
-    ].map(([k,v])=>`<div><span class="eyebrow">${k}</span><b class="num" style="font-size:1.35rem">${v}</b></div>`).join('');
-    const byL = {}; rows.forEach(e => (byL[e.liga] = byL[e.liga] || []).push(e));
-    document.getElementById('blist').innerHTML = Object.keys(byL).map(lg => `<div class="blg"><h4>${lg}</h4>${byL[lg].map(e=>{
-      const m = {h:e.h, a:e.a};
-      const col = e.hit_safe===true ? 'var(--hi)' : (e.hit_safe===false ? 'var(--lo)' : 'var(--line)');
-      const st = e.st ? `<span class="tag ${cls(e.hit_st)}">Tiros a puerta esp. <b>${f1(e.st[0])}–${f1(e.st[1])}</b>${e.hst!=null?` · real <b>${e.hst}–${e.ast}</b>`:''} ${tick(e.hit_st)}</span>` : '';
-      return `<div class="brow" style="--c:${col}">
-        <div class="sc"><span>${short(e.h)}</span>${e.res?`<b class="num">${e.hg} – ${e.ag}</b>`:`<b class="pend">${e.date < (DATA.updated_at||DATA.generated).slice(0,10) ? 'sin resultado' : (e.time?plTime(e.date,e.time):'—')}</b>`}<span>${short(e.a)}</span></div>
-        <div class="tags">
-          <span class="tag ${cls(e.hit_safe)}">Pick: <b>${mkName(e.safe,m)}</b> ${pct(e.ps)} ${tick(e.hit_safe)}</span>
-          <span class="tag ${cls(e.hit_1x2)}">Favorito: <b>${e.k1==='1'?short(e.h):e.k1==='2'?short(e.a):'Empate'}</b> ${pct(e.p1)} ${tick(e.hit_1x2)}</span>
-          ${e.o25!=null?`<span class="tag ${cls(e.hit_ou)}">${e.o25>=.5?'Más':'Menos'} de 2,5 ${pct(e.o25>=.5?e.o25:1-e.o25)} ${tick(e.hit_ou)}</span>`:''}
-          ${st}
-        </div></div>`; }).join('')}</div>`).join('') || '<div class="empty">Sin partidos con ese filtro.</div>';
+    let open = []; try { open = JSON.parse(localStorage.getItem('pp-open-days')||'null'); } catch(e){}
+    if (!Array.isArray(open)) open = [lastWithRes || days[0]];
+    document.getElementById('bdays').innerHTML = days.map(d => {
+      let rows = BD.filter(e=>e.date===d); if (only) rows = rows.filter(e=>e.ps>=0.85);
+      if (!rows.length) return '';
+      const done = rows.filter(e=>e.res);
+      const byL = {}; rows.forEach(e => (byL[e.liga] = byL[e.liga] || []).push(e));
+      const sum = done.length
+        ? `<span class="sum">Pick ${rt(cnt(done,'hit_safe'))} · Favorito ${rt(cnt(done,'hit_1x2'))} · Goles ${rt(cnt(done,'hit_ou'))} · Tiros a puerta ${rt(cnt(done,'hit_st'))} · Córners ${rt(cnt(done,'hit_c'))}</span>`
+        : `<span class="sum">${rows.length} partidos por jugar</span>`;
+      return `<details class="day" data-d="${d}" ${open.includes(d)?'open':''}><summary><strong>${d===today?'Hoy · ':''}${fmtDate(d,'')}</strong><span class="sum"><b>${rows.length}</b> partidos${done.length<rows.length&&done.length?` · ${rows.length-done.length} por jugar`:''}</span>${sum}</summary>
+        <div class="dayin">${Object.keys(byL).map(lg=>`<div class="blg"><h4>${lg}</h4>${byL[lg].map(matchHTML).join('')}</div>`).join('')}</div></details>`;
+    }).join('') || '<div class="empty">Sin partidos con ese filtro.</div>';
+    document.querySelectorAll('details.day').forEach(el => el.addEventListener('toggle', () => {
+      const o = [...document.querySelectorAll('details.day[open]')].map(x=>x.dataset.d);
+      try { localStorage.setItem('pp-open-days', JSON.stringify(o)); } catch(e){}
+    }));
   }
-  document.getElementById('bdates').addEventListener('click', ev => { const b = ev.target.closest('button'); if(!b) return; bday = b.dataset.d; try{localStorage.setItem('pp-bday',bday)}catch(e){} renderBoard(); });
   document.getElementById('bonly').addEventListener('change', renderBoard);
   renderBoard();
 }

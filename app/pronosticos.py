@@ -716,11 +716,21 @@ def pred_entry(l, m, pub):
              h=m["h"], a=m["a"], pub=pub, k1=k1, p1=mk[k1], safe=m["safe"], ps=mk[m["safe"]],
              o25=mk.get("+2.5"), btts=mk.get("AM-Sí"), res=None)
     if m.get("shots") and m["shots"].get("ST"): e["st"] = m["shots"]["ST"]
+    if m.get("shots") and m["shots"].get("S"): e["sx"] = m["shots"]["S"]
+    if m.get("shots") and m["shots"].get("C"): e["cx"] = m["shots"]["C"]
     if m.get("odds"): e["odds"] = {k: m["odds"].get(k) for k in ("o1", "oX", "o2")}
+    if m.get("elo"): e["elo"] = m["elo"]
     return e
 
 def resolve_entry(e, s):
     hg, ag = s["hg"], s["ag"]
+    iv = lambda v: int(v) if v is not None else None
+    e.update(hs=iv(s.get("HS")), as_=iv(s.get("AS")), hc=iv(s.get("HC")), ac=iv(s.get("AC")),
+             hposs=s.get("HPoss"), aposs=s.get("APoss"))
+    if e.get("cx") and e["hc"] is not None and e["ac"] is not None and abs(e["cx"][0] - e["cx"][1]) >= 0.5 and e["hc"] != e["ac"]:
+        e["hit_c"] = (e["cx"][0] > e["cx"][1]) == (e["hc"] > e["ac"])
+    if e.get("sx") and e["hs"] is not None and e["as_"] is not None and abs(e["sx"][0] - e["sx"][1]) >= 0.5 and e["hs"] != e["as_"]:
+        e["hit_s"] = (e["sx"][0] > e["sx"][1]) == (e["hs"] > e["as_"])
     e.update(res=f"{hg}-{ag}", hg=hg, ag=ag, hst=s.get("HST"), ast=s.get("AST"),
              hit_safe=bool(hit(e["safe"], hg, ag)), hit_1x2=bool(hit(e["k1"], hg, ag)))
     if e.get("o25") is not None: e["hit_ou"] = bool(hit("+2.5" if e["o25"] >= .5 else "-2.5", hg, ag))
@@ -745,7 +755,7 @@ if PREDS:
         stats_by[L["code"]] = {(s["date"].isoformat(), s["h"], s["a"]): s for s in L["stats"]}
         smaps[L["code"]] = name_mapper([s["h"] for s in L["stats"]] + [s["a"] for s in L["stats"]])
     for e in PR.values():
-        if e.get("res") is not None: continue
+        if e.get("res") is not None and "hc" in e: continue
         sb, mp = stats_by.get(e["lg"], {}), smaps.get(e["lg"], lambda x: x)
         h2, a2 = mp(e["h"]) or e["h"], mp(e["a"]) or e["a"]
         d0 = date.fromisoformat(e["date"])
