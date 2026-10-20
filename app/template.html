@@ -145,7 +145,7 @@ details.more[open] summary::before{content:"– "}
   <header>
     <div class="eyebrow">Modelo <span id="mdl"></span> · datos reales <span id="srcs"></span> · actualizado <span id="gen"></span></div>
     <h1>Pizarra de Pronósticos</h1>
-    <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa), calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
+    <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa) y en la Champions, la Europa League y la Conference, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
   </header>
 
   <section class="calib board" id="board" hidden>
@@ -274,13 +274,13 @@ function gapNote(l){
 function card(m){
   const k = m.mk, probs = {'1':k['1'],'X':k['X'],'2':k['2']};
   const pick = Object.keys(probs).reduce((a,b)=>probs[a]>=probs[b]?a:b), p = probs[pick], L = lvl(p);
-  const sp = k[m.safe], band = bandOf(B.cal_safe, sp);
+  const sp = k[m.safe], band = bandOf(m.elo && DATA.eu ? DATA.eu.cal : B.cal_safe, sp);
   const w = x => (x*100).toFixed(1)+'%';
   return `<article class="card" style="--c:var(--${lvl(sp>=.8?.7:sp>=.7?.55:.4)})">
     <div class="meta"><span>${fmtDate(m.date,m.time)}</span><span>${m.round.replace('Matchday','Jornada')}</span></div>
     <div class="teams">
-      <div class="team">${short(m.h)}${formHTML(m.fh)}</div><div class="xg">${m.lh.toFixed(2)} gol esp.</div>
-      <div class="team">${short(m.a)}${formHTML(m.fa)}</div><div class="xg">${m.la.toFixed(2)} gol esp.</div>
+      <div class="team">${short(m.h)}${formHTML(m.fh)}</div><div class="xg">${m.lh!=null ? m.lh.toFixed(2)+' gol esp.' : (m.elo ? 'Elo '+m.elo[0] : '')}</div>
+      <div class="team">${short(m.a)}${formHTML(m.fa)}</div><div class="xg">${m.la!=null ? m.la.toFixed(2)+' gol esp.' : (m.elo ? 'Elo '+m.elo[1] : '')}</div>
     </div>
     <div class="safe"><span class="lab">Pick seguro</span><span class="lab" style="text-align:right">Cuota justa ${(1/sp).toFixed(2)}</span>
       <strong>${mkName(m.safe,m)}</strong><span class="p num">${pct(sp)}</span>
@@ -289,17 +289,18 @@ function card(m){
       <div class="s1" style="width:${w(k['1'])}">1 · ${pct(k['1'])}</div><div class="sx" style="width:${w(k['X'])}">X ${pct(k['X'])}</div><div class="s2" style="width:${w(k['2'])}">2 · ${pct(k['2'])}</div>
     </div>
     <div class="pick"><strong>${mkName(pick,m)}</strong><span class="pill ${L}">${lvlName[L]} ${pct(p)}</span><span class="pill" style="color:var(--muted)">Cuota justa ${(1/p).toFixed(2)}</span></div>
-    <div class="stats">
+    ${m.elo && m.known < 2 ? `<small style="color:var(--muted)">${m.known===0?'Ninguno de los dos equipos':'Uno de los equipos no'} juega en las ligas con datos: su fuerza sale solo de partidos europeos (menos fiable).</small>` : ''}
+    ${k['+1.5']==null ? '' : `<div class="stats">
       <div><b>${pct(k['+1.5'])}</b><span>+1,5</span></div>
       <div><b>${pct(k['+2.5'])}</b><span>+2,5</span></div>
       <div><b>${pct(k['+3.5'])}</b><span>+3,5</span></div>
       <div><b>${pct(k['AM-Sí'])}</b><span>Ambos marcan</span></div>
-    </div>
+    </div>`}
     ${m.odds ? `<div class="scores">Cuotas casa: <b>1</b> ${m.odds.o1.toFixed(2)} · <b>X</b> ${m.odds.oX.toFixed(2)} · <b>2</b> ${m.odds.o2.toFixed(2)}${m.odds.oO?` · <b>+2,5</b> ${m.odds.oO.toFixed(2)}`:''}</div>` : ''}
     ${(m.value||[]).length ? `<div class="pick">${m.value.map(v=>`<span class="pill hi">Valor: ${mkName(v.m,m)} @ ${v.odds.toFixed(2)} (+${Math.round(v.edge*100)} %)</span>`).join('')}</div>` : ''}
     ${shotsHTML(m)}
     ${statTable(m)}
-    <div class="scores">Marcadores más probables: ${m.scores.map(s=>`<b>${s[0]}-${s[1]}</b> ${pct(s[2])}`).join(' · ')}</div>
+    ${(m.scores||[]).length ? `<div class="scores">Marcadores más probables: ${m.scores.map(s=>`<b>${s[0]}-${s[1]}</b> ${pct(s[2])}`).join(' · ')}</div>` : ''}
   </article>`;
 }
 
@@ -310,7 +311,8 @@ function render(){
   const ms = l.matches.filter(m=>m.mk[m.safe]>=filt).sort((a,b)=>b.mk[b.safe]-a.mk[a.safe]);
   document.getElementById('league').innerHTML = `
     <div class="leaguehead"><h2>${l.name}</h2>
-      <span class="eyebrow">Acierto ganador en esta liga: <span class="num">${pct(l.acc)}</span> (${l.n_bt} partidos) · último partido jugado: ${fmtDate(l.last_data,'')}${gapNote(l)}</span></div>
+      <span class="eyebrow">Acierto ganador en esta liga: <span class="num">${pct(l.acc)}</span> (${l.n_bt} partidos) · último partido jugado: ${fmtDate(l.last_data,'')}${gapNote(l)}</span>
+      ${l.eu ? `<span class="eyebrow" style="flex-basis:100%">Elo europeo propio: 19 ligas + Champions, Europa y Conference desde 2023. Sin cuotas de casas (las fuentes gratuitas no las tienen)${DATA.eu ? ` · picks ≥85 % acertaron el ${pct(DATA.eu.safe85.real)} de ${DATA.eu.safe85.n} partidos europeos` : ''}.</span>` : ''}</div>
     ${ms.length ? `<div class="grid">${ms.map(card).join('')}</div>` : `<div class="empty">Ningún partido de esta jornada llega a ese nivel de confianza. Elige "Todos" para verlos todos.</div>`}
     ${recentHTML(l)}`;
 }

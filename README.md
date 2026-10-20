@@ -18,3 +18,8 @@ Pronósticos de fútbol para 9 ligas (Premier, Championship, LaLiga, Serie A, Bu
 
 ### Datos de xG
 | xG Understat (diario) | 04:43 | xG real por partido de las 5 grandes ligas (paquete abierto `soccerdata`) → `data/xg/`. El modelo lo usa en vez de los tiros en esas ligas: en el backtest de 2026 mejoró "ambos marcan" (57,2 % → 57,9 %) y el modelo de goles; en ganador y +2,5 siguen mandando las cuotas. |
+
+### Competiciones europeas
+| Europa (Champions, Europa y Conference) | cada 2 h | Resultados, estadísticas y calendario de ESPN desde 2023 → `data/europa/`. |
+
+Para estos partidos no hay cuotas gratuitas, así que se usa un **Elo europeo propio**: un único Elo para todos los clubes, alimentado por 19 ligas (las 9 de la app más Bélgica, Escocia, Turquía, Grecia, Austria, Suiza, Dinamarca, Noruega, Suecia y Rumanía, solo como conexión) y los partidos europeos. Backtest sin mirar el futuro (621 partidos europeos de 2025-26 y 2026-27): ganador 58 %, picks seguros ≥ 85 % aciertan el 90 %.
