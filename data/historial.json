@@ -321,8 +321,8 @@
 "m": "1X",
 "p": 0.91,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "2-2",
+"hit": true
 },
 {
 "id": "2026-10-20|Sabah FK|Borussia Dortmund",
@@ -334,8 +334,8 @@
 "m": "X2",
 "p": 0.873,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "1-2",
+"hit": true
 },
 {
 "id": "2026-10-20|AS Roma|Slovan Bratislava",
