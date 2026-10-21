@@ -547,8 +547,8 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 20/10/2026,21:00,league-phase,Napoli,Bodo/Glimt,4,3,FT,8,6,17,15,43.2,56.8,2,5
 20/10/2026,21:00,league-phase,Paris Saint-Germain,Barcelona,4,2,FT,14,5,22,18,47.1,52.9,2,3
 20/10/2026,21:00,league-phase,VfB Stuttgart,Atlético Madrid,1,1,FT,5,3,18,10,54.1,45.9,9,4
-21/10/2026,18:45,league-phase,Como,Manchester United,,,NS,,,,,,,,
-21/10/2026,18:45,league-phase,Lille,Galatasaray,,,NS,,,,,,,,
+21/10/2026,18:45,league-phase,Como,Manchester United,,,NS,0,0,0,0,0,0,0,0
+21/10/2026,18:45,league-phase,Lille,Galatasaray,,,NS,0,0,0,0,0,0,0,0
 21/10/2026,21:00,league-phase,Aston Villa,Viking FK,,,NS,,,,,,,,
 21/10/2026,21:00,league-phase,Bayern Munich,Arsenal,,,NS,,,,,,,,
 21/10/2026,21:00,league-phase,Club Brugge,Lens,,,NS,,,,,,,,
