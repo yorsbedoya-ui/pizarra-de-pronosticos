@@ -386,8 +386,8 @@
 "m": "1X",
 "p": 0.853,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "3-1",
+"hit": true
 },
 {
 "id": "2026-10-21|Internazionale|Shakhtar Donetsk",
@@ -399,8 +399,8 @@
 "m": "1X",
 "p": 0.896,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-10-21|Real Madrid|RB Leipzig",
@@ -412,8 +412,8 @@
 "m": "1X",
 "p": 0.893,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "4-1",
+"hit": true
 },
 {
 "id": "2026-10-21|Sporting CP|LASK Linz",
@@ -425,8 +425,8 @@
 "m": "1X",
 "p": 0.934,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "2-3",
+"hit": false
 },
 {
 "id": "2026-10-22|Ferencvaros|Torreense",
