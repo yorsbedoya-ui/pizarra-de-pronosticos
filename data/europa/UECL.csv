@@ -465,20 +465,20 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 15/10/2026,21:00,league-phase,Sint-Truidense,Iberia 1999,2,0,FT,5,1,20,4,57.5,42.5,4,0
 15/10/2026,21:00,league-phase,SK Brann,Lincoln Red Imps,2,1,FT,10,3,19,7,72.2,27.8,17,2
 22/10/2026,16:30,league-phase,Kairat Almaty,Panathinaikos,1,5,FT,2,6,12,11,42.7,57.3,5,4
-22/10/2026,18:45,league-phase,FC Nordsjælland,CSKA Sofia,2,2,FT,6,7,13,18,53.5,46.5,5,2
+22/10/2026,18:45,league-phase,FC Nordsjælland,CSKA Sofia,2,2,FT,6,7,13,18,53.4,46.6,5,2
 22/10/2026,18:45,league-phase,Getafe,FC Lugano,2,5,FT,8,7,26,10,60.2,39.8,15,2
-22/10/2026,18:45,league-phase,Iberia 1999,Mjällby AIF,1,1,FT,1,5,7,23,44.3,55.7,2,7
+22/10/2026,18:45,league-phase,Iberia 1999,Mjällby AIF,1,1,FT,1,5,7,23,43.8,56.2,2,7
 22/10/2026,18:45,league-phase,Inter D'Escaldes,CSU Craiova,1,3,FT,5,7,7,16,64.4,35.6,3,6
-22/10/2026,18:45,league-phase,Jablonec,Brighton & Hove Albion,0,0,FT,4,4,9,26,28,72,2,7
+22/10/2026,18:45,league-phase,Jablonec,Brighton & Hove Albion,0,0,FT,4,4,9,26,27.9,72.1,2,7
 22/10/2026,18:45,league-phase,Kauno Zalgiris,SK Brann,1,4,FT,2,8,12,21,33,67,1,4
 22/10/2026,18:45,league-phase,Pafos,Riga FC,1,1,FT,4,3,17,16,51.4,48.6,10,4
-22/10/2026,18:45,league-phase,Red Star Belgrade,F.C. København,2,2,FT,5,2,12,7,58,42,4,6
-22/10/2026,18:45,league-phase,Trabzonspor,Heart of Midlothian,2,0,LIVE,5,1,11,10,60.6,39.4,6,1
-22/10/2026,21:00,league-phase,AGF,Egnatia,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,Ajax Amsterdam,Atalanta,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,AS Monaco,SC Freiburg,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,Borac Banja Luka,KuPS Kuopio,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,Braga,KAA Gent,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,FC Midtjylland,Sint-Truidense,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,FC Thun,Hajduk Split,,,NS,0,0,0,0,0,0,0,0
-22/10/2026,21:00,league-phase,Lincoln Red Imps,FC Twente,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Red Star Belgrade,F.C. København,2,2,FT,5,2,12,8,58,42,4,6
+22/10/2026,18:45,league-phase,Trabzonspor,Heart of Midlothian,2,0,FT,5,1,11,10,60.7,39.3,6,1
+22/10/2026,21:00,league-phase,AGF,Egnatia,0,1,LIVE,0,3,1,5,35.4,64.6,1,2
+22/10/2026,21:00,league-phase,Ajax Amsterdam,Atalanta,0,0,LIVE,2,0,12,6,64,36,4,5
+22/10/2026,21:00,league-phase,AS Monaco,SC Freiburg,0,0,LIVE,2,0,5,3,59.5,40.5,4,1
+22/10/2026,21:00,league-phase,Borac Banja Luka,KuPS Kuopio,1,0,LIVE,7,2,16,6,45.3,54.7,8,0
+22/10/2026,21:00,league-phase,Braga,KAA Gent,1,0,LIVE,3,0,5,2,45.9,54.1,3,2
+22/10/2026,21:00,league-phase,FC Midtjylland,Sint-Truidense,0,0,LIVE,2,1,7,5,46.5,53.5,3,1
+22/10/2026,21:00,league-phase,FC Thun,Hajduk Split,0,1,LIVE,1,3,3,6,42.8,57.2,0,2
+22/10/2026,21:00,league-phase,Lincoln Red Imps,FC Twente,1,2,LIVE,1,5,1,14,23.5,76.5,0,4
