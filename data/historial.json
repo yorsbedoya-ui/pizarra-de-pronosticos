@@ -477,8 +477,8 @@
 "m": "1X",
 "p": 0.883,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-10-22|Omonia Nicosia|Benfica",
@@ -490,8 +490,8 @@
 "m": "X2",
 "p": 0.876,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "1-4",
+"hit": true
 },
 {
 "id": "2026-10-22|Viktoria Plzen|Levski Sofia",
@@ -503,8 +503,8 @@
 "m": "1X",
 "p": 0.852,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "1-2",
+"hit": false
 },
 {
 "id": "2026-10-22|Jablonec|Brighton & Hove Albion",
@@ -529,7 +529,7 @@
 "m": "1X",
 "p": 0.858,
 "pub": "2026-10-20",
-"res": null,
-"hit": null
+"res": "0-1",
+"hit": false
 }
 ]
