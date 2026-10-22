@@ -464,16 +464,16 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 15/10/2026,21:00,league-phase,SC Freiburg,Jablonec,3,2,FT,9,2,23,11,60.4,39.6,5,1
 15/10/2026,21:00,league-phase,Sint-Truidense,Iberia 1999,2,0,FT,5,1,20,4,57.5,42.5,4,0
 15/10/2026,21:00,league-phase,SK Brann,Lincoln Red Imps,2,1,FT,10,3,19,7,72.2,27.8,17,2
-22/10/2026,16:30,league-phase,Kairat Almaty,Panathinaikos,0,3,LIVE,0,4,7,5,41.4,58.6,3,2
-22/10/2026,18:45,league-phase,FC Nordsjælland,CSKA Sofia,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Getafe,FC Lugano,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Iberia 1999,Mjällby AIF,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Inter D'Escaldes,CSU Craiova,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Jablonec,Brighton & Hove Albion,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Kauno Zalgiris,SK Brann,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Pafos,Riga FC,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Red Star Belgrade,F.C. København,,,NS,,,,,,,,
-22/10/2026,18:45,league-phase,Trabzonspor,Heart of Midlothian,,,NS,,,,,,,,
+22/10/2026,16:30,league-phase,Kairat Almaty,Panathinaikos,1,5,FT,2,6,12,11,42.6,57.4,5,4
+22/10/2026,18:45,league-phase,FC Nordsjælland,CSKA Sofia,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Getafe,FC Lugano,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Iberia 1999,Mjällby AIF,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Inter D'Escaldes,CSU Craiova,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Jablonec,Brighton & Hove Albion,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Kauno Zalgiris,SK Brann,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Pafos,Riga FC,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Red Star Belgrade,F.C. København,,,NS,0,0,0,0,0,0,0,0
+22/10/2026,18:45,league-phase,Trabzonspor,Heart of Midlothian,,,NS,0,0,0,0,0,0,0,0
 22/10/2026,21:00,league-phase,AGF,Egnatia,,,NS,,,,,,,,
 22/10/2026,21:00,league-phase,Ajax Amsterdam,Atalanta,,,NS,,,,,,,,
 22/10/2026,21:00,league-phase,AS Monaco,SC Freiburg,,,NS,,,,,,,,
