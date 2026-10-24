@@ -555,8 +555,8 @@
 "m": "1X",
 "p": 0.912,
 "pub": "2026-10-24",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-10-24|Lazio|Parma",
@@ -620,8 +620,8 @@
 "m": "X2",
 "p": 0.867,
 "pub": "2026-10-24",
-"res": null,
-"hit": null
+"res": "0-1",
+"hit": true
 },
 {
 "id": "2026-10-25|Sp Lisbon|Academico Viseu",
