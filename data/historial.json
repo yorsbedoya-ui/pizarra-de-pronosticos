@@ -542,8 +542,8 @@
 "m": "1X",
 "p": 0.871,
 "pub": "2026-10-24",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-10-24|Ath Madrid|La Coruna",
@@ -659,7 +659,7 @@
 "m": "1X",
 "p": 0.881,
 "pub": "2026-10-24",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 }
 ]
