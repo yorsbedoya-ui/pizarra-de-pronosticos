@@ -661,5 +661,44 @@
 "pub": "2026-10-24",
 "res": "1-0",
 "hit": true
+},
+{
+"id": "2026-11-03|Bodo/Glimt|Lille",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-03",
+"h": "Bodo/Glimt",
+"a": "Lille",
+"m": "1X",
+"p": 0.85,
+"pub": "2026-10-26",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-03|LASK Linz|Slovan Bratislava",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-03",
+"h": "LASK Linz",
+"a": "Slovan Bratislava",
+"m": "1X",
+"p": 0.913,
+"pub": "2026-10-26",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-03|Villarreal|Paris Saint-Germain",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-03",
+"h": "Villarreal",
+"a": "Paris Saint-Germain",
+"m": "X2",
+"p": 0.906,
+"pub": "2026-10-26",
+"res": null,
+"hit": null
 }
 ]
