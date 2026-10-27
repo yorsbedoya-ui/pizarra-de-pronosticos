@@ -700,5 +700,44 @@
 "pub": "2026-10-26",
 "res": null,
 "hit": null
+},
+{
+"id": "2026-11-04|AEK Athens|Real Madrid",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-04",
+"h": "AEK Athens",
+"a": "Real Madrid",
+"m": "X2",
+"p": 0.851,
+"pub": "2026-10-27",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-04|Slavia Prague|Arsenal",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-04",
+"h": "Slavia Prague",
+"a": "Arsenal",
+"m": "X2",
+"p": 0.972,
+"pub": "2026-10-27",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-04|Viking FK|Sabah FK",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-04",
+"h": "Viking FK",
+"a": "Sabah FK",
+"m": "1X",
+"p": 0.904,
+"pub": "2026-10-27",
+"res": null,
+"hit": null
 }
 ]
