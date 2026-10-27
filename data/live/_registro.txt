@@ -1,5 +1,6 @@
 E0 desde 2026-10-24: 19 leídos, 90 en total, 80 terminados, 0 días con error
 E1 desde 2026-10-24: 32 leídos, 165 en total, 144 terminados, 0 días con error
+  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261103 TimeoutError('The read operation timed out')
 SP1 desde 2026-10-24: 19 leídos, 110 en total, 99 terminados, 0 días con error
 I1 desde 2026-10-24: 29 leídos, 100 en total, 80 terminados, 0 días con error
 D1 desde 2026-10-24: 17 leídos, 72 en total, 63 terminados, 0 días con error
@@ -7,4 +8,4 @@ F1 desde 2026-10-24: 17 leídos, 84 en total, 72 terminados, 0 días con error
 P1 desde 2026-10-24: 17 leídos, 90 en total, 81 terminados, 0 días con error
 N1 desde 2026-10-24: 17 leídos, 99 en total, 90 terminados, 0 días con error
 estadísticas disponibles en ESPN: ['appearances', 'foulsCommitted', 'goalAssists', 'possessionPct', 'shotAssists', 'shotsOnTarget', 'totalGoals', 'totalShots', 'wonCorners']
-ligas guardadas: 8 | hora UTC 2026-10-27T10:42+00:00
+ligas guardadas: 8 | hora UTC 2026-10-27T10:57+00:00
