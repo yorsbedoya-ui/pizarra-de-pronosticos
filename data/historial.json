@@ -856,5 +856,18 @@
 "pub": "2026-10-28",
 "res": null,
 "hit": null
+},
+{
+"id": "2026-10-28|Venezia|Inter",
+"lg": "it.1",
+"liga": "Serie A",
+"date": "2026-10-28",
+"h": "Venezia",
+"a": "Inter",
+"m": "X2",
+"p": 0.878,
+"pub": "2026-10-28",
+"res": null,
+"hit": null
 }
 ]
