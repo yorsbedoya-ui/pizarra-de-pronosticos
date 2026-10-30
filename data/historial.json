@@ -880,8 +880,8 @@
 "m": "1X",
 "p": 0.859,
 "pub": "2026-10-30",
-"res": null,
-"hit": null
+"res": "0-1",
+"hit": false
 },
 {
 "id": "2026-10-31|Betis|Malaga",
@@ -997,8 +997,8 @@
 "m": "X2",
 "p": 0.899,
 "pub": "2026-10-30",
-"res": null,
-"hit": null
+"res": "0-2",
+"hit": true
 },
 {
 "id": "2026-10-31|Porto|Estoril",
