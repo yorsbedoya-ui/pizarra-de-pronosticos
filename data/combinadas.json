@@ -1,0 +1,49 @@
+{
+"2026-10-31": {
+"legs": [
+"2026-10-31|PSV Eindhoven|Willem II",
+"2026-10-31|Barcelona|Alaves"
+],
+"created": "2026-10-31T08:26",
+"frozen": false
+},
+"2026-11-01": {
+"legs": [
+"2026-11-01|Santander|Real Madrid",
+"2026-11-01|Como|Venezia"
+],
+"created": "2026-10-31T08:26",
+"frozen": false
+},
+"2026-11-02": {
+"legs": [
+"2026-11-02|Benfica|Alverca"
+],
+"created": "2026-10-31T08:26",
+"frozen": false
+},
+"2026-11-03": {
+"legs": [
+"2026-11-03|Villarreal|Paris Saint-Germain",
+"2026-11-03|LASK Linz|Slovan Bratislava"
+],
+"created": "2026-10-31T08:26",
+"frozen": false
+},
+"2026-11-04": {
+"legs": [
+"2026-11-04|Slavia Prague|Arsenal",
+"2026-11-04|Viking FK|Sabah FK"
+],
+"created": "2026-10-31T08:26",
+"frozen": false
+},
+"2026-11-05": {
+"legs": [
+"2026-11-05|Atalanta|Kairat Almaty",
+"2026-11-05|FC Lugano|Kauno Zalgiris"
+],
+"created": "2026-10-31T08:26",
+"frozen": false
+}
+}
