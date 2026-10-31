@@ -906,8 +906,8 @@
 "m": "1X",
 "p": 0.952,
 "pub": "2026-10-30",
-"res": null,
-"hit": null
+"res": "6-1",
+"hit": true
 },
 {
 "id": "2026-11-01|Santander|Real Madrid",
@@ -1010,8 +1010,8 @@
 "m": "1X",
 "p": 0.932,
 "pub": "2026-10-30",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-02|Benfica|Alverca",
