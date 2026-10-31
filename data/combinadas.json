@@ -5,7 +5,7 @@
 "2026-10-31|Barcelona|Alaves"
 ],
 "created": "2026-10-31T17:18",
-"frozen": false,
+"frozen": true,
 "kind": "doble"
 },
 "2026-11-01": {
@@ -13,7 +13,7 @@
 "2026-11-01|Santander|Real Madrid",
 "2026-11-01|Como|Venezia"
 ],
-"created": "2026-10-31T17:18",
+"created": "2026-10-31T18:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -21,7 +21,7 @@
 "legs": [
 "2026-11-02|Benfica|Alverca"
 ],
-"created": "2026-10-31T17:18",
+"created": "2026-10-31T18:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -30,7 +30,7 @@
 "2026-11-03|Villarreal|Paris Saint-Germain",
 "2026-11-03|LASK Linz|Slovan Bratislava"
 ],
-"created": "2026-10-31T17:18",
+"created": "2026-10-31T18:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -39,7 +39,7 @@
 "2026-11-04|Slavia Prague|Arsenal",
 "2026-11-04|Viking FK|Sabah FK"
 ],
-"created": "2026-10-31T17:18",
+"created": "2026-10-31T18:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -48,7 +48,7 @@
 "2026-11-05|Atalanta|Kairat Almaty",
 "2026-11-05|FC Lugano|Kauno Zalgiris"
 ],
-"created": "2026-10-31T17:18",
+"created": "2026-10-31T18:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -69,10 +69,10 @@
 "2026-11-05|Atalanta|Kairat Almaty",
 "2026-11-05|FC Lugano|Kauno Zalgiris",
 "2026-11-05|Panathinaikos|CSKA Sofia",
-"2026-11-05|Bayer Leverkusen|Marseille",
-"2026-11-05|Benfica|Lech Poznan"
+"2026-11-05|Benfica|Lech Poznan",
+"2026-11-05|CSU Craiova|Egnatia"
 ],
-"created": "2026-10-31T17:18",
+"created": "2026-10-31T18:43",
 "frozen": false,
 "kind": "larga"
 }
