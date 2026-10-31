@@ -785,6 +785,11 @@ def parlay_backtest():
     byd = {}
     for l in legs: byd.setdefault(l[0], []).append(l)
     out = {}
+    res, pr = [], []
+    for ls in byd.values():
+        c = sorted([l for l in ls if l[1] >= PARLAY_MIN], key=lambda l: -l[1])[:5]
+        if len(c) >= 3: res.append(all(l[2] for l in c)); pr.append(float(np.prod([l[1] for l in c])))
+    if res: out["larga"] = dict(days=len(res), of=len(byd), real=round(float(np.mean(res)), 3), prob=round(float(np.mean(pr)), 3))
     for n in (1, 2, 3):
         res, pr = [], []
         for ls in byd.values():
@@ -792,32 +797,36 @@ def parlay_backtest():
             if len(c) == n: res.append(all(l[2] for l in c)); pr.append(float(np.prod([l[1] for l in c])))
         if res: out[str(n)] = dict(days=len(res), of=len(byd), real=round(float(np.mean(res)), 3), prob=round(float(np.mean(pr)), 3))
     return out
+PARLAY_KINDS = {"doble": (2, 2), "larga": (3, 5)}   # (mínimo, máximo) de partidos, todos >= PARLAY_MIN en doble oportunidad / 1 / 2
 if COMBS and board_out is not None:
     try: CB = json.load(open(COMBS))
     except (OSError, ValueError): CB = {}
     nowu = datetime.utcnow()
     started = lambda e: nowu >= kickoff_utc(e["date"], e.get("time"))
     eligible = lambda e: e.get("res") is None and e["ps"] >= PARLAY_MIN and (e.get("odds") or e.get("elo"))
-    for d in sorted({e["date"] for e in PR.values() if e["date"] >= _now_str()[:10]}):
-        c = CB.get(d)
-        if c and c.get("frozen"): continue
-        if c and any(started(PR[i]) for i in c["legs"] if i in PR):
-            c["frozen"] = True; continue
-        legs = sorted([e for e in PR.values() if e["date"] == d and eligible(e) and not started(e)], key=lambda e: -e["ps"])[:PARLAY_N]
-        if legs: CB[d] = dict(legs=[e["id"] for e in legs], created=_now_str(), frozen=False)
-        elif d in CB: del CB[d]
-    days_out = []
-    for d in sorted(CB, reverse=True)[:30]:
-        legs = [PR[i] for i in CB[d]["legs"] if i in PR]
-        if not legs: continue
+    for kind, (nmin, nmax) in PARLAY_KINDS.items():
+        for d in sorted({e["date"] for e in PR.values() if e["date"] >= _now_str()[:10]}):
+            key = d if kind == "doble" else f"{d}#{kind}"
+            c = CB.get(key)
+            if c and c.get("frozen"): continue
+            if c and any(started(PR[i]) for i in c["legs"] if i in PR):
+                c["frozen"] = True; continue
+            legs = sorted([e for e in PR.values() if e["date"] == d and eligible(e) and not started(e)], key=lambda e: -e["ps"])[:nmax]
+            if len(legs) >= (nmin if kind != "doble" else 1): CB[key] = dict(legs=[e["id"] for e in legs], created=_now_str(), frozen=False, kind=kind)
+            elif key in CB: del CB[key]
+    def pack(key):
+        legs = [PR[i] for i in CB[key]["legs"] if i in PR]
+        if not legs: return None
         hits = [e.get("hit_safe") for e in legs]
         status = "fallo" if False in hits else ("acierto" if all(h is True for h in hits) else "pendiente")
         prob = float(np.prod([e["ps"] for e in legs]))
-        days_out.append(dict(date=d, n=len(legs), prob=round(prob, 3), fair=round(1 / prob, 2), status=status, frozen=CB[d].get("frozen", False),
-                             legs=[{k: e.get(k) for k in ("id", "liga", "date", "time", "h", "a", "safe", "ps", "res", "hit_safe")} for e in legs]))
+        return dict(date=key.split("#")[0], kind=CB[key].get("kind", "doble"), n=len(legs), prob=round(prob, 3), fair=round(1 / prob, 2),
+                    status=status, frozen=CB[key].get("frozen", False),
+                    legs=[{k: e.get(k) for k in ("id", "liga", "date", "time", "h", "a", "safe", "ps", "res", "hit_safe")} for e in legs])
+    days_out = [x for x in (pack(k) for k in sorted(CB, reverse=True)[:60]) if x]
     json.dump(CB, open(COMBS, "w"), ensure_ascii=False, indent=0)
     parlay_out = dict(min=PARLAY_MIN, n=PARLAY_N, bt=parlay_backtest(), days=days_out)
-    print("Combinadas:", len(CB), "días;", {k: v for k, v in parlay_out["bt"].items()}, flush=True)
+    print("Combinadas:", len(CB), parlay_out["bt"], flush=True)
 
 # ---------------- Historial real (picks publicados en vivo) ----------------
 hist_out = None

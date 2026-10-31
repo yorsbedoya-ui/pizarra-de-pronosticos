@@ -176,7 +176,7 @@ details.mt>summary::-webkit-details-marker{display:none}
   </header>
 
   <section class="calib parlay" id="parlay" hidden>
-    <div class="eyebrow">Combinada del día · los 2 picks más seguros (≥ 88 % cada uno)</div>
+    <div class="eyebrow">Combinadas del día</div>
     <div id="pbody"></div>
   </section>
 
@@ -350,33 +350,37 @@ function render(){
 render();
 
 
-// ---------- Combinada del día ----------
+// ---------- Combinadas del día ----------
 const PL = DATA.parlay;
 if (PL && PL.days && PL.days.length) {
   document.getElementById('parlay').hidden = false;
   const today = (DATA.updated_at||DATA.generated).slice(0,10);
-  const up = PL.days.filter(d => d.date >= today).sort((a,b)=>a.date<b.date?-1:1);
-  const cur = up[0];
-  const past = PL.days.filter(d => d.date < today || (d.date===today && d.status!=='pendiente'));
-  const ok = past.filter(d=>d.status==='acierto').length, ko = past.filter(d=>d.status==='fallo').length;
-  const bt2 = PL.bt && PL.bt['2'];
   const stTag = s => s==='acierto' ? '<span class="pst ok">✓ Acertada</span>' : s==='fallo' ? '<span class="pst ko">✗ Fallada</span>' : '<span class="pst wait">Pendiente</span>';
+  const KIND = {doble: {t:'Doble del día', d:'los 2 picks más seguros (≥ 88 % cada uno)', bt:'2'},
+                larga: {t:'Combinada larga', d:'de 3 a 5 picks en doble oportunidad (≥ 88 % cada uno)', bt:'larga'}};
   let h = '';
-  if (cur) {
-    h += `<div class="eyebrow">${cur.date===today?'Hoy':'Próxima'} · ${fmtDate(cur.date,'')}${cur.n<2?' · solo hay 1 pick que cumpla la regla':''}</div><div class="legs">` +
-      cur.legs.map(e => { const m={h:e.h,a:e.a};
-        return `<div class="leg"><span class="lab">${e.liga} · ${plTime(e.date,e.time)} h PL</span><span class="lab" style="text-align:right">cuota justa ${(1/e.ps).toFixed(2)}</span>
-          <strong>${short(e.h)} – ${short(e.a)}: ${mkName(e.safe,m)}</strong><span class="p num">${pct(e.ps)}</span></div>`; }).join('') + `</div>
-      <div class="ptot"><span>Probabilidad combinada <b class="num">${pct(cur.prob)}</b></span><span>Cuota mínima para que compense <b class="num">${cur.fair.toFixed(2)}</b></span>${stTag(cur.status)}</div>
-      <small style="color:var(--muted)">En Betclic, la cuota de la combinada es el producto de las dos. Apuesta solo si llega a la cuota mínima. La combinada se congela antes del primer partido.</small>`;
-  } else {
-    h += '<div class="empty">Hoy no hay ningún pick que llegue al 88 %. Mejor no forzar una combinada.</div>';
+  for (const kind of ['doble','larga']) {
+    const all = PL.days.filter(d => (d.kind||'doble') === kind);
+    const cur = all.filter(d => d.date >= today).sort((a,b)=>a.date<b.date?-1:1)[0];
+    const past = all.filter(d => d.status !== 'pendiente');
+    const ok = past.filter(d=>d.status==='acierto').length, ko = past.filter(d=>d.status==='fallo').length;
+    const bt = PL.bt && PL.bt[KIND[kind].bt];
+    h += `<div class="eyebrow" style="margin-top:${kind==='doble'?0:14}px">${KIND[kind].t} · ${KIND[kind].d}</div>`;
+    if (cur) {
+      h += `<div class="eyebrow">${cur.date===today?'Hoy':'Próxima'} · ${fmtDate(cur.date,'')} · ${cur.n} partido${cur.n>1?'s':''}</div><div class="legs">` +
+        cur.legs.map(e => { const m={h:e.h,a:e.a};
+          return `<div class="leg"><span class="lab">${e.liga} · ${plTime(e.date,e.time)} h PL</span><span class="lab" style="text-align:right">cuota justa ${(1/e.ps).toFixed(2)}</span>
+            <strong>${short(e.h)} – ${short(e.a)}: ${mkName(e.safe,m)}</strong><span class="p num">${pct(e.ps)}</span></div>`; }).join('') + `</div>
+        <div class="ptot"><span>Probabilidad combinada <b class="num">${pct(cur.prob)}</b></span><span>Cuota mínima <b class="num">${cur.fair.toFixed(2)}</b></span>${stTag(cur.status)}</div>`;
+    } else {
+      h += `<div class="empty">${kind==='larga' ? 'Hoy no hay 3 picks que lleguen al 88 %. Mejor no forzar una combinada larga.' : 'Hoy no hay ningún pick que llegue al 88 %.'}</div>`;
+    }
+    h += `<div class="perf" style="margin-top:6px">
+      <div><span class="eyebrow">Backtest 2026</span><b class="num" style="font-size:1.25rem">${bt ? pct(bt.real) : '–'}</b><small style="color:var(--muted)">${bt ? bt.days+' días · prob. media prevista '+pct(bt.prob) : ''}</small></div>
+      <div><span class="eyebrow">En vivo · acertadas</span><b class="num" style="font-size:1.25rem">${ok}/${ok+ko}</b></div></div>`;
+    if (past.length) h += `<details class="more"><summary>Anteriores</summary><div class="tw"><table class="cmp"><tbody>${past.slice(0,14).map(d=>`<tr><td>${fmtDate(d.date,'')}</td><td>${d.legs.map(e=>`${short(e.h)}–${short(e.a)} ${e.res?'('+e.res+')':''} ${e.hit_safe===true?'✓':e.hit_safe===false?'✗':''}`).join('<br>')}</td><td class="num">${pct(d.prob)}</td><td>${stTag(d.status)}</td></tr>`).join('')}</tbody></table></div></details>`;
   }
-  h += `<div class="perf" style="margin-top:8px">
-    <div><span class="eyebrow">Backtest 2026 · combinada de 2</span><b class="num" style="font-size:1.35rem">${bt2 ? pct(bt2.real) : '–'}</b><small style="color:var(--muted)">${bt2 ? bt2.days+' días de '+bt2.of : ''}</small></div>
-    <div><span class="eyebrow">En vivo · acertadas</span><b class="num" style="font-size:1.35rem">${ok}/${ok+ko}</b></div>
-  </div>`;
-  if (past.length) h += `<details class="more" style="margin-top:6px"><summary>Combinadas anteriores</summary><div class="tw"><table class="cmp"><tbody>${past.slice(0,14).map(d=>`<tr><td>${fmtDate(d.date,'')}</td><td>${d.legs.map(e=>`${short(e.h)}–${short(e.a)} ${e.res?'('+e.res+')':''} ${e.hit_safe===true?'✓':e.hit_safe===false?'✗':''}`).join('<br>')}</td><td class="num">${pct(d.prob)}</td><td>${stTag(d.status)}</td></tr>`).join('')}</tbody></table></div></details>`;
+  h += `<small style="color:var(--muted)">Solo doble oportunidad o ganador con ≥ 88 %: en combinadas de 3–5 a ganador directo el acierto real cae al 27–56 %. En Betclic la cuota de la combinada es el producto de las cuotas: apuesta solo si llega a la cuota mínima. Se congelan antes del primer partido.</small>`;
   document.getElementById('pbody').innerHTML = h;
 }
 
