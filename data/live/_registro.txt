@@ -1,4 +1,3 @@
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261105 URLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)'))
 E0 desde 2026-10-28: 15 leídos, 95 en total, 86 terminados, 0 días con error
 E1 desde 2026-10-28: 36 leídos, 180 en total, 156 terminados, 0 días con error
 SP1 desde 2026-10-28: 15 leídos, 115 en total, 102 terminados, 0 días con error
@@ -8,4 +7,4 @@ F1 desde 2026-10-28: 12 leídos, 89 en total, 75 terminados, 0 días con error
 P1 desde 2026-10-28: 13 leídos, 94 en total, 83 terminados, 0 días con error
 N1 desde 2026-10-28: 13 leídos, 103 en total, 91 terminados, 0 días con error
 estadísticas disponibles en ESPN: ['appearances', 'foulsCommitted', 'goalAssists', 'possessionPct', 'shotAssists', 'shotsOnTarget', 'totalGoals', 'totalShots', 'wonCorners']
-ligas guardadas: 8 | hora UTC 2026-10-31T17:42+00:00
+ligas guardadas: 8 | hora UTC 2026-10-31T18:43+00:00
