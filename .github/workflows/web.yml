@@ -34,7 +34,7 @@ jobs:
           set -o pipefail
           mkdir -p web
           python app/pronosticos.py /tmp/openfootball app/template.html web/index.html \
-            "$(date -u +%Y-%m-%d)" --fd data/fd --hist data/historial.json --preds data/predicciones.json 2>&1 | tail -60 > web/_registro.txt
+            "$(date -u +%Y-%m-%d)" --fd data/fd --hist data/historial.json --preds data/predicciones.json --combs data/combinadas.json 2>&1 | tail -60 > web/_registro.txt
           grep -q "const DATA =" web/index.html
           # copia para la pizarra de Claude (sin cabecera de documento ni recarga)
           python - <<'PY'
@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name "pizarra-bot"
           git config user.email "pizarra-bot@users.noreply.github.com"
-          git add web data/historial.json data/predicciones.json
+          git add web data/historial.json data/predicciones.json data/combinadas.json
           git diff --cached --quiet && exit 0
           git commit -m "Web $(date -u +%Y-%m-%dT%H:%M)"
           git pull --rebase origin main

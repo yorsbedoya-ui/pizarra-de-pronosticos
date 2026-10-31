@@ -18,6 +18,9 @@ HIST = None   # historial.json: picks publicados (≥85 %) y su resultado real
 if "--hist" in args:
     i = args.index("--hist"); HIST = args[i+1]; del args[i:i+2]
 HIST_MIN = 0.85
+COMBS = None  # combinadas.json: combinada del día (2 picks >= 88 %), congelada antes del primer partido
+if "--combs" in args:
+    i = args.index("--combs"); COMBS = args[i+1]; del args[i:i+2]
 PREDS = None  # predicciones.json: predicción de TODOS los partidos (congelada antes del inicio) y su resultado
 if "--preds" in args:
     i = args.index("--preds"); PREDS = args[i+1]; del args[i:i+2]
@@ -475,7 +478,7 @@ for code, (name, div) in LEAGUES.items():
         mdl = Model([r for r in played if r[0] < st], st, x0); x0 = mdl.P["x"]
         for r in test:
             rw = mdl.raw(r[1], r[2])
-            if rw: lbt.append(dict(raw=rw, odds=r[7], hg=r[3], ag=r[4], lg=code))
+            if rw: lbt.append(dict(raw=rw, odds=r[7], hg=r[3], ag=r[4], lg=code, date=r[0]))
     bt += lbt
     per_league.append(dict(code=code, name=name, src=src, played=played, fixtures=fixtures, n_bt=len(lbt), div=div, gw=GOAL_W,
                            stats=match_stats(div, played)))
@@ -664,7 +667,7 @@ try:
             for x in hist_e:
                 if x[3] and (x[2].year, x[2].month) == ym:
                     pr = olpred(p_, x[0]); mk = eu_markets(pr); k = max(EU_SAFE, key=lambda q: mk[q])
-                    rec.append(dict(comp=x[4][5], p=pr, y=x[1], safe=k, ps=mk[k], hg=x[4][3], ag=x[4][4]))
+                    rec.append(dict(comp=x[4][5], p=pr, y=x[1], safe=k, ps=mk[k], hg=x[4][3], ag=x[4][4], date=x[2]))
         cal = band_stats([(r["ps"], hit(r["safe"], r["hg"], r["ag"])) for r in rec])
         eu_summary = dict(n=len(rec), acc=round(float(np.mean([r["p"].argmax() == r["y"] for r in rec])), 3) if rec else None,
                           safe85=thr([(r["ps"], hit(r["safe"], r["hg"], r["ag"])) for r in rec], .85), cal=cal)
@@ -766,6 +769,56 @@ if PREDS:
     board_out = sorted((e for e in PR.values() if e["date"] >= keep_from), key=lambda e: (e["date"], e.get("time", ""), e["liga"]))
     print("Cuadro diario:", len(PR), "predicciones,", sum(1 for e in PR.values() if e.get("res")), "con resultado", flush=True)
 
+
+# ---------------- Combinada del día ----------------
+# Regla elegida por backtest (2026, 205 días con cuotas): los 2 picks más seguros del día con >= 88 % cada uno.
+PARLAY_MIN, PARLAY_N = 0.88, 2
+parlay_out = None
+def parlay_backtest():
+    legs = []
+    for b in bt:
+        if not b.get("odds") or not b.get("date"): continue
+        mk = markets(b["raw"], b["odds"], WM); k = max(SAFE, key=lambda q: mk[q])
+        if k in ("1", "2", "1X", "X2"): legs.append((b["date"], mk[k], hit(k, b["hg"], b["ag"])))
+    for r in (globals().get("rec") or []):
+        if isinstance(r, dict) and r.get("date"): legs.append((r["date"], r["ps"], hit(r["safe"], r["hg"], r["ag"])))
+    byd = {}
+    for l in legs: byd.setdefault(l[0], []).append(l)
+    out = {}
+    for n in (1, 2, 3):
+        res, pr = [], []
+        for ls in byd.values():
+            c = sorted([l for l in ls if l[1] >= PARLAY_MIN], key=lambda l: -l[1])[:n]
+            if len(c) == n: res.append(all(l[2] for l in c)); pr.append(float(np.prod([l[1] for l in c])))
+        if res: out[str(n)] = dict(days=len(res), of=len(byd), real=round(float(np.mean(res)), 3), prob=round(float(np.mean(pr)), 3))
+    return out
+if COMBS and board_out is not None:
+    try: CB = json.load(open(COMBS))
+    except (OSError, ValueError): CB = {}
+    nowu = datetime.utcnow()
+    started = lambda e: nowu >= kickoff_utc(e["date"], e.get("time"))
+    eligible = lambda e: e.get("res") is None and e["ps"] >= PARLAY_MIN and (e.get("odds") or e.get("elo"))
+    for d in sorted({e["date"] for e in PR.values() if e["date"] >= _now_str()[:10]}):
+        c = CB.get(d)
+        if c and c.get("frozen"): continue
+        if c and any(started(PR[i]) for i in c["legs"] if i in PR):
+            c["frozen"] = True; continue
+        legs = sorted([e for e in PR.values() if e["date"] == d and eligible(e) and not started(e)], key=lambda e: -e["ps"])[:PARLAY_N]
+        if legs: CB[d] = dict(legs=[e["id"] for e in legs], created=_now_str(), frozen=False)
+        elif d in CB: del CB[d]
+    days_out = []
+    for d in sorted(CB, reverse=True)[:30]:
+        legs = [PR[i] for i in CB[d]["legs"] if i in PR]
+        if not legs: continue
+        hits = [e.get("hit_safe") for e in legs]
+        status = "fallo" if False in hits else ("acierto" if all(h is True for h in hits) else "pendiente")
+        prob = float(np.prod([e["ps"] for e in legs]))
+        days_out.append(dict(date=d, n=len(legs), prob=round(prob, 3), fair=round(1 / prob, 2), status=status, frozen=CB[d].get("frozen", False),
+                             legs=[{k: e.get(k) for k in ("id", "liga", "date", "time", "h", "a", "safe", "ps", "res", "hit_safe")} for e in legs]))
+    json.dump(CB, open(COMBS, "w"), ensure_ascii=False, indent=0)
+    parlay_out = dict(min=PARLAY_MIN, n=PARLAY_N, bt=parlay_backtest(), days=days_out)
+    print("Combinadas:", len(CB), "días;", {k: v for k, v in parlay_out["bt"].items()}, flush=True)
+
 # ---------------- Historial real (picks publicados en vivo) ----------------
 hist_out = None
 if HIST:
@@ -803,7 +856,7 @@ except Exception:
     _now = datetime.utcnow()
 data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
             model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (" + xG" if "xg" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
-            backtest=summary, leagues=leagues, history=hist_out, board=board_out, eu=eu_summary,
+            backtest=summary, leagues=leagues, history=hist_out, board=board_out, eu=eu_summary, parlay=parlay_out,
             names=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json"), encoding="utf-8"))
                   if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json")) else {})
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))

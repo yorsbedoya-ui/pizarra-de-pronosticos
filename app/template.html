@@ -155,6 +155,15 @@ details.mt>summary::-webkit-details-marker{display:none}
 .cmp th{font-family:var(--f-mono);font-weight:500;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
 .cmp td.r{text-align:center;font-weight:600}
 .cmp td.r.ok{color:var(--hi)} .cmp td.r.ko{color:var(--lo)}
+.parlay .legs{display:grid;gap:6px}
+.leg{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;background:var(--pitch-soft);border-radius:4px;padding:8px 10px}
+.leg .lab{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.leg strong{font-size:.95rem}
+.leg .p{font:600 1.2rem var(--f-display);color:var(--pitch);text-align:right}
+.ptot{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;padding-top:4px}
+.ptot b{font:600 1.5rem var(--f-display)}
+.pst{font:600 .8rem var(--f-body);padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.pst.ok{color:var(--hi)} .pst.ko{color:var(--lo)} .pst.wait{color:var(--muted)}
 </style>
 
 </head>
@@ -165,6 +174,11 @@ details.mt>summary::-webkit-details-marker{display:none}
     <h1>Pizarra de Pronósticos</h1>
     <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa) y en la Champions, la Europa League y la Conference, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
   </header>
+
+  <section class="calib parlay" id="parlay" hidden>
+    <div class="eyebrow">Combinada del día · los 2 picks más seguros (≥ 88 % cada uno)</div>
+    <div id="pbody"></div>
+  </section>
 
   <section class="calib board" id="board" hidden>
     <div class="eyebrow">Resultados por día · todas las ligas · lo que se proyectó antes del partido frente a lo que pasó</div>
@@ -334,6 +348,37 @@ function render(){
     ${recentHTML(l)}`;
 }
 render();
+
+
+// ---------- Combinada del día ----------
+const PL = DATA.parlay;
+if (PL && PL.days && PL.days.length) {
+  document.getElementById('parlay').hidden = false;
+  const today = (DATA.updated_at||DATA.generated).slice(0,10);
+  const up = PL.days.filter(d => d.date >= today).sort((a,b)=>a.date<b.date?-1:1);
+  const cur = up[0];
+  const past = PL.days.filter(d => d.date < today || (d.date===today && d.status!=='pendiente'));
+  const ok = past.filter(d=>d.status==='acierto').length, ko = past.filter(d=>d.status==='fallo').length;
+  const bt2 = PL.bt && PL.bt['2'];
+  const stTag = s => s==='acierto' ? '<span class="pst ok">✓ Acertada</span>' : s==='fallo' ? '<span class="pst ko">✗ Fallada</span>' : '<span class="pst wait">Pendiente</span>';
+  let h = '';
+  if (cur) {
+    h += `<div class="eyebrow">${cur.date===today?'Hoy':'Próxima'} · ${fmtDate(cur.date,'')}${cur.n<2?' · solo hay 1 pick que cumpla la regla':''}</div><div class="legs">` +
+      cur.legs.map(e => { const m={h:e.h,a:e.a};
+        return `<div class="leg"><span class="lab">${e.liga} · ${plTime(e.date,e.time)} h PL</span><span class="lab" style="text-align:right">cuota justa ${(1/e.ps).toFixed(2)}</span>
+          <strong>${short(e.h)} – ${short(e.a)}: ${mkName(e.safe,m)}</strong><span class="p num">${pct(e.ps)}</span></div>`; }).join('') + `</div>
+      <div class="ptot"><span>Probabilidad combinada <b class="num">${pct(cur.prob)}</b></span><span>Cuota mínima para que compense <b class="num">${cur.fair.toFixed(2)}</b></span>${stTag(cur.status)}</div>
+      <small style="color:var(--muted)">En Betclic, la cuota de la combinada es el producto de las dos. Apuesta solo si llega a la cuota mínima. La combinada se congela antes del primer partido.</small>`;
+  } else {
+    h += '<div class="empty">Hoy no hay ningún pick que llegue al 88 %. Mejor no forzar una combinada.</div>';
+  }
+  h += `<div class="perf" style="margin-top:8px">
+    <div><span class="eyebrow">Backtest 2026 · combinada de 2</span><b class="num" style="font-size:1.35rem">${bt2 ? pct(bt2.real) : '–'}</b><small style="color:var(--muted)">${bt2 ? bt2.days+' días de '+bt2.of : ''}</small></div>
+    <div><span class="eyebrow">En vivo · acertadas</span><b class="num" style="font-size:1.35rem">${ok}/${ok+ko}</b></div>
+  </div>`;
+  if (past.length) h += `<details class="more" style="margin-top:6px"><summary>Combinadas anteriores</summary><div class="tw"><table class="cmp"><tbody>${past.slice(0,14).map(d=>`<tr><td>${fmtDate(d.date,'')}</td><td>${d.legs.map(e=>`${short(e.h)}–${short(e.a)} ${e.res?'('+e.res+')':''} ${e.hit_safe===true?'✓':e.hit_safe===false?'✗':''}`).join('<br>')}</td><td class="num">${pct(d.prob)}</td><td>${stTag(d.status)}</td></tr>`).join('')}</tbody></table></div></details>`;
+  document.getElementById('pbody').innerHTML = h;
+}
 
 // ---------- Cuadro de resultados diarios (desplegable por día y por partido) ----------
 const BD = DATA.board || [];
