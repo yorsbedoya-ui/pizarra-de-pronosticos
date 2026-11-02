@@ -1,10 +1,100 @@
-E0: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions']
-E0: 1988 partidos con xG, último 2026-10-31 20:00:00
-SP1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions']
-SP1: 2004 partidos con xG, último 2026-10-31 20:00:00
-I1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions']
-I1: 1993 partidos con xG, último 2026-10-31 19:45:00
-D1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions']
-D1: 1600 partidos con xG, último 2026-10-31 17:30:00
-F1: columnas ['league', 'season', 'game', 'league_id', 'season_id', 'game_id', 'date', 'home_team_id', 'away_team_id', 'home_team', 'away_team', 'away_team_code', 'home_team_code', 'away_points', 'away_expected_points', 'away_goals', 'away_xg', 'away_np_xg', 'away_np_xg_difference', 'away_ppda', 'away_deep_completions', 'home_points', 'home_expected_points', 'home_goals', 'home_xg', 'home_np_xg', 'home_np_xg_difference', 'home_ppda', 'home_deep_completions']
-F1: 1754 partidos con xG, último 2026-10-31 19:45:00
+E0: ERROR
+Traceback (most recent call last):
+  File "/home/runner/work/pizarra-de-pronosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 17, in <module>
+    df = us.read_team_match_stats().reset_index()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+    df_seasons = self.read_seasons()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+    data = self._read_leagues()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 651, in _read_leagues
+    reader = self._request_api(url, filepath, no_cache=no_cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 715, in _request_api
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
+    raise HTTPError(
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: server misbehaving for url: https://understat.com/getStatData
+
+SP1: ERROR
+Traceback (most recent call last):
+  File "/home/runner/work/pizarra-de-pronosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 17, in <module>
+    df = us.read_team_match_stats().reset_index()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+    df_seasons = self.read_seasons()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+    data = self._read_leagues()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 651, in _read_leagues
+    reader = self._request_api(url, filepath, no_cache=no_cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 715, in _request_api
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
+    raise HTTPError(
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:54968->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+
+I1: ERROR
+Traceback (most recent call last):
+  File "/home/runner/work/pizarra-de-pronosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 17, in <module>
+    df = us.read_team_match_stats().reset_index()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+    df_seasons = self.read_seasons()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+    data = self._read_leagues()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 651, in _read_leagues
+    reader = self._request_api(url, filepath, no_cache=no_cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 715, in _request_api
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
+    raise HTTPError(
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:36501->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+
+D1: ERROR
+Traceback (most recent call last):
+  File "/home/runner/work/pizarra-de-pronosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 17, in <module>
+    df = us.read_team_match_stats().reset_index()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+    df_seasons = self.read_seasons()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+    data = self._read_leagues()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 651, in _read_leagues
+    reader = self._request_api(url, filepath, no_cache=no_cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 715, in _request_api
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
+    raise HTTPError(
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:60037->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+
+F1: ERROR
+Traceback (most recent call last):
+  File "/home/runner/work/pizarra-de-pronosticos/pizarra-de-pronosticos/scripts/fetch_xg.py", line 17, in <module>
+    df = us.read_team_match_stats().reset_index()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+    df_seasons = self.read_seasons()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+    data = self._read_leagues()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 651, in _read_leagues
+    reader = self._request_api(url, filepath, no_cache=no_cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 715, in _request_api
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
+    raise HTTPError(
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:33634->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+
