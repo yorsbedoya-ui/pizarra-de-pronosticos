@@ -18,6 +18,9 @@ HIST = None   # historial.json: picks publicados (≥85 %) y su resultado real
 if "--hist" in args:
     i = args.index("--hist"); HIST = args[i+1]; del args[i:i+2]
 HIST_MIN = 0.85
+LADDERS = None  # escaleras.json: reto escalera (5 escalones), congelado al crear cada escalón
+if "--ladders" in args:
+    i = args.index("--ladders"); LADDERS = args[i+1]; del args[i:i+2]
 COMBS = None  # combinadas.json: combinada del día (2 picks >= 88 %), congelada antes del primer partido
 if "--combs" in args:
     i = args.index("--combs"); COMBS = args[i+1]; del args[i:i+2]
@@ -828,6 +831,88 @@ if COMBS and board_out is not None:
     parlay_out = dict(min=PARLAY_MIN, n=PARLAY_N, bt=parlay_backtest(), days=days_out)
     print("Combinadas:", len(CB), parlay_out["bt"], flush=True)
 
+
+# ---------------- Reto escalera ----------------
+# 5 escalones; cada escalón es una combinada de N picks (un mercado por partido) con prob >= umbral.
+# Mercados permitidos: los que en el backtest cumplen lo que prometen a >= 85 % (1X, X2, 1, 2, +1,5 goles).
+LADDER_KINDS = {"A": dict(n=2, thr=0.88, name="Escalera A · 2 picks ≥ 88 %"),
+                "B": dict(n=3, thr=0.90, name="Escalera B · 3 picks ≥ 90 %")}
+LADDER_STEPS, LADDER_MK = 5, ["1", "2", "1X", "X2", "+1.5"]
+ladders_out = None
+def ladder_backtest():
+    byday = {}
+    for b in bt:
+        if not b.get("odds") or not b.get("date"): continue
+        mk = markets(b["raw"], b["odds"], WM); k = max(LADDER_MK, key=lambda q: mk.get(q, 0))
+        byday.setdefault(b["date"], []).append((mk[k], hit(k, b["hg"], b["ag"])))
+    for r in (globals().get("rec") or []):
+        if isinstance(r, dict) and r.get("date"):
+            mk = {"1": r["p"][0], "2": r["p"][2], "1X": r["p"][0] + r["p"][1], "X2": r["p"][1] + r["p"][2]}
+            k = max(mk, key=mk.get); byday.setdefault(r["date"], []).append((mk[k], hit(k, r["hg"], r["ag"])))
+    out = {}
+    for kind, cfg in LADDER_KINDS.items():
+        comp = fail = cur = 0; wins = []
+        for d in sorted(byday):
+            c = sorted([l for l in byday[d] if l[0] >= cfg["thr"]], key=lambda l: -l[0])[:cfg["n"]]
+            if len(c) < cfg["n"]: continue
+            ok = all(l[1] for l in c); wins.append(ok)
+            if ok:
+                cur += 1
+                if cur == LADDER_STEPS: comp += 1; cur = 0
+            else: fail += 1; cur = 0
+        out[kind] = dict(steps=len(wins), step_acc=round(float(np.mean(wins)), 3) if wins else None,
+                         done=comp, total=comp + fail, rate=round(comp / (comp + fail), 3) if comp + fail else None)
+    return out
+if LADDERS and board_out is not None:
+    try: LD = json.load(open(LADDERS))
+    except (OSError, ValueError): LD = {"ladders": []}
+    nowu = datetime.utcnow()
+    # candidatos: partidos aún no empezados, con cuotas (ligas) o Elo europeo, mejor mercado permitido
+    cands = []
+    for l in leagues:
+        for m in l["matches"]:
+            if not (m.get("odds") or m.get("elo")): continue
+            if nowu >= kickoff_utc(m["date"], m.get("time")): continue
+            mk = m["mk"]; k = max([q for q in LADDER_MK if mk.get(q) is not None], key=lambda q: mk[q])
+            cands.append(dict(id=f'{m["date"]}|{m["h"]}|{m["a"]}', liga=l["name"], date=m["date"], time=m.get("time", ""),
+                              h=m["h"], a=m["a"], m=k, p=round(float(mk[k]), 3)))
+    def leg_result(g):
+        e = PR.get(g["id"])
+        if not e or e.get("res") is None: return None
+        return bool(hit(g["m"], e["hg"], e["ag"]))
+    for kind, cfg in LADDER_KINDS.items():
+        act = next((x for x in LD["ladders"] if x["kind"] == kind and x["status"] == "activa"), None)
+        if act and act["steps"]:
+            st = act["steps"][-1]
+            if st["status"] == "pendiente":
+                rs = [leg_result(g) for g in st["legs"]]
+                for g, r_ in zip(st["legs"], rs): g["hit"] = r_
+                if False in rs: st["status"] = "fallado"; act["status"] = "fallida"; act["ended"] = _now_str()
+                elif all(r_ is True for r_ in rs):
+                    st["status"] = "acertado"
+                    if sum(1 for s in act["steps"] if s["status"] == "acertado") >= LADDER_STEPS:
+                        act["status"] = "completada"; act["ended"] = _now_str()
+        if not act or act["status"] != "activa":
+            act = dict(id=f"{kind}-{_now_str()}", kind=kind, created=_now_str(), status="activa", steps=[])
+            LD["ladders"].append(act)
+        if not act["steps"] or act["steps"][-1]["status"] == "acertado":
+            used = {g["id"] for x in LD["ladders"] if x["status"] == "activa" and x is not act
+                    for s in x["steps"] if s["status"] == "pendiente" for g in s["legs"]}
+            pool = [c for c in cands if c["p"] >= cfg["thr"] and c["id"] not in used]
+            for d in sorted({c["date"] for c in pool}):
+                day = sorted([c for c in pool if c["date"] == d], key=lambda c: -c["p"])[:cfg["n"]]
+                if len(day) == cfg["n"]:
+                    prob = float(np.prod([c["p"] for c in day]))
+                    act["steps"].append(dict(n=len(act["steps"]) + 1, created=_now_str(), status="pendiente",
+                                             prob=round(prob, 3), fair=round(1 / prob, 2), legs=[dict(c) for c in day]))
+                    break
+    # quitar escaleras vacías antiguas (sin escalones) salvo la activa de cada tipo
+    LD["ladders"] = [x for x in LD["ladders"] if x["steps"] or x["status"] == "activa"]
+    json.dump(LD, open(LADDERS, "w"), ensure_ascii=False, indent=0)
+    ladders_out = dict(kinds={k: dict(v) for k, v in LADDER_KINDS.items()}, steps=LADDER_STEPS, bt=ladder_backtest(),
+                       ladders=sorted(LD["ladders"], key=lambda x: x["created"], reverse=True)[:30])
+    print("Escaleras:", [(x["kind"], x["status"], len(x["steps"])) for x in LD["ladders"] if x["status"] == "activa"], ladders_out["bt"], flush=True)
+
 # ---------------- Historial real (picks publicados en vivo) ----------------
 hist_out = None
 if HIST:
@@ -865,7 +950,7 @@ except Exception:
     _now = datetime.utcnow()
 data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
             model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (" + xG" if "xg" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
-            backtest=summary, leagues=leagues, history=hist_out, board=board_out, eu=eu_summary, parlay=parlay_out,
+            backtest=summary, leagues=leagues, history=hist_out, board=board_out, eu=eu_summary, parlay=parlay_out, ladders=ladders_out,
             names=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json"), encoding="utf-8"))
                   if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json")) else {})
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))

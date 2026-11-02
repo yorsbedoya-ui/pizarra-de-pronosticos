@@ -164,6 +164,19 @@ details.mt>summary::-webkit-details-marker{display:none}
 .ptot b{font:600 1.5rem var(--f-display)}
 .pst{font:600 .8rem var(--f-body);padding:2px 8px;border-radius:999px;border:1px solid currentColor}
 .pst.ok{color:var(--hi)} .pst.ko{color:var(--lo)} .pst.wait{color:var(--muted)}
+details.sec{border-top:2px solid var(--line);padding-top:4px}
+details.sec>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:8px 0;font:600 1.35rem var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary::after{content:"▸";font:500 1rem var(--f-mono);color:var(--muted);margin-left:auto}
+details.sec[open]>summary::after{content:"▾"}
+details.sec>*:not(summary){margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.steps span{height:28px;border-radius:4px;background:var(--chip);display:grid;place-items:center;font:600 .8rem var(--f-mono);color:var(--muted)}
+.steps span.ok{background:var(--hi);color:var(--surface)}
+.steps span.ko{background:var(--lo);color:var(--surface)}
+.steps span.cur{outline:2px solid var(--pitch);color:var(--pitch);background:var(--pitch-soft)}
+.lad{border:1px solid var(--line);border-radius:6px;padding:10px;display:grid;gap:8px;background:var(--surface)}
+.lad h4{margin:0;font:600 1.05rem var(--f-display);text-transform:uppercase}
 </style>
 
 </head>
@@ -175,17 +188,29 @@ details.mt>summary::-webkit-details-marker{display:none}
     <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa) y en la Champions, la Europa League y la Conference, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
   </header>
 
+  <details class="sec" id="sec-parlay" open><summary>Combinadas del día</summary>
   <section class="calib parlay" id="parlay" hidden>
     <div class="eyebrow">Combinadas del día</div>
     <div id="pbody"></div>
   </section>
+  </details>
 
+  <details class="sec" id="sec-ladder" open><summary>Reto escalera</summary>
+  <section class="calib ladder" id="ladder" hidden>
+    <div class="eyebrow">Reto escalera · 5 escalones · cada escalón es una combinada con lo más seguro de cada partido</div>
+    <div id="lbody"></div>
+  </section>
+  </details>
+
+  <details class="sec" id="sec-board"><summary>Resultados por día</summary>
   <section class="calib board" id="board" hidden>
     <div class="eyebrow">Resultados por día · todas las ligas · lo que se proyectó antes del partido frente a lo que pasó</div>
     <label class="toggle" style="justify-self:start"><input type="checkbox" id="bonly"> Solo picks seguros ≥ 85 %</label>
     <div id="bdays" class="bdays"></div>
   </section>
+  </details>
 
+  <details class="sec" id="sec-perf"><summary>Rendimiento del modelo</summary>
   <section class="perf" id="perf"></section>
 
   <section class="calib">
@@ -195,7 +220,9 @@ details.mt>summary::-webkit-details-marker{display:none}
       <div><strong>Ganador (1X2)</strong><div class="tw"><table><thead><tr><th>Confianza</th><th>Partidos</th><th>Acierto real</th><th style="width:30%"></th></tr></thead><tbody id="calW"></tbody></table></div></div>
     </div>
   </section>
+  </details>
 
+  <details class="sec" id="sec-ligas" open><summary>Partidos por liga</summary>
   <div class="controls">
     <div class="tabs" id="tabs" role="group" aria-label="Liga"></div>
     <div class="seg" role="group" aria-label="Filtro">
@@ -206,13 +233,17 @@ details.mt>summary::-webkit-details-marker{display:none}
   </div>
 
   <section id="league" class="wrap" style="gap:12px"></section>
+  </details>
 
+  <details class="sec" id="sec-hist"><summary>Historial de picks ≥ 85 %</summary>
   <section class="calib" id="hist" hidden>
     <div class="eyebrow">Historial real · picks seguros ≥ 85 % publicados en vivo desde <span id="hsince"></span></div>
     <div class="perf" id="hperf"></div>
     <div class="tw"><table><thead><tr><th>Fecha</th><th>Liga</th><th>Partido</th><th>Pick</th><th>Prob.</th><th>Resultado</th></tr></thead><tbody id="hrows"></tbody></table></div>
   </section>
+  </details>
 
+  <details class="sec" id="sec-note"><summary>Cómo leerlo</summary>
   <section class="note">
     <h3>Cómo leerlo</h3>
     <p><b>Pick seguro</b> es el mercado con más probabilidad del partido entre: ganador, doble oportunidad, más/menos 2,5 goles y ambos marcan. Es la forma honesta de subir el acierto: con confianza ≥ 85 % salió bien el <span id="s85"></span> de las veces, pero paga cuotas bajas.</p>
@@ -221,6 +252,7 @@ details.mt>summary::-webkit-details-marker{display:none}
     <p><b>Con cuotas reales</b>, el backtest decide cuánto pesa el mercado frente a nuestro modelo. Las etiquetas de <b>valor</b> (modelo por encima de la cuota) solo aparecen si históricamente han ganado dinero; hoy no es así, por eso están ocultas.</p>
     <p>El modelo no detecta amaños: eso no aparece en los marcadores. <b>Lesiones y alineaciones</b> no se leen una a una, pero entran a través de las cuotas: cuando se conoce una baja o el once titular, las casas mueven la cuota en minutos, y la app usa esas cuotas para el ganador y los goles (en las pruebas con partidos reales fueron lo que mejor predijo). Los resultados se comprueban cada hora; último partido terminado en los datos: <span id="last"></span>. Si apuestas, hazlo solo con dinero que puedas perder.</p>
   </section>
+  </details>
 </div>
 
 <script>
@@ -460,6 +492,50 @@ if (H) {
     return `<tr><td class="num">${e.date}</td><td>${e.liga}</td><td>${short(e.h)} – ${short(e.a)}</td><td>${mkName(e.m,e)}</td><td class="num">${pct(e.p)}</td><td>${st}</td></tr>`;
   }).join('');
 }
+// ---------- Reto escalera ----------
+const LDR = DATA.ladders;
+const MKL = {'1':'Gana local','2':'Gana visitante','1X':'Local o empate','X2':'Visitante o empate','+1.5':'Más de 1,5 goles'};
+const legName = g => g.m==='+1.5' ? 'Más de 1,5 goles' : mkName(g.m,{h:g.h,a:g.a});
+if (LDR && LDR.ladders) {
+  document.getElementById('ladder').hidden = false;
+  const today = (DATA.updated_at||DATA.generated).slice(0,10);
+  const stTxt = {pendiente:'<span class="pst wait">Pendiente</span>', acertado:'<span class="pst ok">✓ Acertado</span>', fallado:'<span class="pst ko">✗ Fallado</span>'};
+  let h = '';
+  for (const kind of Object.keys(LDR.kinds)) {
+    const K = LDR.kinds[kind], bt = LDR.bt[kind];
+    const act = LDR.ladders.find(x=>x.kind===kind && x.status==='activa');
+    const past = LDR.ladders.filter(x=>x.kind===kind && x.status!=='activa');
+    const done = past.filter(x=>x.status==='completada').length, lost = past.filter(x=>x.status==='fallida').length;
+    h += `<div class="lad"><h4>${K.name}</h4>`;
+    if (act) {
+      const okSteps = act.steps.filter(s=>s.status==='acertado');
+      const mult = okSteps.reduce((a,s)=>a*s.fair,1);
+      const cells = [...Array(LDR.steps)].map((_,i)=>{ const s=act.steps[i]; const c = !s ? '' : s.status==='acertado'?'ok':s.status==='fallado'?'ko':'cur'; return `<span class="${c}">${s&&s.status==='acertado'?'✓':i+1}</span>`; }).join('');
+      h += `<div class="steps" aria-label="Escalón ${okSteps.length} de ${LDR.steps}">${cells}</div>
+        <small style="color:var(--muted)">Escalones superados: <b>${okSteps.length}/${LDR.steps}</b>${okSteps.length?` · multiplicador acumulado (cuota justa) ×${mult.toFixed(2)}: 10 € → ${(10*mult).toFixed(2)} €`:''}</small>`;
+      const st = act.steps[act.steps.length-1];
+      if (st && st.status==='pendiente') {
+        h += `<div class="eyebrow">Escalón ${st.n} · ${fmtDate(st.legs[0].date,'')}</div><div class="legs">` + st.legs.map(g=>`<div class="leg"><span class="lab">${g.liga} · ${plTime(g.date,g.time)} h PL</span><span class="lab" style="text-align:right">${g.hit===true?'✓':g.hit===false?'✗':'cuota justa '+(1/g.p).toFixed(2)}</span><strong>${short(g.h)} – ${short(g.a)}: ${legName(g)}</strong><span class="p num">${pct(g.p)}</span></div>`).join('') +
+          `</div><div class="ptot"><span>Prob. del escalón <b class="num">${pct(st.prob)}</b></span><span>Cuota mínima <b class="num">${st.fair.toFixed(2)}</b></span>${stTxt[st.status]}</div>`;
+      } else {
+        h += `<div class="empty">Esperando partidos con suficientes picks ≥ ${Math.round(K.thr*100)} % para el escalón ${act.steps.length+1}. Se crea solo en cuanto los haya (hoy mismo o el próximo día).</div>`;
+      }
+    }
+    h += `<div class="perf"><div><span class="eyebrow">Backtest 2026 · escaleras terminadas</span><b class="num" style="font-size:1.2rem">${bt&&bt.rate!=null?pct(bt.rate):'–'}</b><small style="color:var(--muted)">${bt?bt.done+' de '+bt.total+' · acierto por escalón '+pct(bt.step_acc):''}</small></div>
+      <div><span class="eyebrow">En vivo</span><b class="num" style="font-size:1.2rem">${done} ✓ · ${lost} ✗</b><small style="color:var(--muted)">terminadas · caídas</small></div></div>`;
+    if (past.length) h += `<details class="more"><summary>Escaleras anteriores</summary><div class="tw"><table class="cmp"><tbody>${past.slice(0,12).map(x=>`<tr><td>${fmtDate(x.created.slice(0,10),'')}</td><td>${x.status==='completada'?'<span class="pst ok">Completada</span>':'<span class="pst ko">Caída en el escalón '+x.steps.length+'</span>'}</td><td>${x.steps.map(s=>s.legs.map(g=>`${short(g.h)}–${short(g.a)} (${legName(g)}) ${g.hit===true?'✓':g.hit===false?'✗':''}`).join('<br>')).join('<hr style="border:0;border-top:1px solid var(--line)">')}</td></tr>`).join('')}</tbody></table></div></details>`;
+    h += `</div>`;
+  }
+  h += `<small style="color:var(--muted)">Mercados permitidos: los que en los datos reales cumplen lo que prometen con ≥ 85 % (doble oportunidad, ganador, más de 1,5 goles). "Ambos marcan" nunca llega al 85 %, por eso no entra. Cada escalón se fija al crearse y lo ganado se reinvierte en el siguiente; si falla un escalón, la escalera cae y empieza otra.</small>`;
+  document.getElementById('lbody').innerHTML = h;
+}
+// ---------- Pestañas desplegables: ocultar las vacías y recordar cuáles están abiertas ----------
+document.querySelectorAll('details.sec').forEach(d => {
+  const inner = d.querySelector(':scope > section');
+  if (inner && inner.hidden) d.hidden = true;
+  try { const s = localStorage.getItem('pp-'+d.id); if (s!==null) d.open = s==='1'; } catch(e){}
+  d.addEventListener('toggle', () => { try { localStorage.setItem('pp-'+d.id, d.open?'1':'0'); } catch(e){} });
+});
 </script>
 </body>
 </html>
