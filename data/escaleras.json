@@ -1,0 +1,88 @@
+{
+"ladders": [
+{
+"id": "A-2026-11-02T14:56",
+"kind": "A",
+"created": "2026-11-02T14:56",
+"status": "activa",
+"steps": [
+{
+"n": 1,
+"created": "2026-11-02T14:56",
+"status": "pendiente",
+"prob": 0.827,
+"fair": 1.21,
+"legs": [
+{
+"id": "2026-11-03|Villarreal|Paris Saint-Germain",
+"liga": "Champions League",
+"date": "2026-11-03",
+"time": "21:00",
+"h": "Villarreal",
+"a": "Paris Saint-Germain",
+"m": "X2",
+"p": 0.915
+},
+{
+"id": "2026-11-03|LASK Linz|Slovan Bratislava",
+"liga": "Champions League",
+"date": "2026-11-03",
+"time": "21:00",
+"h": "LASK Linz",
+"a": "Slovan Bratislava",
+"m": "1X",
+"p": 0.904
+}
+]
+}
+]
+},
+{
+"id": "B-2026-11-02T14:56",
+"kind": "B",
+"created": "2026-11-02T14:56",
+"status": "activa",
+"steps": [
+{
+"n": 1,
+"created": "2026-11-02T14:56",
+"status": "pendiente",
+"prob": 0.754,
+"fair": 1.33,
+"legs": [
+{
+"id": "2026-11-05|Atalanta|Kairat Almaty",
+"liga": "Conference League",
+"date": "2026-11-05",
+"time": "18:45",
+"h": "Atalanta",
+"a": "Kairat Almaty",
+"m": "1X",
+"p": 0.915
+},
+{
+"id": "2026-11-05|FC Lugano|Kauno Zalgiris",
+"liga": "Conference League",
+"date": "2026-11-05",
+"time": "21:00",
+"h": "FC Lugano",
+"a": "Kauno Zalgiris",
+"m": "1X",
+"p": 0.914
+},
+{
+"id": "2026-11-05|Panathinaikos|CSKA Sofia",
+"liga": "Conference League",
+"date": "2026-11-05",
+"time": "21:00",
+"h": "Panathinaikos",
+"a": "CSKA Sofia",
+"m": "1X",
+"p": 0.901
+}
+]
+}
+]
+}
+]
+}
