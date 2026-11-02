@@ -21,7 +21,8 @@
 "h": "Villarreal",
 "a": "Paris Saint-Germain",
 "m": "X2",
-"p": 0.915
+"p": 0.915,
+"hit": null
 },
 {
 "id": "2026-11-03|LASK Linz|Slovan Bratislava",
@@ -31,7 +32,8 @@
 "h": "LASK Linz",
 "a": "Slovan Bratislava",
 "m": "1X",
-"p": 0.904
+"p": 0.904,
+"hit": null
 }
 ]
 }
@@ -58,7 +60,8 @@
 "h": "Atalanta",
 "a": "Kairat Almaty",
 "m": "1X",
-"p": 0.915
+"p": 0.915,
+"hit": null
 },
 {
 "id": "2026-11-05|FC Lugano|Kauno Zalgiris",
@@ -68,7 +71,8 @@
 "h": "FC Lugano",
 "a": "Kauno Zalgiris",
 "m": "1X",
-"p": 0.914
+"p": 0.914,
+"hit": null
 },
 {
 "id": "2026-11-05|Panathinaikos|CSKA Sofia",
@@ -78,7 +82,8 @@
 "h": "Panathinaikos",
 "a": "CSKA Sofia",
 "m": "1X",
-"p": 0.901
+"p": 0.901,
+"hit": null
 }
 ]
 }
