@@ -16,7 +16,7 @@ Traceback (most recent call last):
     response.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
     raise HTTPError(
-tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: server misbehaving for url: https://understat.com/getStatData
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:48731->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
 
 SP1: ERROR
 Traceback (most recent call last):
@@ -36,7 +36,7 @@ Traceback (most recent call last):
     response.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
     raise HTTPError(
-tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:54968->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:59663->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
 
 I1: ERROR
 Traceback (most recent call last):
@@ -56,7 +56,7 @@ Traceback (most recent call last):
     response.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
     raise HTTPError(
-tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:36501->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: server misbehaving for url: https://understat.com/getStatData
 
 D1: ERROR
 Traceback (most recent call last):
@@ -76,7 +76,7 @@ Traceback (most recent call last):
     response.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
     raise HTTPError(
-tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:60037->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:35147->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
 
 F1: ERROR
 Traceback (most recent call last):
@@ -96,5 +96,5 @@ Traceback (most recent call last):
     response.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/tls_requests/models/response.py", line 207, in raise_for_status
     raise HTTPError(
-tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:33634->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
+tls_requests.exceptions.HTTPError: 0 TLS Client Error: failed to do request: Get "https://understat.com/getStatData": dial tcp: lookup understat.com on 127.0.0.53:53: read udp 127.0.0.1:54713->127.0.0.53:53: i/o timeout for url: https://understat.com/getStatData
 
