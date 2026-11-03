@@ -52,7 +52,8 @@
 "h": "Slavia Prague",
 "a": "Arsenal",
 "m": "X2",
-"p": 0.973
+"p": 0.973,
+"hit": null
 },
 {
 "id": "2026-11-04|Viking FK|Sabah FK",
@@ -62,7 +63,8 @@
 "h": "Viking FK",
 "a": "Sabah FK",
 "m": "1X",
-"p": 0.904
+"p": 0.904,
+"hit": null
 }
 ]
 }
