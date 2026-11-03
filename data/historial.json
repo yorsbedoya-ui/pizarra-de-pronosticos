@@ -672,8 +672,8 @@
 "m": "1X",
 "p": 0.85,
 "pub": "2026-10-26",
-"res": null,
-"hit": null
+"res": "0-0",
+"hit": true
 },
 {
 "id": "2026-11-03|LASK Linz|Slovan Bratislava",
@@ -685,8 +685,8 @@
 "m": "1X",
 "p": 0.913,
 "pub": "2026-10-26",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-03|Villarreal|Paris Saint-Germain",
@@ -698,8 +698,8 @@
 "m": "X2",
 "p": 0.906,
 "pub": "2026-10-26",
-"res": null,
-"hit": null
+"res": "0-6",
+"hit": true
 },
 {
 "id": "2026-11-04|AEK Athens|Real Madrid",

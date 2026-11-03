@@ -9,7 +9,7 @@
 {
 "n": 1,
 "created": "2026-11-02T14:56",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.827,
 "fair": 1.21,
 "legs": [
@@ -22,7 +22,7 @@
 "a": "Paris Saint-Germain",
 "m": "X2",
 "p": 0.915,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-03|LASK Linz|Slovan Bratislava",
@@ -33,7 +33,36 @@
 "a": "Slovan Bratislava",
 "m": "1X",
 "p": 0.904,
-"hit": null
+"hit": true
+}
+]
+},
+{
+"n": 2,
+"created": "2026-11-03T23:42",
+"status": "pendiente",
+"prob": 0.88,
+"fair": 1.14,
+"legs": [
+{
+"id": "2026-11-04|Slavia Prague|Arsenal",
+"liga": "Champions League",
+"date": "2026-11-04",
+"time": "21:00",
+"h": "Slavia Prague",
+"a": "Arsenal",
+"m": "X2",
+"p": 0.973
+},
+{
+"id": "2026-11-04|Viking FK|Sabah FK",
+"liga": "Champions League",
+"date": "2026-11-04",
+"time": "21:00",
+"h": "Viking FK",
+"a": "Sabah FK",
+"m": "1X",
+"p": 0.904
 }
 ]
 }
