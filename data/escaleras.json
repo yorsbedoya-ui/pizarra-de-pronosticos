@@ -83,7 +83,8 @@
 "h": "F.C. København",
 "a": "Iberia 1999",
 "m": "1X",
-"p": 0.884
+"p": 0.884,
+"hit": null
 },
 {
 "id": "2026-11-05|CSU Craiova|Egnatia",
@@ -93,7 +94,8 @@
 "h": "CSU Craiova",
 "a": "Egnatia",
 "m": "1X",
-"p": 0.883
+"p": 0.883,
+"hit": null
 }
 ]
 }
