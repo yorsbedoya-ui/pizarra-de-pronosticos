@@ -565,8 +565,8 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 03/11/2026,22:00,league-phase,LASK Linz,Slovan Bratislava,4,0,FT,10,5,29,7,60,40,8,2
 03/11/2026,22:00,league-phase,Manchester United,AS Roma,3,2,FT,6,4,15,7,52.4,47.6,3,1
 03/11/2026,22:00,league-phase,Villarreal,Paris Saint-Germain,0,6,FT,2,12,14,22,29.4,70.6,4,8
-04/11/2026,19:45,league-phase,AEK Athens,Real Madrid,,,NS,0,0,0,0,0,0,0,0
-04/11/2026,19:45,league-phase,Fenerbahce,Liverpool,,,NS,0,0,0,0,0,0,0,0
+04/11/2026,19:45,league-phase,AEK Athens,Real Madrid,1,1,LIVE,4,2,4,9,31.6,68.4,0,3
+04/11/2026,19:45,league-phase,Fenerbahce,Liverpool,1,1,LIVE,2,1,8,9,30.7,69.3,2,6
 04/11/2026,22:00,league-phase,Borussia Dortmund,Real Betis,,,NS,,,,,,,,
 04/11/2026,22:00,league-phase,FC Porto,Napoli,,,NS,,,,,,,,
 04/11/2026,22:00,league-phase,Lens,Como,,,NS,,,,,,,,
