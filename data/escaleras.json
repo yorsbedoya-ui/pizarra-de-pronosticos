@@ -40,7 +40,7 @@
 {
 "n": 2,
 "created": "2026-11-03T23:42",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.88,
 "fair": 1.14,
 "legs": [
@@ -53,7 +53,7 @@
 "a": "Arsenal",
 "m": "X2",
 "p": 0.973,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-04|Viking FK|Sabah FK",
@@ -64,7 +64,36 @@
 "a": "Sabah FK",
 "m": "1X",
 "p": 0.904,
-"hit": null
+"hit": true
+}
+]
+},
+{
+"n": 3,
+"created": "2026-11-04T23:43",
+"status": "pendiente",
+"prob": 0.781,
+"fair": 1.28,
+"legs": [
+{
+"id": "2026-11-05|F.C. København|Iberia 1999",
+"liga": "Conference League",
+"date": "2026-11-05",
+"time": "21:00",
+"h": "F.C. København",
+"a": "Iberia 1999",
+"m": "1X",
+"p": 0.884
+},
+{
+"id": "2026-11-05|CSU Craiova|Egnatia",
+"liga": "Conference League",
+"date": "2026-11-05",
+"time": "21:00",
+"h": "CSU Craiova",
+"a": "Egnatia",
+"m": "1X",
+"p": 0.883
 }
 ]
 }
