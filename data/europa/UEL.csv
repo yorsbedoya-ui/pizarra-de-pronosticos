@@ -573,14 +573,14 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 22/10/2026,21:00,league-phase,TSG Hoffenheim,Lyon,3,0,FT,8,2,21,8,43.2,56.8,11,9
 22/10/2026,21:00,league-phase,Viktoria Plzen,Levski Sofia,1,2,FT,2,3,13,6,50.2,49.8,4,1
 04/11/2026,17:30,league-phase,Stade Rennais,Olympiacos,0,0,FT,4,3,9,12,42,58,3,3
-05/11/2026,19:45,league-phase,AC Milan,Ferencvaros,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,Anderlecht,RB Salzburg,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,Crystal Palace,TSG Hoffenheim,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,Levski Sofia,Jagiellonia Bialystok,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,Lillestrom,Viktoria Plzen,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,NEC Nijmegen,Omonia Nicosia,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,Real Sociedad,Lyon,,,NS,,,,,,,,
-05/11/2026,19:45,league-phase,Sparta Prague,AFC Bournemouth,,,NS,,,,,,,,
+05/11/2026,19:45,league-phase,AC Milan,Ferencvaros,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,Anderlecht,RB Salzburg,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,Crystal Palace,TSG Hoffenheim,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,Levski Sofia,Jagiellonia Bialystok,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,Lillestrom,Viktoria Plzen,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,NEC Nijmegen,Omonia Nicosia,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,Real Sociedad,Lyon,,,NS,0,0,0,0,0,0,0,0
+05/11/2026,19:45,league-phase,Sparta Prague,AFC Bournemouth,,,NS,0,0,0,0,0,0,0,0
 05/11/2026,19:45,league-phase,Stade Rennais,Olympiacos,,,NS,,,,,,,,
 05/11/2026,22:00,league-phase,AZ Alkmaar,Juventus,,,NS,,,,,,,,
 05/11/2026,22:00,league-phase,Bayer Leverkusen,Marseille,,,NS,,,,,,,,
