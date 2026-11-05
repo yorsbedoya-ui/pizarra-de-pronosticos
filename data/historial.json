@@ -750,8 +750,8 @@
 "m": "X2",
 "p": 0.853,
 "pub": "2026-10-28",
-"res": null,
-"hit": null
+"res": "1-3",
+"hit": true
 },
 {
 "id": "2026-11-05|Bayer Leverkusen|Marseille",
@@ -789,8 +789,8 @@
 "m": "1X",
 "p": 0.915,
 "pub": "2026-10-28",
-"res": null,
-"hit": null
+"res": "1-1",
+"hit": true
 },
 {
 "id": "2026-11-05|AS Monaco|FC Nordsjælland",
