@@ -2,25 +2,25 @@ E0: ERROR
 tch_xg.py", line 17, in <module>
     df = us.read_team_match_stats().reset_index()
          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
     df_seasons = self.read_seasons()
                  ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
     data = self._read_leagues()
            ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
     data = json.load(reader)
            ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 293, in load
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 293, in load
     return loads(fp.read(),
            ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 346, in loads
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
     return _default_decoder.decode(s)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 338, in decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
@@ -28,25 +28,25 @@ SP1: ERROR
 tch_xg.py", line 17, in <module>
     df = us.read_team_match_stats().reset_index()
          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
     df_seasons = self.read_seasons()
                  ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
     data = self._read_leagues()
            ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
     data = json.load(reader)
            ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 293, in load
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 293, in load
     return loads(fp.read(),
            ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 346, in loads
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
     return _default_decoder.decode(s)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 338, in decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
@@ -54,25 +54,25 @@ I1: ERROR
 tch_xg.py", line 17, in <module>
     df = us.read_team_match_stats().reset_index()
          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
     df_seasons = self.read_seasons()
                  ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
     data = self._read_leagues()
            ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
     data = json.load(reader)
            ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 293, in load
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 293, in load
     return loads(fp.read(),
            ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 346, in loads
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
     return _default_decoder.decode(s)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 338, in decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
@@ -80,25 +80,25 @@ D1: ERROR
 tch_xg.py", line 17, in <module>
     df = us.read_team_match_stats().reset_index()
          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
     df_seasons = self.read_seasons()
                  ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
     data = self._read_leagues()
            ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
     data = json.load(reader)
            ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 293, in load
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 293, in load
     return loads(fp.read(),
            ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 346, in loads
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
     return _default_decoder.decode(s)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 338, in decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
@@ -106,25 +106,25 @@ F1: ERROR
 tch_xg.py", line 17, in <module>
     df = us.read_team_match_stats().reset_index()
          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 280, in read_team_match_stats
     df_seasons = self.read_seasons()
                  ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 141, in read_seasons
     data = self._read_leagues()
            ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/soccerdata/understat.py", line 652, in _read_leagues
     data = json.load(reader)
            ^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 293, in load
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 293, in load
     return loads(fp.read(),
            ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 346, in loads
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
     return _default_decoder.decode(s)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 338, in decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
