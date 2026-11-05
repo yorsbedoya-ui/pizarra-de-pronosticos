@@ -577,17 +577,17 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 05/11/2026,19:45,league-phase,Anderlecht,RB Salzburg,2,0,FT,7,3,12,8,44.4,55.6,5,4
 05/11/2026,19:45,league-phase,Crystal Palace,TSG Hoffenheim,1,1,FT,5,5,13,15,54.7,45.3,5,5
 05/11/2026,19:45,league-phase,Levski Sofia,Jagiellonia Bialystok,1,0,FT,5,2,13,10,47.9,52.1,4,5
-05/11/2026,19:45,league-phase,Lillestrom,Viktoria Plzen,0,1,FT,4,11,15,17,64,36,3,6
+05/11/2026,19:45,league-phase,Lillestrom,Viktoria Plzen,0,1,FT,4,11,15,17,64.1,35.9,3,6
 05/11/2026,19:45,league-phase,NEC Nijmegen,Omonia Nicosia,3,1,FT,9,3,19,6,63.3,36.7,5,2
 05/11/2026,19:45,league-phase,Real Sociedad,Lyon,1,1,FT,4,4,11,12,46.6,53.4,5,6
 05/11/2026,19:45,league-phase,Sparta Prague,AFC Bournemouth,1,3,FT,3,9,12,20,41.3,58.7,3,10
 05/11/2026,19:45,league-phase,Stade Rennais,Olympiacos,,,NS,,,,,,,,
-05/11/2026,22:00,league-phase,AZ Alkmaar,Juventus,0,2,LIVE,1,2,4,6,59.4,40.6,0,1
-05/11/2026,22:00,league-phase,Bayer Leverkusen,Marseille,0,0,LIVE,1,1,2,3,56.4,43.6,1,1
-05/11/2026,22:00,league-phase,Benfica,Lech Poznan,1,0,LIVE,4,1,11,1,59.8,40.2,2,1
-05/11/2026,22:00,league-phase,Celta Vigo,Union St.-Gilloise,1,1,LIVE,1,1,3,7,43.3,56.7,2,1
-05/11/2026,22:00,league-phase,Celtic,Besiktas,0,0,LIVE,0,0,1,4,41.3,58.7,1,4
-05/11/2026,22:00,league-phase,Hapoel Be'er,OFI Crete,0,0,LIVE,0,0,5,4,64.1,35.9,0,1
-05/11/2026,22:00,league-phase,SK Sturm Graz,NK Celje,1,1,LIVE,4,4,13,5,59,41,4,2
-05/11/2026,22:00,league-phase,Sunderland,Dinamo Zagreb,0,1,LIVE,3,3,5,6,49.8,50.2,0,2
-05/11/2026,22:00,league-phase,Torreense,Ararat-Armenia,1,0,LIVE,1,1,3,5,39.9,60.1,1,3
+05/11/2026,22:00,league-phase,AZ Alkmaar,Juventus,0,2,LIVE,1,2,12,8,55.2,44.8,2,2
+05/11/2026,22:00,league-phase,Bayer Leverkusen,Marseille,0,1,LIVE,2,2,6,8,54.3,45.7,4,2
+05/11/2026,22:00,league-phase,Benfica,Lech Poznan,2,1,LIVE,7,4,18,5,56.2,43.8,5,3
+05/11/2026,22:00,league-phase,Celta Vigo,Union St.-Gilloise,1,2,LIVE,3,3,9,15,53.9,46.1,4,1
+05/11/2026,22:00,league-phase,Celtic,Besiktas,2,1,LIVE,5,3,8,12,40.2,59.8,5,7
+05/11/2026,22:00,league-phase,Hapoel Be'er,OFI Crete,0,2,LIVE,4,3,14,8,63.6,36.4,2,2
+05/11/2026,22:00,league-phase,SK Sturm Graz,NK Celje,1,3,LIVE,5,7,21,8,60.2,39.8,7,2
+05/11/2026,22:00,league-phase,Sunderland,Dinamo Zagreb,0,2,LIVE,6,4,14,9,59.8,40.2,4,3
+05/11/2026,22:00,league-phase,Torreense,Ararat-Armenia,1,2,LIVE,1,7,5,17,38.4,61.6,2,6
