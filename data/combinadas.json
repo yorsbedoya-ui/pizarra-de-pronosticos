@@ -49,7 +49,7 @@
 "2026-11-05|Atalanta|Kairat Almaty"
 ],
 "created": "2026-11-05T18:43",
-"frozen": false,
+"frozen": true,
 "kind": "doble"
 },
 "2026-10-31#larga": {
@@ -73,7 +73,7 @@
 "2026-11-05|CSU Craiova|Egnatia"
 ],
 "created": "2026-11-05T18:43",
-"frozen": false,
+"frozen": true,
 "kind": "larga"
 }
 }
