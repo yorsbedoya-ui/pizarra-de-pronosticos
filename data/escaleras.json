@@ -71,7 +71,7 @@
 {
 "n": 3,
 "created": "2026-11-04T23:43",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.781,
 "fair": 1.28,
 "legs": [
@@ -84,7 +84,7 @@
 "a": "Iberia 1999",
 "m": "1X",
 "p": 0.884,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-05|CSU Craiova|Egnatia",
@@ -95,7 +95,7 @@
 "a": "Egnatia",
 "m": "1X",
 "p": 0.883,
-"hit": null
+"hit": true
 }
 ]
 }
@@ -110,7 +110,7 @@
 {
 "n": 1,
 "created": "2026-11-02T14:56",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.754,
 "fair": 1.33,
 "legs": [
@@ -134,7 +134,7 @@
 "a": "Kauno Zalgiris",
 "m": "1X",
 "p": 0.914,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-05|Panathinaikos|CSKA Sofia",
@@ -145,7 +145,7 @@
 "a": "CSKA Sofia",
 "m": "1X",
 "p": 0.901,
-"hit": null
+"hit": true
 }
 ]
 }
