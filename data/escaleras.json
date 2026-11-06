@@ -114,7 +114,8 @@
 "h": "Paris SG",
 "a": "Troyes",
 "m": "1X",
-"p": 0.95
+"p": 0.95,
+"hit": null
 },
 {
 "id": "2026-11-07|Arsenal|Hull",
@@ -124,7 +125,8 @@
 "h": "Arsenal",
 "a": "Hull",
 "m": "1X",
-"p": 0.942
+"p": 0.942,
+"hit": null
 }
 ]
 }
@@ -193,7 +195,8 @@
 "h": "Sp Lisbon",
 "a": "Moreirense",
 "m": "1X",
-"p": 0.928
+"p": 0.928,
+"hit": null
 },
 {
 "id": "2026-11-07|Mainz|Bayern Munich",
@@ -203,7 +206,8 @@
 "h": "Mainz",
 "a": "Bayern Munich",
 "m": "+1.5",
-"p": 0.904
+"p": 0.904,
+"hit": null
 },
 {
 "id": "2026-11-07|Dortmund|Elversberg",
@@ -213,7 +217,8 @@
 "h": "Dortmund",
 "a": "Elversberg",
 "m": "+1.5",
-"p": 0.9
+"p": 0.9,
+"hit": null
 }
 ]
 }
