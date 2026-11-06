@@ -98,6 +98,35 @@
 "hit": true
 }
 ]
+},
+{
+"n": 4,
+"created": "2026-11-06T14:43",
+"status": "pendiente",
+"prob": 0.895,
+"fair": 1.12,
+"legs": [
+{
+"id": "2026-11-07|Paris SG|Troyes",
+"liga": "Ligue 1",
+"date": "2026-11-07",
+"time": "20:05",
+"h": "Paris SG",
+"a": "Troyes",
+"m": "1X",
+"p": 0.95
+},
+{
+"id": "2026-11-07|Arsenal|Hull",
+"liga": "Premier League",
+"date": "2026-11-07",
+"time": "15:00",
+"h": "Arsenal",
+"a": "Hull",
+"m": "1X",
+"p": 0.942
+}
+]
 }
 ]
 },
@@ -146,6 +175,45 @@
 "m": "1X",
 "p": 0.901,
 "hit": true
+}
+]
+},
+{
+"n": 2,
+"created": "2026-11-06T14:43",
+"status": "pendiente",
+"prob": 0.755,
+"fair": 1.32,
+"legs": [
+{
+"id": "2026-11-07|Sp Lisbon|Moreirense",
+"liga": "Primeira Liga",
+"date": "2026-11-07",
+"time": "20:30",
+"h": "Sp Lisbon",
+"a": "Moreirense",
+"m": "1X",
+"p": 0.928
+},
+{
+"id": "2026-11-07|Mainz|Bayern Munich",
+"liga": "Bundesliga",
+"date": "2026-11-07",
+"time": "14:30",
+"h": "Mainz",
+"a": "Bayern Munich",
+"m": "+1.5",
+"p": 0.904
+},
+{
+"id": "2026-11-07|Dortmund|Elversberg",
+"liga": "Bundesliga",
+"date": "2026-11-07",
+"time": "14:30",
+"h": "Dortmund",
+"a": "Elversberg",
+"m": "+1.5",
+"p": 0.9
 }
 ]
 }
