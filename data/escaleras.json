@@ -207,7 +207,7 @@
 "a": "Bayern Munich",
 "m": "+1.5",
 "p": 0.904,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-07|Dortmund|Elversberg",
@@ -218,7 +218,7 @@
 "a": "Elversberg",
 "m": "+1.5",
 "p": 0.9,
-"hit": null
+"hit": true
 }
 ]
 }

@@ -1140,8 +1140,8 @@
 "m": "1X",
 "p": 0.885,
 "pub": "2026-11-06",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-07|Mainz|Bayern Munich",
@@ -1153,8 +1153,8 @@
 "m": "X2",
 "p": 0.865,
 "pub": "2026-11-06",
-"res": null,
-"hit": null
+"res": "1-2",
+"hit": true
 },
 {
 "id": "2026-11-07|Paris SG|Troyes",
