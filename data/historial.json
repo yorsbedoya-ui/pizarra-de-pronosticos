@@ -1101,8 +1101,8 @@
 "m": "X2",
 "p": 0.898,
 "pub": "2026-11-06",
-"res": null,
-"hit": null
+"res": "0-3",
+"hit": true
 },
 {
 "id": "2026-11-08|Villarreal|Getafe",
@@ -1166,8 +1166,8 @@
 "m": "1X",
 "p": 0.95,
 "pub": "2026-11-06",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-11-07|Sp Lisbon|Moreirense",
@@ -1179,8 +1179,8 @@
 "m": "1X",
 "p": 0.928,
 "pub": "2026-11-06",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-11-08|Estrela|Benfica",

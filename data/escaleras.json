@@ -102,7 +102,7 @@
 {
 "n": 4,
 "created": "2026-11-06T14:43",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.895,
 "fair": 1.12,
 "legs": [
@@ -115,7 +115,7 @@
 "a": "Troyes",
 "m": "1X",
 "p": 0.95,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-07|Arsenal|Hull",
@@ -127,6 +127,35 @@
 "m": "1X",
 "p": 0.942,
 "hit": true
+}
+]
+},
+{
+"n": 5,
+"created": "2026-11-07T23:43",
+"status": "pendiente",
+"prob": 0.852,
+"fair": 1.17,
+"legs": [
+{
+"id": "2026-11-08|Cambuur|PSV Eindhoven",
+"liga": "Eredivisie",
+"date": "2026-11-08",
+"time": "15:45",
+"h": "Cambuur",
+"a": "PSV Eindhoven",
+"m": "+1.5",
+"p": 0.941
+},
+{
+"id": "2026-11-08|Estrela|Benfica",
+"liga": "Primeira Liga",
+"date": "2026-11-08",
+"time": "20:30",
+"h": "Estrela",
+"a": "Benfica",
+"m": "X2",
+"p": 0.905
 }
 ]
 }
@@ -183,7 +212,7 @@
 {
 "n": 2,
 "created": "2026-11-06T14:43",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.755,
 "fair": 1.32,
 "legs": [
@@ -196,7 +225,7 @@
 "a": "Moreirense",
 "m": "1X",
 "p": 0.928,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-07|Mainz|Bayern Munich",
