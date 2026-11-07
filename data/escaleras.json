@@ -126,7 +126,7 @@
 "a": "Hull",
 "m": "1X",
 "p": 0.942,
-"hit": null
+"hit": true
 }
 ]
 }
