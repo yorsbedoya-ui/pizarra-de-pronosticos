@@ -1,16 +1,10 @@
 E0 desde 2026-11-04: 10 leídos, 100 en total, 91 terminados, 0 días con error
 E1 desde 2026-11-04: 15 leídos, 180 en total, 169 terminados, 0 días con error
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-SP1 desde 2026-11-04: 6 leídos, 120 en total, 110 terminados, 1 días con error
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-I1 desde 2026-11-04: 6 leídos, 110 en total, 101 terminados, 1 días con error
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-D1 desde 2026-11-04: 4 leídos, 81 en total, 73 terminados, 1 días con error
+SP1 desde 2026-11-04: 10 leídos, 120 en total, 110 terminados, 0 días con error
+I1 desde 2026-11-04: 10 leídos, 110 en total, 101 terminados, 0 días con error
+D1 desde 2026-11-04: 9 leídos, 81 en total, 73 terminados, 0 días con error
 F1 desde 2026-11-04: 9 leídos, 95 en total, 82 terminados, 0 días con error
 P1 desde 2026-11-04: 9 leídos, 99 en total, 91 terminados, 0 días con error
 N1 desde 2026-11-04: 9 leídos, 108 en total, 100 terminados, 0 días con error
 estadísticas disponibles en ESPN: ['appearances', 'foulsCommitted', 'goalAssists', 'possessionPct', 'shotAssists', 'shotsOnTarget', 'totalGoals', 'totalShots', 'wonCorners']
-ligas guardadas: 8 | hora UTC 2026-11-07T05:43+00:00
+ligas guardadas: 8 | hora UTC 2026-11-07T07:42+00:00
