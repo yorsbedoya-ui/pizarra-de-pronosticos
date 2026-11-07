@@ -82,14 +82,14 @@
 "2026-11-07|Arsenal|Hull"
 ],
 "created": "2026-11-07T14:43",
-"frozen": false,
+"frozen": true,
 "kind": "doble"
 },
 "2026-11-08": {
 "legs": [
 "2026-11-08|Estrela|Benfica"
 ],
-"created": "2026-11-07T14:43",
+"created": "2026-11-07T15:42",
 "frozen": false,
 "kind": "doble"
 },
@@ -102,7 +102,7 @@
 "2026-11-07|Roma|Sassuolo"
 ],
 "created": "2026-11-07T14:43",
-"frozen": false,
+"frozen": true,
 "kind": "larga"
 }
 }
