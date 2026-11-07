@@ -145,7 +145,8 @@
 "h": "Cambuur",
 "a": "PSV Eindhoven",
 "m": "+1.5",
-"p": 0.941
+"p": 0.941,
+"hit": null
 },
 {
 "id": "2026-11-08|Estrela|Benfica",
@@ -155,7 +156,8 @@
 "h": "Estrela",
 "a": "Benfica",
 "m": "X2",
-"p": 0.905
+"p": 0.905,
+"hit": null
 }
 ]
 }
