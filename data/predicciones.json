@@ -23481,7 +23481,7 @@
 "ps": 0.805,
 "o25": 0.638,
 "btts": 0.561,
-"res": null,
+"res": "2-1",
 "st": [
 6.8,
 2.8
@@ -23498,7 +23498,24 @@
 "o1": 1.59,
 "oX": 4.33,
 "o2": 4.81
-}
+},
+"hs": 15,
+"as_": 23,
+"hc": 6,
+"ac": 4,
+"hposs": 48.8,
+"aposs": 51.2,
+"hit_c": true,
+"hit_s": false,
+"hg": 2,
+"ag": 1,
+"hst": 7.0,
+"ast": 6.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-07|For Sittard|Telstar": {
 "id": "2026-11-07|For Sittard|Telstar",
@@ -25996,7 +26013,7 @@
 "ps": 0.808,
 "o25": 0.513,
 "btts": 0.432,
-"res": null,
+"res": "1-2",
 "st": [
 3.4,
 4.5
@@ -26013,7 +26030,23 @@
 "o1": 4.83,
 "oX": 3.85,
 "o2": 1.63
-}
+},
+"hs": 16,
+"as_": 12,
+"hc": 4,
+"ac": 5,
+"hposs": 46.6,
+"aposs": 53.4,
+"hit_s": true,
+"hg": 1,
+"ag": 2,
+"hst": 6.0,
+"ast": 4.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": false,
+"hit_st": false
 },
 "2026-11-08|Estrela|Benfica": {
 "id": "2026-11-08|Estrela|Benfica",
