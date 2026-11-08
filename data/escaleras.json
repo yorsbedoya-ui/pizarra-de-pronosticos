@@ -4,7 +4,7 @@
 "id": "A-2026-11-02T14:56",
 "kind": "A",
 "created": "2026-11-02T14:56",
-"status": "activa",
+"status": "completada",
 "steps": [
 {
 "n": 1,
@@ -133,7 +133,7 @@
 {
 "n": 5,
 "created": "2026-11-07T23:43",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.852,
 "fair": 1.17,
 "legs": [
@@ -157,11 +157,12 @@
 "a": "Benfica",
 "m": "X2",
 "p": 0.905,
-"hit": null
+"hit": true
 }
 ]
 }
-]
+],
+"ended": "2026-11-08T23:27"
 },
 {
 "id": "B-2026-11-02T14:56",
@@ -254,6 +255,13 @@
 ]
 }
 ]
+},
+{
+"id": "A-2026-11-08T23:27",
+"kind": "A",
+"created": "2026-11-08T23:27",
+"status": "activa",
+"steps": []
 }
 ]
 }
