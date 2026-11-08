@@ -23380,7 +23380,7 @@
 "ps": 0.757,
 "o25": 0.672,
 "btts": 0.652,
-"res": null,
+"res": "1-2",
 "st": [
 5.4,
 4.2
@@ -23397,7 +23397,23 @@
 "o1": 3.85,
 "oX": 4.03,
 "o2": 1.78
-}
+},
+"hs": 12,
+"as_": 14,
+"hc": 2,
+"ac": 6,
+"hposs": 38.3,
+"aposs": 61.7,
+"hit_s": false,
+"hg": 1,
+"ag": 2,
+"hst": 6.0,
+"ast": 8.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": false
 },
 "2026-11-08|Freiburg|Union Berlin": {
 "id": "2026-11-08|Freiburg|Union Berlin",
@@ -23441,20 +23457,20 @@
 "time": "18:30",
 "h": "Hoffenheim",
 "a": "Schalke 04",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "1",
 "p1": 0.589,
 "safe": "1X",
 "ps": 0.805,
 "o25": 0.638,
-"btts": 0.56,
+"btts": 0.561,
 "res": null,
 "st": [
 6.8,
 2.8
 ],
 "sx": [
-17.1,
+17.2,
 9.3
 ],
 "cx": [
@@ -23796,7 +23812,7 @@
 "time": "19:00",
 "h": "Utrecht",
 "a": "Nijmegen",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "1",
 "p1": 0.39,
 "safe": "AM-Sí",
@@ -24036,7 +24052,7 @@
 "ps": 0.739,
 "o25": 0.594,
 "btts": 0.615,
-"res": null,
+"res": "2-0",
 "st": [
 5.1,
 3.4
@@ -24053,7 +24069,24 @@
 "o1": 1.9,
 "oX": 3.82,
 "o2": 3.59
-}
+},
+"hs": 20,
+"as_": 5,
+"hc": 7,
+"ac": 3,
+"hposs": 75.3,
+"aposs": 24.7,
+"hit_c": true,
+"hit_s": true,
+"hg": 2,
+"ag": 0,
+"hst": 6.0,
+"ast": 0.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": false,
+"hit_st": true
 },
 "2026-11-08|Crystal Palace|Liverpool": {
 "id": "2026-11-08|Crystal Palace|Liverpool",
@@ -24070,7 +24103,7 @@
 "ps": 0.818,
 "o25": 0.607,
 "btts": 0.611,
-"res": null,
+"res": "1-3",
 "st": [
 3.8,
 4.4
@@ -24087,7 +24120,24 @@
 "o1": 5.15,
 "oX": 4.27,
 "o2": 1.57
-}
+},
+"hs": 19,
+"as_": 20,
+"hc": 4,
+"ac": 7,
+"hposs": 53.1,
+"aposs": 46.9,
+"hit_c": true,
+"hit_s": true,
+"hg": 1,
+"ag": 3,
+"hst": 7.0,
+"ast": 8.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-08|Ipswich|Bournemouth": {
 "id": "2026-11-08|Ipswich|Bournemouth",
@@ -24104,7 +24154,7 @@
 "ps": 0.748,
 "o25": 0.559,
 "btts": 0.615,
-"res": null,
+"res": "1-2",
 "st": [
 4.1,
 4.8
@@ -24121,7 +24171,24 @@
 "o1": 3.72,
 "oX": 3.69,
 "o2": 1.9
-}
+},
+"hs": 10,
+"as_": 15,
+"hc": 2,
+"ac": 7,
+"hposs": 55.9,
+"aposs": 44.1,
+"hit_c": true,
+"hit_s": true,
+"hg": 1,
+"ag": 2,
+"hst": 2.0,
+"ast": 4.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-08|Sunderland|Chelsea": {
 "id": "2026-11-08|Sunderland|Chelsea",
@@ -24138,7 +24205,7 @@
 "ps": 0.745,
 "o25": 0.527,
 "btts": 0.586,
-"res": null,
+"res": "1-0",
 "st": [
 4.4,
 4.0
@@ -24155,7 +24222,22 @@
 "o1": 3.68,
 "oX": 3.6,
 "o2": 1.93
-}
+},
+"hs": 9,
+"as_": 10,
+"hc": 2,
+"ac": 2,
+"hposs": 31.3,
+"aposs": 68.7,
+"hit_s": true,
+"hg": 1,
+"ag": 0,
+"hst": 2.0,
+"ast": 4.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-11-08|Man United|Aston Villa": {
 "id": "2026-11-08|Man United|Aston Villa",
@@ -24602,7 +24684,7 @@
 "time": "20:00",
 "h": "Ath Madrid",
 "a": "Barcelona",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "2",
 "p1": 0.518,
 "safe": "X2",
@@ -24894,7 +24976,7 @@
 "ps": 0.789,
 "o25": 0.456,
 "btts": 0.495,
-"res": null,
+"res": "1-2",
 "st": [
 3.9,
 4.2
@@ -24911,7 +24993,21 @@
 "o1": 4.45,
 "oX": 3.49,
 "o2": 1.8
-}
+},
+"hs": 17,
+"as_": 6,
+"hc": 3,
+"ac": 0,
+"hposs": 37.7,
+"aposs": 62.3,
+"hg": 1,
+"ag": 2,
+"hst": 5.0,
+"ast": 2.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-11-08|Monza|Atalanta": {
 "id": "2026-11-08|Monza|Atalanta",
@@ -24928,7 +25024,7 @@
 "ps": 0.708,
 "o25": 0.607,
 "btts": 0.604,
-"res": null,
+"res": "0-1",
 "st": [
 4.1,
 5.1
@@ -24945,7 +25041,22 @@
 "o1": 3.22,
 "oX": 3.74,
 "o2": 2.06
-}
+},
+"hs": 22,
+"as_": 13,
+"hc": 7,
+"ac": 2,
+"hposs": 48.6,
+"aposs": 51.4,
+"hit_s": false,
+"hg": 0,
+"ag": 1,
+"hst": 7.0,
+"ast": 7.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-11-08|Inter|Como": {
 "id": "2026-11-08|Inter|Como",
@@ -24989,13 +25100,13 @@
 "time": "19:45",
 "h": "Fiorentina",
 "a": "Juventus",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "2",
 "p1": 0.455,
 "safe": "X2",
 "ps": 0.721,
 "o25": 0.535,
-"btts": 0.484,
+"btts": 0.483,
 "res": null,
 "st": [
 3.3,
@@ -25181,7 +25292,7 @@
 "ps": 0.7,
 "o25": 0.591,
 "btts": 0.589,
-"res": null,
+"res": "1-2",
 "st": [
 4.7,
 4.2
@@ -25198,7 +25309,24 @@
 "o1": 2.11,
 "oX": 3.62,
 "o2": 3.11
-}
+},
+"hs": 15,
+"as_": 8,
+"hc": 7,
+"ac": 2,
+"hposs": 55.5,
+"aposs": 44.5,
+"hit_c": true,
+"hit_s": true,
+"hg": 1,
+"ag": 2,
+"hst": 2.0,
+"ast": 3.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": false
 },
 "2026-11-08|Angers|Nice": {
 "id": "2026-11-08|Angers|Nice",
@@ -25344,7 +25472,7 @@
 "time": "19:45",
 "h": "Lens",
 "a": "Marseille",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "1",
 "p1": 0.43,
 "safe": "1X",
@@ -25353,7 +25481,7 @@
 "btts": 0.641,
 "res": null,
 "st": [
-5.5,
+5.4,
 4.2
 ],
 "sx": [
@@ -25633,7 +25761,7 @@
 "time": "18:00",
 "h": "Guimaraes",
 "a": "Porto",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "2",
 "p1": 0.568,
 "safe": "X2",
@@ -25667,7 +25795,7 @@
 "time": "20:30",
 "h": "Estrela",
 "a": "Benfica",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "2",
 "p1": 0.75,
 "safe": "X2",
@@ -25701,7 +25829,7 @@
 "time": "20:30",
 "h": "Rio Ave",
 "a": "Sp Braga",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "2",
 "p1": 0.61,
 "safe": "X2",
@@ -25911,7 +26039,7 @@
 "time": "19:15",
 "h": "Lech Poznan",
 "a": "Zaglebie",
-"pub": "2026-11-08T17:44",
+"pub": "2026-11-08T17:45",
 "k1": "1",
 "p1": 0.637,
 "safe": "1X",
