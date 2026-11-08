@@ -23430,7 +23430,7 @@
 "ps": 0.841,
 "o25": 0.587,
 "btts": 0.527,
-"res": null,
+"res": "2-0",
 "st": [
 4.9,
 3.4
@@ -23447,7 +23447,24 @@
 "o1": 1.49,
 "oX": 4.39,
 "o2": 5.89
-}
+},
+"hs": 20,
+"as_": 4,
+"hc": 5,
+"ac": 1,
+"hposs": 59.0,
+"aposs": 41.0,
+"hit_c": true,
+"hit_s": true,
+"hg": 2,
+"ag": 0,
+"hst": 9.0,
+"ast": 0.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": false,
+"hit_st": true
 },
 "2026-11-08|Hoffenheim|Schalke 04": {
 "id": "2026-11-08|Hoffenheim|Schalke 04",
@@ -23751,7 +23768,7 @@
 "ps": 0.82,
 "o25": 0.673,
 "btts": 0.601,
-"res": null,
+"res": "4-3",
 "st": [
 5.7,
 4.5
@@ -23768,7 +23785,23 @@
 "o1": 1.52,
 "oX": 4.52,
 "o2": 5.17
-}
+},
+"hs": 19,
+"as_": 9,
+"hc": 7,
+"ac": 0,
+"hposs": 58.2,
+"aposs": 41.8,
+"hit_c": true,
+"hit_s": true,
+"hg": 4,
+"ag": 3,
+"hst": 5.0,
+"ast": 5.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-11-08|Cambuur|PSV Eindhoven": {
 "id": "2026-11-08|Cambuur|PSV Eindhoven",
@@ -23785,7 +23818,7 @@
 "ps": 0.849,
 "o25": 0.744,
 "btts": 0.751,
-"res": null,
+"res": "2-5",
 "st": [
 4.7,
 5.8
@@ -23802,7 +23835,23 @@
 "o1": 6.13,
 "oX": 5.48,
 "o2": 1.36
-}
+},
+"hs": 10,
+"as_": 16,
+"hc": 1,
+"ac": 1,
+"hposs": 37.7,
+"aposs": 62.3,
+"hit_s": true,
+"hg": 2,
+"ag": 5,
+"hst": 3.0,
+"ast": 7.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-08|Utrecht|Nijmegen": {
 "id": "2026-11-08|Utrecht|Nijmegen",
@@ -24700,7 +24749,7 @@
 "time": "20:00",
 "h": "Ath Madrid",
 "a": "Barcelona",
-"pub": "2026-11-08T18:42",
+"pub": "2026-11-08T19:29",
 "k1": "2",
 "p1": 0.518,
 "safe": "X2",
@@ -25116,7 +25165,7 @@
 "time": "19:45",
 "h": "Fiorentina",
 "a": "Juventus",
-"pub": "2026-11-08T18:42",
+"pub": "2026-11-08T19:29",
 "k1": "2",
 "p1": 0.455,
 "safe": "X2",
@@ -25359,7 +25408,7 @@
 "ps": 0.724,
 "o25": 0.552,
 "btts": 0.521,
-"res": null,
+"res": "0-2",
 "st": [
 4.5,
 4.3
@@ -25376,7 +25425,23 @@
 "o1": 3.38,
 "oX": 3.61,
 "o2": 2.0
-}
+},
+"hs": 12,
+"as_": 16,
+"hc": 6,
+"ac": 4,
+"hposs": 51.6,
+"aposs": 48.4,
+"hit_c": true,
+"hit_s": false,
+"hg": 0,
+"ag": 2,
+"hst": 4.0,
+"ast": 8.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-11-08|Brest|Lyon": {
 "id": "2026-11-08|Brest|Lyon",
@@ -25393,7 +25458,7 @@
 "ps": 0.659,
 "o25": 0.509,
 "btts": 0.578,
-"res": null,
+"res": "2-0",
 "st": [
 4.3,
 4.0
@@ -25410,7 +25475,22 @@
 "o1": 2.74,
 "oX": 3.43,
 "o2": 2.41
-}
+},
+"hs": 13,
+"as_": 10,
+"hc": 1,
+"ac": 8,
+"hposs": 31.1,
+"aposs": 68.9,
+"hit_s": true,
+"hg": 2,
+"ag": 0,
+"hst": 6.0,
+"ast": 2.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": false
 },
 "2026-11-08|Le Havre|Lorient": {
 "id": "2026-11-08|Le Havre|Lorient",
@@ -25427,7 +25507,7 @@
 "ps": 0.664,
 "o25": 0.473,
 "btts": 0.505,
-"res": null,
+"res": "0-2",
 "st": [
 4.1,
 3.7
@@ -25444,7 +25524,23 @@
 "o1": 2.78,
 "oX": 3.26,
 "o2": 2.47
-}
+},
+"hs": 21,
+"as_": 7,
+"hc": 5,
+"ac": 0,
+"hposs": 53.8,
+"aposs": 46.2,
+"hit_c": true,
+"hit_s": true,
+"hg": 0,
+"ag": 2,
+"hst": 5.0,
+"ast": 3.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": true,
+"hit_btts": false
 },
 "2026-11-08|Le Mans|Monaco": {
 "id": "2026-11-08|Le Mans|Monaco",
@@ -25461,7 +25557,7 @@
 "ps": 0.78,
 "o25": 0.592,
 "btts": 0.606,
-"res": null,
+"res": "1-1",
 "st": [
 4.3,
 4.8
@@ -25478,7 +25574,24 @@
 "o1": 4.25,
 "oX": 3.99,
 "o2": 1.71
-}
+},
+"hs": 19,
+"as_": 5,
+"hc": 8,
+"ac": 7,
+"hposs": 48.2,
+"aposs": 51.8,
+"hit_c": false,
+"hit_s": false,
+"hg": 1,
+"ag": 1,
+"hst": 5.0,
+"ast": 3.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": false
 },
 "2026-11-08|Lens|Marseille": {
 "id": "2026-11-08|Lens|Marseille",
@@ -25488,21 +25601,21 @@
 "time": "19:45",
 "h": "Lens",
 "a": "Marseille",
-"pub": "2026-11-08T18:42",
+"pub": "2026-11-08T19:29",
 "k1": "1",
 "p1": 0.43,
 "safe": "1X",
 "ps": 0.677,
 "o25": 0.64,
-"btts": 0.641,
+"btts": 0.643,
 "res": null,
 "st": [
-5.4,
+5.5,
 4.2
 ],
 "sx": [
-15.1,
-11.6
+15.2,
+11.5
 ],
 "cx": [
 5.4,
@@ -25842,7 +25955,7 @@
 "time": "20:30",
 "h": "Estrela",
 "a": "Benfica",
-"pub": "2026-11-08T18:42",
+"pub": "2026-11-08T19:29",
 "k1": "2",
 "p1": 0.75,
 "safe": "X2",
@@ -25876,7 +25989,7 @@
 "time": "20:30",
 "h": "Rio Ave",
 "a": "Sp Braga",
-"pub": "2026-11-08T18:42",
+"pub": "2026-11-08T19:29",
 "k1": "2",
 "p1": 0.61,
 "safe": "X2",
