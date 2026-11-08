@@ -24303,7 +24303,7 @@
 "ps": 0.695,
 "o25": 0.602,
 "btts": 0.606,
-"res": null,
+"res": "4-4",
 "st": [
 6.0,
 3.7
@@ -24320,7 +24320,24 @@
 "o1": 2.13,
 "oX": 3.68,
 "o2": 3.07
-}
+},
+"hs": 26,
+"as_": 12,
+"hc": 8,
+"ac": 1,
+"hposs": 55.7,
+"aposs": 44.3,
+"hit_c": true,
+"hit_s": true,
+"hg": 4,
+"ag": 4,
+"hst": 9.0,
+"ast": 6.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-06|Sevilla|Alaves": {
 "id": "2026-11-06|Sevilla|Alaves",
@@ -24688,7 +24705,7 @@
 "ps": 0.767,
 "o25": 0.497,
 "btts": 0.566,
-"res": null,
+"res": "0-0",
 "st": [
 5.0,
 3.5
@@ -24705,7 +24722,24 @@
 "o1": 1.86,
 "oX": 3.56,
 "o2": 4.02
-}
+},
+"hs": 23,
+"as_": 6,
+"hc": 6,
+"ac": 1,
+"hposs": 58.7,
+"aposs": 41.3,
+"hit_c": true,
+"hit_s": true,
+"hg": 0,
+"ag": 0,
+"hst": 8.0,
+"ast": 0.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": false,
+"hit_st": true
 },
 "2026-11-08|Villarreal|Getafe": {
 "id": "2026-11-08|Villarreal|Getafe",
@@ -24722,7 +24756,7 @@
 "ps": 0.869,
 "o25": 0.532,
 "btts": 0.455,
-"res": null,
+"res": "2-0",
 "st": [
 5.1,
 2.7
@@ -24739,7 +24773,24 @@
 "o1": 1.42,
 "oX": 4.41,
 "o2": 7.1
-}
+},
+"hs": 22,
+"as_": 9,
+"hc": 9,
+"ac": 4,
+"hposs": 72.4,
+"aposs": 27.6,
+"hit_c": true,
+"hit_s": true,
+"hg": 2,
+"ag": 0,
+"hst": 7.0,
+"ast": 1.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-08|Ath Madrid|Barcelona": {
 "id": "2026-11-08|Ath Madrid|Barcelona",
@@ -25138,7 +25189,7 @@
 "ps": 0.738,
 "o25": 0.641,
 "btts": 0.573,
-"res": null,
+"res": "2-0",
 "st": [
 4.7,
 4.0
@@ -25155,7 +25206,24 @@
 "o1": 1.86,
 "oX": 4.01,
 "o2": 3.58
-}
+},
+"hs": 14,
+"as_": 5,
+"hc": 4,
+"ac": 2,
+"hposs": 43.0,
+"aposs": 57.0,
+"hit_c": true,
+"hit_s": true,
+"hg": 2,
+"ag": 0,
+"hst": 4.0,
+"ast": 1.0,
+"hit_safe": true,
+"hit_1x2": true,
+"hit_ou": false,
+"hit_btts": false,
+"hit_st": true
 },
 "2026-11-08|Fiorentina|Juventus": {
 "id": "2026-11-08|Fiorentina|Juventus",
