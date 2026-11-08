@@ -23885,7 +23885,7 @@
 "ps": 0.668,
 "o25": 0.636,
 "btts": 0.668,
-"res": null,
+"res": "2-3",
 "st": [
 5.0,
 5.4
@@ -23902,7 +23902,21 @@
 "o1": 2.38,
 "oX": 3.73,
 "o2": 2.57
-}
+},
+"hs": 16,
+"as_": 16,
+"hc": 3,
+"ac": 8,
+"hposs": 49.5,
+"aposs": 50.5,
+"hg": 2,
+"ag": 3,
+"hst": 5.0,
+"ast": 7.0,
+"hit_safe": true,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true
 },
 "2026-11-07|Leeds|Tottenham": {
 "id": "2026-11-07|Leeds|Tottenham",
@@ -25693,7 +25707,7 @@
 "ps": 0.677,
 "o25": 0.64,
 "btts": 0.643,
-"res": null,
+"res": "1-2",
 "st": [
 5.5,
 4.2
@@ -25710,7 +25724,24 @@
 "o1": 2.17,
 "oX": 3.79,
 "o2": 2.89
-}
+},
+"hs": 13,
+"as_": 16,
+"hc": 4,
+"ac": 6,
+"hposs": 41.3,
+"aposs": 58.7,
+"hit_c": false,
+"hit_s": false,
+"hg": 1,
+"ag": 2,
+"hst": 6.0,
+"ast": 5.0,
+"hit_safe": false,
+"hit_1x2": false,
+"hit_ou": true,
+"hit_btts": true,
+"hit_st": true
 },
 "2026-11-06|Famalicao|Arouca": {
 "id": "2026-11-06|Famalicao|Arouca",
