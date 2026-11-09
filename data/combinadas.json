@@ -110,7 +110,7 @@
 "2026-11-12|San Marino|Belarus",
 "2026-11-12|Czechia|Spain"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -119,7 +119,7 @@
 "2026-11-13|Slovakia|Faroe Islands",
 "2026-11-13|Liechtenstein|Azerbaijan"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -128,7 +128,7 @@
 "2026-11-14|Norway|Wales",
 "2026-11-14|Portugal|Denmark"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -137,7 +137,7 @@
 "2026-11-15|Finland|San Marino",
 "2026-11-15|France|Türkiye"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -146,7 +146,7 @@
 "2026-11-16|Lithuania|Liechtenstein",
 "2026-11-16|Switzerland|Scotland"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -154,7 +154,7 @@
 "legs": [
 "2026-11-17|Wales|Portugal"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -165,7 +165,7 @@
 "2026-11-12|England|Croatia",
 "2026-11-12|Montenegro|Latvia"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "larga"
 },
@@ -176,7 +176,7 @@
 "2026-11-13|Scotland|North Macedonia",
 "2026-11-13|Netherlands|Greece"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "larga"
 },
@@ -186,7 +186,7 @@
 "2026-11-15|France|Türkiye",
 "2026-11-15|Croatia|Czechia"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "larga"
 },
@@ -196,7 +196,7 @@
 "2026-11-16|Switzerland|Scotland",
 "2026-11-16|Iceland|Luxembourg"
 ],
-"created": "2026-11-09T19:43",
+"created": "2026-11-09T20:43",
 "frozen": false,
 "kind": "larga"
 }
