@@ -2,6 +2,7 @@
 Guarda data/europa/<COMP>.csv con el mismo formato que data/live/.
 Primera vez: desde julio de 2023; después: últimos 4 días + próximos 10."""
 import csv, json, os, time, urllib.request, urllib.error
+from zoneinfo import ZoneInfo
 from datetime import date, datetime, timedelta, timezone
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "europa"); os.makedirs(OUT, exist_ok=True)
 COMPS = {"UCL": "uefa.champions", "UEL": "uefa.europa", "UECL": "uefa.europa.conf", "UNL": "uefa.nations"}
@@ -29,7 +30,7 @@ def parse(js):
             comp = ev["competitions"][0]
             h = next(c for c in comp["competitors"] if c["homeAway"] == "home")
             w = next(c for c in comp["competitors"] if c["homeAway"] == "away")
-            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(timezone(timedelta(hours=2)))
+            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(ZoneInfo("Europe/Warsaw"))
             st = comp["status"]["type"]
             status = "FT" if st.get("completed") else ("LIVE" if st.get("state") == "in" else "NS")
             row = dict(Date=dt.strftime("%d/%m/%Y"), Time=dt.strftime("%H:%M"),

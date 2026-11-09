@@ -5,6 +5,7 @@ pizarra/data/live/<DIV>.csv con: Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,Status y 
 Status: FT (terminado), LIVE (en juego), NS (no empezado).
 """
 import csv, json, os, sys, time, urllib.request, urllib.error
+from zoneinfo import ZoneInfo
 from datetime import date, datetime, timedelta, timezone
 
 LEAGUES = {"E0": "eng.1", "E1": "eng.2", "SP1": "esp.1", "I1": "ita.1",
@@ -39,7 +40,7 @@ def parse(js):
             comp = ev["competitions"][0]
             h = next(c for c in comp["competitors"] if c["homeAway"] == "home")
             w = next(c for c in comp["competitors"] if c["homeAway"] == "away")
-            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(timezone(timedelta(hours=2)))
+            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(ZoneInfo("Europe/Warsaw"))
             st = comp["status"]["type"]
             status = "FT" if st.get("completed") else ("LIVE" if st.get("state") == "in" else "NS")
             row = dict(Date=dt.strftime("%d/%m/%Y"), Time=dt.strftime("%H:%M"),
