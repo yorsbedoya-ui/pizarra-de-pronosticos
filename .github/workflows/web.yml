@@ -29,12 +29,14 @@ jobs:
         run: pip install numpy scipy
       - name: Datos base (openfootball)
         run: git clone --depth 1 https://github.com/openfootball/football.json.git /tmp/openfootball
+      - name: Resultados de selecciones (martj42/international_results)
+        run: git clone --depth 1 https://github.com/martj42/international_results.git /tmp/intl
       - name: Calcular pronósticos
         run: |
           set -o pipefail
           mkdir -p web
           python app/pronosticos.py /tmp/openfootball app/template.html web/index.html \
-            "$(date -u +%Y-%m-%d)" --fd data/fd --hist data/historial.json --preds data/predicciones.json --combs data/combinadas.json --ladders data/escaleras.json 2>&1 | tail -60 > web/_registro.txt
+            "$(date -u +%Y-%m-%d)" --fd data/fd --hist data/historial.json --preds data/predicciones.json --combs data/combinadas.json --ladders data/escaleras.json --intl /tmp/intl/results.csv 2>&1 | tail -60 > web/_registro.txt
           grep -q "const DATA =" web/index.html
           # copia para la pizarra de Claude (sin cabecera de documento ni recarga)
           python - <<'PY'

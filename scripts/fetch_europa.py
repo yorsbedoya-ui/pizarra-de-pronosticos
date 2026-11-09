@@ -4,7 +4,7 @@ Primera vez: desde julio de 2023; después: últimos 4 días + próximos 10."""
 import csv, json, os, time, urllib.request, urllib.error
 from datetime import date, datetime, timedelta, timezone
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "europa"); os.makedirs(OUT, exist_ok=True)
-COMPS = {"UCL": "uefa.champions", "UEL": "uefa.europa", "UECL": "uefa.europa.conf"}
+COMPS = {"UCL": "uefa.champions", "UEL": "uefa.europa", "UECL": "uefa.europa.conf", "UNL": "uefa.nations"}
 API = "https://site.api.espn.com/apis/site/v2/sports/soccer/{lg}/scoreboard?dates={d}"
 STATMAP = {"shotsOnTarget": "ST", "totalShots": "S", "possessionPct": "Poss", "wonCorners": "C"}
 FIELDS = ["Date", "Time", "Round", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "Status", "HST", "AST", "HS", "AS", "HPoss", "APoss", "HC", "AC"]

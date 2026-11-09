@@ -185,7 +185,7 @@ details.sec>*:not(summary){margin-bottom:12px}
   <header>
     <div class="eyebrow">Modelo <span id="mdl"></span> · datos reales <span id="srcs"></span> · actualizado <span id="gen"></span></div>
     <h1>Pizarra de Pronósticos</h1>
-    <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa) y en la Champions, la Europa League y la Conference, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
+    <p class="sub">Probabilidades de la próxima jornada en 9 ligas (incluida la Ekstraklasa) y en la Champions, la Europa League, la Conference y la Liga de Naciones, calculadas con goles reales, fuerza Elo, ventaja de local y más peso a lo reciente. Cada cifra de acierto sale de predecir partidos ya jugados usando solo la información que había antes de cada uno.</p>
   </header>
 
   <details class="sec" id="sec-parlay" open><summary>Combinadas del día</summary>
@@ -336,7 +336,7 @@ function gapNote(l){
 function card(m){
   const k = m.mk, probs = {'1':k['1'],'X':k['X'],'2':k['2']};
   const pick = Object.keys(probs).reduce((a,b)=>probs[a]>=probs[b]?a:b), p = probs[pick], L = lvl(p);
-  const sp = k[m.safe], band = bandOf(m.elo && DATA.eu ? DATA.eu.cal : B.cal_safe, sp);
+  const sp = k[m.safe], band = bandOf(m.nt && DATA.intl ? DATA.intl.cal : (m.elo && DATA.eu ? DATA.eu.cal : B.cal_safe), sp);
   const w = x => (x*100).toFixed(1)+'%';
   return `<article class="card" style="--c:var(--${lvl(sp>=.8?.7:sp>=.7?.55:.4)})">
     <div class="meta"><span>${fmtDate(m.date,m.time)}</span><span>${m.round.replace('Matchday','Jornada')}</span></div>
@@ -375,7 +375,8 @@ function render(){
   document.getElementById('league').innerHTML = `
     <div class="leaguehead"><h2>${l.name}</h2>
       <span class="eyebrow">Acierto ganador en esta liga: <span class="num">${pct(l.acc)}</span> (${l.n_bt} partidos) · último partido jugado: ${fmtDate(l.last_data,'')}${gapNote(l)}</span>
-      ${l.eu ? `<span class="eyebrow" style="flex-basis:100%">Elo europeo propio: 19 ligas + Champions, Europa y Conference desde 2023. Sin cuotas de casas (las fuentes gratuitas no las tienen)${DATA.eu ? ` · picks ≥85 % acertaron el ${pct(DATA.eu.safe85.real)} de ${DATA.eu.safe85.n} partidos europeos` : ''}.</span>` : ''}</div>
+      ${l.nt ? `<span class="eyebrow" style="flex-basis:100%">Elo de selecciones (método World Football Elo) con todos los partidos internacionales desde 1872 (martj42/international_results) y los resultados de ESPN. Sin cuotas de casas${DATA.intl ? ` · en partidos oficiales de selecciones europeas desde 2023: ganador ${pct(DATA.intl.acc)}, picks ≥85 % acertaron el ${pct(DATA.intl.safe85.real)} de ${DATA.intl.safe85.n}` : ''}.</span>` : ''}
+      ${l.eu && !l.nt ? `<span class="eyebrow" style="flex-basis:100%">Elo europeo propio: 19 ligas + Champions, Europa y Conference desde 2023. Sin cuotas de casas (las fuentes gratuitas no las tienen)${DATA.eu ? ` · picks ≥85 % acertaron el ${pct(DATA.eu.safe85.real)} de ${DATA.eu.safe85.n} partidos europeos` : ''}.</span>` : ''}</div>
     ${ms.length ? `<div class="grid">${ms.map(card).join('')}</div>` : `<div class="empty">Ningún partido de esta jornada llega a ese nivel de confianza. Elige "Todos" para verlos todos.</div>`}
     ${recentHTML(l)}`;
 }

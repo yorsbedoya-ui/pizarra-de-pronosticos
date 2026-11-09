@@ -18,6 +18,9 @@ HIST = None   # historial.json: picks publicados (≥85 %) y su resultado real
 if "--hist" in args:
     i = args.index("--hist"); HIST = args[i+1]; del args[i:i+2]
 HIST_MIN = 0.85
+INTL = None  # results.csv de martj42/international_results (todos los partidos de selecciones)
+if "--intl" in args:
+    i = args.index("--intl"); INTL = args[i+1]; del args[i:i+2]
 LADDERS = None  # escaleras.json: reto escalera (5 escalones), congelado al crear cada escalón
 if "--ladders" in args:
     i = args.index("--ladders"); LADDERS = args[i+1]; del args[i:i+2]
@@ -706,6 +709,105 @@ except Exception as _e:
     import traceback; print("Europa: ERROR", traceback.format_exc()[-1200:], flush=True)
 
 
+
+# ---------------- Selecciones: Liga de Naciones de la UEFA ----------------
+# Elo de selecciones al estilo World Football Elo (K por tipo de partido, +100 al local, multiplicador por
+# diferencia de goles) sobre todos los partidos de martj42/international_results, más los resultados de ESPN
+# posteriores. Probabilidad: modelo ordinal sobre la diferencia de Elo, ajustado con partidos oficiales.
+# Backtest (oficiales UEFA desde 2023-07, sin mirar el futuro): ganador 63 %, picks >= 85 % 94 % (364).
+NT_ALIAS = {"czechia": "Czech Republic", "turkiye": "Turkey", "republic of ireland": "Republic of Ireland", "ireland": "Republic of Ireland",
+            "bosnia-herzegovina": "Bosnia and Herzegovina", "bosnia & herzegovina": "Bosnia and Herzegovina", "north macedonia": "North Macedonia",
+            "korea republic": "South Korea", "usa": "United States", "cape verde islands": "Cape Verde", "faroe islands": "Faroe Islands"}
+def nt_k(t):
+    if t == "FIFA World Cup": return 60
+    if t in ("UEFA Euro", "Copa América", "African Cup of Nations", "AFC Asian Cup", "Gold Cup", "Confederations Cup"): return 50
+    if "qualification" in t or "Nations League" in t: return 40
+    return 20 if t == "Friendly" else 30
+intl_summary = None
+try:
+    unl_p = os.path.join(FD, "..", "europa", "UNL.csv") if FD else None
+    if INTL and os.path.exists(INTL) and unl_p and os.path.exists(unl_p):
+        nt = []
+        for r in csv.DictReader(open(INTL, encoding="utf-8")):
+            try: nt.append((date.fromisoformat(r["date"]), r["home_team"], r["away_team"], int(r["home_score"]), int(r["away_score"]), r["tournament"], r["neutral"] == "TRUE"))
+            except (ValueError, KeyError): pass
+        nt.sort(key=lambda r: r[0]); last_nt = nt[-1][0] if nt else date(2000, 1, 1)
+        nt_names = {r[1] for r in nt} | {r[2] for r in nt}; keys = {n.lower(): n for n in nt_names}
+        def nt_map(n):
+            low = unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode().lower().strip()
+            if low in NT_ALIAS and NT_ALIAS[low] in nt_names: return NT_ALIAS[low]
+            if low in keys: return keys[low]
+            m = difflib.get_close_matches(low, keys.keys(), n=1, cutoff=0.85)
+            return keys[m[0]] if m else None
+        unl_rows, unl_fx, unl_stats = [], [], []
+        for r in csv.DictReader(open(unl_p, encoding="utf-8")):
+            d = pdate(r["Date"]); h0, a0 = r["HomeTeam"], r["AwayTeam"]; h, a = nt_map(h0), nt_map(a0)
+            if not (d and h and a): continue
+            if r["Status"] == "FT":
+                try: hg, ag = int(r["FTHG"]), int(r["FTAG"])
+                except ValueError: continue
+                if d > last_nt: nt.append((d, h, a, hg, ag, "UEFA Nations League", False))
+                s = dict(date=d, h=h0, a=a0, hg=hg, ag=ag)
+                for c in STAT_COLS: s[c] = _num(r.get(c))
+                unl_stats.append(s)
+            elif r["Status"] == "NS" and TODAY <= d <= TODAY + timedelta(days=8):
+                unl_fx.append(dict(date=d, time=r.get("Time", ""), h=h0, a=a0, hk=h, ak=a))
+        nt.sort(key=lambda r: r[0])
+        R_n, hist_n = {}, []
+        for d, h, a, hg, ag, tt, neu in nt:
+            rh, ra = R_n.get(h, 1500), R_n.get(a, 1500); diff = rh - ra + (0 if neu else 100)
+            hist_n.append((diff, 0 if hg > ag else (1 if hg == ag else 2), d, tt, h, a, hg, ag))
+            e = 1 / (1 + 10 ** (-diff / 400)); s_ = 1 if hg > ag else (.5 if hg == ag else 0)
+            gd = abs(hg - ag); mult = 1 if gd <= 1 else (1.5 if gd == 2 else (11 + gd) / 8)
+            k = nt_k(tt) * mult; R_n[h] = rh + k * (s_ - e); R_n[a] = ra - k * (s_ - e)
+        def nt_fit(before):
+            tr = [x for x in hist_n if date(2010, 1, 1) <= x[2] < before and x[3] != "Friendly"]
+            D = np.array([x[0] for x in tr]); O = np.array([x[1] for x in tr])
+            def f(p):
+                b, c1, g = p; c2 = c1 + math.exp(g)
+                pa = 1 / (1 + np.exp(-(c1 - b * D))); pad = 1 / (1 + np.exp(-(c2 - b * D)))
+                pr = np.where(O == 2, pa, np.where(O == 1, pad - pa, 1 - pad))
+                return -np.log(np.clip(pr, 1e-9, 1)).sum()
+            return minimize(f, [0.005, -1, 0], method="Nelder-Mead").x
+        uefa = {x[4] for x in hist_n if x[3] == "UEFA Nations League"} | {x[5] for x in hist_n if x[3] == "UEFA Nations League"}
+        COMP = ("UEFA Nations League", "UEFA Euro qualification", "UEFA Euro", "FIFA World Cup qualification", "FIFA World Cup")
+        test = [x for x in hist_n if x[2] >= date(2023, 7, 1) and x[3] in COMP and x[4] in uefa and x[5] in uefa]
+        rec_n = []
+        for ym in sorted({(x[2].year, x[2].month) for x in test}):
+            p_ = nt_fit(date(ym[0], ym[1], 1))
+            for x in test:
+                if (x[2].year, x[2].month) == ym:
+                    pr = olpred(p_, x[0]); mk = eu_markets(pr); k = max(EU_SAFE, key=lambda q: mk[q])
+                    rec_n.append((float(mk[k]), bool(hit(k, x[6], x[7])), pr, x[1]))
+        intl_summary = dict(n=len(rec_n), acc=round(float(np.mean([r[2].argmax() == r[3] for r in rec_n])), 3) if rec_n else None,
+                            safe85=thr([(r[0], r[1]) for r in rec_n], .85), cal=band_stats([(r[0], r[1]) for r in rec_n]), last=last_nt.isoformat())
+        print("Selecciones backtest:", {k: v for k, v in intl_summary.items() if k != "cal"}, flush=True)
+        pfit = nt_fit(TODAY + timedelta(days=1)); preds = []
+        for f in sorted(unl_fx, key=lambda f: (f["date"], f["time"])):
+            rh, ra = R_n.get(f["hk"], 1500), R_n.get(f["ak"], 1500)
+            pr = olpred(pfit, rh - ra + 100); mk = eu_markets(pr); safe = max(EU_SAFE, key=lambda q: mk[q])
+            hh, mm_ = (f["time"] or "12:00").split(":")[:2]; tuk = f"{(int(hh) - 1) % 24:02d}:{mm_}"
+            def nform(T):
+                out = ""
+                for x in [y for y in hist_n if T in (y[4], y[5])][-5:][::-1]:
+                    gf, ga = (x[6], x[7]) if x[4] == T else (x[7], x[6])
+                    out += "V" if gf > ga else ("E" if gf == ga else "D")
+                return out
+            fh, fa = nform(f["hk"]), nform(f["ak"])
+            preds.append(dict(date=f["date"].isoformat(), time=tuk, round="Liga de Naciones", h=f["h"], a=f["a"], fh=fh, fa=fa,
+                              lh=None, la=None, mk={k: round(float(v), 3) for k, v in mk.items()}, scores=[], safe=safe, odds=None, value=[],
+                              elo=[round(rh), round(ra)], known=2, sh=None, sa=None, nt=True))
+        st = sorted(unl_stats, key=lambda s: s["date"])
+        per_league.append(dict(code="unl", name="Liga de Naciones", src="espn+elo", div="UNL", gw=GOAL_W_SHOTS, n_bt=len(rec_n), stats=st,
+                               played=[(s["date"], s["h"], s["a"], s["hg"], s["ag"], None, None, None) for s in st], fixtures=[]))
+        leagues.append(dict(code="unl", name="Liga de Naciones", src="espn+elo", eu=True, nt=True,
+                            last_data=st[-1]["date"].isoformat() if st else TODAY.isoformat(), n_bt=len(rec_n),
+                            acc=intl_summary["acc"], matches=preds,
+                            recent=[stat_row(s) for s in st if s["date"] >= TODAY - timedelta(days=4)][::-1]))
+        print(f"  Liga de Naciones: {len(preds)} próximos partidos", flush=True)
+except Exception:
+    import traceback; print("Selecciones: ERROR", traceback.format_exc()[-1200:], flush=True)
+
 # ---------------- Registro de todas las predicciones (cuadro diario) ----------------
 def kickoff_utc(d, tm):
     """Hora de inicio en UTC. El calendario de football-data va en hora del Reino Unido (UTC+1 en verano):
@@ -950,7 +1052,7 @@ except Exception:
     _now = datetime.utcnow()
 data = dict(generated=TODAY.isoformat(), updated_at=_now.strftime("%Y-%m-%dT%H:%M"), sources=src,
             model="Dixon-Coles + Elo" + (" + tiros" if "football-data" in src else "") + (" + xG" if "xg" in src else "") + (f" + mercado {int(WM*100)} %" if WM else ""),
-            backtest=summary, leagues=leagues, history=hist_out, board=board_out, eu=eu_summary, parlay=parlay_out, ladders=ladders_out,
+            backtest=summary, leagues=leagues, history=hist_out, board=board_out, eu=eu_summary, parlay=parlay_out, ladders=ladders_out, intl=intl_summary,
             names=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json"), encoding="utf-8"))
                   if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nombres_betclic.json")) else {})
 print(json.dumps({k: v for k, v in summary.items() if not k.startswith("cal")}, indent=1))
