@@ -269,7 +269,8 @@
 "h": "Slovakia",
 "a": "Faroe Islands",
 "m": "1X",
-"p": 0.936
+"p": 0.936,
+"hit": null
 },
 {
 "id": "2026-11-13|Liechtenstein|Azerbaijan",
@@ -279,7 +280,8 @@
 "h": "Liechtenstein",
 "a": "Azerbaijan",
 "m": "X2",
-"p": 0.913
+"p": 0.913,
+"hit": null
 },
 {
 "id": "2026-11-13|Scotland|North Macedonia",
@@ -289,7 +291,8 @@
 "h": "Scotland",
 "a": "North Macedonia",
 "m": "1X",
-"p": 0.903
+"p": 0.903,
+"hit": null
 }
 ]
 }
@@ -316,7 +319,8 @@
 "h": "San Marino",
 "a": "Belarus",
 "m": "X2",
-"p": 0.978
+"p": 0.978,
+"hit": null
 },
 {
 "id": "2026-11-12|Czechia|Spain",
@@ -326,7 +330,8 @@
 "h": "Czechia",
 "a": "Spain",
 "m": "X2",
-"p": 0.968
+"p": 0.968,
+"hit": null
 }
 ]
 }
