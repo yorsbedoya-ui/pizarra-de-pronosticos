@@ -253,6 +253,45 @@
 "hit": true
 }
 ]
+},
+{
+"n": 3,
+"created": "2026-11-09T05:04",
+"status": "pendiente",
+"prob": 0.772,
+"fair": 1.3,
+"legs": [
+{
+"id": "2026-11-13|Slovakia|Faroe Islands",
+"liga": "Liga de Naciones",
+"date": "2026-11-13",
+"time": "19:45",
+"h": "Slovakia",
+"a": "Faroe Islands",
+"m": "1X",
+"p": 0.936
+},
+{
+"id": "2026-11-13|Liechtenstein|Azerbaijan",
+"liga": "Liga de Naciones",
+"date": "2026-11-13",
+"time": "19:45",
+"h": "Liechtenstein",
+"a": "Azerbaijan",
+"m": "X2",
+"p": 0.913
+},
+{
+"id": "2026-11-13|Scotland|North Macedonia",
+"liga": "Liga de Naciones",
+"date": "2026-11-13",
+"time": "19:45",
+"h": "Scotland",
+"a": "North Macedonia",
+"m": "1X",
+"p": 0.903
+}
+]
 }
 ]
 },
@@ -261,7 +300,37 @@
 "kind": "A",
 "created": "2026-11-08T23:27",
 "status": "activa",
-"steps": []
+"steps": [
+{
+"n": 1,
+"created": "2026-11-09T05:04",
+"status": "pendiente",
+"prob": 0.947,
+"fair": 1.06,
+"legs": [
+{
+"id": "2026-11-12|San Marino|Belarus",
+"liga": "Liga de Naciones",
+"date": "2026-11-12",
+"time": "19:45",
+"h": "San Marino",
+"a": "Belarus",
+"m": "X2",
+"p": 0.978
+},
+{
+"id": "2026-11-12|Czechia|Spain",
+"liga": "Liga de Naciones",
+"date": "2026-11-12",
+"time": "19:45",
+"h": "Czechia",
+"a": "Spain",
+"m": "X2",
+"p": 0.968
+}
+]
+}
+]
 }
 ]
 }
