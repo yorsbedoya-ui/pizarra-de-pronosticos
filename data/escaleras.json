@@ -307,7 +307,7 @@
 {
 "n": 1,
 "created": "2026-11-09T05:04",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.947,
 "fair": 1.06,
 "legs": [
@@ -331,7 +331,36 @@
 "a": "Spain",
 "m": "X2",
 "p": 0.968,
-"hit": null
+"hit": true
+}
+]
+},
+{
+"n": 2,
+"created": "2026-11-12T23:43",
+"status": "pendiente",
+"prob": 0.83,
+"fair": 1.2,
+"legs": [
+{
+"id": "2026-11-14|Norway|Wales",
+"liga": "Liga de Naciones",
+"date": "2026-11-14",
+"time": "17:00",
+"h": "Norway",
+"a": "Wales",
+"m": "1X",
+"p": 0.917
+},
+{
+"id": "2026-11-14|Portugal|Denmark",
+"liga": "Liga de Naciones",
+"date": "2026-11-14",
+"time": "19:45",
+"h": "Portugal",
+"a": "Denmark",
+"m": "1X",
+"p": 0.905
 }
 ]
 }
