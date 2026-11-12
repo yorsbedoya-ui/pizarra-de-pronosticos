@@ -350,7 +350,8 @@
 "h": "Norway",
 "a": "Wales",
 "m": "1X",
-"p": 0.917
+"p": 0.917,
+"hit": null
 },
 {
 "id": "2026-11-14|Portugal|Denmark",
@@ -360,7 +361,8 @@
 "h": "Portugal",
 "a": "Denmark",
 "m": "1X",
-"p": 0.905
+"p": 0.905,
+"hit": null
 }
 ]
 }
