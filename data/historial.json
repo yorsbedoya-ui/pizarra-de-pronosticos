@@ -1218,8 +1218,8 @@
 "m": "1X",
 "p": 0.941,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-12|Montenegro|Latvia",
@@ -1231,8 +1231,8 @@
 "m": "1X",
 "p": 0.928,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-12|San Marino|Belarus",
@@ -1244,8 +1244,8 @@
 "m": "X2",
 "p": 0.978,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "0-2",
+"hit": true
 },
 {
 "id": "2026-11-13|Liechtenstein|Azerbaijan",
