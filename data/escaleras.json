@@ -257,7 +257,7 @@
 {
 "n": 3,
 "created": "2026-11-09T05:04",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.772,
 "fair": 1.3,
 "legs": [
@@ -270,7 +270,7 @@
 "a": "Faroe Islands",
 "m": "1X",
 "p": 0.936,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-13|Liechtenstein|Azerbaijan",
@@ -281,7 +281,7 @@
 "a": "Azerbaijan",
 "m": "X2",
 "p": 0.913,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-13|Scotland|North Macedonia",
@@ -292,7 +292,46 @@
 "a": "North Macedonia",
 "m": "1X",
 "p": 0.903,
-"hit": null
+"hit": true
+}
+]
+},
+{
+"n": 4,
+"created": "2026-11-13T22:43",
+"status": "pendiente",
+"prob": 0.846,
+"fair": 1.18,
+"legs": [
+{
+"id": "2026-11-15|Finland|San Marino",
+"liga": "Liga de Naciones",
+"date": "2026-11-15",
+"time": "17:00",
+"h": "Finland",
+"a": "San Marino",
+"m": "1X",
+"p": 0.992
+},
+{
+"id": "2026-11-15|France|Türkiye",
+"liga": "Liga de Naciones",
+"date": "2026-11-15",
+"time": "19:45",
+"h": "France",
+"a": "Türkiye",
+"m": "1X",
+"p": 0.946
+},
+{
+"id": "2026-11-15|Croatia|Czechia",
+"liga": "Liga de Naciones",
+"date": "2026-11-15",
+"time": "19:45",
+"h": "Croatia",
+"a": "Czechia",
+"m": "1X",
+"p": 0.902
 }
 ]
 }

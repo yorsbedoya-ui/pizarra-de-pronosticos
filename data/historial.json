@@ -1257,8 +1257,8 @@
 "m": "X2",
 "p": 0.913,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "0-1",
+"hit": true
 },
 {
 "id": "2026-11-13|Netherlands|Greece",
@@ -1270,8 +1270,8 @@
 "m": "1X",
 "p": 0.896,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "7-0",
+"hit": true
 },
 {
 "id": "2026-11-13|Scotland|North Macedonia",
@@ -1283,8 +1283,8 @@
 "m": "1X",
 "p": 0.903,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-13|Slovakia|Faroe Islands",
@@ -1296,8 +1296,8 @@
 "m": "1X",
 "p": 0.936,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-2",
+"hit": true
 },
 {
 "id": "2026-11-14|Norway|Wales",
