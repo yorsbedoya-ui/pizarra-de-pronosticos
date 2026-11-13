@@ -301,16 +301,16 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 12/11/2026,20:45,league-phase,Italy,France,3,1,FT,5,5,11,18,35.1,64.9,4,3
 12/11/2026,20:45,league-phase,Montenegro,Latvia,2,1,FT,7,5,21,15,50.2,49.8,11,6
 12/11/2026,20:45,league-phase,San Marino,Belarus,0,2,FT,1,7,5,18,39.6,60.4,2,6
-13/11/2026,18:00,league-phase,Moldova,Kazakhstan,2,1,LIVE,5,5,14,9,56.9,43.1,2,2
-13/11/2026,20:45,league-phase,Andorra,Gibraltar,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Bulgaria,Iceland,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Liechtenstein,Azerbaijan,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Luxembourg,Estonia,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Netherlands,Greece,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Scotland,North Macedonia,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Serbia,Germany,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Slovakia,Faroe Islands,,,NS,,,,,,,,
-13/11/2026,20:45,league-phase,Slovenia,Switzerland,,,NS,,,,,,,,
+13/11/2026,18:00,league-phase,Moldova,Kazakhstan,2,1,FT,5,5,14,11,55.5,44.5,2,3
+13/11/2026,20:45,league-phase,Andorra,Gibraltar,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Bulgaria,Iceland,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Liechtenstein,Azerbaijan,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Luxembourg,Estonia,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Netherlands,Greece,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Scotland,North Macedonia,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Serbia,Germany,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Slovakia,Faroe Islands,,,NS,0,0,0,0,0,0,0,0
+13/11/2026,20:45,league-phase,Slovenia,Switzerland,,,NS,0,0,0,0,0,0,0,0
 14/11/2026,15:00,league-phase,Kosovo,Israel,,,NS,,,,,,,,
 14/11/2026,18:00,league-phase,Georgia,Hungary,,,NS,,,,,,,,
 14/11/2026,18:00,league-phase,Norway,Wales,,,NS,,,,,,,,
