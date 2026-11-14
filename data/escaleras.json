@@ -432,7 +432,8 @@
 "h": "Lithuania",
 "a": "Liechtenstein",
 "m": "1X",
-"p": 0.96
+"p": 0.96,
+"hit": null
 },
 {
 "id": "2026-11-16|Iceland|Luxembourg",
@@ -442,7 +443,8 @@
 "h": "Iceland",
 "a": "Luxembourg",
 "m": "1X",
-"p": 0.944
+"p": 0.944,
+"hit": null
 }
 ]
 }
