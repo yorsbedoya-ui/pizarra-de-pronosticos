@@ -1309,8 +1309,8 @@
 "m": "1X",
 "p": 0.917,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "3-1",
+"hit": true
 },
 {
 "id": "2026-11-14|Austria|Republic of Ireland",
@@ -1478,6 +1478,19 @@
 "m": "X2",
 "p": 0.89,
 "pub": "2026-11-09",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-17|Ukraine|Georgia",
+"lg": "unl",
+"liga": "Liga de Naciones",
+"date": "2026-11-17",
+"h": "Ukraine",
+"a": "Georgia",
+"m": "1X",
+"p": 0.868,
+"pub": "2026-11-14",
 "res": null,
 "hit": null
 }
