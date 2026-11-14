@@ -344,7 +344,7 @@
 "id": "A-2026-11-08T23:27",
 "kind": "A",
 "created": "2026-11-08T23:27",
-"status": "activa",
+"status": "fallida",
 "steps": [
 {
 "n": 1,
@@ -380,7 +380,7 @@
 {
 "n": 2,
 "created": "2026-11-12T23:43",
-"status": "pendiente",
+"status": "fallado",
 "prob": 0.83,
 "fair": 1.2,
 "legs": [
@@ -404,7 +404,45 @@
 "a": "Denmark",
 "m": "1X",
 "p": 0.905,
-"hit": null
+"hit": false
+}
+]
+}
+],
+"ended": "2026-11-14T23:45"
+},
+{
+"id": "A-2026-11-14T23:45",
+"kind": "A",
+"created": "2026-11-14T23:45",
+"status": "activa",
+"steps": [
+{
+"n": 1,
+"created": "2026-11-14T23:45",
+"status": "pendiente",
+"prob": 0.906,
+"fair": 1.1,
+"legs": [
+{
+"id": "2026-11-16|Lithuania|Liechtenstein",
+"liga": "Liga de Naciones",
+"date": "2026-11-16",
+"time": "17:00",
+"h": "Lithuania",
+"a": "Liechtenstein",
+"m": "1X",
+"p": 0.96
+},
+{
+"id": "2026-11-16|Iceland|Luxembourg",
+"liga": "Liga de Naciones",
+"date": "2026-11-16",
+"time": "17:00",
+"h": "Iceland",
+"a": "Luxembourg",
+"m": "1X",
+"p": 0.944
 }
 ]
 }

@@ -1322,8 +1322,8 @@
 "m": "1X",
 "p": 0.871,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-11-14|Portugal|Denmark",
@@ -1335,8 +1335,8 @@
 "m": "1X",
 "p": 0.905,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "1-4",
+"hit": false
 },
 {
 "id": "2026-11-15|Finland|San Marino",
