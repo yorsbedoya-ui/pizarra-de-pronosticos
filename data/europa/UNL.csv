@@ -314,11 +314,11 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 14/11/2026,15:00,league-phase,Kosovo,Israel,0,0,FT,3,3,16,6,46,54,7,2
 14/11/2026,18:00,league-phase,Georgia,Hungary,0,2,FT,1,6,7,12,53.4,46.6,8,6
 14/11/2026,18:00,league-phase,Norway,Wales,3,1,FT,6,5,15,12,55,45,8,2
-14/11/2026,20:45,league-phase,Austria,Republic of Ireland,0,0,LIVE,3,3,7,4,54.5,45.5,2,3
-14/11/2026,20:45,league-phase,Northern Ireland,Ukraine,0,0,LIVE,2,1,8,2,41.3,58.7,2,0
-14/11/2026,20:45,league-phase,Portugal,Denmark,0,1,LIVE,2,2,4,7,47.3,52.7,2,5
-14/11/2026,20:45,league-phase,Romania,Poland,0,0,LIVE,1,0,6,6,51.1,48.9,3,3
-14/11/2026,20:45,league-phase,Sweden,Bosnia-Herzegovina,3,0,LIVE,5,1,9,7,43.8,56.2,1,1
+14/11/2026,20:45,league-phase,Austria,Republic of Ireland,1,0,FT,8,7,21,17,55.1,44.9,7,12
+14/11/2026,20:45,league-phase,Northern Ireland,Ukraine,1,0,FT,5,2,15,7,38.1,61.9,4,2
+14/11/2026,20:45,league-phase,Portugal,Denmark,1,4,FT,8,6,15,17,51.5,48.5,6,7
+14/11/2026,20:45,league-phase,Romania,Poland,2,1,FT,4,3,11,15,44.3,55.7,4,7
+14/11/2026,20:45,league-phase,Sweden,Bosnia-Herzegovina,3,2,FT,7,7,13,16,42.2,57.8,3,7
 15/11/2026,15:00,league-phase,Cyprus,Montenegro,,,NS,,,,,,,,
 15/11/2026,15:00,league-phase,Latvia,Armenia,,,NS,,,,,,,,
 15/11/2026,18:00,league-phase,Belarus,Albania,,,NS,,,,,,,,
