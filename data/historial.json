@@ -1361,8 +1361,8 @@
 "m": "1X",
 "p": 0.902,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-15|France|Türkiye",
@@ -1374,8 +1374,8 @@
 "m": "1X",
 "p": 0.952,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-15|Spain|England",

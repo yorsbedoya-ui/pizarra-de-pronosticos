@@ -299,7 +299,7 @@
 {
 "n": 4,
 "created": "2026-11-13T22:43",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.846,
 "fair": 1.18,
 "legs": [
@@ -323,7 +323,7 @@
 "a": "Türkiye",
 "m": "1X",
 "p": 0.946,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-15|Croatia|Czechia",
@@ -334,7 +334,7 @@
 "a": "Czechia",
 "m": "1X",
 "p": 0.902,
-"hit": null
+"hit": true
 }
 ]
 }
