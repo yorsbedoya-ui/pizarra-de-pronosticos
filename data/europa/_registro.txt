@@ -1,5 +1,4 @@
 UCL desde 2026-11-11: 18 leídos, 593 en total, 575 terminados, 0 días con error
 UEL desde 2026-11-11: 0 leídos, 592 en total, 591 terminados, 0 días con error
 UECL desde 2026-11-11: 0 leídos, 501 en total, 501 terminados, 0 días con error
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117 URLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011)'))
 UNL desde 2026-11-11: 52 leídos, 346 en total, 320 terminados, 0 días con error
