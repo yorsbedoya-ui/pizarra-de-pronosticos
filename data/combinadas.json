@@ -138,7 +138,7 @@
 "2026-11-15|France|Türkiye"
 ],
 "created": "2026-11-15T16:51",
-"frozen": false,
+"frozen": true,
 "kind": "doble"
 },
 "2026-11-16": {
@@ -146,7 +146,7 @@
 "2026-11-16|Lithuania|Liechtenstein",
 "2026-11-16|Iceland|Luxembourg"
 ],
-"created": "2026-11-15T16:51",
+"created": "2026-11-15T17:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -179,7 +179,7 @@
 "2026-11-15|Croatia|Czechia"
 ],
 "created": "2026-11-15T16:51",
-"frozen": false,
+"frozen": true,
 "kind": "larga"
 },
 "2026-11-16#larga": {
@@ -188,7 +188,7 @@
 "2026-11-16|Iceland|Luxembourg",
 "2026-11-16|Switzerland|Scotland"
 ],
-"created": "2026-11-15T16:51",
+"created": "2026-11-15T17:43",
 "frozen": false,
 "kind": "larga"
 }
