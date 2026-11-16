@@ -147,7 +147,7 @@
 "2026-11-16|Iceland|Luxembourg"
 ],
 "created": "2026-11-16T16:43",
-"frozen": false,
+"frozen": true,
 "kind": "doble"
 },
 "2026-11-12#larga": {
@@ -189,7 +189,7 @@
 "2026-11-16|Switzerland|Scotland"
 ],
 "created": "2026-11-16T16:43",
-"frozen": false,
+"frozen": true,
 "kind": "larga"
 },
 "2026-11-24": {
@@ -197,7 +197,7 @@
 "2026-11-24|Slovan Bratislava|Real Betis",
 "2026-11-24|Real Madrid|PSV Eindhoven"
 ],
-"created": "2026-11-16T16:43",
+"created": "2026-11-16T17:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -208,7 +208,7 @@
 "2026-11-24|Arsenal|Borussia Dortmund",
 "2026-11-24|Manchester City|Napoli"
 ],
-"created": "2026-11-16T16:43",
+"created": "2026-11-16T17:43",
 "frozen": false,
 "kind": "larga"
 }
