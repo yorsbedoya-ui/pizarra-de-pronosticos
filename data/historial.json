@@ -1439,8 +1439,8 @@
 "m": "1X",
 "p": 0.859,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-11-16|Switzerland|Scotland",
@@ -1452,8 +1452,8 @@
 "m": "1X",
 "p": 0.929,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-17|Bosnia-Herzegovina|Romania",
