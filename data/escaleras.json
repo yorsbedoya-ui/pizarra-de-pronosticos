@@ -420,7 +420,7 @@
 {
 "n": 1,
 "created": "2026-11-14T23:45",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.906,
 "fair": 1.1,
 "legs": [
@@ -433,7 +433,7 @@
 "a": "Liechtenstein",
 "m": "1X",
 "p": 0.96,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-16|Iceland|Luxembourg",
@@ -444,7 +444,36 @@
 "a": "Luxembourg",
 "m": "1X",
 "p": 0.944,
-"hit": null
+"hit": true
+}
+]
+},
+{
+"n": 2,
+"created": "2026-11-16T20:46",
+"status": "pendiente",
+"prob": 0.833,
+"fair": 1.2,
+"legs": [
+{
+"id": "2026-11-24|Slovan Bratislava|Real Betis",
+"liga": "Champions League",
+"date": "2026-11-24",
+"time": "20:00",
+"h": "Slovan Bratislava",
+"a": "Real Betis",
+"m": "X2",
+"p": 0.933
+},
+{
+"id": "2026-11-24|Real Madrid|PSV Eindhoven",
+"liga": "Champions League",
+"date": "2026-11-24",
+"time": "20:00",
+"h": "Real Madrid",
+"a": "PSV Eindhoven",
+"m": "1X",
+"p": 0.893
 }
 ]
 }
