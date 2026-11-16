@@ -327,8 +327,8 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 15/11/2026,20:45,league-phase,Croatia,Czechia,2,1,FT,8,1,21,8,60.3,39.7,5,1
 15/11/2026,20:45,league-phase,France,Türkiye,2,1,FT,8,3,23,13,60.3,39.7,8,5
 15/11/2026,20:45,league-phase,Spain,England,2,3,FT,7,5,23,9,64.2,35.8,4,6
-16/11/2026,16:00,league-phase,Faroe Islands,Moldova,,,NS,,,,,,,,
-16/11/2026,16:00,league-phase,Kazakhstan,Slovakia,,,NS,,,,,,,,
+16/11/2026,16:00,league-phase,Faroe Islands,Moldova,,,NS,0,0,0,0,0,0,0,0
+16/11/2026,16:00,league-phase,Kazakhstan,Slovakia,,,NS,0,0,0,0,0,0,0,0
 16/11/2026,18:00,league-phase,Estonia,Bulgaria,,,NS,,,,,,,,
 16/11/2026,18:00,league-phase,Iceland,Luxembourg,,,NS,,,,,,,,
 16/11/2026,18:00,league-phase,Lithuania,Liechtenstein,,,NS,,,,,,,,
