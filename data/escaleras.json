@@ -463,7 +463,8 @@
 "h": "Slovan Bratislava",
 "a": "Real Betis",
 "m": "X2",
-"p": 0.933
+"p": 0.933,
+"hit": null
 },
 {
 "id": "2026-11-24|Real Madrid|PSV Eindhoven",
@@ -473,7 +474,8 @@
 "h": "Real Madrid",
 "a": "PSV Eindhoven",
 "m": "1X",
-"p": 0.893
+"p": 0.893,
+"hit": null
 }
 ]
 }
