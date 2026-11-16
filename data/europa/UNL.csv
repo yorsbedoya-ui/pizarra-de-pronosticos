@@ -329,14 +329,14 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 15/11/2026,20:45,league-phase,Spain,England,2,3,FT,7,5,23,9,64.2,35.8,4,6
 16/11/2026,16:00,league-phase,Faroe Islands,Moldova,1,0,FT,5,5,22,11,43.2,56.8,9,3
 16/11/2026,16:00,league-phase,Kazakhstan,Slovakia,2,2,FT,5,4,17,16,35.1,64.9,1,3
-16/11/2026,18:00,league-phase,Estonia,Bulgaria,2,1,LIVE,3,2,7,9,54.4,45.6,1,3
-16/11/2026,18:00,league-phase,Iceland,Luxembourg,3,0,LIVE,11,0,22,2,60.6,39.4,6,0
-16/11/2026,18:00,league-phase,Lithuania,Liechtenstein,2,1,LIVE,4,3,18,6,69.2,30.8,6,0
-16/11/2026,20:45,league-phase,Germany,Netherlands,,,NS,,,,,,,,
-16/11/2026,20:45,league-phase,Gibraltar,Malta,,,NS,,,,,,,,
-16/11/2026,20:45,league-phase,Greece,Serbia,,,NS,,,,,,,,
-16/11/2026,20:45,league-phase,North Macedonia,Slovenia,,,NS,,,,,,,,
-16/11/2026,20:45,league-phase,Switzerland,Scotland,,,NS,,,,,,,,
+16/11/2026,18:00,league-phase,Estonia,Bulgaria,2,1,FT,4,2,10,10,52.2,47.8,2,3
+16/11/2026,18:00,league-phase,Iceland,Luxembourg,3,0,FT,11,0,25,4,58.3,41.7,9,3
+16/11/2026,18:00,league-phase,Lithuania,Liechtenstein,2,1,FT,4,3,21,8,68.1,31.9,6,2
+16/11/2026,20:45,league-phase,Germany,Netherlands,,,NS,0,0,0,0,0,0,0,0
+16/11/2026,20:45,league-phase,Gibraltar,Malta,,,NS,0,0,0,0,0,0,0,0
+16/11/2026,20:45,league-phase,Greece,Serbia,,,NS,0,0,0,0,0,0,0,0
+16/11/2026,20:45,league-phase,North Macedonia,Slovenia,,,NS,0,0,0,0,0,0,0,0
+16/11/2026,20:45,league-phase,Switzerland,Scotland,,,NS,0,0,0,0,0,0,0,0
 17/11/2026,20:45,league-phase,Bosnia-Herzegovina,Romania,,,NS,,,,,,,,
 17/11/2026,20:45,league-phase,Denmark,Norway,,,NS,,,,,,,,
 17/11/2026,20:45,league-phase,Hungary,Northern Ireland,,,NS,,,,,,,,
