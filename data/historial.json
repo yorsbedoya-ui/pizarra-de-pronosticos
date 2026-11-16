@@ -1493,5 +1493,83 @@
 "pub": "2026-11-14",
 "res": null,
 "hit": null
+},
+{
+"id": "2026-11-24|Bodo/Glimt|LASK Linz",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-24",
+"h": "Bodo/Glimt",
+"a": "LASK Linz",
+"m": "1X",
+"p": 0.856,
+"pub": "2026-11-16",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-24|Arsenal|Borussia Dortmund",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-24",
+"h": "Arsenal",
+"a": "Borussia Dortmund",
+"m": "1X",
+"p": 0.892,
+"pub": "2026-11-16",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-24|Como|AEK Athens",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-24",
+"h": "Como",
+"a": "AEK Athens",
+"m": "1X",
+"p": 0.865,
+"pub": "2026-11-16",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-24|Manchester City|Napoli",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-24",
+"h": "Manchester City",
+"a": "Napoli",
+"m": "1X",
+"p": 0.888,
+"pub": "2026-11-16",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-24|Real Madrid|PSV Eindhoven",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-24",
+"h": "Real Madrid",
+"a": "PSV Eindhoven",
+"m": "1X",
+"p": 0.893,
+"pub": "2026-11-16",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-24|Slovan Bratislava|Real Betis",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-24",
+"h": "Slovan Bratislava",
+"a": "Real Betis",
+"m": "X2",
+"p": 0.933,
+"pub": "2026-11-16",
+"res": null,
+"hit": null
 }
 ]
