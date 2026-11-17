@@ -1465,8 +1465,8 @@
 "m": "1X",
 "p": 0.865,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-17|Wales|Portugal",
@@ -1478,8 +1478,8 @@
 "m": "X2",
 "p": 0.89,
 "pub": "2026-11-09",
-"res": null,
-"hit": null
+"res": "2-3",
+"hit": true
 },
 {
 "id": "2026-11-17|Ukraine|Georgia",
@@ -1491,8 +1491,8 @@
 "m": "1X",
 "p": 0.868,
 "pub": "2026-11-14",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-11-24|Bodo/Glimt|LASK Linz",
