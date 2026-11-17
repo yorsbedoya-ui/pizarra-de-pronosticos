@@ -337,6 +337,45 @@
 "hit": true
 }
 ]
+},
+{
+"n": 5,
+"created": "2026-11-17T02:45",
+"status": "pendiente",
+"prob": 0.796,
+"fair": 1.26,
+"legs": [
+{
+"id": "2026-11-25|Sabah FK|Barcelona",
+"liga": "Champions League",
+"date": "2026-11-25",
+"time": "17:45",
+"h": "Sabah FK",
+"a": "Barcelona",
+"m": "X2",
+"p": 0.958
+},
+{
+"id": "2026-11-25|Lille|Bayern Munich",
+"liga": "Champions League",
+"date": "2026-11-25",
+"time": "20:00",
+"h": "Lille",
+"a": "Bayern Munich",
+"m": "X2",
+"p": 0.914
+},
+{
+"id": "2026-11-25|Paris Saint-Germain|AS Roma",
+"liga": "Champions League",
+"date": "2026-11-25",
+"time": "20:00",
+"h": "Paris Saint-Germain",
+"a": "AS Roma",
+"m": "1X",
+"p": 0.909
+}
+]
 }
 ]
 },

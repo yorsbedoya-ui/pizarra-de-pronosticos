@@ -1571,5 +1571,57 @@
 "pub": "2026-11-16",
 "res": null,
 "hit": null
+},
+{
+"id": "2026-11-25|Sabah FK|Barcelona",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-25",
+"h": "Sabah FK",
+"a": "Barcelona",
+"m": "X2",
+"p": 0.958,
+"pub": "2026-11-17",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-25|Internazionale|VfB Stuttgart",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-25",
+"h": "Internazionale",
+"a": "VfB Stuttgart",
+"m": "1X",
+"p": 0.859,
+"pub": "2026-11-17",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-25|Lille|Bayern Munich",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-25",
+"h": "Lille",
+"a": "Bayern Munich",
+"m": "X2",
+"p": 0.914,
+"pub": "2026-11-17",
+"res": null,
+"hit": null
+},
+{
+"id": "2026-11-25|Paris Saint-Germain|AS Roma",
+"lg": "ucl",
+"liga": "Champions League",
+"date": "2026-11-25",
+"h": "Paris Saint-Germain",
+"a": "AS Roma",
+"m": "1X",
+"p": 0.909,
+"pub": "2026-11-17",
+"res": null,
+"hit": null
 }
 ]
