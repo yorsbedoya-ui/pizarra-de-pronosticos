@@ -1,11 +1,11 @@
-E0 desde 2026-11-15: 10 leídos, 110 en total, 100 terminados, 0 días con error
-E1 desde 2026-11-15: 24 leídos, 204 en total, 180 terminados, 0 días con error
-SP1 desde 2026-11-15: 10 leídos, 130 en total, 119 terminados, 0 días con error
-I1 desde 2026-11-15: 10 leídos, 120 en total, 110 terminados, 0 días con error
-D1 desde 2026-11-15: 9 leídos, 90 en total, 81 terminados, 0 días con error
-F1 desde 2026-11-15: 9 leídos, 104 en total, 90 terminados, 0 días con error
-P1 desde 2026-11-15: 0 leídos, 101 en total, 98 terminados, 0 días con error
-N1 desde 2026-11-15: 9 leídos, 117 en total, 108 terminados, 0 días con error
-T1 desde 2026-11-15: 9 leídos, 108 en total, 99 terminados, 0 días con error
+E0 desde 2026-11-16: 10 leídos, 110 en total, 100 terminados, 0 días con error
+E1 desde 2026-11-16: 24 leídos, 204 en total, 180 terminados, 0 días con error
+SP1 desde 2026-11-16: 10 leídos, 130 en total, 119 terminados, 0 días con error
+I1 desde 2026-11-16: 10 leídos, 120 en total, 110 terminados, 0 días con error
+D1 desde 2026-11-16: 9 leídos, 90 en total, 81 terminados, 0 días con error
+F1 desde 2026-11-16: 9 leídos, 104 en total, 90 terminados, 0 días con error
+P1 desde 2026-11-16: 0 leídos, 101 en total, 98 terminados, 0 días con error
+N1 desde 2026-11-16: 9 leídos, 117 en total, 108 terminados, 0 días con error
+T1 desde 2026-11-16: 9 leídos, 108 en total, 99 terminados, 0 días con error
 estadísticas disponibles en ESPN: []
-ligas guardadas: 9 | hora UTC 2026-11-18T23:44+00:00
+ligas guardadas: 9 | hora UTC 2026-11-19T01:27+00:00
