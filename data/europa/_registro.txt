@@ -1,5 +1,4 @@
 UCL desde 2026-11-15: 18 leídos, 593 en total, 575 terminados, 0 días con error
 UEL desde 2026-11-15: 18 leídos, 610 en total, 591 terminados, 0 días con error
 UECL desde 2026-11-15: 18 leídos, 519 en total, 501 terminados, 0 días con error
-  fallo https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116 URLError(ConnectionResetError(104, 'Connection reset by peer'))
 UNL desde 2026-11-15: 26 leídos, 346 en total, 346 terminados, 0 días con error
