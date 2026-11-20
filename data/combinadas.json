@@ -197,7 +197,7 @@
 "2026-11-24|Slovan Bratislava|Real Betis",
 "2026-11-24|Real Madrid|PSV Eindhoven"
 ],
-"created": "2026-11-20T14:44",
+"created": "2026-11-20T15:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -208,7 +208,7 @@
 "2026-11-24|Arsenal|Borussia Dortmund",
 "2026-11-24|Manchester City|Napoli"
 ],
-"created": "2026-11-20T14:44",
+"created": "2026-11-20T15:43",
 "frozen": false,
 "kind": "larga"
 },
@@ -217,7 +217,7 @@
 "2026-11-25|Sabah FK|Barcelona",
 "2026-11-25|Lille|Bayern Munich"
 ],
-"created": "2026-11-20T14:44",
+"created": "2026-11-20T15:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -227,7 +227,7 @@
 "2026-11-25|Lille|Bayern Munich",
 "2026-11-25|Paris Saint-Germain|AS Roma"
 ],
-"created": "2026-11-20T14:44",
+"created": "2026-11-20T15:43",
 "frozen": false,
 "kind": "larga"
 },
@@ -236,7 +236,7 @@
 "2026-11-26|Juventus|Omonia Nicosia",
 "2026-11-26|Lyon|Lillestrom"
 ],
-"created": "2026-11-20T14:44",
+"created": "2026-11-20T15:43",
 "frozen": false,
 "kind": "doble"
 },
@@ -248,7 +248,57 @@
 "2026-11-26|Besiktas|Hapoel Be'er",
 "2026-11-26|Ajax Amsterdam|FC Thun"
 ],
-"created": "2026-11-20T14:44",
+"created": "2026-11-20T15:43",
+"frozen": false,
+"kind": "larga"
+},
+"2026-11-20": {
+"legs": [
+"2026-11-20|Bayern Munich|FC Koln"
+],
+"created": "2026-11-20T15:43",
+"frozen": false,
+"kind": "doble"
+},
+"2026-11-21": {
+"legs": [
+"2026-11-21|Real Madrid|Celta",
+"2026-11-21|West Ham|Preston"
+],
+"created": "2026-11-20T15:43",
+"frozen": false,
+"kind": "doble"
+},
+"2026-11-22": {
+"legs": [
+"2026-11-22|Twente|Willem II",
+"2026-11-22|Trabzonspor|Eyupspor"
+],
+"created": "2026-11-20T15:43",
+"frozen": false,
+"kind": "doble"
+},
+"2026-11-21#larga": {
+"legs": [
+"2026-11-21|Real Madrid|Celta",
+"2026-11-21|West Ham|Preston",
+"2026-11-21|Feyenoord|Excelsior",
+"2026-11-21|Galatasaray|Samsunspor",
+"2026-11-21|Parma|Roma"
+],
+"created": "2026-11-20T15:43",
+"frozen": false,
+"kind": "larga"
+},
+"2026-11-22#larga": {
+"legs": [
+"2026-11-22|Twente|Willem II",
+"2026-11-22|Trabzonspor|Eyupspor",
+"2026-11-22|Ajax|Den Haag",
+"2026-11-22|Barcelona|Villarreal",
+"2026-11-22|Paris FC|Angers"
+],
+"created": "2026-11-20T15:43",
 "frozen": false,
 "kind": "larga"
 }
