@@ -1738,8 +1738,8 @@
 "m": "1X",
 "p": 0.869,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "1-1",
+"hit": true
 },
 {
 "id": "2026-11-21|Real Madrid|Celta",
@@ -1920,8 +1920,8 @@
 "m": "1X",
 "p": 0.87,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-11-21|Middlesbrough|Bristol City",
