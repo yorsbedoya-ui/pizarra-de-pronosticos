@@ -3,9 +3,9 @@ E1 desde 2026-11-18: 35 leídos, 215 en total, 191 terminados, 0 días con error
 SP1 desde 2026-11-18: 15 leídos, 135 en total, 122 terminados, 0 días con error
 I1 desde 2026-11-18: 14 leídos, 124 en total, 112 terminados, 0 días con error
 D1 desde 2026-11-18: 15 leídos, 96 en total, 87 terminados, 0 días con error
-F1 desde 2026-11-18: 15 leídos, 110 en total, 91 terminados, 0 días con error
+F1 desde 2026-11-18: 15 leídos, 110 en total, 92 terminados, 0 días con error
 P1 desde 2026-11-18: 5 leídos, 106 en total, 98 terminados, 0 días con error
 N1 desde 2026-11-18: 13 leídos, 121 en total, 109 terminados, 0 días con error
-T1 desde 2026-11-18: 13 leídos, 112 en total, 102 terminados, 0 días con error
+T1 desde 2026-11-18: 13 leídos, 112 en total, 103 terminados, 0 días con error
 estadísticas disponibles en ESPN: ['appearances', 'foulsCommitted', 'goalAssists', 'possessionPct', 'shotAssists', 'shotsOnTarget', 'totalGoals', 'totalShots', 'wonCorners']
-ligas guardadas: 9 | hora UTC 2026-11-21T17:42+00:00
+ligas guardadas: 9 | hora UTC 2026-11-21T18:44+00:00
