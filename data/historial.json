@@ -1803,8 +1803,8 @@
 "m": "X2",
 "p": 0.899,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "1-5",
+"hit": true
 },
 {
 "id": "2026-11-22|Juventus|Venezia",
@@ -1881,8 +1881,8 @@
 "m": "1X",
 "p": 0.914,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-3",
+"hit": false
 },
 {
 "id": "2026-11-22|Twente|Willem II",
