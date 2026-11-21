@@ -1933,8 +1933,8 @@
 "m": "1X",
 "p": 0.866,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-11-21|West Ham|Preston",
@@ -1946,8 +1946,8 @@
 "m": "1X",
 "p": 0.918,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "1-1",
+"hit": true
 },
 {
 "id": "2026-11-21|Wolves|Charlton",
@@ -1959,8 +1959,8 @@
 "m": "1X",
 "p": 0.889,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-21|Galatasaray|Samsunspor",
