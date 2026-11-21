@@ -1777,8 +1777,8 @@
 "m": "1X",
 "p": 0.897,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-11-21|Lazio|Lecce",
@@ -1790,8 +1790,8 @@
 "m": "1X",
 "p": 0.879,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "3-0",
+"hit": true
 },
 {
 "id": "2026-11-21|Parma|Roma",
@@ -1842,8 +1842,8 @@
 "m": "1X",
 "p": 0.892,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-21|Monaco|Auxerre",
