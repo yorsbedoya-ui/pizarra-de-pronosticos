@@ -1751,8 +1751,8 @@
 "m": "1X",
 "p": 0.934,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-22|Barcelona|Villarreal",
@@ -1855,8 +1855,8 @@
 "m": "1X",
 "p": 0.863,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "1-1",
+"hit": true
 },
 {
 "id": "2026-11-22|Paris FC|Angers",
