@@ -1764,8 +1764,8 @@
 "m": "1X",
 "p": 0.909,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "3-2",
+"hit": true
 },
 {
 "id": "2026-11-21|Como|Cagliari",
@@ -1907,8 +1907,8 @@
 "m": "1X",
 "p": 0.921,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "3-0",
+"hit": true
 },
 {
 "id": "2026-11-21|Southampton|Derby",
