@@ -1816,8 +1816,8 @@
 "m": "1X",
 "p": 0.884,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-20|Bayern Munich|FC Koln",
@@ -1894,8 +1894,8 @@
 "m": "1X",
 "p": 0.952,
 "pub": "2026-11-20",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": true
 },
 {
 "id": "2026-11-22|Ajax|Den Haag",
