@@ -8,4 +8,4 @@ P1 desde 2026-11-20: 9 leídos, 110 en total, 98 terminados, 0 días con error
 N1 desde 2026-11-20: 18 leídos, 126 en total, 117 terminados, 0 días con error
 T1 desde 2026-11-20: 18 leídos, 117 en total, 107 terminados, 0 días con error
 estadísticas disponibles en ESPN: ['appearances', 'foulsCommitted', 'goalAssists', 'possessionPct', 'shotAssists', 'shotsOnTarget', 'totalGoals', 'totalShots', 'wonCorners']
-ligas guardadas: 9 | hora UTC 2026-11-23T09:45+00:00
+ligas guardadas: 9 | hora UTC 2026-11-23T10:45+00:00
