@@ -536,7 +536,8 @@
 "h": "Juventus",
 "a": "Omonia Nicosia",
 "m": "1X",
-"p": 0.924
+"p": 0.924,
+"hit": null
 },
 {
 "id": "2026-11-26|Lyon|Lillestrom",
@@ -546,7 +547,8 @@
 "h": "Lyon",
 "a": "Lillestrom",
 "m": "1X",
-"p": 0.908
+"p": 0.908,
+"hit": null
 }
 ]
 }
