@@ -1987,5 +1987,18 @@
 "pub": "2026-11-20",
 "res": "1-0",
 "hit": true
+},
+{
+"id": "2026-11-24|Wolves|Derby",
+"lg": "en.2",
+"liga": "Championship",
+"date": "2026-11-24",
+"h": "Wolves",
+"a": "Derby",
+"m": "1X",
+"p": 0.901,
+"pub": "2026-11-24",
+"res": null,
+"hit": null
 }
 ]
