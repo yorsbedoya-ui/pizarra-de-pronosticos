@@ -1517,8 +1517,8 @@
 "m": "1X",
 "p": 0.892,
 "pub": "2026-11-16",
-"res": null,
-"hit": null
+"res": "1-1",
+"hit": true
 },
 {
 "id": "2026-11-24|Como|AEK Athens",
@@ -1530,8 +1530,8 @@
 "m": "1X",
 "p": 0.865,
 "pub": "2026-11-16",
-"res": null,
-"hit": null
+"res": "1-0",
+"hit": true
 },
 {
 "id": "2026-11-24|Manchester City|Napoli",
@@ -1543,8 +1543,8 @@
 "m": "1X",
 "p": 0.888,
 "pub": "2026-11-16",
-"res": null,
-"hit": null
+"res": "2-2",
+"hit": true
 },
 {
 "id": "2026-11-24|Real Madrid|PSV Eindhoven",
@@ -1556,8 +1556,8 @@
 "m": "1X",
 "p": 0.893,
 "pub": "2026-11-16",
-"res": null,
-"hit": null
+"res": "5-1",
+"hit": true
 },
 {
 "id": "2026-11-24|Slovan Bratislava|Real Betis",
@@ -1569,8 +1569,8 @@
 "m": "X2",
 "p": 0.933,
 "pub": "2026-11-16",
-"res": null,
-"hit": null
+"res": "0-2",
+"hit": true
 },
 {
 "id": "2026-11-25|Sabah FK|Barcelona",
@@ -1998,7 +1998,7 @@
 "m": "1X",
 "p": 0.901,
 "pub": "2026-11-24",
-"res": null,
-"hit": null
+"res": "3-0",
+"hit": true
 }
 ]

@@ -493,7 +493,7 @@
 {
 "n": 2,
 "created": "2026-11-16T20:46",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.833,
 "fair": 1.2,
 "legs": [
@@ -506,7 +506,7 @@
 "a": "Real Betis",
 "m": "X2",
 "p": 0.933,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-24|Real Madrid|PSV Eindhoven",
@@ -517,7 +517,36 @@
 "a": "PSV Eindhoven",
 "m": "1X",
 "p": 0.893,
-"hit": null
+"hit": true
+}
+]
+},
+{
+"n": 3,
+"created": "2026-11-24T23:43",
+"status": "pendiente",
+"prob": 0.839,
+"fair": 1.19,
+"legs": [
+{
+"id": "2026-11-26|Juventus|Omonia Nicosia",
+"liga": "Europa League",
+"date": "2026-11-26",
+"time": "20:00",
+"h": "Juventus",
+"a": "Omonia Nicosia",
+"m": "1X",
+"p": 0.924
+},
+{
+"id": "2026-11-26|Lyon|Lillestrom",
+"liga": "Europa League",
+"date": "2026-11-26",
+"time": "20:00",
+"h": "Lyon",
+"a": "Lillestrom",
+"m": "1X",
+"p": 0.908
 }
 ]
 }
