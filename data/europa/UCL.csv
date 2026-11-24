@@ -574,15 +574,15 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 04/11/2026,21:00,league-phase,RB Leipzig,Manchester City,2,3,FT,6,5,14,12,35.4,64.6,5,3
 04/11/2026,21:00,league-phase,Slavia Prague,Arsenal,1,2,FT,6,5,18,12,43.5,56.5,4,2
 04/11/2026,21:00,league-phase,Viking FK,Sabah FK,4,1,FT,8,4,21,16,50.5,49.5,10,6
-24/11/2026,18:45,league-phase,Bodo/Glimt,LASK Linz,0,0,LIVE,0,0,4,0,67.5,32.5,1,0
-24/11/2026,18:45,league-phase,Galatasaray,Aston Villa,0,0,LIVE,0,0,1,3,45.2,54.8,1,1
-24/11/2026,21:00,league-phase,Arsenal,Borussia Dortmund,,,NS,,,,,,,,
-24/11/2026,21:00,league-phase,Como,AEK Athens,,,NS,,,,,,,,
-24/11/2026,21:00,league-phase,Feyenoord Rotterdam,FC Porto,,,NS,,,,,,,,
-24/11/2026,21:00,league-phase,Manchester City,Napoli,,,NS,,,,,,,,
-24/11/2026,21:00,league-phase,RB Leipzig,Lens,,,NS,,,,,,,,
-24/11/2026,21:00,league-phase,Real Madrid,PSV Eindhoven,,,NS,,,,,,,,
-24/11/2026,21:00,league-phase,Slovan Bratislava,Real Betis,,,NS,,,,,,,,
+24/11/2026,18:45,league-phase,Bodo/Glimt,LASK Linz,1,0,FT,2,0,9,5,65.8,34.2,4,0
+24/11/2026,18:45,league-phase,Galatasaray,Aston Villa,1,0,FT,2,0,9,4,45.3,54.7,5,1
+24/11/2026,21:00,league-phase,Arsenal,Borussia Dortmund,,,NS,0,0,0,0,0,0,0,0
+24/11/2026,21:00,league-phase,Como,AEK Athens,,,NS,0,0,0,0,0,0,0,0
+24/11/2026,21:00,league-phase,Feyenoord Rotterdam,FC Porto,,,NS,0,0,0,0,0,0,0,0
+24/11/2026,21:00,league-phase,Manchester City,Napoli,,,NS,0,0,0,0,0,0,0,0
+24/11/2026,21:00,league-phase,RB Leipzig,Lens,,,NS,0,0,0,0,0,0,0,0
+24/11/2026,21:00,league-phase,Real Madrid,PSV Eindhoven,,,NS,0,0,0,0,0,0,0,0
+24/11/2026,21:00,league-phase,Slovan Bratislava,Real Betis,,,NS,0,0,0,0,0,0,0,0
 25/11/2026,18:45,league-phase,Sabah FK,Barcelona,,,NS,,,,,,,,
 25/11/2026,18:45,league-phase,Slavia Prague,Villarreal,,,NS,,,,,,,,
 25/11/2026,21:00,league-phase,Atlético Madrid,Viking FK,,,NS,,,,,,,,
