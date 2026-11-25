@@ -583,8 +583,8 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 24/11/2026,21:00,league-phase,RB Leipzig,Lens,3,1,FT,7,3,16,11,58.6,41.4,10,4
 24/11/2026,21:00,league-phase,Real Madrid,PSV Eindhoven,5,1,FT,9,1,24,10,61.5,38.5,4,1
 24/11/2026,21:00,league-phase,Slovan Bratislava,Real Betis,0,2,FT,2,6,12,18,31.6,68.4,1,4
-25/11/2026,18:45,league-phase,Sabah FK,Barcelona,,,NS,,,,,,,,
-25/11/2026,18:45,league-phase,Slavia Prague,Villarreal,,,NS,,,,,,,,
+25/11/2026,18:45,league-phase,Sabah FK,Barcelona,,,NS,0,0,0,0,0,0,0,0
+25/11/2026,18:45,league-phase,Slavia Prague,Villarreal,,,NS,0,0,0,0,0,0,0,0
 25/11/2026,21:00,league-phase,Atlético Madrid,Viking FK,,,NS,,,,,,,,
 25/11/2026,21:00,league-phase,Club Brugge,Liverpool,,,NS,,,,,,,,
 25/11/2026,21:00,league-phase,Internazionale,VfB Stuttgart,,,NS,,,,,,,,
