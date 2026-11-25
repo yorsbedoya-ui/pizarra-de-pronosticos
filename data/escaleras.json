@@ -168,7 +168,7 @@
 "id": "B-2026-11-02T14:56",
 "kind": "B",
 "created": "2026-11-02T14:56",
-"status": "activa",
+"status": "fallida",
 "steps": [
 {
 "n": 1,
@@ -341,7 +341,7 @@
 {
 "n": 5,
 "created": "2026-11-17T02:45",
-"status": "pendiente",
+"status": "fallado",
 "prob": 0.796,
 "fair": 1.26,
 "legs": [
@@ -365,7 +365,7 @@
 "a": "Bayern Munich",
 "m": "X2",
 "p": 0.914,
-"hit": null
+"hit": false
 },
 {
 "id": "2026-11-25|Paris Saint-Germain|AS Roma",
@@ -376,11 +376,12 @@
 "a": "AS Roma",
 "m": "1X",
 "p": 0.909,
-"hit": null
+"hit": true
 }
 ]
 }
-]
+],
+"ended": "2026-11-25T23:43"
 },
 {
 "id": "A-2026-11-08T23:27",
@@ -553,6 +554,13 @@
 ]
 }
 ]
+},
+{
+"id": "B-2026-11-25T23:43",
+"kind": "B",
+"created": "2026-11-25T23:43",
+"status": "activa",
+"steps": []
 }
 ]
 }

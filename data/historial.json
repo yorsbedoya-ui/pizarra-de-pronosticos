@@ -1595,8 +1595,8 @@
 "m": "1X",
 "p": 0.859,
 "pub": "2026-11-17",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-11-25|Lille|Bayern Munich",
@@ -1608,8 +1608,8 @@
 "m": "X2",
 "p": 0.914,
 "pub": "2026-11-17",
-"res": null,
-"hit": null
+"res": "2-1",
+"hit": false
 },
 {
 "id": "2026-11-25|Paris Saint-Germain|AS Roma",
@@ -1621,8 +1621,8 @@
 "m": "1X",
 "p": 0.909,
 "pub": "2026-11-17",
-"res": null,
-"hit": null
+"res": "2-2",
+"hit": true
 },
 {
 "id": "2026-11-26|Besiktas|Hapoel Be'er",
