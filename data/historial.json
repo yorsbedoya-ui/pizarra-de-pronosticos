@@ -1647,8 +1647,8 @@
 "m": "1X",
 "p": 0.878,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "2-0",
+"hit": true
 },
 {
 "id": "2026-11-26|Union St.-Gilloise|Lech Poznan",
@@ -1660,8 +1660,8 @@
 "m": "1X",
 "p": 0.87,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "2-2",
+"hit": true
 },
 {
 "id": "2026-11-26|Ferencvaros|NK Celje",
@@ -1712,8 +1712,8 @@
 "m": "1X",
 "p": 0.893,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-26|Braga|KuPS Kuopio",
