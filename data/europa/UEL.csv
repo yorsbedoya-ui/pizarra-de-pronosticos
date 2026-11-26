@@ -591,21 +591,21 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 05/11/2026,21:00,league-phase,SK Sturm Graz,NK Celje,2,3,FT,7,7,30,8,61.3,38.7,12,2
 05/11/2026,21:00,league-phase,Sunderland,Dinamo Zagreb,0,2,FT,7,4,17,9,62.2,37.8,5,3
 05/11/2026,21:00,league-phase,Torreense,Ararat-Armenia,3,2,FT,5,8,12,19,41.5,58.5,4,6
-26/11/2026,18:45,league-phase,Besiktas,Hapoel Be'er,,,NS,3,4,4,4,55,45,1,2
-26/11/2026,18:45,league-phase,Celta Vigo,AFC Bournemouth,1,0,LIVE,4,2,11,3,56.2,43.8,0,4
-26/11/2026,18:45,league-phase,Dinamo Zagreb,Bayer Leverkusen,0,2,LIVE,1,2,5,7,37.3,62.7,4,6
-26/11/2026,18:45,league-phase,Marseille,Levski Sofia,1,0,LIVE,2,1,5,5,53.7,46.3,3,1
-26/11/2026,18:45,league-phase,Olympiacos,AC Milan,1,0,LIVE,3,2,9,4,35.1,64.9,2,1
-26/11/2026,18:45,league-phase,RB Salzburg,Ararat-Armenia,0,0,LIVE,4,0,12,1,62.8,37.2,6,3
-26/11/2026,18:45,league-phase,Union St.-Gilloise,Lech Poznan,0,2,LIVE,5,2,9,5,57,43,3,0
-26/11/2026,18:45,league-phase,Viktoria Plzen,Benfica,3,0,LIVE,6,2,8,9,27.9,72.1,1,6
-26/11/2026,21:00,league-phase,Crystal Palace,Real Sociedad,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,Ferencvaros,NK Celje,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,Juventus,Omonia Nicosia,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,Lyon,Lillestrom,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,NEC Nijmegen,Stade Rennais,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,OFI Crete,Anderlecht,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,Sparta Prague,AZ Alkmaar,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,Sunderland,Jagiellonia Bialystok,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,Torreense,Celtic,,,NS,,,,,,,,
-26/11/2026,21:00,league-phase,TSG Hoffenheim,SK Sturm Graz,,,NS,,,,,,,,
+26/11/2026,18:45,league-phase,Besiktas,Hapoel Be'er,0,0,LIVE,6,8,17,8,52.5,47.5,8,4
+26/11/2026,18:45,league-phase,Celta Vigo,AFC Bournemouth,1,2,FT,5,6,20,10,64.3,35.7,6,5
+26/11/2026,18:45,league-phase,Dinamo Zagreb,Bayer Leverkusen,0,2,FT,3,2,14,9,37.8,62.2,6,6
+26/11/2026,18:45,league-phase,Marseille,Levski Sofia,1,0,FT,5,1,12,8,51.8,48.2,3,2
+26/11/2026,18:45,league-phase,Olympiacos,AC Milan,2,4,FT,5,6,18,12,40.6,59.4,6,1
+26/11/2026,18:45,league-phase,RB Salzburg,Ararat-Armenia,2,0,FT,8,1,24,8,62.5,37.5,9,3
+26/11/2026,18:45,league-phase,Union St.-Gilloise,Lech Poznan,2,2,FT,10,2,24,5,58.7,41.3,9,0
+26/11/2026,18:45,league-phase,Viktoria Plzen,Benfica,4,0,FT,11,2,15,16,30.8,69.2,4,10
+26/11/2026,21:00,league-phase,Crystal Palace,Real Sociedad,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,Ferencvaros,NK Celje,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,Juventus,Omonia Nicosia,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,Lyon,Lillestrom,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,NEC Nijmegen,Stade Rennais,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,OFI Crete,Anderlecht,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,Sparta Prague,AZ Alkmaar,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,Sunderland,Jagiellonia Bialystok,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,Torreense,Celtic,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,21:00,league-phase,TSG Hoffenheim,SK Sturm Graz,,,NS,0,0,0,0,0,0,0,0
