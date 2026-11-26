@@ -1673,8 +1673,8 @@
 "m": "1X",
 "p": 0.866,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "0-0",
+"hit": true
 },
 {
 "id": "2026-11-26|Juventus|Omonia Nicosia",
@@ -1686,8 +1686,8 @@
 "m": "1X",
 "p": 0.922,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "4-1",
+"hit": true
 },
 {
 "id": "2026-11-26|Lyon|Lillestrom",
@@ -1699,8 +1699,8 @@
 "m": "1X",
 "p": 0.911,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "0-0",
+"hit": true
 },
 {
 "id": "2026-11-26|Ajax Amsterdam|FC Thun",
@@ -1725,8 +1725,8 @@
 "m": "1X",
 "p": 0.898,
 "pub": "2026-11-18",
-"res": null,
-"hit": null
+"res": "4-0",
+"hit": true
 },
 {
 "id": "2026-11-21|Man City|Fulham",

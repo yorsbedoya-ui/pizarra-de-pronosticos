@@ -525,7 +525,7 @@
 {
 "n": 3,
 "created": "2026-11-24T23:43",
-"status": "pendiente",
+"status": "acertado",
 "prob": 0.839,
 "fair": 1.19,
 "legs": [
@@ -538,7 +538,7 @@
 "a": "Omonia Nicosia",
 "m": "1X",
 "p": 0.924,
-"hit": null
+"hit": true
 },
 {
 "id": "2026-11-26|Lyon|Lillestrom",
@@ -549,7 +549,7 @@
 "a": "Lillestrom",
 "m": "1X",
 "p": 0.908,
-"hit": null
+"hit": true
 }
 ]
 }
