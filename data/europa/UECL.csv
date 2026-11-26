@@ -500,16 +500,16 @@ Date,Time,Round,HomeTeam,AwayTeam,FTHG,FTAG,Status,HST,AST,HS,AS,HPoss,APoss,HC,
 05/11/2026,21:00,league-phase,Panathinaikos,CSKA Sofia,2,1,FT,12,5,24,9,62.6,37.4,12,4
 05/11/2026,21:00,league-phase,Riga FC,Jablonec,1,1,FT,2,3,13,11,59.4,40.6,5,5
 05/11/2026,21:00,league-phase,Sint-Truidense,SK Brann,1,1,FT,5,5,17,9,43.1,56.9,4,7
-26/11/2026,16:30,league-phase,Kairat Almaty,Mjällby AIF,1,0,LIVE,5,2,12,5,52.3,47.7,1,2
-26/11/2026,18:45,league-phase,Ajax Amsterdam,FC Thun,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Brighton & Hove Albion,CSU Craiova,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Egnatia,Lincoln Red Imps,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Heart of Midlothian,AS Monaco,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Iberia 1999,Getafe,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Jablonec,FC Lugano,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Kauno Zalgiris,Riga FC,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,Pafos,FC Midtjylland,,,NS,,,,,,,,
-26/11/2026,18:45,league-phase,SK Brann,AGF,,,NS,,,,,,,,
+26/11/2026,16:30,league-phase,Kairat Almaty,Mjällby AIF,1,0,FT,6,6,16,14,44.3,55.7,3,5
+26/11/2026,18:45,league-phase,Ajax Amsterdam,FC Thun,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Brighton & Hove Albion,CSU Craiova,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Egnatia,Lincoln Red Imps,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Heart of Midlothian,AS Monaco,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Iberia 1999,Getafe,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Jablonec,FC Lugano,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Kauno Zalgiris,Riga FC,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,Pafos,FC Midtjylland,,,NS,0,0,0,0,0,0,0,0
+26/11/2026,18:45,league-phase,SK Brann,AGF,,,NS,0,0,0,0,0,0,0,0
 26/11/2026,21:00,league-phase,Borac Banja Luka,Atalanta,,,NS,,,,,,,,
 26/11/2026,21:00,league-phase,Braga,KuPS Kuopio,,,NS,,,,,,,,
 26/11/2026,21:00,league-phase,CSKA Sofia,Trabzonspor,,,NS,,,,,,,,
