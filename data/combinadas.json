@@ -316,7 +316,7 @@
 "2026-11-28|Real Madrid|Alaves",
 "2026-11-28|Paris SG|Lorient"
 ],
-"created": "2026-11-27T19:43",
+"created": "2026-11-27T19:53",
 "frozen": false,
 "kind": "doble"
 },
@@ -325,7 +325,7 @@
 "2026-11-29|Roma|Monza",
 "2026-11-29|Fenerbahce|Erzurumspor"
 ],
-"created": "2026-11-27T19:43",
+"created": "2026-11-27T19:53",
 "frozen": false,
 "kind": "doble"
 },
@@ -333,7 +333,7 @@
 "legs": [
 "2026-11-30|Benfica|Famalicao"
 ],
-"created": "2026-11-27T19:43",
+"created": "2026-11-27T19:53",
 "frozen": false,
 "kind": "doble"
 },
@@ -345,7 +345,7 @@
 "2026-11-28|Hamburg|Bayern Munich",
 "2026-11-28|Inter|Genoa"
 ],
-"created": "2026-11-27T19:43",
+"created": "2026-11-27T19:53",
 "frozen": false,
 "kind": "larga"
 },
@@ -355,7 +355,7 @@
 "2026-11-29|Fenerbahce|Erzurumspor",
 "2026-11-29|La Coruna|Barcelona"
 ],
-"created": "2026-11-27T19:43",
+"created": "2026-11-27T19:53",
 "frozen": false,
 "kind": "larga"
 }
