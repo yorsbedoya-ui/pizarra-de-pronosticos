@@ -568,7 +568,8 @@
 "h": "Real Madrid",
 "a": "Alaves",
 "m": "1X",
-"p": 0.945
+"p": 0.945,
+"hit": null
 },
 {
 "id": "2026-11-28|PSV Eindhoven|Go Ahead Eagles",
@@ -578,7 +579,8 @@
 "h": "PSV Eindhoven",
 "a": "Go Ahead Eagles",
 "m": "+1.5",
-"p": 0.932
+"p": 0.932,
+"hit": null
 }
 ]
 }
@@ -605,7 +607,8 @@
 "h": "Roma",
 "a": "Monza",
 "m": "1X",
-"p": 0.922
+"p": 0.922,
+"hit": null
 },
 {
 "id": "2026-11-29|Fenerbahce|Erzurumspor",
@@ -615,7 +618,8 @@
 "h": "Fenerbahce",
 "a": "Erzurumspor",
 "m": "1X",
-"p": 0.907
+"p": 0.907,
+"hit": null
 },
 {
 "id": "2026-11-29|La Coruna|Barcelona",
@@ -625,7 +629,8 @@
 "h": "La Coruna",
 "a": "Barcelona",
 "m": "X2",
-"p": 0.905
+"p": 0.905,
+"hit": null
 }
 ]
 }
