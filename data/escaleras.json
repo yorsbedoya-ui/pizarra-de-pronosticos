@@ -552,6 +552,35 @@
 "hit": true
 }
 ]
+},
+{
+"n": 4,
+"created": "2026-11-27T16:43",
+"status": "pendiente",
+"prob": 0.881,
+"fair": 1.14,
+"legs": [
+{
+"id": "2026-11-28|Real Madrid|Alaves",
+"liga": "LaLiga",
+"date": "2026-11-28",
+"time": "20:00",
+"h": "Real Madrid",
+"a": "Alaves",
+"m": "1X",
+"p": 0.945
+},
+{
+"id": "2026-11-28|PSV Eindhoven|Go Ahead Eagles",
+"liga": "Eredivisie",
+"date": "2026-11-28",
+"time": "17:45",
+"h": "PSV Eindhoven",
+"a": "Go Ahead Eagles",
+"m": "+1.5",
+"p": 0.932
+}
+]
 }
 ]
 },
@@ -560,7 +589,47 @@
 "kind": "B",
 "created": "2026-11-25T23:43",
 "status": "activa",
-"steps": []
+"steps": [
+{
+"n": 1,
+"created": "2026-11-27T16:43",
+"status": "pendiente",
+"prob": 0.757,
+"fair": 1.32,
+"legs": [
+{
+"id": "2026-11-29|Roma|Monza",
+"liga": "Serie A",
+"date": "2026-11-29",
+"time": "17:00",
+"h": "Roma",
+"a": "Monza",
+"m": "1X",
+"p": 0.922
+},
+{
+"id": "2026-11-29|Fenerbahce|Erzurumspor",
+"liga": "Süper Lig",
+"date": "2026-11-29",
+"time": "16:00",
+"h": "Fenerbahce",
+"a": "Erzurumspor",
+"m": "1X",
+"p": 0.907
+},
+{
+"id": "2026-11-29|La Coruna|Barcelona",
+"liga": "LaLiga",
+"date": "2026-11-29",
+"time": "15:15",
+"h": "La Coruna",
+"a": "Barcelona",
+"m": "X2",
+"p": 0.905
+}
+]
+}
+]
 }
 ]
 }
