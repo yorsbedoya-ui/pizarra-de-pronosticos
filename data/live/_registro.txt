@@ -1,11 +1,11 @@
-E0 desde 2026-11-24: 20 leídos, 130 en total, 111 terminados, 0 días con error
-E1 desde 2026-11-24: 25 leídos, 217 en total, 205 terminados, 0 días con error
-SP1 desde 2026-11-24: 13 leídos, 143 en total, 130 terminados, 0 días con error
-I1 desde 2026-11-24: 11 leídos, 131 en total, 121 terminados, 0 días con error
-D1 desde 2026-11-24: 10 leídos, 100 en total, 91 terminados, 0 días con error
-F1 desde 2026-11-24: 10 leídos, 114 en total, 100 terminados, 0 días con error
-P1 desde 2026-11-24: 10 leídos, 111 en total, 99 terminados, 0 días con error
-N1 desde 2026-11-24: 10 leídos, 127 en total, 118 terminados, 0 días con error
-T1 desde 2026-11-24: 10 leídos, 118 en total, 110 terminados, 0 días con error
+E0 desde 2026-11-25: 27 leídos, 137 en total, 111 terminados, 0 días con error
+E1 desde 2026-11-25: 27 leídos, 227 en total, 205 terminados, 0 días con error
+SP1 desde 2026-11-25: 17 leídos, 147 en total, 130 terminados, 0 días con error
+I1 desde 2026-11-25: 14 leídos, 134 en total, 121 terminados, 0 días con error
+D1 desde 2026-11-25: 16 leídos, 106 en total, 91 terminados, 0 días con error
+F1 desde 2026-11-25: 15 leídos, 119 en total, 100 terminados, 0 días con error
+P1 desde 2026-11-25: 13 leídos, 114 en total, 99 terminados, 0 días con error
+N1 desde 2026-11-25: 14 leídos, 131 en total, 118 terminados, 0 días con error
+T1 desde 2026-11-25: 13 leídos, 121 en total, 110 terminados, 0 días con error
 estadísticas disponibles en ESPN: ['appearances', 'foulsCommitted', 'goalAssists', 'possessionPct', 'shotAssists', 'shotsOnTarget', 'totalGoals', 'totalShots', 'wonCorners']
-ligas guardadas: 9 | hora UTC 2026-11-27T23:42+00:00
+ligas guardadas: 9 | hora UTC 2026-11-28T01:42+00:00
